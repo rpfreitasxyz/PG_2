@@ -2,19 +2,19 @@
 doc_type: 'grad' # 'msc' or 'dscexam' or 'dsc'
 portuguese: true # choose either portuguese or english to be true
 english: false 
-title:  'My Final College Paper'
-foreigntitle: 'Foreign Title'
+title:  '_Valuation_ Intrínseco e Relativo: O estudo de caso da COPEL'
+foreigntitle: 'Intrinsic and Relative Valuation: The case study of COPEL'
 department: 'EPR'
-date_month: '09'
-date_year: '2020'
-keyword: [Primeira palavra-chave, Segunda palavra-chave]
+date_month: '`r format(Sys.Date(), "%m")`'
+date_year: '`r format(Sys.Date(), "%Y")`'
+keyword: [Valuation, Análise de investimentos]
 author:
 - name: Rafael Pinto
   surname: de Freitas
 advisor:
 - title: Prof.
-  name: Nome do Primeiro Orientador
-  surname: Sobrenome
+  name: José Roberto
+  surname: Ribas
   degree: D.Sc.
 - title: Prof.
   name: Nome do Segundo Orientador
