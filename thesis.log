@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.18)  31 MAY 2020 21:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.18)  1 JUN 2020 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -726,7 +726,7 @@ LaTeX Warning: Reference `tab:maxdelays' on page 5 undefined on input line 263.
 ]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 275.
-<figure/reed.jpg, id=256, 250.9375pt x 251.94125pt>
+<figure/reed.jpg, id=257, 250.9375pt x 251.94125pt>
 File: figure/reed.jpg Graphic file (type jpg)
 <use figure/reed.jpg>
 Package pdftex.def Info: figure/reed.jpg  used on input line 280.
@@ -737,7 +737,7 @@ Package pdftex.def Info: figure/reed.jpg  used on input line 280.
 
 LaTeX Warning: Reference `rmd-basics' on page 7 undefined on input line 287.
 
-<thesis_files/figure-latex/delaysboxplot-1.pdf, id=263, 433.62pt x 325.215pt>
+<thesis_files/figure-latex/delaysboxplot-1.pdf, id=264, 433.62pt x 325.215pt>
 File: thesis_files/figure-latex/delaysboxplot-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/delaysboxplot-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/delaysboxplot-1.pdf  used on
@@ -751,7 +751,7 @@ Overfull \hbox (6.82759pt too wide) in paragraph at lines 298--299
 [7
 
  <./thesis_files/figure-latex/delaysboxplot-1.pdf>]
-<figure/subdivision.pdf, id=276, 220.825pt x 89.33376pt>
+<figure/subdivision.pdf, id=277, 220.825pt x 89.33376pt>
 File: figure/subdivision.pdf Graphic file (type pdf)
 <use figure/subdivision.pdf>
 Package pdftex.def Info: figure/subdivision.pdf  used on input line 309.
@@ -792,16 +792,16 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 471.
  ) 
 Here is how much of TeX's memory you used:
- 8896 strings out of 482404
- 135046 string characters out of 5944921
+ 8901 strings out of 482404
+ 135123 string characters out of 5944921
  426411 words of memory out of 5000000
- 24362 multiletter control sequences out of 15000+600000
+ 24367 multiletter control sequences out of 15000+600000
  542432 words of font info for 63 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  39i,12n,34p,1072b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
  <c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/tcrm1200.600pk> <c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-v
-ar/fonts/pk/ljfour/jknappen/ec/tctt1200.600pk><c:/Users/Rafael Pinto/AppData/Ro
+appen/ec/tctt1200.600pk> <c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-v
+ar/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk><c:/Users/Rafael Pinto/AppData/Ro
 aming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/Ra
 fael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 bx12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/
@@ -820,9 +820,9 @@ pe1/public/amsfonts/cm/cmsy8.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX
 pData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/
 Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msam10.pfb>
-Output written on thesis.pdf (26 pages, 320144 bytes).
+Output written on thesis.pdf (26 pages, 323218 bytes).
 PDF statistics:
- 454 PDF objects out of 1000 (max. 8388607)
+ 460 PDF objects out of 1000 (max. 8388607)
  394 compressed objects within 4 object streams
  90 named destinations out of 1000 (max. 500000)
  189 words of extra memory for PDF output out of 10000 (max. 10000000)
