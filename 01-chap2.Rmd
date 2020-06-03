@@ -8,7 +8,7 @@ The {#rmd-basics} text after the chapter declaration will allow us to link throu
 
 # O mercado de energia
 
-## Órgãos relevantes
+## Agentes regulatórios
 
 ### MME
 
@@ -22,9 +22,11 @@ The {#rmd-basics} text after the chapter declaration will allow us to link throu
 
 ### Transmissão
 
+### Comercialização
+
 ### Distribuição
 
-## Estudos e projeções
+## Estudos e projeções de longo prazo
 
 ### Plano Decenal de Expansão de Energia (PDE)
 
