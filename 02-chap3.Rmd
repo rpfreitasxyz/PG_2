@@ -1,0 +1,17 @@
+# Referencial teórico
+
+## Demonstrações financeiras
+
+### Demonstrativo de Resultados do Exercício (DRE)
+
+### Balanço Patrimonial (BP)
+
+### Demonstrativo de Fluxo de Caixa (DFC)
+
+## _Valuation_ intrínseco
+
+### Método do Fluxo de Caixa Descontado
+
+## _Valuation_ relativo
+
+### Análise por múltiplos
