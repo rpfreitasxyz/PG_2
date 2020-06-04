@@ -93,9 +93,25 @@ on chapters.
 
 ## Contextualização
 
-## Objetivos
+histórai do mercado de capitais como um todo.
+
+histórai do mercado de capitais brasileiro.
+
+falar da evolucao de CPFs na bolsa
 
 ## Justificativa
+
+comparar rendimentos de titulos publicos x acoes
+
+falar sobre democratizacao da bolsa (falar sobre bogle e etfs)
+
+falar sobre a importancia da racionalidade nas escolhas (procurar referencias)
+
+## Objetivos
+
+- fazer o valuation da COPEL via fluxo de caixa descontado e relativo
+- fazer uma comparacao dos resultados
+- alguma outra coisa
 
 ## Limitações
 
