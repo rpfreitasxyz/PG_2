@@ -101,10 +101,17 @@ falar da evolucao de CPFs na bolsa
 
 ## Justificativa
 
-comparar rendimentos de titulos publicos x acoes
-
 falar sobre democratizacao da bolsa (falar sobre bogle e etfs)
 
+Em comparação à poupança, é evidente que o rendimento do IBOV é superior.
+
+```{r ibovpoupanca, echo = FALSE, fig.cap="Uma comparação entre poupança vs. IBOV, de 2016 a 2018. Fonte: Econometrica", out.width = "100%"}
+knitr::include_graphics("figure/poupanca-ou-acoes-grafico.png")
+```
+
+Interessantemente, o único período no exposto acima que a poupança superou o IBOV foi nos momentos posteriores ao _Joesley Day_, em 18 de maio de 2017.
+
+Assim sendo, é importante de que as escolhas de ativos seja racional. 
 falar sobre a importancia da racionalidade nas escolhas (procurar referencias)
 
 ## Objetivos
