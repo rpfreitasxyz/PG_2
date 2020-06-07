@@ -47,7 +47,7 @@ foreignabstract: |
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 bibliography: bib/thesis.bib
-csl: coppe.csl
+csl: abnt.csl
 biblio-style: "coppe-unsrt"
 link-citations: true
 output: 
@@ -97,16 +97,15 @@ A Bolsa de Valores ganhou uma de suas mais famosas denominações a partir de 19
 
 A partir de 2007, as bolsas de valores deixaram de ser entidades sem fins lucrativos e tornaram-se empresas de capital aberto. No ano seguinte, a BM&F e a Bovespa se uniram, resultando na criação da Bolsa de Valores, Mercadorias e Futuros de São Paulo (BM&F Bovespa). Em 2017, são fundidas a BM&F Bovespa e CETIP, dando eram à B3 S.A., sob a supervisão da CVM – esta é a bolsa como a conhecemos.
 
-Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Valores ano a ano, sendo em 2020 o recorde, um aumento de 33% relativo a 2019 [@valorinveste2020].
+Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Valores ano a ano, sendo em 2020 o recorde, um aumento de 47.7% relativo a maio de 2019^[O último acesso a estes dados foi em 07 jul 2020. Pode-se conferir os dados baixando a planilha presente neste link: http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-a-vista/historico-pessoas-fisicas/].
 
 Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros, sendo o setor utilitário 
 
-
 ## Justificativa
 
-Geralmente, no caso de investidores iniciantes, diversificação de ativos segundo a teoria do portfólio eficiente de Markowitz [-@markowitz1952] é a rota trilhada. Por esse prisma, a compra de fundos de índice (ETFs) possibilita uma significativa diversificação de ativos a preços acessíveis. Efetivamente, replica-se um índice do mercado, possibilitando ao cotista -- o comprador do fundo de índice -- um retorno muito próximo ao mesmo.
+Geralmente, no caso de investidores iniciantes, diversificação de ativos segundo a teoria do portfólio eficiente de Markowitz [-@markowitz1952] é a rota trilhada. Por esse prisma, a compra de fundos de índice (ETFs) possibilita uma significativa diversificação de ativos a preços acessíveis. Efetivamente, replica-se um índice do mercado, possibilitando ao cotista -- o comprador do fundo -- um retorno muito próximo ao mesmo.
 
-Com o passar do tempo, a maturação no mercado financeiro naturalmente pode levar o investidor a se interessar por retornos acima do mercado, fundos de índice impossibilitam o objetivo. Isso leva ações singulares se tornem mais atraentes, tendo em visto que raramente fundos de investimento com administração ativa, no longo prazo, superam os retornos dos fundos de índice [@bogle2015].
+Com o passar do tempo, a maturação no mercado financeiro naturalmente pode levar o investidor a se interessar por retornos acima do mercado -- fundos de índice por definição impossibilitam o objetivo. Isso leva a uma exploração de diferentes classes de ativos, desde ações ordinárias a fundos de investimento em ações. Um investidor, entretanto, há de ter em mente que raramente fundos de investimento com administração ativa, no longo prazo, superam os retornos dos fundos de índice, em termos reais [@bogle2015].
 
 Em comparação à poupança, é evidente que o rendimento do IBOV é superior.
 
