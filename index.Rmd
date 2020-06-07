@@ -99,17 +99,21 @@ A partir de 2007, as bolsas de valores deixaram de ser entidades sem fins lucrat
 
 Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Valores ano a ano, sendo em 2020 o recorde, um aumento de 33% relativo a 2019 [@valorinveste2020].
 
-Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros. 
+Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros, sendo o setor utilitário 
 
-Aos investidores iniciantes, diversificação de ativos segundo a teoria do portfólio eficiente de Markowitz [-@markowitz1952] é geralmente a rota trilhada. Por esse prisma, a compra de ETFs
 
 ## Justificativa
 
+Geralmente, no caso de investidores iniciantes, diversificação de ativos segundo a teoria do portfólio eficiente de Markowitz [-@markowitz1952] é a rota trilhada. Por esse prisma, a compra de fundos de índice (ETFs) possibilita uma significativa diversificação de ativos a preços acessíveis. Efetivamente, replica-se um índice do mercado, possibilitando ao cotista -- o comprador do fundo de índice -- um retorno muito próximo ao mesmo.
+
+Com o passar do tempo, a maturação no mercado financeiro naturalmente pode levar o investidor a se interessar por retornos acima do mercado, fundos de índice impossibilitam o objetivo. Isso leva ações singulares se tornem mais atraentes, tendo em visto que raramente fundos de investimento com administração ativa, no longo prazo, superam os retornos dos fundos de índice [@bogle2015].
+
 Em comparação à poupança, é evidente que o rendimento do IBOV é superior.
 
-```{r ibovpoupanca, echo = FALSE, fig.cap = "Uma comparação entre poupança vs. IBOV, de 2016 a 2018. Fonte: Econometrica", out.width = "100%"}
+```{r ibovpoupanca, echo = FALSE, fig.cap = "Uma comparação entre poupança vs. IBOV, de 2016 a 2018. Fonte: Econometrica", out.width = "100%", fig.pos="H"}
 knitr::include_graphics("figure/poupanca-ou-acoes-grafico.png")
 ```
+
 
 Interessantemente, o único período no exposto acima que a poupança superou o IBOV foi nos momentos posteriores ao _Joesley Day_, em 18 de maio de 2017.
 
