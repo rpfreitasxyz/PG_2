@@ -93,23 +93,27 @@ on chapters.
 
 ## Contextualização
 
-histórai do mercado de capitais como um todo.
+A Bolsa de Valores ganhou uma de suas mais famosas denominações a partir de 1967: Bovespa, a Bolsa de Valores SP. Um ano depois, foi criado o principal índice de ações brasileiro: o Ibovespa. Resumidamente, é uma média ponderada das ações com maior volume de negociação. Após certo tempo, foi criada a CETIP – a Central de Custódia e de Liquidação Financeira de Títulos – em 1984, começando a operar em 1986.
 
-histórai do mercado de capitais brasileiro.
+A partir de 2007, as bolsas de valores deixaram de ser entidades sem fins lucrativos e tornaram-se empresas de capital aberto. No ano seguinte, a BM&F e a Bovespa se uniram, resultando na criação da Bolsa de Valores, Mercadorias e Futuros de São Paulo (BM&F Bovespa). Em 2017, são fundidas a BM&F Bovespa e CETIP, dando eram à B3 S.A., sob a supervisão da CVM – esta é a bolsa como a conhecemos.
 
-falar da evolucao de CPFs na bolsa
+Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Valores ano a ano, sendo em 2020 o recorde, um aumento de 33% relativo a 2019 [@valorinveste2020].
+
+Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros. 
+
+Aos investidores iniciantes, diversificação de ativos segundo a teoria do portfólio eficiente de Markowitz [-@markowitz1952] é geralmente a rota trilhada. Por esse prisma, a compra de ETFs
 
 ## Justificativa
 
-falar sobre democratizacao da bolsa (falar sobre bogle e etfs)
-
 Em comparação à poupança, é evidente que o rendimento do IBOV é superior.
 
-```{r ibovpoupanca, echo = FALSE, fig.cap="Uma comparação entre poupança vs. IBOV, de 2016 a 2018. Fonte: Econometrica", out.width = "100%"}
+```{r ibovpoupanca, echo = FALSE, fig.cap = "Uma comparação entre poupança vs. IBOV, de 2016 a 2018. Fonte: Econometrica", out.width = "100%"}
 knitr::include_graphics("figure/poupanca-ou-acoes-grafico.png")
 ```
 
 Interessantemente, o único período no exposto acima que a poupança superou o IBOV foi nos momentos posteriores ao _Joesley Day_, em 18 de maio de 2017.
+
+falar sobre democratizacao da bolsa (falar sobre bogle e etfs)
 
 Assim sendo, é importante de que as escolhas de ativos seja racional. 
 falar sobre a importancia da racionalidade nas escolhas (procurar referencias)
