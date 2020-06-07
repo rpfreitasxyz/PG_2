@@ -8,7 +8,7 @@ The {#rmd-basics} text after the chapter declaration will allow us to link throu
 
 # O mercado de energia
 
-## Agentes regulatórios
+## Órgãos presentes no estudo
 
 ### MME
 
