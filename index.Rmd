@@ -95,19 +95,15 @@ Cabe, antes de começar o desenvolvimento do trabalho propriamente dito, context
 
 ## Contextualização
 
-Por estar inserido o trabalho no cenário brasileiro, cabe definir e relatar os objetivos da Bolsa de Valores, assim como uma breve história de como a foi . 
+Cabe, inicialmente, definir Bolsas de Valores, assim como retratar uma breve história da brasileira a partir de 1967 --  ano a partir do qual começou a se chamar Bolsa de Valores de São Paulo, a Bovespa. Segundo Assaf Neto [-@assafneto2018], as Bolsas são entidades, cujo objetivo básico é o de manter um local em condições adequadas para a realização de operações de compra e venda de títulos e valores mobiliários.
 
-Bolsas de Valores são, segundo a definição de Assaf Neto [-@assafneto2018]:
+Um ano após 1967, foi criado o principal índice de ações brasileiro: o Ibovespa. Resumidamente, este índice é uma média ponderada das ações com maior volume de negociação. Após certo tempo, foi criada a Cetip – a Central de Custódia e de Liquidação Financeira de Títulos – em 1984, começando a operar em 1986.
 
->"[...] entidades, cujo objetivo básico é o de manter um local em condições adequadas para a realização, entre seus membros, de operações de compra e venda de títulos e valores mobiliários."
-
-A Bolsa de Valores brasileira ganhou uma de suas mais famosas denominações a partir de 1967: Bovespa, a Bolsa de Valores SP. Um ano depois, foi criado o principal índice de ações brasileiro: o Ibovespa. Resumidamente, é uma média ponderada das ações com maior volume de negociação. Após certo tempo, foi criada a Cetip – a Central de Custódia e de Liquidação Financeira de Títulos – em 1984, começando a operar em 1986.
-
-A partir de 2007, as bolsas de valores deixaram de ser entidades sem fins lucrativos e tornaram-se empresas de capital aberto. No ano seguinte, a BM&F e a Bovespa se uniram, resultando na criação da Bolsa de Valores, Mercadorias e Futuros de São Paulo (BM&F Bovespa). Em 2017, são fundidas a BM&F Bovespa e Cetip, dando eram à B3 S.A., sob a supervisão da Comissão de Valores Mobiliários (CVM) – esta é a bolsa como a conhecemos.
+A partir de 2007, as bolsas de valores deixaram de ser entidades sem fins lucrativos e tornaram-se empresas de capital aberto. No ano seguinte, a BM&F e a Bovespa se uniram, resultando na criação da Bolsa de Valores, Mercadorias e Futuros de São Paulo (BM&F Bovespa). Em 2017, são fundidas a BM&F Bovespa e Cetip, dando origem à B3 S.A., sob a supervisão da Comissão de Valores Mobiliários (CVM) – esta é a bolsa brasileira atualmente.
 
 Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Valores ano a ano, sendo em 2020 o recorde, um aumento de 47.7% relativo a maio de 2019^[O último acesso a estes dados foi em 07 jul 2020. Pode-se conferir a evolução dos mesmos baixando a planilha presente neste link: http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-a-vista/historico-pessoas-fisicas/].
 
-Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros.
+Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros -- o que não quer dizer que o investidor deve investir em todos. De fato, o investidor precisa minimizar seu risco, preferencialmente investindo em empresas que dentre outras características, possuem alto _payout_ de dividendos, baixo grau de alavancagem; e menor variabilidade de lucros [@beaver1970].
 
 ## Justificativa
 
