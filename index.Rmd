@@ -109,31 +109,13 @@ Empresas do setor de utilidades possuem tais características, em sua maioria; d
 
 ## Justificativa
 
-Em comparação à poupança, é evidente que o rendimento do IBOV é superior.
+Por mais que a caderneta de poupança seja o investimento preferido dos brasileiros, segundo a Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais [-@anbima2019] -- esta modalidade conta com 88% da população -- é evidente que o rendimento nominal^[Nominalmente, uma vez que os retornos reais são contextuais, devido ao pagamento de impostos e, a depender do ativo, dos custos do mesmo.] do IBOV é superior no longo prazo. Pelo IPEA, pode-se obter tanto os rendimentos nominais (em % a.m.) da poupança quanto os retornos do IBOV (também em % a.m.), ambos em intervalos mensais desde 1990. A partir daí, acumulamos as taxas recursivamente. Definindo $i$ como a taxa de retorno nominal total, e $i_t$ como sendo a taxa de retorno nominal no mês $t$, temos $i = \prod_{t=1}^n (1+i_t),$ sendo $n$ o mês que se deseja calcular o retorno nominal total. Exposto isso, foi feito um gráfico dos retornos totais de ambas as modalidades:
 
-```{r ibov-poupanca, echo = FALSE, fig.cap = "Uma comparação entre poupança e o IBOV, de 2016 a 2018.", out.width = "100%", fig.pos="H"}
-library(tidyverse)
-
-dados <- read_csv2("data/ibov-poupanca.csv") %>%
-  select(-c(2, 3)) %>%
-  separate(col = 1, into = c("ano",  "mes"), sep = 4) %>%
-  mutate(data = paste(ano, mes, "01", sep = "/") %>% as.Date()) %>%
-  select(-c(1, 2)) %>%
-  pivot_longer(cols = c(1, 2), names_to = "tipo", values_to = "acum")
-  
-ggplot(dados, aes(x = data, y = acum, color = tipo)) +
-  geom_line() +
-  labs(x = "Ano",
-       y = "Rentabilidade acumulada",
-       caption = "Fonte: IPEA") +
-  theme_minimal() +
-  theme(text = element_text(family = "Computer Modern"))
-  
+```{r, fig.cap = "Uma comparação entre o IBOV e a poupança.", fig.pos = "H", echo = FALSE, out.width = "100%"}
+knitr::include_graphics("img/ibov-poupanca.png")
 ```
 
-Interessantemente, o único período no exposto acima que a poupança superou o IBOV foi nos momentos posteriores ao _Joesley Day_, em 18 de maio de 2017.
-
-Geralmente, no caso de investidores iniciantes, diversificação de ativos segundo a teoria do portfólio eficiente de Markowitz [-@markowitz1952] é a rota trilhada. Por esse prisma, a compra de fundos de índice (ETFs) possibilita uma significativa diversificação de ativos a preços acessíveis. Efetivamente, replica-se um índice do mercado, possibilitando ao cotista -- o comprador do fundo -- um retorno muito próximo ao mesmo.
+Isso significa que, caso um investidor fizesse a diversificação de ativos segundo a teoria do portfólio eficiente de Markowitz [-@markowitz1952] é a rota trilhada. Por esse prisma, a compra de fundos de índice (ETFs) possibilita uma significativa diversificação de ativos a preços acessíveis. Efetivamente, replica-se um índice do mercado, possibilitando ao cotista -- o comprador do fundo -- um retorno muito próximo ao mesmo.
 
 Com o passar do tempo, a maturação no mercado financeiro pode, naturalmente, levar o investidor a se interessar por retornos acima do mercado -- fundos de índice por definição impossibilitam o objetivo. Isso leva a uma exploração de diferentes classes de ativos, desde ações ordinárias a fundos de investimento em ações. Um investidor, entretanto, há de ter em mente que raramente fundos de investimento com administração ativa, no longo prazo, superam os retornos dos fundos de índice, em termos reais [@bogle2015].
 
