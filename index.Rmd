@@ -95,7 +95,7 @@ Cabe, antes de começar o desenvolvimento do trabalho propriamente dito, context
 
 ## Contextualização
 
-Cabe, inicialmente, definir Bolsas de Valores, assim como retratar uma breve história da brasileira a partir de 1967 --  ano a partir do qual começou a se chamar Bolsa de Valores de São Paulo, a Bovespa. Segundo Assaf Neto [-@assafneto2018], as Bolsas são entidades, cujo objetivo básico é o de manter um local em condições adequadas para a realização de operações de compra e venda de títulos e valores mobiliários.
+É necessário definir Bolsas de Valores, assim como retratar uma breve história da brasileira a partir de 1967 --  ano a partir do qual começou a se chamar Bolsa de Valores de São Paulo, a Bovespa. Segundo Assaf Neto [-@assafneto2018], as Bolsas são entidades, cujo objetivo básico é o de manter um local em condições adequadas para a realização de operações de compra e venda de títulos e valores mobiliários.
 
 Um ano após 1967, foi criado o principal índice de ações brasileiro: o Ibovespa. Resumidamente, este índice é uma média ponderada das ações com maior volume de negociação. Após certo tempo, foi criada a Cetip – a Central de Custódia e de Liquidação Financeira de Títulos – em 1984, começando a operar em 1986.
 
@@ -119,14 +119,28 @@ Com o passar do tempo, entretanto, a maturação no mercado financeiro pode, nat
 
 Assim sendo, caso o investidor deseja ter sucesso, é importante que as escolhas de ativos sejam racionais. Ao menos, tão racionais quanto possível forem para humanos. De fato, indivíduos estão sujeitos a uma racionalidade restrita [@simon1997], o que leva a diversas heurísticas -- inclusive, mas não limitadas a: enfatizar evidências que apoiam visões próprias [@klayman1995], superestimar probabilidades por maior "disponibilidade" em memória [@schwarz1991]; e superestimar a própria habilidade, quando se é novato, assim como subestimar, quando se é um _expert_ [@kruger1999] -- para simplificar o processo de raciocínio e, permitir, assim, que o agente consiga satisfazer as restrições -- tempo, recursos, dentre outros -- para a tomada de decisões.
 
-papo sobre sindrome do homem com martelo.
+De fato, a abordagem de realizar tanto o _valuation_ intrínseco quanto o relativo de uma empresa é, além de uma interessante comparação entre métodos, uma forma de evitar a "síndrome do homem com martelo", popularizado por Munger [-@munger2006]. Este cita um provérbio, que diz: "Para um homem com um martelo, todo problema se parece com um prego."
 
 ## Objetivos
 
-- fazer o valuation da COPEL via fluxo de caixa descontado e relativo
-- fazer uma comparacao dos resultados
-- alguma outra coisa
+São os principais objetivos do trabalho (1) fazer o _valuation_ da Companhia Paranaense de Energia através de, no mínimo, dois métodos de valuation, sendo no mínimo um deles intrísenco e no mínimo, um relativo e (2) realizar a comparação entre os resultados dos métodos.
+
+Com o desenvolver do trabalho, poderão ser percebidas outras motivações, entretanto seriam estas consideradas secundárias.
 
 ## Limitações
 
+Este trabalho se limita a prover um breve prospecto do cenário energético brasileiro, assim como possíveis desenvolvimentos. Não serão discutidas políticas energéticas e afins. Se limita, também, a tomar como verdadeira a teoria moderna do portfólio como exposta por Markowitz [-@markowitz1952], para o cálculo do custo de capital. Não será discutido economia comportamental, nem modelos mais sofisticados para tal cálculo.
+
 ## Estrutura do trabalho
+
+O trabalho possui, em sua integridade, cinco capítulos.
+
+O primeiro capítulo é uma introdução ao restante do trabalho, e é efetivamente um resumo do que o leitor verá pela frente.
+
+O segundo capítulo é uma examinação do setor energético brasileiro, a ser feito pela leitura e examinação do Plano Decenal de Expansão de Energia (PDE) e o Plano Nacioanl de Energia (PNE), ambos elaborados pela Empresa de Pesquisa Energética (EPE). Através destes, podemos ter uma melhor noção do setor no qual a empresa está inserido, possibilitando um melhor cálculo e previsão dos fluxos de caixa.
+
+O terceiro capítulo é a documentação do referencial teórico utilizado, a ser escrito seguindo uma lógica linear, de forma tal que possa também ser visto como uma metodologia, com exemplos para auxiliar o leitor.
+
+O quarto capítulo é o estudo de caso de fato. Será dada uma contextualização da empresa, assim como a aplicação dos métodos discutidos.
+
+O quinto e último capítulo é a conclusão, em que será feita a exposição dos resultados, assim como a comparação entre os métodos de _valuation_ discutidos durante o texto.

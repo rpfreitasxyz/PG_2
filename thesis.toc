@@ -9,49 +9,49 @@
 \contentsline {section}{\numberline {1.3}Objetivos}{4}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Limitações}{4}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Estrutura do trabalho}{4}{section.1.5}%
-\contentsline {chapter}{\numberline {2}O mercado de energia}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Órgãos presentes no estudo}{5}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}MME}{5}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}ANEEL}{5}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}ONS}{5}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}CCEE}{5}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}EPE}{5}{subsection.2.1.5}%
-\contentsline {section}{\numberline {2.2}O fluxo de energia}{5}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Geração}{5}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Transmissão}{5}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Comercialização}{5}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Distribuição}{5}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Estudos e projeções de longo prazo}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Plano Decenal de Expansão de Energia (PDE)}{5}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Plano Nacional de Energia (PNE)}{5}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}Referencial teórico}{6}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Demonstrações financeiras}{6}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Demonstrativo de Resultados do Exercício (DRE)}{6}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Balanço Patrimonial (BP)}{6}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Demonstrativo de Fluxo de Caixa (DFC)}{6}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}\emph {Valuation} intrínseco}{6}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Método do Fluxo de Caixa Descontado}{6}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}\emph {Valuation} relativo}{6}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Análise por múltiplos}{6}{subsection.3.3.1}%
-\contentsline {chapter}{\numberline {4}Estudo de caso}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Contextualização da COPEL}{8}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}História}{8}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}\emph {Core business}}{8}{subsection.4.1.2}%
-\contentsline {subsubsection}{Geração}{8}{section*.5}%
-\contentsline {subsubsection}{Transmissão}{8}{section*.6}%
-\contentsline {subsubsection}{Distribuição}{8}{section*.7}%
-\contentsline {subsubsection}{Outros}{8}{section*.8}%
-\contentsline {section}{\numberline {4.2}Cálculo do \emph {valuation} intrínseco}{8}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}O custo de capital médio ponderado (WACC)}{8}{subsection.4.2.1}%
-\contentsline {subsubsection}{Custo de capital próprio}{8}{section*.9}%
-\contentsline {subsubsection}{Custo de capital de terceiros}{8}{section*.10}%
-\contentsline {subsubsection}{Fluxo de caixa descontado}{8}{section*.11}%
-\contentsline {section}{\numberline {4.3}Cálculo do \emph {valuation} relativo}{8}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Margem bruta}{8}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Lucros antes de juros e impostos (EBIT)}{8}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Margem líquida}{8}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Razão preço/lucro (P/E)}{8}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Retorno sobre patrimônio líquido (ROE)}{8}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Comparação com empresas do setor}{8}{subsection.4.3.6}%
-\contentsline {chapter}{\numberline {5}Conclusão}{9}{chapter.5}%
-\contentsline {chapter}{Referências Bibliográficas}{10}{chapter*.12}%
+\contentsline {chapter}{\numberline {2}O mercado de energia}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Órgãos presentes no estudo}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}MME}{6}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}ANEEL}{6}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}ONS}{6}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}CCEE}{6}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}EPE}{6}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}O fluxo de energia}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Geração}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Transmissão}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Comercialização}{6}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Distribuição}{6}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Estudos e projeções de longo prazo}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Plano Decenal de Expansão de Energia (PDE)}{6}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Plano Nacional de Energia (PNE)}{6}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}Referencial teórico}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Demonstrações financeiras}{7}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Demonstrativo de Resultados do Exercício (DRE)}{7}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Balanço Patrimonial (BP)}{7}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Demonstrativo de Fluxo de Caixa (DFC)}{7}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}\emph {Valuation} intrínseco}{7}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Método do Fluxo de Caixa Descontado}{7}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}\emph {Valuation} relativo}{7}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Análise por múltiplos}{7}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}Estudo de caso}{8}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Contextualização da COPEL}{9}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}História}{9}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}\emph {Core business}}{9}{subsection.4.1.2}%
+\contentsline {subsubsection}{Geração}{9}{section*.5}%
+\contentsline {subsubsection}{Transmissão}{9}{section*.6}%
+\contentsline {subsubsection}{Distribuição}{9}{section*.7}%
+\contentsline {subsubsection}{Outros}{9}{section*.8}%
+\contentsline {section}{\numberline {4.2}Cálculo do \emph {valuation} intrínseco}{9}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}O custo de capital médio ponderado (WACC)}{9}{subsection.4.2.1}%
+\contentsline {subsubsection}{Custo de capital próprio}{9}{section*.9}%
+\contentsline {subsubsection}{Custo de capital de terceiros}{9}{section*.10}%
+\contentsline {subsubsection}{Fluxo de caixa descontado}{9}{section*.11}%
+\contentsline {section}{\numberline {4.3}Cálculo do \emph {valuation} relativo}{9}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Margem bruta}{9}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Lucros antes de juros e impostos (EBIT)}{9}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Margem líquida}{9}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Razão preço/lucro (P/E)}{9}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Retorno sobre patrimônio líquido (ROE)}{9}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Comparação com empresas do setor}{9}{subsection.4.3.6}%
+\contentsline {chapter}{\numberline {5}Conclusão}{10}{chapter.5}%
+\contentsline {chapter}{Referências Bibliográficas}{11}{chapter*.12}%
