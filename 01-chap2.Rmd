@@ -8,9 +8,15 @@ The {#rmd-basics} text after the chapter declaration will allow us to link throu
 
 # O mercado de energia
 
+É importante, antes de partir para o estudo de caso em questão, estabelecer o contexto do trabalho em questão. De fato, neste capítulo serão tratados os fundamentais do mercado de energia no Brasil, desde os órgãos aos estudos principais do setor.
+
 ## Órgãos presentes no estudo
 
+Nesta seção, serão tratados os cinco principais órgãos do setor, sendo eles: (1) o Ministério de Minas e Energia; (2) a Agência Nacional de Energia Elétrica; (3) o Operador Nacional do Sistema Elétrico; (4) a Câmara Comercializadora de Energia Elétrica; e (5) a Empresa de Pesquisa Energética.
+
 ### MME
+
+O Ministério de Minas e Energia (MME)
 
 ### ANEEL
 
