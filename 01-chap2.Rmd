@@ -73,12 +73,22 @@ Salvo no caso de _holdings_, empresas só podem atuar em uma das áreas ex-comer
 
 A EPE cumpre sua finalidade de braço técnico de estudos do setor energético produzindo relatórios e planos de expansão a respeito do setor elétrico. Por se tratar de um _valuation_ de uma empresa do setor, é importante ponderar a respeito das ações tomadas e o parecer de _experts_ a respeito do futuro do setor como um todo, a fim de aprimorar nossas estimativas da taxa de crescimento.
 
-São os dois principais estudos, nesse sentido, (1) o Plano Decenal de Expansão de Energia; (2) e o Plano Nacional de Energia. 
-
-### Plano Decenal de Expansão de Energia (PDE)
-
-O PDE tem o intuito de de indicar as perspectivas, sob a ótica do Governo, da expansão do setor de energia no horizonte de dez anos, dentro de uma visão integrada para os diversos energéticos. Tal visão permite, então, extrair importantes elementos para o planejamento do setor, com benefícios em termos de aumento de confiabilidade, redução de custos de produção e mitigação de impactos ambientais.
+São os dois principais estudos, nesse sentido, (1) o Plano Nacional de Energia; (2) e o Plano Decenal de Expansão de Energia
 
 ### Plano Nacional de Energia (PNE)
 
+O PNE é um conjunto de estudos que dão suporte ao desenho da estratégia de longo prazo do governo em relação à expansão do setor de energia. A estratégia, por sua vez, consiste em um conjunto de recomendações e diretrizes a serem seguidas na definição das ações e iniciativas a serem implementadas ao longo do horizonte de tempo prescrito. A revisão do PNE deve ser conduzida sempre que houver necessidade de alteração na estratégia de longo prazo do tomador de decisão relevante, sejam por razões ordinárias ou extraordinárias. 
 
+Os PNEs têm relação com os PDEs. Embora haja similaridades, o PNE é um instrumento de planejamento com atribuições distintas do PDE. Em primeiro lugar, o PNE é um documento com visão mais estratégica. Neste contexto, seu enfoque consiste em embasar o posicionamento do governo de modo a orientar e direcionar as estratégias dos agentes do setor de forma a se atingir os objetivos gerais da expansão no longo prazo, com adequação dos recursos, com confiabilidade, modicidade e sustentabilidade. Além disso, o PNE é o alicerce a partir de qual todos os Planos, Políticas, Programas e Iniciativas são elaborados. O PNE é, portanto, um farol que orienta para onde os PDEs devem indicar a expansão do setor de energia no horizonte decenal. Por fim, enquanto o PDE trabalha com um cenário de referência e análises de sensibilidade, anualmente revisto, o PNE deve tratar com mais cenários. **TODO: Colocar referencia PNE**
+
+No caso, foi feito o estudo do PNE 2050, e assim será entregue um pequeno sumário executivo do mesmo a seguir.
+
+Foram elaborados dois grandes cenários, formando um cone de incertezas para o desenho da estratégia de longo prazo: o primeiro, chamado Desafio da Expansão, reflete requisitos de expansão do setor de energia para atendimento a um crescimento da demanda de energia mais expressivo. No segundo, chamado de Estagnação, analisam-se as consequências de um cenário em que o consumo de energia per capita mantém-se inalterado ao longo de todo o período. O foco do relatório está voltado para o cenário Desafio da Expansão.
+
+Os estudos do PNE apontam para um potencial energético de quase 280 bilhões de tep (toneladas equivalentes de petróleo) no horizonte até 2050. A demanda cresce de 300 milhões de tep para 600 milhões de tep e, ao longo de trinta e cinco anos, essa trajetória representa uma demanda de energia total acumulada do período equivalente a pouco menos de 15 bilhões de tep. Tamanha discrepância entre potencial de recursos e a demanda de energia estimada gera uma situação distinta daquela vivida ao longo especialmente da metade do século XX, quando o País viveu grandes crises de energia. Dessa forma, imagina-se uma administração da abundância.
+
+O cenário Desafio da Expansão considera algumas premissas, que serão levadas em conta para o uso no estudo de caso. São essas: (1) crescimento médio de PIB de 3.1% a.a. e 2.8% de PIB per capita; (2) a população brasileira manterá a tendência de crescer a taxas cada vez menores; (3) o consumo potencial de energia elétrica do País pode atingir até 3 vezes o patamar do ano base; (4) a demanda de energia elétrica a ser atendida por geração centralizada cresce até 2.5 vezes em relação aos valores do ano base, mesmo com crescimento de geração distribuída (GD), autoprodução, energia solar térmica e eficiência energética no período; (5) e o consumo de energia e de eletricidade per capita aumenta, a despeito da contribuição da eficiência energética no horizonte até 2050.
+
+### Plano Decenal de Expansão de Energia (PDE)
+
+O PDE tem o intuito de de indicar as perspectivas, sob a ótica do Governo, da expansão do setor de energia no horizonte de dez anos, dentro de uma visão integrada para os diversos energéticos. Tal visão permite, então, extrair importantes elementos para o planejamento do setor, com benefícios em termos de aumento de confiabilidade, redução de custos de produção e mitigação de impactos ambientais. **TODO: Colocar referencia PDE**
