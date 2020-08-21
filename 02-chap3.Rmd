@@ -1,6 +1,14 @@
 # Referencial teórico
 
+Nesta seção será feita uma consideração a respeito dos métodos e conceitos utilizados ao longo do estudo. É de interesse do leitor prestar especial atenção ao enunciado abaixo, uma vez que é um breve alicerce teórico que serve não apenas para esse estudo, como para diversos outros similares.
+
 ## Demonstrações financeiras
+
+dizer o que sao, fazer uma analogia com um medico lendo um relatorio de saude
+
+explicar o padrão IFRS/CPC
+
+falar sobre a lei das SA
 
 ### Demonstrativo de Resultados do Exercício (DRE)
 
