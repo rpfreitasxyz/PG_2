@@ -23,31 +23,31 @@
 \contentsline {chapter}{\numberline {3}Referencial teórico}{3}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Demonstrações financeiras}{3}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Demonstrativo de Resultados do Exercício (DRE)}{3}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Balanço Patrimonial (BP)}{3}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Demonstrativo de Fluxo de Caixa (DFC)}{3}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}\emph {Valuation} intrínseco}{3}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Método do Fluxo de Caixa Descontado}{3}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}\emph {Valuation} relativo}{3}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Análise por múltiplos}{3}{subsection.3.3.1}%
-\contentsline {chapter}{\numberline {4}Estudo de caso}{4}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Contextualização da COPEL}{5}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}História}{5}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}\emph {Core business}}{5}{subsection.4.1.2}%
-\contentsline {subsubsection}{Geração}{5}{section*.5}%
-\contentsline {subsubsection}{Transmissão}{5}{section*.6}%
-\contentsline {subsubsection}{Distribuição}{5}{section*.7}%
-\contentsline {subsubsection}{Outros}{5}{section*.8}%
-\contentsline {section}{\numberline {4.2}Cálculo do \emph {valuation} intrínseco}{5}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}O custo de capital médio ponderado (WACC)}{5}{subsection.4.2.1}%
-\contentsline {subsubsection}{Custo de capital próprio}{5}{section*.9}%
-\contentsline {subsubsection}{Custo de capital de terceiros}{5}{section*.10}%
-\contentsline {subsubsection}{Fluxo de caixa descontado}{5}{section*.11}%
-\contentsline {section}{\numberline {4.3}Cálculo do \emph {valuation} relativo}{5}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Margem bruta}{5}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Lucros antes de juros e impostos (EBIT)}{5}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Margem líquida}{5}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Razão preço/lucro (P/E)}{5}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Retorno sobre patrimônio líquido (ROE)}{5}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Comparação com empresas do setor}{5}{subsection.4.3.6}%
-\contentsline {chapter}{\numberline {5}Conclusão}{6}{chapter.5}%
-\contentsline {chapter}{Referências Bibliográficas}{7}{chapter*.12}%
+\contentsline {subsection}{\numberline {3.1.2}Balanço Patrimonial (BP)}{4}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Demonstrativo de Fluxo de Caixa (DFC)}{4}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}\emph {Valuation} intrínseco}{4}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Método do Fluxo de Caixa Descontado}{4}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}\emph {Valuation} relativo}{4}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Análise por múltiplos}{4}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}Estudo de caso}{5}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Contextualização da COPEL}{6}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}História}{6}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}\emph {Core business}}{6}{subsection.4.1.2}%
+\contentsline {subsubsection}{Geração}{6}{section*.5}%
+\contentsline {subsubsection}{Transmissão}{6}{section*.6}%
+\contentsline {subsubsection}{Distribuição}{6}{section*.7}%
+\contentsline {subsubsection}{Outros}{6}{section*.8}%
+\contentsline {section}{\numberline {4.2}Cálculo do \emph {valuation} intrínseco}{6}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}O custo de capital médio ponderado (WACC)}{6}{subsection.4.2.1}%
+\contentsline {subsubsection}{Custo de capital próprio}{6}{section*.9}%
+\contentsline {subsubsection}{Custo de capital de terceiros}{6}{section*.10}%
+\contentsline {subsubsection}{Fluxo de caixa descontado}{6}{section*.11}%
+\contentsline {section}{\numberline {4.3}Cálculo do \emph {valuation} relativo}{6}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Margem bruta}{6}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Lucros antes de juros e impostos (EBIT)}{6}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Margem líquida}{6}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Razão preço/lucro (P/E)}{6}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Retorno sobre patrimônio líquido (ROE)}{6}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Comparação com empresas do setor}{6}{subsection.4.3.6}%
+\contentsline {chapter}{\numberline {5}Conclusão}{7}{chapter.5}%
+\contentsline {chapter}{Referências Bibliográficas}{8}{chapter*.12}%

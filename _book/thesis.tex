@@ -11,6 +11,46 @@
   \RequirePackage[english, brazil]{babel}
 
 
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \usepackage{longtable}
@@ -131,12 +171,61 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \hypertarget{referencial-teuxf3rico}{%
   \chapter{Referencial teórico}\label{referencial-teuxf3rico}}
   
+  Nesta seção será feita uma consideração a respeito dos métodos e conceitos utilizados ao longo do estudo. É de interesse do leitor prestar especial atenção ao enunciado abaixo, uma vez que é um breve alicerce teórico que serve não apenas para esse estudo, como para diversos outros similares.
+  
   \hypertarget{demonstrauxe7uxf5es-financeiras}{%
   \section{Demonstrações financeiras}\label{demonstrauxe7uxf5es-financeiras}}
   
+  Demonstrações financeiras são representações estruturadas da posição financeira e do desempenho financeiro de uma determinada entidade. Em uma analogia com o ser humano, o médico estuda os resultados de exames com a finalidade de averiguar a saúde de um indivíduo, sejam eles de sangue, tomografias, radiografias, dentre outros; o investidor astuto estuda as demonstrações financeiras da empresa, desde seu balanço patrimonial ao seu demonstrativo de fluxo de caixa, para averiguar a saúde financeira da empresa em questão.
+  
+  Essas demonstrações são ``escritas'' com base em princípios geralmente aceitos de contabilidade. Esse conjunto, no Brasil, é formado por normas provenientes de diversos órgãos, como: (1) a lei 6.404/76; (2) as leis 11.638/07 e 11.941/09; (3) resoluções, circulares, comunicados e afins de órgãos como o Conselho Federal de Contabilidade, Banco Central, e Conselho de Valores Mobiliários.
+  
+  A seguir, serão comentadas sobre as três principais demonstrações financeiras utilizadas para análise de negócios. Para fins de melhor elucidação, serão utilizadas as demonstrações da própria COPEL.
+  
   \hypertarget{demonstrativo-de-resultados-do-exercuxedcio-dre}{%
   \subsection{Demonstrativo de Resultados do Exercício (DRE)}\label{demonstrativo-de-resultados-do-exercuxedcio-dre}}
+  \begin{Shaded}
+  \begin{Highlighting}[]
+  \KeywordTok{library}\NormalTok{(tidyverse)}
+  \end{Highlighting}
+  \end{Shaded}
+  \begin{verbatim}
+  -- Attaching packages ------------------------------------ tidyverse 1.3.0 --
+  \end{verbatim}
+  \begin{verbatim}
+  v ggplot2 3.3.2     v purrr   0.3.4
+  v tibble  3.0.3     v dplyr   1.0.1
+  v tidyr   1.1.0     v stringr 1.4.0
+  v readr   1.3.1     v forcats 0.5.0
+  \end{verbatim}
+  \begin{verbatim}
+  -- Conflicts --------------------------------------- tidyverse_conflicts() --
+  x dplyr::filter() masks stats::filter()
+  x dplyr::lag()    masks stats::lag()
+  \end{verbatim}
+  \begin{Shaded}
+  \begin{Highlighting}[]
+  \NormalTok{dre <-}\StringTok{ }\KeywordTok{tribble}\NormalTok{(}\OperatorTok{~}\NormalTok{x, }\OperatorTok{~}\NormalTok{y,}
+                 \DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{,}
+                 \DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{)}
   
+  \NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(dre, }\StringTok{"latex"}\NormalTok{, }\DataTypeTok{caption =} \StringTok{"Demonstração de Resultado COPEL"}\NormalTok{)}
+  \end{Highlighting}
+  \end{Shaded}
+  \begin{table}
+  
+  \caption{\label{tab:unnamed-chunk-1}Demonstração de Resultado COPEL}
+  \centering
+  \begin{tabular}[t]{r|r}
+  \hline
+  x & y\\
+  \hline
+  1 & 2\\
+  \hline
+  3 & 4\\
+  \hline
+  \end{tabular}
+  \end{table}
   \hypertarget{balanuxe7o-patrimonial-bp}{%
   \subsection{Balanço Patrimonial (BP)}\label{balanuxe7o-patrimonial-bp}}
   
