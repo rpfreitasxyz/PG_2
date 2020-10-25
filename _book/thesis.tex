@@ -11,46 +11,12 @@
   \RequirePackage[english, brazil]{babel}
 
 
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {}%
+  {\par}
+
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \usepackage{longtable}
@@ -69,7 +35,7 @@
     \examiner{Prof.}{Nome Completo do Terceiro Examinador}{Ph.D}
   
   \department{EPR}
-  \date{08}{2020}
+  \date{10}{2020}
 
     \keyword{Valuation}
     \keyword{Análise de investimentos}
@@ -84,6 +50,8 @@ Judge a man by his questions rather than by his answers.
 \end{quote}}
     \chapter*{Agradecimentos}
   Agradeço pela oportunidade de cursar um ensino superior de qualidade de forma pública. Mesmo com suas diversas limitações e imperfeições, a República brasileira segue em frente com a mensagem de democratização do conhecimento. É somente por meio desta que podemos nos defender contra a tirania vil da ignorância. Dessa forma, estou em dívida com a sociedade; com todos que permitiram minha entrada e estadia no curso de Engenharia de Produção pela UFRJ. Uma dívida monumental, se pensada pela ótica dos benefícios. Espero retornar o investimento em breve, a começar de forma humilde com este trabalho de conclusão de curso. Boa leitura!
+
+  tentativa 1
   \begin{abstract}
 Sit urna lacus aenean euismod morbi integer mauris ligula euismod. Massa leo nunc rutrum non vulputate viverra erat aliquet torquent. Dictumst inceptos litora diam dui eu non sodales eget metus? Mollis faucibus justo class class nulla vestibulum consequat purus.
 
@@ -115,206 +83,320 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
 
   \hypertarget{introduuxe7uxe3o}{%
   \chapter{Introdução}\label{introduuxe7uxe3o}}
-  
-  Placeholder
-  
+
+  Cabe, antes de começar o desenvolvimento do trabalho propriamente dito, contextualizar e justificar o trabalho, assim como explicitar aos leitores os objetivos, as limitações e a estrutura do mesmo.
+
   \hypertarget{contextualizauxe7uxe3o}{%
   \section{Contextualização}\label{contextualizauxe7uxe3o}}
-  
+
+  É necessário definir Bolsas de Valores, assim como retratar uma breve história da brasileira a partir de 1967 -- ano a partir do qual começou a se chamar Bolsa de Valores de São Paulo, a Bovespa. Segundo Assaf Neto (\protect\hyperlink{ref-assafneto2018}{2018}), as Bolsas são entidades, cujo objetivo básico é o de manter um local em condições adequadas para a realização de operações de compra e venda de títulos e valores mobiliários.
+
+  Um ano após 1967, foi criado o principal índice de ações brasileiro: o Ibovespa. Resumidamente, este índice é uma média ponderada das ações com maior volume de negociação. Após certo tempo, foi criada a Cetip -- a Central de Custódia e de Liquidação Financeira de Títulos -- em 1984, começando a operar em 1986.
+
+  A partir de 2007, as bolsas de valores deixaram de ser entidades sem fins lucrativos e tornaram-se empresas de capital aberto. No ano seguinte, a BM\&F e a Bovespa se uniram, resultando na criação da Bolsa de Valores, Mercadorias e Futuros de São Paulo -- a BM\&F Bovespa. Em 2017, são fundidas a BM\&F Bovespa e Cetip, dando origem à B3 S.A., sob a supervisão da Comissão de Valores Mobiliários -- esta é a bolsa brasileira atualmente.
+
+  Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Valores ano a ano, sendo em 2020 o recorde, um aumento de 47.7\% relativo a maio de 2019\footnote{O último acesso a estes dados foi em 07 jul 2020. Pode-se conferir a evolução dos mesmos baixando a planilha presente neste link: \url{http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-a-vista/historico-pessoas-fisicas/}}.
+
+  Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros -- o que não quer dizer que o investidor deve investir em todos. De fato, o investidor precisa minimizar seu risco, preferencialmente investindo em empresas que dentre outras características possuem alto \emph{payout} de dividendos, baixo grau de alavancagem; e menor variabilidade de lucros (BEAVER; KETTLER; SCHOLES, \protect\hyperlink{ref-beaver1970}{1970}).
+
+  Empresas do setor de utilidades possuem tais características, em sua maioria; dessa forma, escolheu-se um exemplar do mesmo -- a Companhia Paranaense de Energia, COPEL -- como forma de fazer o valuation da empresa, fazer um breve resumo do setor elétrico e exemplificar o processo ao leitor.
+
   \hypertarget{justificativa}{%
   \section{Justificativa}\label{justificativa}}
-  
+
+  Por mais que a caderneta de poupança seja o investimento preferido dos brasileiros, segundo a Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais (\protect\hyperlink{ref-anbima2019}{2019}) -- esta modalidade conta com 88\% da população -- é evidente que o rendimento nominal\footnote{Nominal, pois os retornos reais são contextuais devido ao pagamento de impostos, dividendos; e, a depender do ativo, dos custos do mesmo.} do IBOV é superior no longo prazo. Pelo IPEA, pode-se obter tanto os rendimentos nominais (em \% a.m.) da poupança quanto os retornos do IBOV (também em \% a.m.), ambos em intervalos mensais desde 1990. A partir daí, acumulamos as taxas recursivamente. Definindo \(i\) como a taxa de retorno nominal total, e \(i_t\) como sendo a taxa de retorno nominal no mês \(t\), temos \(i = \prod_{t=1}^n (1+i_t),\) sendo \(n\) o mês que se deseja calcular o retorno nominal total. Exposto isso, foi feito um gráfico dos retornos totais de ambas as modalidades:
+  \begin{figure}[H]
+  \includegraphics[width=1\linewidth]{img/ibov-poupanca} \caption{Uma comparação entre o IBOV e a poupança.}\label{fig:unnamed-chunk-1}
+  \end{figure}
+  Com o passar do tempo, entretanto, a maturação no mercado financeiro pode, naturalmente, levar o investidor a se interessar por retornos acima do mercado -- fundos de índice, por definição, impossibilitam o objetivo. Isso leva a uma exploração de diferentes classes de ativos, desde ações ordinárias a fundos de investimento em ações. Um investidor, entretanto, há de ter em mente que raramente fundos de investimento com administração ativa, no longo prazo, superam os retornos dos fundos de índice, em termos reais (BOGLE, \protect\hyperlink{ref-bogle2015}{2015}).
+
+  Assim sendo, caso o investidor deseja ter sucesso, é importante que as escolhas de ativos sejam racionais. Ao menos, tão racionais quanto possível forem para humanos. De fato, indivíduos estão sujeitos a uma racionalidade restrita (SIMON, \protect\hyperlink{ref-simon1997}{1997}), o que leva a diversas heurísticas -- inclusive, mas não limitadas a: enfatizar evidências que apoiam visões próprias (KLAYMAN, \protect\hyperlink{ref-klayman1995}{1995}), superestimar probabilidades por maior ``disponibilidade'' em memória (SCHWARZ et al., \protect\hyperlink{ref-schwarz1991}{1991}); e superestimar a própria habilidade, quando se é novato, assim como subestimar, quando se é um \emph{expert} (KRUGER; DUNNING, \protect\hyperlink{ref-kruger1999}{1999}) -- para simplificar o processo de raciocínio e, permitir, assim, que o agente consiga satisfazer as restrições -- tempo, recursos, dentre outros -- para a tomada de decisões.
+
+  De fato, a abordagem de realizar tanto o \emph{valuation} intrínseco quanto o relativo de uma empresa é, além de uma interessante comparação entre métodos, uma forma de evitar a ``síndrome do homem com martelo'', popularizado por Munger (\protect\hyperlink{ref-munger2006}{2006}). Este cita um provérbio, que diz: ``Para um homem com um martelo, todo problema se parece com um prego.''
+
   \hypertarget{objetivos}{%
   \section{Objetivos}\label{objetivos}}
-  
+
+  São os principais objetivos do trabalho (1) fazer o \emph{valuation} da Companhia Paranaense de Energia através de, no mínimo, dois métodos de valuation, sendo no mínimo um deles intrísenco e no mínimo, um relativo e (2) realizar a comparação entre os resultados dos métodos.
+
+  Com o desenvolver do trabalho, poderão ser percebidas outras motivações, entretanto seriam estas consideradas secundárias.
+
   \hypertarget{limitauxe7uxf5es}{%
   \section{Limitações}\label{limitauxe7uxf5es}}
-  
+
+  Este trabalho se limita a prover um breve prospecto do cenário energético brasileiro, assim como possíveis desenvolvimentos. Não serão discutidas políticas energéticas e afins. Se limita, também, a tomar como verdadeira a teoria moderna do portfólio como exposta por Markowitz (\protect\hyperlink{ref-markowitz1952}{1952}), para o cálculo do custo de capital. Não será discutido economia comportamental, nem modelos mais sofisticados para tal cálculo.
+
   \hypertarget{estrutura-do-trabalho}{%
   \section{Estrutura do trabalho}\label{estrutura-do-trabalho}}
-  
+
+  O trabalho possui, em sua integridade, cinco capítulos.
+
+  O primeiro capítulo é uma introdução ao restante do trabalho, e é efetivamente um resumo do que o leitor verá pela frente.
+
+  O segundo capítulo é uma examinação do setor energético brasileiro, a ser feito pela leitura e examinação do Plano Decenal de Expansão de Energia (PDE) e o Plano Nacioanl de Energia (PNE), ambos elaborados pela Empresa de Pesquisa Energética (EPE). Através destes, podemos ter uma melhor noção do setor no qual a empresa está inserido, possibilitando um melhor cálculo e previsão dos fluxos de caixa.
+
+  O terceiro capítulo é a documentação do referencial teórico utilizado, a ser escrito seguindo uma lógica linear, de forma tal que possa também ser visto como uma metodologia, com exemplos para auxiliar o leitor.
+
+  O quarto capítulo é o estudo de caso de fato. Será dada uma contextualização da empresa, assim como a aplicação dos métodos discutidos.
+
+  O quinto e último capítulo é a conclusão, em que será feita a exposição dos resultados, assim como a comparação entre os métodos de \emph{valuation} discutidos durante o texto.
+
   \hypertarget{o-mercado-de-energia}{%
   \chapter{O mercado de energia}\label{o-mercado-de-energia}}
-  
-  Placeholder
-  
+
+  É importante, antes de partir para o estudo de caso em questão, estabelecer o contexto do trabalho em questão. De fato, neste capítulo serão tratados os fundamentais do mercado de energia no Brasil, desde os órgãos aos estudos principais do setor.
+
   \hypertarget{uxf3rguxe3os-presentes-no-estudo}{%
   \section{Órgãos presentes no estudo}\label{uxf3rguxe3os-presentes-no-estudo}}
-  
+
+  Nesta seção, serão tratados os cinco principais órgãos do setor, sendo eles: (1) o Ministério de Minas e Energia; (2) a Agência Nacional de Energia Elétrica; (3) o Operador Nacional do Sistema Elétrico; (4) a Câmara Comercializadora de Energia Elétrica; e (5) a Empresa de Pesquisa Energética.
+
   \hypertarget{mme}{%
   \subsection{MME}\label{mme}}
-  
+
+  O Ministério de Minas e Energia (MME) foi criado em 1960, no governo do presidente Juscelino Kubitschek. Assim seguiu por 30 anos, até ser extinto em 1990 e recriado em 1992.
+
+  Em 1997, foi criado o Conselho Nacional de Política Energética (CNPE), vinculado à Presidência da República e presidido pelo ministro de Minas e Energia, com a atribuição de propor ao presidente da República políticas nacionais e medidas para o setor.
+
+  Logo em seguida, em 2003, foram definidas as competências do MME como sendo as áreas de (1) geologia, recursos minerais e energéticos; (2) aproveitamento da energia hidráulica; mineração e metalurgia; e (3) petróleo, combustível e energia elétrica.
+
+  No ano seguinte foi criado o Comitê de Monitoramento do Setor Elétrico (CMSE), cuja função é acompanhar e avaliar permanentemente a continuidade e a segurança do suprimento eletroenergético em todo o território nacional. No mesmo ano, foi permitida também a criação da Empresa de Pesquisa Energética (EPE), vinculada ao Ministério, que tem por finalidade prestar serviços na área de estudos e pesquisas destinadas a subsidiar o planejamento do setor energético.
+
+  O MME tem como empresas vinculadas a Eletrobras e Petrobras. Estão, também, vinculadas algumas autarquias ao Ministério, dentre elas: a Agência Nacional de Energia Elétrica (ANEEL); Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP); e a Agência Nacional de Mineração (ANM).
+
   \hypertarget{aneel}{%
   \subsection{ANEEL}\label{aneel}}
-  
+
+  A Agência Nacional de Energia Elétrica (ANEEL) é uma autarquia vinculada ao Ministério de Minas e Energia. Tem como finalidade regular e fiscalizar a produção, transmissão, distribuição e comercialização de energia elétrica, de acordo com a legislação e em conformidade com as diretrizes e as políticas do governo federal. A autarquia foi criada em dezembro de 1996, durante o mandato de Fernando Henrique Cardoso.
+
+  Cabe à ANEEL, dentre outras competências: (1) implementar as políticas e diretrizes do governo federal para a exploração da energia elétrica e o aproveitamento dos potenciais hidráulicos; (2) estabelecer as tarifas para o suprimento de energia elétrica realizado às concessionárias e permissionárias de distribuição; e (3) fazer a gestão dos contratos de concessão ou de permisão de serviços públicos de energia elétrica e fiscalizar, diretamente ou mediante convênios com órgãos estaduais, as concessões, as permissões e a prestação dos serviços de energia elétrica.
+
+  Pode-se conferir a lista completa de atribuições pelo art. 3° da lei n°
+  9.427/96.
+
   \hypertarget{ons}{%
   \subsection{ONS}\label{ons}}
-  
+
+  O Operador Nacional do Sistema Elétrico (ONS) é uma entidade privada sem fins lucrativos que é responsável pela coordenação e controle da operação de instalações de geração e tranmissão de energia elétrica do Sistema Interligado Nacional (SIN), sob fiscalização da ANEEL. O órgão foi criado em agosto de 1998, sob mandato do presidente Fernando Henrique Cardoso.
+
   \hypertarget{ccee}{%
   \subsection{CCEE}\label{ccee}}
-  
+
+  A Câmara de Comercialização de Energia Elétrica (CCEE) tem por finalidade viabilizar a comercialização de energia elétrica no mercado de energia brasileiro. De fato, esta efetua a contabilização e a liquidação financeira das operações realizadas no mercado de curto prazo. As regras e procedimentos que regulam as atividades realizadas da CCEE são aprovados pela ANEEL.
+
+  Foi criada em agosto de 2004, sob mandato do presidente Luiz Inácio Lula da Silva, sucedendo ao antigo Mercado Atacadista de Energia.
+
   \hypertarget{epe}{%
   \subsection{EPE}\label{epe}}
-  
+
+  A Empresa de Pesquisa Energética (EPE) é uma empresa pública vinculada ao Ministério de Minas e Energia, criada em março de 2004, sob mandato do presidente Luiz Inácio Lula da Silva. Tem por finalidade prestar serviços na área de estudos e pesquisas destinadas a subsidiar o planejamento do setor energético.
+
+  Cabe à EPE, dentre outras atribuições: (1) apresentar ao CNPE, anualmente, os Planos Decenais de Expansão (PDE), assim como a cada dois anos os Planos Nacionais de Energia (PNE); (2) identificar e quantificar os potenciais de recursos energéticos; e (3) elaborar e publicar o balanço energético nacional.
+
+  A lista completa de atribuições pode ser vista no art. 4° da lei n° 10.847/04.
+
+  Uma das principais motivações para a criação da EPE foram os racionamentos e apagões ocorridos no início da década, ocorridos durante o governo de Fernando Henrique Cardoso, atribuídos em parte á carência de planejamento. Embora seja uma entidade independente, é vinculada ao Ministério de Minas e Energia.
+
   \hypertarget{o-fluxo-de-energia}{%
   \section{O fluxo de energia}\label{o-fluxo-de-energia}}
-  
+
+  Atualmente, o setor elétrico brasileiro tem uma estrutura predominantemente unidirecional nos fluxos de energia. Assim, são tipicamente dividos em geração, transmissão, comercialização e distribuição. Por se tratarem do final da cadeia de valor convencional, os consumidores então têm efetivamente um comportamento passivo.
+
+  A geração de energia elétrica é a transformação da energia primária -- petróleo, carvão mineral, dentre outros -- em energia elétrica. No Brasil, predomina-se a geração hidráulica devido ao grande potencial hidroenergético dos nossos rios.
+
+  A transmissão efetua o transporte da energia gerada até os centros consumidores de carga. Nessa parte, o sistema brasileiro possui uma particularidade, que é o fato de que os grandes centros de consumidores ficam localizados longe da grande geração energética. Isso faz com que o Brasil tenha uma grande quantidade de linhas de transmissão com algumas centenas de quilômetros.
+
+  A comercialização de energia é atualmente realizada em dois ambientes diferentes: (1) no Ambiente de Contratação Livre, que é destinado ao atendimento de consumidores livres -- o consumidor que pode optar pela compra de energia elétrica junto a qualquer fornecedor, que é atendido em qualquer tensão e com demanda contratada mínima de 3 MW, segundo a Resolução da ANEEL n° 264 e 456; e (2) no Ambiente de Contratação Regulada, que é destinado ao atendimento de consumidores cativos por meio das distribuidoras, sendo estas supridas por geradores estatais ou independentes que vendem energia em leilões públicos.
+
+  A distribuição é o setor responsável por receber a energia da transmissão e distribuí-la para os centros consumidores.
+
+  Salvo no caso de \emph{holdings}, empresas só podem atuar em uma das áreas ex-comercialização.
+
   \hypertarget{estudos-e-projeuxe7uxf5es-de-longo-prazo}{%
   \section{Estudos e projeções de longo prazo}\label{estudos-e-projeuxe7uxf5es-de-longo-prazo}}
-  
+
+  A EPE cumpre sua finalidade de braço técnico de estudos do setor energético produzindo relatórios e planos de expansão a respeito do setor elétrico. Por se tratar de um \emph{valuation} de uma empresa do setor, é importante ponderar a respeito das ações tomadas e o parecer de \emph{experts} a respeito do futuro do setor como um todo, a fim de aprimorar nossas estimativas da taxa de crescimento.
+
+  São os dois principais estudos, nesse sentido, (1) o Plano Nacional de Energia; (2) e o Plano Decenal de Expansão de Energia
+
   \hypertarget{plano-nacional-de-energia-pne}{%
   \subsection{Plano Nacional de Energia (PNE)}\label{plano-nacional-de-energia-pne}}
-  
+
+  O PNE é um conjunto de estudos que dão suporte ao desenho da estratégia de longo prazo do governo em relação à expansão do setor de energia. A estratégia, por sua vez, consiste em um conjunto de recomendações e diretrizes a serem seguidas na definição das ações e iniciativas a serem implementadas ao longo do horizonte de tempo prescrito. A revisão do PNE deve ser conduzida sempre que houver necessidade de alteração na estratégia de longo prazo do tomador de decisão relevante, sejam por razões ordinárias ou extraordinárias.
+
+  Os PNEs têm relação com os PDEs. Embora haja similaridades, o PNE é um instrumento de planejamento com atribuições distintas do PDE. Em primeiro lugar, o PNE é um documento com visão mais estratégica. Neste contexto, seu enfoque consiste em embasar o posicionamento do governo de modo a orientar e direcionar as estratégias dos agentes do setor de forma a se atingir os objetivos gerais da expansão no longo prazo, com adequação dos recursos, com confiabilidade, modicidade e sustentabilidade. Além disso, o PNE é o alicerce a partir de qual todos os Planos, Políticas, Programas e Iniciativas são elaborados. O PNE é, portanto, um farol que orienta para onde os PDEs devem indicar a expansão do setor de energia no horizonte decenal. Por fim, enquanto o PDE trabalha com um cenário de referência e análises de sensibilidade, anualmente revisto, o PNE deve tratar com mais cenários.
+
+  No caso, foi feito o estudo do PNE 2050 (EPE, \protect\hyperlink{ref-epe2020}{2020}), e assim será entregue um pequeno sumário executivo do mesmo a seguir.
+
+  Foram elaborados dois grandes cenários, formando um cone de incertezas para o desenho da estratégia de longo prazo: o primeiro, chamado Desafio da Expansão, reflete requisitos de expansão do setor de energia para atendimento a um crescimento da demanda de energia mais expressivo. No segundo, chamado de Estagnação, analisam-se as consequências de um cenário em que o consumo de energia per capita mantém-se inalterado ao longo de todo o período. O foco do relatório está voltado para o cenário Desafio da Expansão.
+
+  Os estudos do PNE apontam para um potencial energético de quase 280 bilhões de tep (toneladas equivalentes de petróleo) no horizonte até 2050. A demanda cresce de 300 milhões de tep para 600 milhões de tep e, ao longo de trinta e cinco anos, essa trajetória representa uma demanda de energia total acumulada do período equivalente a pouco menos de 15 bilhões de tep. Tamanha discrepância entre potencial de recursos e a demanda de energia estimada gera uma situação distinta daquela vivida ao longo especialmente da metade do século XX, quando o País viveu grandes crises de energia. Dessa forma, imagina-se uma administração da abundância.
+
+  O cenário Desafio da Expansão considera algumas premissas, que serão levadas em conta para o uso no estudo de caso. São essas: (1) crescimento médio de PIB de 3.1\% a.a. e 2.8\% de PIB per capita; (2) a população brasileira manterá a tendência de crescer a taxas cada vez menores; (3) o consumo potencial de energia elétrica do País pode atingir até 3 vezes o patamar do ano base; (4) a demanda de energia elétrica a ser atendida por geração centralizada cresce até 2.5 vezes em relação aos valores do ano base, mesmo com crescimento de geração distribuída (GD), autoprodução, energia solar térmica e eficiência energética no período; (5) e o consumo de energia e de eletricidade per capita aumenta, a despeito da contribuição da eficiência energética no horizonte até 2050.
+
   \hypertarget{plano-decenal-de-expansuxe3o-de-energia-pde}{%
   \subsection{Plano Decenal de Expansão de Energia (PDE)}\label{plano-decenal-de-expansuxe3o-de-energia-pde}}
-  
+
+  O PDE tem o intuito de de indicar as perspectivas, sob a ótica do Governo, da expansão do setor de energia no horizonte de dez anos, dentro de uma visão integrada para os diversos energéticos. Tal visão permite, então, extrair importantes elementos para o planejamento do setor, com benefícios em termos de aumento de confiabilidade, redução de custos de produção e mitigação de impactos ambientais.
+
+  Como o PDE tem intuitos mais operacionais do que estratégicos, serão utilizadas as premissas e estudos do PNE para nortear as decisões do presente \emph{valuation}.
+
   \hypertarget{referencial-teuxf3rico}{%
   \chapter{Referencial teórico}\label{referencial-teuxf3rico}}
-  
+
   Nesta seção será feita uma consideração a respeito dos métodos e conceitos utilizados ao longo do estudo. É de interesse do leitor prestar especial atenção ao enunciado abaixo, uma vez que é um breve alicerce teórico que serve não apenas para esse estudo, como para diversos outros similares.
-  
+
   \hypertarget{demonstrauxe7uxf5es-financeiras}{%
   \section{Demonstrações financeiras}\label{demonstrauxe7uxf5es-financeiras}}
-  
+
   Demonstrações financeiras são representações estruturadas da posição financeira e do desempenho financeiro de uma determinada entidade. Em uma analogia com o ser humano, o médico estuda os resultados de exames com a finalidade de averiguar a saúde de um indivíduo, sejam eles de sangue, tomografias, radiografias, dentre outros; o investidor astuto estuda as demonstrações financeiras da empresa, desde seu balanço patrimonial ao seu demonstrativo de fluxo de caixa, para averiguar a saúde financeira da empresa em questão.
-  
+
   Essas demonstrações são ``escritas'' com base em princípios geralmente aceitos de contabilidade. Esse conjunto, no Brasil, é formado por normas provenientes de diversos órgãos, como: (1) a lei 6.404/76; (2) as leis 11.638/07 e 11.941/09; (3) resoluções, circulares, comunicados e afins de órgãos como o Conselho Federal de Contabilidade, Banco Central, e Conselho de Valores Mobiliários.
-  
-  A seguir, serão comentadas sobre as três principais demonstrações financeiras utilizadas para análise de negócios. Para fins de melhor elucidação, serão utilizadas as demonstrações da própria COPEL.
-  
+
+  A seguir, serão comentadas sobre as três principais demonstrações financeiras utilizadas para análise de negócios. Para fins de melhor elucidação, serão utilizadas as demonstrações da própria COPEL, baixadas e organizadas utilizando-se o software R, utilizando o formato disponibilizado pelo banco de dados da CVM.
+
+  \textbf{Colocar endereco do banco de dados da CVM}
+
   \hypertarget{demonstrativo-de-resultados-do-exercuxedcio-dre}{%
   \subsection{Demonstrativo de Resultados do Exercício (DRE)}\label{demonstrativo-de-resultados-do-exercuxedcio-dre}}
-  \begin{Shaded}
-  \begin{Highlighting}[]
-  \KeywordTok{library}\NormalTok{(tidyverse)}
-  \end{Highlighting}
-  \end{Shaded}
-  \begin{verbatim}
-  -- Attaching packages ------------------------------------ tidyverse 1.3.0 --
-  \end{verbatim}
-  \begin{verbatim}
-  v ggplot2 3.3.2     v purrr   0.3.4
-  v tibble  3.0.3     v dplyr   1.0.1
-  v tidyr   1.1.0     v stringr 1.4.0
-  v readr   1.3.1     v forcats 0.5.0
-  \end{verbatim}
-  \begin{verbatim}
-  -- Conflicts --------------------------------------- tidyverse_conflicts() --
-  x dplyr::filter() masks stats::filter()
-  x dplyr::lag()    masks stats::lag()
-  \end{verbatim}
-  \begin{Shaded}
-  \begin{Highlighting}[]
-  \NormalTok{dre <-}\StringTok{ }\KeywordTok{tribble}\NormalTok{(}\OperatorTok{~}\NormalTok{x, }\OperatorTok{~}\NormalTok{y,}
-                 \DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{,}
-                 \DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{)}
-  
-  \NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(dre, }\StringTok{"latex"}\NormalTok{, }\DataTypeTok{caption =} \StringTok{"Demonstração de Resultado COPEL"}\NormalTok{)}
-  \end{Highlighting}
-  \end{Shaded}
-  \begin{table}
-  
-  \caption{\label{tab:unnamed-chunk-1}Demonstração de Resultado COPEL}
-  \centering
-  \begin{tabular}[t]{r|r}
-  \hline
-  x & y\\
-  \hline
-  1 & 2\\
-  \hline
-  3 & 4\\
-  \hline
-  \end{tabular}
-  \end{table}
+
   \hypertarget{balanuxe7o-patrimonial-bp}{%
   \subsection{Balanço Patrimonial (BP)}\label{balanuxe7o-patrimonial-bp}}
-  
+
   \hypertarget{demonstrativo-de-fluxo-de-caixa-dfc}{%
   \subsection{Demonstrativo de Fluxo de Caixa (DFC)}\label{demonstrativo-de-fluxo-de-caixa-dfc}}
-  
+
   \hypertarget{valuation-intruxednseco}{%
   \section{\texorpdfstring{\emph{Valuation} intrínseco}{Valuation intrínseco}}\label{valuation-intruxednseco}}
-  
+
   \hypertarget{muxe9todo-do-fluxo-de-caixa-descontado}{%
   \subsection{Método do Fluxo de Caixa Descontado}\label{muxe9todo-do-fluxo-de-caixa-descontado}}
-  
+
   \hypertarget{valuation-relativo}{%
   \section{\texorpdfstring{\emph{Valuation} relativo}{Valuation relativo}}\label{valuation-relativo}}
-  
+
   \hypertarget{anuxe1lise-por-muxfaltiplos}{%
   \subsection{Análise por múltiplos}\label{anuxe1lise-por-muxfaltiplos}}
-  
+
   \hypertarget{estudo-de-caso}{%
   \chapter{Estudo de caso}\label{estudo-de-caso}}
-  
-  Placeholder
-  
+
   \hypertarget{contextualizauxe7uxe3o-da-copel}{%
   \section{Contextualização da COPEL}\label{contextualizauxe7uxe3o-da-copel}}
-  
+
   \hypertarget{histuxf3ria}{%
   \subsection{História}\label{histuxf3ria}}
-  
+
   \hypertarget{core-business}{%
   \subsection{\texorpdfstring{\emph{Core business}}{Core business}}\label{core-business}}
-  
+
   \hypertarget{gerauxe7uxe3o}{%
   \subsubsection{Geração}\label{gerauxe7uxe3o}}
-  
+
   \hypertarget{transmissuxe3o}{%
   \subsubsection{Transmissão}\label{transmissuxe3o}}
-  
+
   \hypertarget{distribuiuxe7uxe3o}{%
   \subsubsection{Distribuição}\label{distribuiuxe7uxe3o}}
-  
+
   \hypertarget{outros}{%
   \subsubsection{Outros}\label{outros}}
-  
+
   \hypertarget{cuxe1lculo-do-valuation-intruxednseco}{%
   \section{\texorpdfstring{Cálculo do \emph{valuation} intrínseco}{Cálculo do valuation intrínseco}}\label{cuxe1lculo-do-valuation-intruxednseco}}
-  
+
   \hypertarget{o-custo-de-capital-muxe9dio-ponderado-wacc}{%
   \subsection{O custo de capital médio ponderado (WACC)}\label{o-custo-de-capital-muxe9dio-ponderado-wacc}}
-  
+
   \hypertarget{custo-de-capital-pruxf3prio}{%
   \subsubsection{Custo de capital próprio}\label{custo-de-capital-pruxf3prio}}
-  
+
   \hypertarget{custo-de-capital-de-terceiros}{%
   \subsubsection{Custo de capital de terceiros}\label{custo-de-capital-de-terceiros}}
-  
+
   \hypertarget{fluxo-de-caixa-descontado}{%
   \subsubsection{Fluxo de caixa descontado}\label{fluxo-de-caixa-descontado}}
-  
+
   \hypertarget{cuxe1lculo-do-valuation-relativo}{%
   \section{\texorpdfstring{Cálculo do \emph{valuation} relativo}{Cálculo do valuation relativo}}\label{cuxe1lculo-do-valuation-relativo}}
-  
+
   \hypertarget{margem-bruta}{%
   \subsection{Margem bruta}\label{margem-bruta}}
-  
+
   \hypertarget{lucros-antes-de-juros-e-impostos-ebit}{%
   \subsection{Lucros antes de juros e impostos (EBIT)}\label{lucros-antes-de-juros-e-impostos-ebit}}
-  
+
   \hypertarget{margem-luxedquida}{%
   \subsection{Margem líquida}\label{margem-luxedquida}}
-  
+
   \hypertarget{razuxe3o-preuxe7olucro-pe}{%
   \subsection{Razão preço/lucro (P/E)}\label{razuxe3o-preuxe7olucro-pe}}
-  
+
   \hypertarget{retorno-sobre-patrimuxf4nio-luxedquido-roe}{%
   \subsection{Retorno sobre patrimônio líquido (ROE)}\label{retorno-sobre-patrimuxf4nio-luxedquido-roe}}
-  
+
   \hypertarget{comparauxe7uxe3o-com-empresas-do-setor}{%
   \subsection{Comparação com empresas do setor}\label{comparauxe7uxe3o-com-empresas-do-setor}}
-  
+
   \hypertarget{conclusuxe3o}{%
   \chapter{Conclusão}\label{conclusuxe3o}}
-  
+
+  \backmatter
+
   \hypertarget{referuxeancias-bibliogruxe1ficas}{%
   \chapter*{Referências Bibliográficas}\label{referuxeancias-bibliogruxe1ficas}}
   \addcontentsline{toc}{chapter}{Referências Bibliográficas}
-  
-  Placeholder
 
+  \markboth{References}{References}
+
+  \label{bib:begin}
+  \noindent
+
+  \setlength{\parindent}{-0.20in}
+  \setlength{\leftskip}{0.20in}
+  \setlength{\parskip}{8pt}
+
+  \hypertarget{refs}{}
+  \begin{cslreferences}
+  \leavevmode\hypertarget{ref-anbima2019}{}%
+  ANBIMA. \textbf{Raio-X do Investidor Brasileiro}, 2019.
+
+  \leavevmode\hypertarget{ref-beaver1970}{}%
+  BEAVER, W.; KETTLER, P.; SCHOLES, M. The association between market determined and accounting determined risk measures. \textbf{The Accounting Review}, v. 45, n. 4, p. 654--682, 1970.
+
+  \leavevmode\hypertarget{ref-bogle2015}{}%
+  BOGLE, J. C. \textbf{Bogle on mutual funds: New perspectives for the intelligent investor}. New Jersey: John Wiley \& Sons, 2015.
+
+  \leavevmode\hypertarget{ref-epe2020}{}%
+  EPE. \textbf{Plano Nacional de Energia 2050}. Brasília: Ministério de Minas e Energia, 2020.
+
+  \leavevmode\hypertarget{ref-techreport-exampleIn}{}%
+  GARRET, D. A. \textbf{The Microscopic Detection of Corrosion in Aluminum Aircraft Structures with Thermal Neutron Beams and Film Imaging Methods}. Washington, D.C.: National Bureau of Standards, 1977.
+
+  \leavevmode\hypertarget{ref-article-example}{}%
+  IESAN, D. Existence Theorems in the Theory of Mixtures. \textbf{Journal of Elasticity}, v. 42, n. 2, p. 145--163, fev. 1996.
+
+  \leavevmode\hypertarget{ref-klayman1995}{}%
+  KLAYMAN, J. Varieties of confirmation bias. \textbf{Psychology of learning and motivation}, v. 32, p. 385--418, 1995.
+
+  \leavevmode\hypertarget{ref-kruger1999}{}%
+  KRUGER, J.; DUNNING, D. Unskilled and unaware of it: how difficulties in recognizing one's own incompetence lead to inflated self-assessments. \textbf{Journal of personality and social psychology}, v. 77, n. 6, p. 1121, 1999.
+
+  \leavevmode\hypertarget{ref-markowitz1952}{}%
+  MARKOWITZ, H. Portfolio selection. \textbf{The Journal of Finance}, v. 7, n. 1, p. 77--91, 1952.
+
+  \leavevmode\hypertarget{ref-munger2006}{}%
+  MUNGER, C. T. \textbf{Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger}. Virginia Beach: Donning Company, 2006.
+
+  \leavevmode\hypertarget{ref-assafneto2018}{}%
+  NETO, A. A. \textbf{Mercado financeiro}. 14. ed. São Paulo: Atlas, 2018.
+
+  \leavevmode\hypertarget{ref-schwarz1991}{}%
+  SCHWARZ, N. et al. Ease of retrieval as information: another look at the availability heuristic. \textbf{Journal of Personality and Social psychology}, v. 61, n. 2, p. 195, 1991.
+
+  \leavevmode\hypertarget{ref-simon1997}{}%
+  SIMON, H. A. \textbf{Models of bounded rationality: Empirically grounded economic reason}. Massachusetts: MIT press, 1997. v. 3
+  \end{cslreferences}
   \backmatter
   \bibliographystyle{coppe-unsrt}
   \bibliography{thesis}

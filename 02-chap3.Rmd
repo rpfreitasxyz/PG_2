@@ -14,10 +14,6 @@ A seguir, serão comentadas sobre as três principais demonstrações financeira
 
 ### Demonstrativo de Resultados do Exercício (DRE)
 
-```{r}
-
-```
-
 ### Balanço Patrimonial (BP)
 
 ### Demonstrativo de Fluxo de Caixa (DFC)
