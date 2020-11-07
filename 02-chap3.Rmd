@@ -2,25 +2,11 @@
 
 Nesta seção será feita uma consideração a respeito dos métodos e conceitos utilizados ao longo do estudo. É de interesse do leitor prestar especial atenção ao enunciado abaixo, uma vez que é um breve alicerce teórico que serve não apenas para esse estudo, como para diversos outros similares.
 
-## Demonstrações financeiras
-
-Demonstrações financeiras são representações estruturadas da posição financeira e do desempenho financeiro de uma determinada entidade. Em uma analogia com o ser humano, o médico estuda os resultados de exames com a finalidade de averiguar a saúde de um indivíduo, sejam eles de sangue, tomografias, radiografias, dentre outros; o investidor astuto estuda as demonstrações financeiras da empresa, desde seu balanço patrimonial ao seu demonstrativo de fluxo de caixa, para averiguar a saúde financeira da empresa em questão.
-
-Essas demonstrações são "escritas" com base em princípios geralmente aceitos de contabilidade. Esse conjunto, no Brasil, é formado por normas provenientes de diversos órgãos, como: (1) a lei 6.404/76; (2) as leis 11.638/07 e 11.941/09; (3) resoluções, circulares, comunicados e afins de órgãos como o Conselho Federal de Contabilidade, Banco Central, e Conselho de Valores Mobiliários.
-
-A seguir, serão comentadas sobre as três principais demonstrações financeiras utilizadas para análise de negócios. Para fins de melhor elucidação, serão utilizadas as demonstrações da própria COPEL, baixadas e organizadas utilizando-se o software R, utilizando o formato disponibilizado pelo banco de dados da CVM.
-
-**Colocar endereco do banco de dados da CVM**
-
-### Demonstrativo de Resultados do Exercício (DRE)
-
-### Balanço Patrimonial (BP)
-
-### Demonstrativo de Fluxo de Caixa (DFC)
-
 ## _Valuation_ intrínseco
 
 ### Método do Fluxo de Caixa Descontado
+
+### Método do Desconto de Dividendos
 
 ## _Valuation_ relativo
 
