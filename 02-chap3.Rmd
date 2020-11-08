@@ -1,12 +1,48 @@
 # Referencial teórico
 
-Nesta seção será feita uma consideração a respeito dos métodos e conceitos utilizados ao longo do estudo. É de interesse do leitor prestar especial atenção ao enunciado abaixo, uma vez que é um breve alicerce teórico que serve não apenas para esse estudo, como para diversos outros similares.
+Nesta seção será feita uma consideração a respeito dos métodos e conceitos utilizados ao longo do estudo. É de interesse do leitor prestar especial atenção ao enunciado abaixo, uma vez que é um breve alicerce teórico que serve não apenas para esse estudo, como para diversos outros similares. Recomenda-se, ainda, a leitura de Damodaran [-@damodaran2007] para se ter um panorama de diversos outros modelos a serem aplicados, assim como uma discussão a respeito de seus usos e efetividade.
 
 ## _Valuation_ intrínseco
 
-### Método do Fluxo de Caixa Descontado
+Comecemos discutindo brevemente a respeito do que é possuir "valor intrínseco". Este é um conceito filosófico, em que o valor de um objeto ou projeto é derivado de, e por si só -- em outras palavras, livre de fatores externos. Analistas financeiros constroem modelos para estimar o que se imagina ser o valor intrínseco de uma empresa sem considerar o seu valor de mercado em determinado dia. 
 
-### Método do Desconto de Dividendos
+Naturalmente, o mercado, no curto prazo, está sujeito a flutuações que podem ser atribuídas a diversos fatores, desde manipulação de preços em papéis mais ilíquidos a pensamento de manada por parte de investidores. Cabe, nesse momento, utilizar a analogia popularizada por Graham [-@graham2016], do Sr. Mercado:
+
+> "Imagine que você possui uma participação pequena em uma companhia de capital fechado que lhe custou US$1.000. Um de seus sócios, chamado Sr. Mercado, é de fato muito prestativo. Todo dia ele lhe informa o que pensa ser o valor de sua participação e, além disso, se dispõe a comprar de você ou vender a você uma participação adicional naquelas  bases. Às vezes, sua ideia de valor parece plausível e justificada pela evolução e pelas perspectivas do negócio da forma como você as conhece. Por outro lado, o Sr. Mercado deixa frequentemente o entusiasmo ou o receio tomar conta dele e o valor proposto por ele lhe parece pura bobagem.
+Se você é um investidor prudente ou um empresário inteligente, deixaria as comunicações diárias do Sr. Mercado influenciarem sua opinião sobre o valor de uma participação de US$1.000 na companhia? Só se você concordasse com ele ou então desejasse negociar com ele. Você pode ficar feliz em vender para ele quando ele cota um preço ridiculamente alto e igualmente feliz em comprar dele quando seu preço é baixo. No entanto, no resto do tempo, você seria mais esperto se formulasse suas próprias ideias acerca do valor de sua carteira com base nos relatório completos da companhia sobre suas operações e posições financeiras."
+
+Dessa forma, a discrepância entre preço de mercado e a estimativa do valor intrísenco feita por um analista torna-se uma medida para oportunidade de investimento. Aqueles que considerarem tais modelos como estimativas razoáveis de valor intrínseco, e que tomarem ação baseando-se nessas estimativas, são conhecidos como investidores de valor [@damodaran2012].
+
+### Modelo de Fluxo de Caixa Descontado
+
+### Modelo de Desconto de Dividendos
+
+O modelo de desconto de dividendos (DDM) é um método de se fazer o _valuation_ de uma ação baseado na teoria de que a ação vale a soma de todos os seus pagamentos de dividendos futuros, descontados de volta ao seu valor presente líquido (VPL). A equação mais utilizada amplamente é o chamado modelo de crescimento de Gordon (GGM). É nomeada assim por causa da publicação de Gordon e Shapiro [-@gordon1959], embora tenha sido originalmente desenvolvida três anos antes [@gordon1956]. Trata-se da equação:
+$$
+P_0 = \frac{D_1}{r-g}
+$$
+onde $P_0$ é o valor atual da ação, $g$ é a taxa de crescimento constante em perpetuidade esperada dos dividendos, $r$ é o custo de capital próprio da empresa; e $D_1$ é o valor dos dividendos do próximo ano.
+
+Naturalmente, existem alguns pressupostos deste modelo:
+
+i. Uma taxa de crescimento constante e perpétua, menor que o custo de capital.
+ii. A ação deve pagar dividendos regularmente; do contrário, versões mais generalizadas do modelo de desconto de dividendos devem ser usados para se descobrir o valor da ação.
+
+A partir destes pontos, temos que as violações de (i) identifica uma ação de valor negativo; e (ii) provê um valor errôneo -- caso seja levado ao extremo, uma empresa que não paga dividendos efetivamente não valeria nada.
+
+A solução para (i) é se considerar um modelo de desconto de dividendos de dois estágios, isto é:
+$$
+P_0 = \frac{D_0 (1+g)}{r-g} \left[1 - \frac{(1+g)^N}{(1+r)^N}\right] + \frac{D_0 (1+g)^N (1+g_\infty)}{(1+r)^N (r-g_\infty)}
+$$
+onde $D_0$ denota os dividendos deste ano, $g$ a taxa de crescimento esperada de curto prazo, $g_\infty$ a taxa de crescimento de longo prazo, e $N$ o período (em número de anos), através do qual a taxa de curto prazo é aplicada.
+
+Uma solução comum para (ii) seria assumir que a hipótese de Modigliani-Miller de irrelevância de dividendos [@modigliani1958] seja verdadeira, e então substituir os dividendos $D$ por $E$, os lucros por ação. Entretanto, isso requer o uso de crescimento dos lucros, ao invés dos de dividendos, que podem ser diferentes.
+
+A equação de Gordon pode ser entendida como o fato de que o retorno total de uma ação é igual à soma da sua receita e seus ganhos de capital. De fato, se rearranjada, teremos que:
+$$
+P_0 = \frac{D_1}{r-g} \iff \frac{D_1}{P_0} + g = r
+$$
+o que significa que o _dividend yield_ ($D_1/P_0$) mais o crescimento ($g$) é igual ao custo de capital próprio ($r$). Ora, caso consideremos a taxa de crescimento de dividendos no modelo como um _proxy_ para o crescimento de lucros e, por extensão, o preço da ação e os ganhos de capital. Consideraríamos, então, o custo de capital próprio como um _proxy_ para o retorno total requerida pelo investidor.
 
 ## _Valuation_ relativo
 
