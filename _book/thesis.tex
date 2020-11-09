@@ -50,7 +50,7 @@ Judge a man by his questions rather than by his answers.
 \end{quote}}
     \chapter*{Agradecimentos}
   Agradeço pela oportunidade de cursar um ensino superior de qualidade de forma pública. Mesmo com suas diversas limitações e imperfeições, a República brasileira segue em frente com a mensagem de democratização do conhecimento. É somente por meio desta que podemos nos defender contra a tirania vil da ignorância. Dessa forma, estou em dívida com a sociedade; com todos que permitiram minha entrada e estadia no curso de Engenharia de Produção pela UFRJ. Uma dívida monumental, se pensada pela ótica dos benefícios. Espero retornar o investimento em breve, a começar de forma humilde com este trabalho de conclusão de curso. Boa leitura!
-  tentativa 1
+  Lorem ipsum
   \begin{abstract}
 Sit urna lacus aenean euismod morbi integer mauris ligula euismod. Massa leo nunc rutrum non vulputate viverra erat aliquet torquent. Dictumst inceptos litora diam dui eu non sodales eget metus? Mollis faucibus justo class class nulla vestibulum consequat purus.
 
@@ -152,8 +152,67 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \end{quote}
   Dessa forma, a discrepância entre preço de mercado e a estimativa do valor intrísenco feita por um analista torna-se uma medida para oportunidade de investimento. Aqueles que considerarem tais modelos como estimativas razoáveis de valor intrínseco, e que tomarem ação baseando-se nessas estimativas, são conhecidos como investidores de valor (DAMODARAN, \protect\hyperlink{ref-damodaran2012}{2012}).
 
-  \hypertarget{modelo-de-fluxo-de-caixa-descontado}{%
-  \subsection{Modelo de Fluxo de Caixa Descontado}\label{modelo-de-fluxo-de-caixa-descontado}}
+  \hypertarget{anuxe1lise-de-fluxo-de-caixa-descontado}{%
+  \subsection{Análise de Fluxo de Caixa Descontado}\label{anuxe1lise-de-fluxo-de-caixa-descontado}}
+
+  A análise de fluxos de caixa descontados (DCF) é um método de se descobrir o valor de uma ação, projeto, empresa, ou ativo usando os conceitos do valor temporal do dinheiro. Para se aplicar o método, todos os fluxos de caixa futuros são estimados e descontados ao se utilizar o custo de capital para dar seus valores presentes. A soma de todos os futuros fluxos de caixa, tanto de entrada quanto de saída, resulta no valor presente líquido, que é tomado como o valor dos fluxos de caixa em questão, no momento.
+
+  Seguindo a queda do mercado em 1929, o método ganhou popularidade para se avaliar ações. De fato, provavelmente o primeiro a formalizar a expressão do método em termos econômicos modernos foi Fisher (\protect\hyperlink{ref-fisher1930}{1930}).
+
+  O valor presente líquido pode ser expresso matematicamente como:
+  \[
+  VPL = \sum_{i=0}^N\frac{FC_t}{(1+r)^t}
+  \]
+  onde \(FC_t\) é o fluxo de caixa no tempo \(t\) e \(r\) é a taxa de desconto. Naturalmente, para que o somatório acima esteja correto, assume-se que a taxa de desconto permaneça constante através do período todo. Caso assuma-se que o fluxo de caixa continue indefinidamente, a previsão finita é geralmente combinada com a premissa de um crescimento constante de fluxo de caixa além do período de projeção discreto -- a dita perpetuidade. Matematicamente:
+  \[
+  VPL = \sum_{i=0}^N\frac{FC_t}{(1+r)^t} + \frac{FC_{N+2}}{(1+r)^{N+1}(r-g)}
+  \]
+  onde o somatório é o período de crescimento normal, e além do somatório, temos o fluxo de caixa em perpetuidade, sendo descontado.
+
+  A pergunta, entretanto, repousa sobre encontrar a taxa de desconto. Diversos modelos foram apresentados com tal finalidade, sendo o mais utilizado o \emph{capital asset pricing model}, doravante mencionado pela sua abreviatura, CAPM.
+
+  Este modelo foi introduzido por Sharpe (\protect\hyperlink{ref-sharpe1964}{1964}), desenvolvendo em cima do trabalho iniciado em diversificação e teoria moderna do portfólio (MARKOWITZ, \protect\hyperlink{ref-markowitz1952}{1952}). O CAPM leva em conta a sensibilidade de um ativo ao risco não diversificável -- também conhecido como risco sistemático, ou risco de mercado -- geralmente representado por \(\beta\). De fato, a equação é como segue:
+  \[
+  E(R_i) = R_f + \beta_i(E(R_m)-R_f)
+  \]
+  onde \(E(R_i)\) é o retorno esperado do ativo, \(R_f\) é a taxa de juros livre de risco -- oriunda geralmente de títulos do governo -- e \(E(R_m)\) é o retorno esperado do mercado. \(\beta\), como comentado, é a sensibilidade do ativo em relação ao mercado, de forma tal que:
+  \[
+  \beta_i = \frac{Cov(R_i, R_m)}{Var(R_m)} = \rho_{i,m}\frac{\sigma_i}{\sigma_m}
+  \]
+  onde \(\rho_{i,m}\) denota o coeficiente de correlação entre o investimento \(i\) e o mercado \(m\), \(\sigma_i\) é o desvio padrão para o investimento \(i\), e \(\sigma_m\) é o desvio padrão para o mercado \(m\).
+
+  Podemos entender essa equação melhor se a rearranjarmos:
+  \[
+  E(R_i) = R_f + \beta_i(E(R_m)-R_f) \iff E(R_i) - R_f = \beta_i(E(R_m)-R_f)
+  \]
+  onde o segundo lado denota uma equivalência interessante. Dessa forma, podemos dizer que o prêmio de risco para o ativo individual é igual ao prêmio pelo risco de mercado, multiplicado pela sensibilidade do ativo (\(\beta\)).
+
+  De fato, o modelo leva em conta diversas premissas, dentre as quais todos os investidores (ARNOLD, \protect\hyperlink{ref-arnold2008}{2008}):
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Têm por objetivo maximizar utilidades econômicas (quantidades de ativos são dadas e fixas).
+  \item
+    São racionais e aversos a risco.
+  \item
+    São amplamente diversificados sobre uma grande gama de investimentos.
+  \item
+    São tomadores de preço, isto é, não influenciam nos preços.
+  \item
+    Podem emprestar e tomar quantias ilimitadas sob a taxa livre de risco de juros.
+  \item
+    Fazem trocas sem custo de transação ou impostos.
+  \item
+    Lidam com ativos que são todos altamente diversificáveis em pequenas parcelas -- são perfeitamente divisíveis e líquidos).
+  \item
+    Têm expectativas homogêneas.
+  \item
+    Têm todas as informações disponíveis ao mesmo tempo.
+  \end{enumerate}
+  Naturalmente, pela quantidade e teor das premissas, este é um modelo que fortemente simplifica a realidade. De fato, pela sua lógica simples e fácil aplicabilidade, ainda é muito utilizado na indústria, embora a maior parte das aplicações utilizando-se este modelo sejam consideradas inválidas (FAMA; FRENCH, \protect\hyperlink{ref-fama2004}{2004}).
+
+  Para os propósitos deste trabalho, entretanto, será feita uma análise de fluxos de caixa descontados utilizando-se, também, o CAPM.
 
   \hypertarget{modelo-de-desconto-de-dividendos}{%
   \subsection{Modelo de Desconto de Dividendos}\label{modelo-de-desconto-de-dividendos}}
@@ -191,6 +250,21 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
 
   \hypertarget{valuation-relativo}{%
   \section{\texorpdfstring{\emph{Valuation} relativo}{Valuation relativo}}\label{valuation-relativo}}
+
+  Em \emph{valuation} relativo, um determinado ativo é avaliado baseado em quão precificados estão os ativos similares no mercado. Como exemplo, uma comprador de imóveis pode, antes de realizar uma compra à vista/financiamento abrupto, pode pesquisar por imóveis similares na vizinhança. Ora, uma pessoa que coleciona selos pode fazer um julgamento de quanto vai pagar em outro selo raro ao checar preços de transações desse mesmo selo em outras épocas. Dessa forma, um investidor em potencial pode estimar o preço de uma ação a comprar fazendo uma pesquisa através da precificação de ações ``similares''.
+
+  Pela descrição acima, existem três fatores a se considerar:
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    \textbf{É necessário encontrar ativos comparáveis, precificados pelo mercado.} Esta é uma tarefa que é mais fácil de se cumprir com ativos tangíveis do que com imateriais, como ações. Frequentemente, analistas consideram outras empresas do mesmo setor como comparáveis, comparando por exemplo, empresas de utilidade com outras empresas de utilidade.
+  \item
+    \textbf{É importante traduzir os preços de mercado a uma variável comum.} A finalidade disso é gerar preços padronizados que sejam comparáveis. Embora isso não seja necessário com ativos idênticos, é necessário quando existe heterogenia. Considere, por exemplo, o exemplo dos imóveis. Uma casa tem 200 m² e outra, 100 m². Reduziria-se um fator à metragem. Naturalmente, com empresas acontece algo similar, geralmente reduzindo-se a múltiplos de lucros, valor patrimonial, entre outros.
+  \item
+    \textbf{É necessário ajustar-se diferenças entre ativos.} Novamente, consideremos o exemplo da casa. Ambas possuem a mesma metragem, mas uma acabou de ser construída, e outra tem mais de 200 anos de idade. Ora, havendo essa diferença de idades, \emph{ceteris paribus}, a casa mais nova deve valer mais. Com ações, pode haver algo similar. Empresas de maior crescimento, \emph{ceteris paribus}, devem valer mais do que empresas de menor crescimento, por exemplo.
+  \end{enumerate}
+  Cabe comentar que existe uma diferença filosófica significativa entre as abordagens intrínseca e relativa. Através de \emph{valuation} intrínseco, tentamos estimar o valor de um ativo baseado na sua capacidade de gerar fluxos de caixa no futuro. No \emph{valuation} relativo, estamos fazendo um julgamento em quanto um ativo vale ao olharmos para o que o mercado está pagando por ativos similares -- implicitamente, estamos ``confiando'' no julgamento de valor do mercado. Dessa forma, caso o mercado esteja sistematicamente superestimando ou subestimando -- \emph{bull} e \emph{bear market}, respectivamente -- um grupo de ativos ou um setor inteiro, ambos os tipos de \emph{valuation} podem diferir entre si.
 
   \hypertarget{anuxe1lise-por-muxfaltiplos}{%
   \subsection{Análise por múltiplos}\label{anuxe1lise-por-muxfaltiplos}}
@@ -268,11 +342,20 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
 
   \hypertarget{refs}{}
   \begin{cslreferences}
+  \leavevmode\hypertarget{ref-arnold2008}{}%
+  ARNOLD, G. \textbf{Corporate financial management}. {[}s.l.{]} Pearson Education, 2008.
+
   \leavevmode\hypertarget{ref-damodaran2007}{}%
   DAMODARAN, A. \textbf{Valuation approaches and metrics: a survey of the theory and evidence}. {[}s.l.{]} Now Publishers Inc, 2007.
 
   \leavevmode\hypertarget{ref-damodaran2012}{}%
-  DAMODARAN, A. \textbf{Investment philosophies: successful strategies and the investors who made them work}. {[}s.l.{]} John Wiley \& Sons, 2012. v. 665
+  DAMODARAN, A. \textbf{Investment philosophies: successful strategies and the investors who made them work}. Hoboken, NJ: John Wiley \& Sons, 2012.
+
+  \leavevmode\hypertarget{ref-fama2004}{}%
+  FAMA, E. F.; FRENCH, K. R. The capital asset pricing model: Theory and evidence. \textbf{Journal of economic perspectives}, v. 18, n. 3, p. 25--46, 2004.
+
+  \leavevmode\hypertarget{ref-fisher1930}{}%
+  FISHER, I. \textbf{Theory of interest: as determined by impatience to spend income and opportunity to invest it}. {[}s.l.{]} Augustusm Kelly Publishers, Clifton, 1930.
 
   \leavevmode\hypertarget{ref-gordon1959}{}%
   GORDON, M. J. Dividends, earnings, and stock prices. \textbf{The review of economics and statistics}, p. 99--105, 1959.
@@ -281,10 +364,16 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   GORDON, M. J.; SHAPIRO, E. Capital equipment analysis: the required rate of profit. \textbf{Management science}, v. 3, n. 1, p. 102--110, 1956.
 
   \leavevmode\hypertarget{ref-graham2016}{}%
-  GRAHAM, B. \textbf{O investidor inteligente}. {[}s.l.{]} HarperCollins Brasil, 2016.
+  GRAHAM, B. \textbf{O investidor inteligente}. Rio de Janeiro: HarperCollins Brasil, 2016.
+
+  \leavevmode\hypertarget{ref-markowitz1952}{}%
+  MARKOWITZ, H. Portfolio selection. \textbf{The Journal of Finance}, v. 7, n. 1, p. 77--91, 1952.
 
   \leavevmode\hypertarget{ref-modigliani1958}{}%
   MODIGLIANI, F.; MILLER, M. H. The cost of capital, corporation finance and the theory of investment. \textbf{The American economic review}, v. 48, n. 3, p. 261--297, 1958.
+
+  \leavevmode\hypertarget{ref-sharpe1964}{}%
+  SHARPE, W. F. Capital asset prices: A theory of market equilibrium under conditions of risk. \textbf{The journal of finance}, v. 19, n. 3, p. 425--442, 1964.
   \end{cslreferences}
   \backmatter
   \bibliographystyle{coppe-unsrt}

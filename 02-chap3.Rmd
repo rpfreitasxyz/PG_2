@@ -11,9 +11,57 @@ Naturalmente, o mercado, no curto prazo, está sujeito a flutuações que podem 
 > "Imagine que você possui uma participação pequena em uma companhia de capital fechado que lhe custou US$1.000. Um de seus sócios, chamado Sr. Mercado, é de fato muito prestativo. Todo dia ele lhe informa o que pensa ser o valor de sua participação e, além disso, se dispõe a comprar de você ou vender a você uma participação adicional naquelas  bases. Às vezes, sua ideia de valor parece plausível e justificada pela evolução e pelas perspectivas do negócio da forma como você as conhece. Por outro lado, o Sr. Mercado deixa frequentemente o entusiasmo ou o receio tomar conta dele e o valor proposto por ele lhe parece pura bobagem.
 Se você é um investidor prudente ou um empresário inteligente, deixaria as comunicações diárias do Sr. Mercado influenciarem sua opinião sobre o valor de uma participação de US$1.000 na companhia? Só se você concordasse com ele ou então desejasse negociar com ele. Você pode ficar feliz em vender para ele quando ele cota um preço ridiculamente alto e igualmente feliz em comprar dele quando seu preço é baixo. No entanto, no resto do tempo, você seria mais esperto se formulasse suas próprias ideias acerca do valor de sua carteira com base nos relatório completos da companhia sobre suas operações e posições financeiras."
 
-Dessa forma, a discrepância entre preço de mercado e a estimativa do valor intrísenco feita por um analista torna-se uma medida para oportunidade de investimento. Aqueles que considerarem tais modelos como estimativas razoáveis de valor intrínseco, e que tomarem ação baseando-se nessas estimativas, são conhecidos como investidores de valor [@damodaran2012].
+Dessa forma, a discrepância entre preço de mercado e a estimativa do valor intrísenco feita por um analista torna-se uma medida para oportunidade de investimento. Aqueles que considerarem tais modelos como estimativas razoáveis de valor intrínseco, e que tomarem ação baseando-se nessas estimativas, são conhecidos como investidores de valor [@damodaran2012]. 
 
-### Modelo de Fluxo de Caixa Descontado
+### Análise de Fluxo de Caixa Descontado
+
+A análise de fluxos de caixa descontados (DCF) é um método de se descobrir o valor de uma ação, projeto, empresa, ou ativo usando os conceitos do valor temporal do dinheiro. Para se aplicar o método, todos os fluxos de caixa futuros são estimados e descontados ao se utilizar o custo de capital para dar seus valores presentes. A soma de todos os futuros fluxos de caixa, tanto de entrada quanto de saída, resulta no valor presente líquido, que é tomado como o valor dos fluxos de caixa em questão, no momento.
+
+Seguindo a queda do mercado em 1929, o método ganhou popularidade para se avaliar ações. De fato, provavelmente o primeiro a formalizar a expressão do método em termos econômicos modernos foi Fisher [-@fisher1930].
+
+O valor presente líquido pode ser expresso matematicamente como:
+$$
+VPL = \sum_{i=0}^N\frac{FC_t}{(1+r)^t}
+$$
+onde $FC_t$ é o fluxo de caixa no tempo $t$ e $r$ é a taxa de desconto. Naturalmente, para que o somatório acima esteja correto, assume-se que a taxa de desconto permaneça constante através do período todo. Caso assuma-se que o fluxo de caixa continue indefinidamente, a previsão finita é geralmente combinada com a premissa de um crescimento constante de fluxo de caixa além do período de projeção discreto -- a dita perpetuidade. Matematicamente:
+$$
+VPL = \sum_{i=0}^N\frac{FC_t}{(1+r)^t} + \frac{FC_{N+2}}{(1+r)^{N+1}(r-g)}
+$$
+onde o somatório é o período de crescimento normal, e além do somatório, temos o fluxo de caixa em perpetuidade, sendo descontado.
+
+A pergunta, entretanto, repousa sobre encontrar a taxa de desconto. Diversos modelos foram apresentados com tal finalidade, sendo o mais utilizado o _capital asset pricing model_, doravante mencionado pela sua abreviatura, CAPM.
+
+Este modelo foi introduzido por Sharpe [-@sharpe1964], desenvolvendo em cima do trabalho iniciado em diversificação e teoria moderna do portfólio [@markowitz1952]. O CAPM leva em conta a sensibilidade de um ativo ao risco não diversificável -- também conhecido como risco sistemático, ou risco de mercado -- geralmente representado por $\beta$. De fato, a equação é como segue:
+$$
+E(R_i) = R_f + \beta_i(E(R_m)-R_f)
+$$
+onde $E(R_i)$ é o retorno esperado do ativo, $R_f$ é a taxa de juros livre de risco -- oriunda geralmente de títulos do governo -- e $E(R_m)$ é o retorno esperado do mercado. $\beta$, como comentado, é a sensibilidade do ativo em relação ao mercado, de forma tal que:
+$$
+\beta_i = \frac{Cov(R_i, R_m)}{Var(R_m)} = \rho_{i,m}\frac{\sigma_i}{\sigma_m}
+$$
+onde $\rho_{i,m}$ denota o coeficiente de correlação entre o investimento $i$ e o mercado $m$, $\sigma_i$ é o desvio padrão para o investimento $i$, e $\sigma_m$ é o desvio padrão para o mercado $m$.
+
+Podemos entender essa equação melhor se a rearranjarmos:
+$$
+E(R_i) = R_f + \beta_i(E(R_m)-R_f) \iff E(R_i) - R_f = \beta_i(E(R_m)-R_f)
+$$
+onde o segundo lado denota uma equivalência interessante. Dessa forma, podemos dizer que o prêmio de risco para o ativo individual é igual ao prêmio pelo risco de mercado, multiplicado pela sensibilidade do ativo ($\beta$).
+
+De fato, o modelo leva em conta diversas premissas, dentre as quais todos os investidores [@arnold2008]:
+
+1. Têm por objetivo maximizar utilidades econômicas (quantidades de ativos são dadas e fixas).
+2. São racionais e aversos a risco.
+3. São amplamente diversificados sobre uma grande gama de investimentos.
+4. São tomadores de preço, isto é, não influenciam nos preços.
+5. Podem emprestar e tomar quantias ilimitadas sob a taxa livre de risco de juros.
+6. Fazem trocas sem custo de transação ou impostos.
+7. Lidam com ativos que são todos altamente diversificáveis em pequenas parcelas -- são perfeitamente divisíveis e líquidos).
+8. Têm expectativas homogêneas.
+9. Têm todas as informações disponíveis ao mesmo tempo.
+
+Naturalmente, pela quantidade e teor das premissas, este é um modelo que fortemente simplifica a realidade. De fato, pela sua lógica simples e fácil aplicabilidade, ainda é muito utilizado na indústria, embora a maior parte das aplicações utilizando-se este modelo sejam consideradas inválidas [@fama2004]. 
+
+Para os propósitos deste trabalho, entretanto, será feita uma análise de fluxos de caixa descontados utilizando-se, também, o CAPM.
 
 ### Modelo de Desconto de Dividendos
 
@@ -45,5 +93,15 @@ $$
 o que significa que o _dividend yield_ ($D_1/P_0$) mais o crescimento ($g$) é igual ao custo de capital próprio ($r$). Ora, caso consideremos a taxa de crescimento de dividendos no modelo como um _proxy_ para o crescimento de lucros e, por extensão, o preço da ação e os ganhos de capital. Consideraríamos, então, o custo de capital próprio como um _proxy_ para o retorno total requerida pelo investidor.
 
 ## _Valuation_ relativo
+
+Em _valuation_ relativo, um determinado ativo é avaliado baseado em quão precificados estão os ativos similares no mercado. Como exemplo, uma comprador de imóveis pode, antes de realizar uma compra à vista/financiamento abrupto, pode pesquisar por imóveis similares na vizinhança. Ora, uma pessoa que coleciona selos pode fazer um julgamento de quanto vai pagar em outro selo raro ao checar preços de transações desse mesmo selo em outras épocas. Dessa forma, um investidor em potencial pode estimar o preço de uma ação a comprar fazendo uma pesquisa através da precificação de ações "similares".
+
+Pela descrição acima, existem três fatores a se considerar:
+
+1. **É necessário encontrar ativos comparáveis, precificados pelo mercado.** Esta é uma tarefa que é mais fácil de se cumprir com ativos tangíveis do que com imateriais, como ações. Frequentemente, analistas consideram outras empresas do mesmo setor como comparáveis, comparando por exemplo, empresas de utilidade com outras empresas de utilidade.
+2. **É importante traduzir os preços de mercado a uma variável comum.** A finalidade disso é gerar preços padronizados que sejam comparáveis. Embora isso não seja necessário com ativos idênticos, é necessário quando existe heterogenia. Considere, por exemplo, o exemplo dos imóveis. Uma casa tem 200 m² e outra, 100 m². Reduziria-se um fator à metragem. Naturalmente, com empresas acontece algo similar, geralmente reduzindo-se a múltiplos de lucros, valor patrimonial, entre outros.
+3. **É necessário ajustar-se diferenças entre ativos.** Novamente, consideremos o exemplo da casa. Ambas possuem a mesma metragem, mas uma acabou de ser construída, e outra tem mais de 200 anos de idade. Ora, havendo essa diferença de idades, _ceteris paribus_, a casa mais nova deve valer mais. Com ações, pode haver algo similar. Empresas de maior crescimento, _ceteris paribus_, devem valer mais do que empresas de menor crescimento, por exemplo.
+
+Cabe comentar que existe uma diferença filosófica significativa entre as abordagens intrínseca e relativa. Através de _valuation_ intrínseco, tentamos estimar o valor de um ativo baseado na sua capacidade de gerar fluxos de caixa no futuro. No _valuation_ relativo, estamos fazendo um julgamento em quanto um ativo vale ao olharmos para o que o mercado está pagando por ativos similares -- implicitamente, estamos "confiando" no julgamento de valor do mercado. Dessa forma, caso o mercado esteja sistematicamente superestimando ou subestimando -- _bull_ e _bear market_, respectivamente -- um grupo de ativos ou um setor inteiro, ambos os tipos de _valuation_ podem diferir entre si.
 
 ### Análise por múltiplos

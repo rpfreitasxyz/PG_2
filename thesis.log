@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  8 NOV 2020 14:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  9 NOV 2020 16:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -665,15 +665,15 @@ Cap\'{\i }tulo 2.
 Cap\'{\i }tulo 3.
 [3
 
-] [4] [5]
+] [4] [5] [6] [7] [8]
 Cap\'{\i }tulo 4.
-[6
+[9
 
-] [7]
+] [10]
 Cap\'{\i }tulo 5.
-[8
+[11
 
-] [9
+] [12
 
 ]
 No file thesis.bbl.
@@ -681,19 +681,19 @@ No file thesis.bbl.
 AED: lastpage setting LastPage
 (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4CCF131526850C90CF1F4BF79DA8B9FE;2827.
+(rerunfilecheck)             Checksum: 6BD5891BB8B02A1205A28A48780079A0;2831.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8452 strings out of 481446
- 128869 string characters out of 5918545
- 463714 words of memory out of 5000000
- 24863 multiletter control sequences out of 15000+600000
+ 8473 strings out of 481446
+ 129065 string characters out of 5918545
+ 463741 words of memory out of 5000000
+ 24864 multiletter control sequences out of 15000+600000
  543259 words of font info for 58 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 80i,12n,85p,686b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 80i,12n,85p,747b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
  <c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jkn
 appen/ec/tcrm1200.600pk><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/Rafael Pinto/AppData/Roa
@@ -708,10 +708,10 @@ m/cmr8.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/Rafael Pinto/AppD
 ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (20 pages, 203181 bytes).
+Output written on thesis.pdf (23 pages, 219271 bytes).
 PDF statistics:
- 445 PDF objects out of 1000 (max. 8388607)
- 405 compressed objects within 5 object streams
- 124 named destinations out of 1000 (max. 500000)
+ 483 PDF objects out of 1000 (max. 8388607)
+ 439 compressed objects within 5 object streams
+ 144 named destinations out of 1000 (max. 500000)
  326 words of extra memory for PDF output out of 10000 (max. 10000000)
 
