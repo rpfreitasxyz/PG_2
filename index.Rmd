@@ -17,16 +17,16 @@ advisor:
   surname: Ribas
   degree: D.Sc.
 - title: Prof.
-  name: Nome do Segundo Orientador
-  surname: Sobrenome
-  degree: Ph.D
+  name: Marco Ludwik Patrício
+  surname: Krebs
+  degree: D.Sc.
 examiner:
 - title: Prof.
   name: José Roberto Ribas
   degree: D.Sc.
 - title: Prof.
-  name: Nome Completo do Segundo Examinador
-  degree: Ph.D
+  name: Marco Ludwik Patrício Krebs
+  degree: D.Sc.
 - title: Prof.
   name: Nome Completo do Terceiro Examinador
   degree: Ph.D
