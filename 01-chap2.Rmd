@@ -31,9 +31,9 @@ A Agência Nacional de Energia Elétrica (ANEEL) é uma autarquia vinculada ao M
 
 Cabe à ANEEL, dentre outras competências: (1) implementar as políticas e diretrizes do governo federal para a exploração da energia elétrica e o aproveitamento dos potenciais hidráulicos; (2) estabelecer as tarifas para o suprimento de energia elétrica realizado às concessionárias e permissionárias de distribuição; e (3) fazer a gestão dos contratos de concessão ou de permisão de serviços públicos de energia elétrica e fiscalizar, diretamente ou mediante convênios com órgãos estaduais, as concessões, as permissões e a prestação dos serviços de energia elétrica.
 
-Pode-se conferir a lista completa de atribuições pelo Art. 3° da Lei n° 9.427/96.[^2.1]
+Pode-se conferir a lista completa de atribuições pelo Art. 3° da Lei n° 9.427/96.[^lei9427]
 
-[^2.1]: Disponível em: <http://www.planalto.gov.br/ccivil_03/leis/l9427cons.htm>. Último acesso em 17 nov 2020.
+[^lei9427]: Disponível em: <http://www.planalto.gov.br/ccivil_03/leis/l9427cons.htm>. Último acesso em 17 nov 2020.
 
 ### ONS
 
@@ -51,9 +51,9 @@ A Empresa de Pesquisa Energética (EPE) é uma empresa pública vinculada ao Min
 
 Cabe à EPE, dentre outras atribuições: (1) apresentar ao CNPE, anualmente, os Planos Decenais de Expansão (PDE), assim como a cada dois anos os Planos Nacionais de Energia (PNE); (2) identificar e quantificar os potenciais de recursos energéticos; e (3) elaborar e publicar o balanço energético nacional.
 
-A lista completa de atribuições pode ser vista no Art. 4° da Lei n° 10.847/04.[^2.2]
+A lista completa de atribuições pode ser vista no Art. 4° da Lei n° 10.847/04.[^lei10847]
 
-[^2.2]: Disponível em: <http://www.planalto.gov.br/CCivil_03/_Ato2004-2006/2004/Lei/L10.847.htm>. Último acesso em 17 nov 2020.
+[^lei10847]: Disponível em: <http://www.planalto.gov.br/CCivil_03/_Ato2004-2006/2004/Lei/L10.847.htm>. Último acesso em 17 nov 2020.
 
 Uma das principais motivações para a criação da EPE foram os racionamentos e apagões ocorridos no início da década, ocorridos durante o governo de Fernando Henrique Cardoso, atribuídos em parte á carência de planejamento. Embora seja uma entidade independente, é vinculada ao Ministério de Minas e Energia.
 
@@ -65,11 +65,11 @@ A geração de energia elétrica é a transformação da energia primária -- pe
 
 A transmissão efetua o transporte da energia gerada até os centros consumidores de carga. Nessa parte, o sistema brasileiro possui uma particularidade, que é o fato de que os grandes centros de consumidores ficam localizados longe da grande geração energética. Isso faz com que o Brasil tenha uma grande quantidade de linhas de transmissão com algumas centenas de quilômetros.
 
-A comercialização de energia é atualmente realizada em dois ambientes diferentes: (1) no Ambiente de Contratação Livre, que é destinado ao atendimento de consumidores livres -- o consumidor que pode optar pela compra de energia elétrica junto a qualquer fornecedor, que é atendido em qualquer tensão e com demanda contratada mínima de 3 MW, segundo a Resolução da ANEEL n° 376, de 25 de agosto de 2009[^2.3] e a Resolução n° 414, de 9 de setembro de 2010[^2.4]; e (2) no Ambiente de Contratação Regulada, que é destinado ao atendimento de consumidores cativos por meio das distribuidoras, sendo estas supridas por geradores estatais ou independentes que vendem energia em leilões públicos.
+A comercialização de energia é atualmente realizada em dois ambientes diferentes: (1) no Ambiente de Contratação Livre, que é destinado ao atendimento de consumidores livres -- o consumidor que pode optar pela compra de energia elétrica junto a qualquer fornecedor, que é atendido em qualquer tensão e com demanda contratada mínima de 3 MW, segundo a Resolução da ANEEL n° 376, de 25 de agosto de 2009[^res376] e a Resolução n° 414, de 9 de setembro de 2010[^res414]; e (2) no Ambiente de Contratação Regulada, que é destinado ao atendimento de consumidores cativos por meio das distribuidoras, sendo estas supridas por geradores estatais ou independentes que vendem energia em leilões públicos.
 
-[^2.3]: Disponível em: <https://www.legisweb.com.br/legislacao/?id=109898>. Último acesso em 17 nov 2020.
+[^res376]: Disponível em: <https://www.legisweb.com.br/legislacao/?id=109898>. Último acesso em 17 nov 2020.
 
-[^2.4]: Disponível em: <https://www.legisweb.com.br/legislacao/?id=112868>. Último acesso em 17 nov 2020.
+[^res414]: Disponível em: <https://www.legisweb.com.br/legislacao/?id=112868>. Último acesso em 17 nov 2020.
 
 A distribuição é o setor responsável por receber a energia da transmissão e distribuí-la para os centros consumidores.
 

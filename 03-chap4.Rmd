@@ -8,9 +8,9 @@ Comecemos, desta forma, fazendo um dossiê da empresa, de forma a estudar melhor
 
 ### História
 
-É de suma importância comentar que a parte a seguir é uma adaptação de transcritos oriundos do site da própria empresa,[^4.1] com pequenos acréscimos por parte do autor.
+É de suma importância comentar que a parte a seguir é uma adaptação de transcritos oriundos do site da própria empresa,[^historiaCopel] com pequenos acréscimos por parte do autor.
 
-[^4.1]: Versão completa disponível em: <https://www.copel.com/hpcopel/root/nivel2.jsp?endereco=%2Fhpcopel%2Froot%2Fpagcopel2.nsf%2Fdocs%2F6505401715872FAA032573FA0069734F>. Último acesso em 10 nov 2020.
+[^historiaCopel]: Versão completa disponível em: <https://www.copel.com/hpcopel/root/nivel2.jsp?endereco=%2Fhpcopel%2Froot%2Fpagcopel2.nsf%2Fdocs%2F6505401715872FAA032573FA0069734F>. Último acesso em 10 nov 2020.
 
 A Companhia Paranaense de Energia é a maior empresa do estado do Paraná, tendo sido criada em 26 de outubro de 1954, sob controle acionário do estado do Paraná, abrindo seu capital acionário em abril de 1994 na BM&FBovespa, e tornou-se em julho de 1997 a primeira do setor elétrico brasileiro a ser listada na Bolsa de Valores de Nova Iorque. A marca está também presente, desde junho de 2002, na Comunidade Econômica Europeia, pela Latibex -- o setor latinoamericano da Bolsa de Valores de Madri. A partir de 7 de maio de 2008, a empresa também passou a figurar oficialmente no Nível 1 de Governança Corporativa da BM&FBovespa.
 
@@ -48,15 +48,15 @@ Podemos notar, então, um grau de maturidade elevado por parte da empresa atualm
 
 ### *Core business*
 
-As informações retiradas para o estudo do *core business* da Copel foram retiradas diretamente do site deles.[^4.2]
+As informações retiradas para o estudo do *core business* da Copel foram retiradas diretamente do site deles.[^siteCopel]
 
-[^4.2]: Disponível em: <https://www.copel.com/hpcweb/>. Último acesso em 20 nov 2020.
+[^siteCopel]: Disponível em: <https://www.copel.com/hpcweb/>. Último acesso em 20 nov 2020.
 
 #### Geração
 
-Comecemos comentando sobre uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução n° 875, de 10 de março de 2020,[^4.3] a diferenciação é tal:
+Comecemos comentando sobre uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução n° 875, de 10 de março de 2020,[^res875] a diferenciação é tal:
 
-[^4.3]: Disponível em: <https://www.in.gov.br/web/dou/-/resolucao-normativa-n-875-de-10-de-marco-de-2020-248070610>. Último acesso em 17 nov 2020.
+[^res875]: Disponível em: <https://www.in.gov.br/web/dou/-/resolucao-normativa-n-875-de-10-de-marco-de-2020-248070610>. Último acesso em 17 nov 2020.
 
 A Copel opera um parque gerador de 29 usinas próprias, sendo estas 16 hidrelétricas, 1 termelétrica e 12 eólicas. No total, a capacidade instalada é de 4.838,1 MW. A geração é supervisionada e coordenada pelo Centro de Operação de Geração e Transmissão da empresa, sediado em Curitiba.
 

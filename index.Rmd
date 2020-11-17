@@ -101,9 +101,9 @@ Um ano após 1967, foi criado o principal índice de ações brasileiro: o Ibove
 
 A partir de 2007, as bolsas de valores deixaram de ser entidades sem fins lucrativos e tornaram-se empresas de capital aberto. No ano seguinte, a BM&F e a Bovespa se uniram, resultando na criação da Bolsa de Valores, Mercadorias e Futuros de São Paulo -- a BM&F Bovespa. Em 2017, são fundidas a BM&F Bovespa e Cetip, dando origem à B3 S.A., sob a supervisão da Comissão de Valores Mobiliários -- esta é a bolsa brasileira atualmente.
 
-Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Valores ano a ano, sendo em 2020 o recorde, um aumento de 47.7% relativo a maio de 2019[^1.1].
+Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Valores ano a ano, sendo em 2020 o recorde, um aumento de 47.7% relativo a maio de 2019[^aumentoCPF].
 
-[^1.1]: Pode-se conferir a evolução dos mesmos baixando a planilha presente neste link: <http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-a-vista/historico-pessoas-fisicas/>. Último acesso em 07 jul 2020.
+[^aumentoCPF]: Pode-se conferir a evolução dos mesmos baixando a planilha presente neste link: <http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-a-vista/historico-pessoas-fisicas/>. Último acesso em 07 jul 2020.
 
 Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros -- o que não quer dizer que o investidor deve investir em todos. De fato, o investidor precisa minimizar seu risco, preferencialmente investindo em empresas que dentre outras características possuem alto *payout* de dividendos, baixo grau de alavancagem; e menor variabilidade de lucros [@beaver1970].
 
@@ -111,11 +111,11 @@ Empresas do setor de utilidades possuem tais características, em sua maioria; d
 
 ## Justificativa
 
-Por mais que a caderneta de poupança seja o investimento preferido dos brasileiros, segundo a Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais [-@anbima2019] -- esta modalidade conta com 88% da população -- é evidente que o rendimento nominal[^1.2] do IBOV é superior no longo prazo. Pelo IPEA, pode-se obter tanto os rendimentos nominais (em % a.m.) da poupança quanto os retornos do IBOV (também em % a.m.), ambos em intervalos mensais desde 1990.[^1.3] A partir daí, acumulamos as taxas recursivamente. Definindo $i$ como a taxa de retorno nominal total, e $i_t$ como sendo a taxa de retorno nominal no mês $t$, temos $i = \prod_{t=1}^n (1+i_t),$ sendo $n$ o mês que se deseja calcular o retorno nominal total. Exposto isso, foi feito um gráfico dos retornos totais de ambas as modalidades:
+Por mais que a caderneta de poupança seja o investimento preferido dos brasileiros, segundo a Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais [-@anbima2019] -- esta modalidade conta com 88% da população -- é evidente que o rendimento nominal[^justNom] do IBOV é superior no longo prazo. Pelo IPEA, pode-se obter tanto os rendimentos nominais (em % a.m.) da poupança quanto os retornos do IBOV (também em % a.m.), ambos em intervalos mensais desde 1990.[^dadosIPEA] A partir daí, acumulamos as taxas recursivamente. Definindo $i$ como a taxa de retorno nominal total, e $i_t$ como sendo a taxa de retorno nominal no mês $t$, temos $i = \prod_{t=1}^n (1+i_t),$ sendo $n$ o mês que se deseja calcular o retorno nominal total. Exposto isso, foi feito um gráfico dos retornos totais de ambas as modalidades:
 
-[^1.2]: Nominal, pois os retornos reais são contextuais devido ao pagamento de impostos, dividendos; e, a depender do ativo, dos custos do mesmo.
+[^justNom]: Nominal, pois os retornos reais são contextuais devido ao pagamento de impostos, dividendos; e, a depender do ativo, dos custos do mesmo.
 
-[^1.3]: Ambas as séries podem ser obtidas em <http://www.ipeadata.gov.br/Default.aspx>. Último acesso em 10 jul 2020.
+[^dadosIPEA]: Ambas as séries podem ser obtidas em <http://www.ipeadata.gov.br/Default.aspx>. Último acesso em 10 jul 2020.
 
 ```{r, fig.cap = "Uma comparação entre o IBOV e a poupança.", fig.pos = "H", echo = FALSE, out.width = "100%"}
 knitr::include_graphics("img/ibov-poupanca.png")

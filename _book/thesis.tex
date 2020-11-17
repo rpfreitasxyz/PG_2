@@ -84,161 +84,57 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \hypertarget{introduuxe7uxe3o}{%
   \chapter{Introdução}\label{introduuxe7uxe3o}}
 
-  Cabe, antes de começar o desenvolvimento do trabalho propriamente dito, contextualizar e justificar o trabalho, assim como explicitar aos leitores os objetivos, as limitações e a estrutura do mesmo.
+  Placeholder
 
   \hypertarget{contextualizauxe7uxe3o}{%
   \section{Contextualização}\label{contextualizauxe7uxe3o}}
 
-  É necessário definir Bolsas de Valores, assim como retratar uma breve história da brasileira a partir de 1967 -- ano a partir do qual começou a se chamar Bolsa de Valores de São Paulo, a Bovespa. Segundo Assaf Neto (\protect\hyperlink{ref-assafneto2018}{2018}), as Bolsas são entidades, cujo objetivo básico é o de manter um local em condições adequadas para a realização de operações de compra e venda de títulos e valores mobiliários.
-
-  Um ano após 1967, foi criado o principal índice de ações brasileiro: o Ibovespa. Resumidamente, este índice é uma média ponderada das ações com maior volume de negociação. Após certo tempo, foi criada a Cetip -- a Central de Custódia e de Liquidação Financeira de Títulos -- em 1984, começando a operar em 1986.
-
-  A partir de 2007, as bolsas de valores deixaram de ser entidades sem fins lucrativos e tornaram-se empresas de capital aberto. No ano seguinte, a BM\&F e a Bovespa se uniram, resultando na criação da Bolsa de Valores, Mercadorias e Futuros de São Paulo -- a BM\&F Bovespa. Em 2017, são fundidas a BM\&F Bovespa e Cetip, dando origem à B3 S.A., sob a supervisão da Comissão de Valores Mobiliários -- esta é a bolsa brasileira atualmente.
-
-  Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Valores ano a ano, sendo em 2020 o recorde, um aumento de 47.7\% relativo a maio de 2019\footnote{Pode-se conferir a evolução dos mesmos baixando a planilha presente neste link: \url{http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-a-vista/historico-pessoas-fisicas/}. Último acesso em 07 jul 2020.}.
-
-  Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros -- o que não quer dizer que o investidor deve investir em todos. De fato, o investidor precisa minimizar seu risco, preferencialmente investindo em empresas que dentre outras características possuem alto \emph{payout} de dividendos, baixo grau de alavancagem; e menor variabilidade de lucros (BEAVER; KETTLER; SCHOLES, \protect\hyperlink{ref-beaver1970}{1970}).
-
-  Empresas do setor de utilidades possuem tais características, em sua maioria; dessa forma, escolheu-se um exemplar do mesmo -- a Companhia Paranaense de Energia, COPEL -- como forma de fazer o valuation da empresa, fazer um breve resumo do setor elétrico, comparar os métodos de avaliação; e, evidentemente, exemplificar o processo ao leitor.
-
   \hypertarget{justificativa}{%
   \section{Justificativa}\label{justificativa}}
-
-  Por mais que a caderneta de poupança seja o investimento preferido dos brasileiros, segundo a Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais (\protect\hyperlink{ref-anbima2019}{2019}) -- esta modalidade conta com 88\% da população -- é evidente que o rendimento nominal\footnote{Nominal, pois os retornos reais são contextuais devido ao pagamento de impostos, dividendos; e, a depender do ativo, dos custos do mesmo.} do IBOV é superior no longo prazo. Pelo IPEA, pode-se obter tanto os rendimentos nominais (em \% a.m.) da poupança quanto os retornos do IBOV (também em \% a.m.), ambos em intervalos mensais desde 1990.\footnote{Ambas as séries podem ser obtidas em \url{http://www.ipeadata.gov.br/Default.aspx}. Último acesso em 10 jul 2020.} A partir daí, acumulamos as taxas recursivamente. Definindo \(i\) como a taxa de retorno nominal total, e \(i_t\) como sendo a taxa de retorno nominal no mês \(t\), temos \(i = \prod_{t=1}^n (1+i_t),\) sendo \(n\) o mês que se deseja calcular o retorno nominal total. Exposto isso, foi feito um gráfico dos retornos totais de ambas as modalidades:
-  \begin{figure}[H]
-  \includegraphics[width=1\linewidth]{img/ibov-poupanca} \caption{Uma comparação entre o IBOV e a poupança.}\label{fig:unnamed-chunk-1}
-  \end{figure}
-  Com o passar do tempo, entretanto, a maturação no mercado financeiro pode, naturalmente, levar o investidor a se interessar por retornos acima do mercado -- fundos de índice, por definição, impossibilitam o objetivo. Isso leva a uma exploração de diferentes classes de ativos, desde ações ordinárias a fundos de investimento em ações. Um investidor, entretanto, há de ter em mente que raramente fundos de investimento com administração ativa, no longo prazo, superam os retornos dos fundos de índice, em termos reais (BOGLE, \protect\hyperlink{ref-bogle2015}{2015}).
-
-  Assim sendo, caso o investidor deseja ter sucesso, é importante que as escolhas de ativos sejam racionais. Ao menos, tão racionais quanto possível forem para humanos. De fato, indivíduos estão sujeitos a uma racionalidade restrita (SIMON, \protect\hyperlink{ref-simon1997}{1997}), o que leva a diversas heurísticas -- inclusive, mas não limitadas a: enfatizar evidências que apoiam visões próprias (KLAYMAN, \protect\hyperlink{ref-klayman1995}{1995}), superestimar probabilidades por maior ``disponibilidade'' em memória (SCHWARZ et al., \protect\hyperlink{ref-schwarz1991}{1991}); e superestimar a própria habilidade, quando se é novato, assim como subestimar, quando se é um \emph{expert} (KRUGER; DUNNING, \protect\hyperlink{ref-kruger1999}{1999}) -- para simplificar o processo de raciocínio e, permitir, assim, que o agente consiga satisfazer as restrições -- tempo, recursos, dentre outros -- para a tomada de decisões.
-
-  De fato, a abordagem de realizar tanto o \emph{valuation} intrínseco quanto o relativo de uma empresa é, além de uma interessante comparação entre métodos, uma forma de evitar a ``síndrome do homem com martelo'', popularizado por Munger (\protect\hyperlink{ref-munger2006}{2006}). Este cita um provérbio, que diz: ``Para um homem com um martelo, todo problema se parece com um prego.''
 
   \hypertarget{objetivos}{%
   \section{Objetivos}\label{objetivos}}
 
-  São os principais objetivos do trabalho (1) fazer o \emph{valuation} da Companhia Paranaense de Energia através de, no mínimo, dois métodos de valuation, sendo no mínimo um deles intrísenco e no mínimo, um relativo e (2) realizar a comparação entre os resultados dos métodos.
-
-  Com o desenvolver do trabalho, poderão ser percebidas outras motivações, entretanto seriam estas consideradas secundárias.
-
   \hypertarget{delimitauxe7uxf5es}{%
   \section{Delimitações}\label{delimitauxe7uxf5es}}
-
-  Este trabalho se limita a prover um breve prospecto do cenário energético brasileiro, assim como possíveis desenvolvimentos. Não serão discutidas políticas energéticas e afins. Se limita, também, a tomar como verdadeira a teoria moderna do portfólio como exposta por Markowitz (\protect\hyperlink{ref-markowitz1952}{1952}), para o cálculo do custo de capital. Não será discutido economia comportamental, nem modelos mais sofisticados para tal cálculo.
 
   \hypertarget{estrutura-do-trabalho}{%
   \section{Estrutura do trabalho}\label{estrutura-do-trabalho}}
 
-  O trabalho possui, em sua integridade, cinco capítulos.
-
-  O primeiro capítulo é uma introdução ao restante do trabalho, e é efetivamente um resumo do que o leitor verá pela frente.
-
-  O segundo capítulo é uma examinação do setor energético brasileiro, a ser feito pela leitura e examinação do Plano Decenal de Expansão de Energia (PDE) e o Plano Nacioanl de Energia (PNE), ambos elaborados pela Empresa de Pesquisa Energética (EPE). Através destes, podemos ter uma melhor noção do setor no qual a empresa está inserido, possibilitando um melhor cálculo e previsão dos fluxos de caixa.
-
-  O terceiro capítulo é a documentação do referencial teórico utilizado, a ser escrito seguindo uma lógica linear, de forma tal que possa também ser visto como uma metodologia, com exemplos para auxiliar o leitor.
-
-  O quarto capítulo é o estudo de caso de fato. Será dada uma contextualização da empresa, assim como a aplicação dos métodos discutidos.
-
-  O quinto e último capítulo é a conclusão, em que será feita a exposição dos resultados, assim como a comparação entre os métodos de \emph{valuation} discutidos durante o texto.
-
   \hypertarget{o-mercado-de-energia}{%
   \chapter{O mercado de energia}\label{o-mercado-de-energia}}
 
-  É importante, antes de partir para o estudo de caso em questão, estabelecer o contexto do trabalho em questão. De fato, neste capítulo serão tratados os fundamentais do mercado de energia no Brasil, desde os órgãos aos estudos principais do setor.
+  Placeholder
 
   \hypertarget{uxf3rguxe3os-presentes-no-estudo}{%
   \section{Órgãos presentes no estudo}\label{uxf3rguxe3os-presentes-no-estudo}}
 
-  Nesta seção, serão tratados os cinco principais órgãos do setor, sendo eles: (1) o Ministério de Minas e Energia; (2) a Agência Nacional de Energia Elétrica; (3) o Operador Nacional do Sistema Elétrico; (4) a Câmara Comercializadora de Energia Elétrica; e (5) a Empresa de Pesquisa Energética.
-
   \hypertarget{mme}{%
   \subsection{MME}\label{mme}}
-
-  O Ministério de Minas e Energia (MME) foi criado em 1960, no governo do presidente Juscelino Kubitschek. Assim seguiu por 30 anos, até ser extinto em 1990 e recriado em 1992.
-
-  Em 1997, foi criado o Conselho Nacional de Política Energética (CNPE), vinculado à Presidência da República e presidido pelo ministro de Minas e Energia, com a atribuição de propor ao presidente da República políticas nacionais e medidas para o setor.
-
-  Logo em seguida, em 2003, foram definidas as competências do MME como sendo as áreas de (1) geologia, recursos minerais e energéticos; (2) aproveitamento da energia hidráulica; mineração e metalurgia; e (3) petróleo, combustível e energia elétrica.
-
-  No ano seguinte foi criado o Comitê de Monitoramento do Setor Elétrico (CMSE), cuja função é acompanhar e avaliar permanentemente a continuidade e a segurança do suprimento eletroenergético em todo o território nacional. No mesmo ano, foi permitida também a criação da Empresa de Pesquisa Energética (EPE), vinculada ao Ministério, que tem por finalidade prestar serviços na área de estudos e pesquisas destinadas a subsidiar o planejamento do setor energético.
-
-  O MME tem como empresas vinculadas a Eletrobras e Petrobras. Estão, também, vinculadas algumas autarquias ao Ministério, dentre elas: a Agência Nacional de Energia Elétrica (ANEEL); Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP); e a Agência Nacional de Mineração (ANM).
 
   \hypertarget{aneel}{%
   \subsection{ANEEL}\label{aneel}}
 
-  A Agência Nacional de Energia Elétrica (ANEEL) é uma autarquia vinculada ao Ministério de Minas e Energia. Tem como finalidade regular e fiscalizar a produção, transmissão, distribuição e comercialização de energia elétrica, de acordo com a legislação e em conformidade com as diretrizes e as políticas do governo federal. A autarquia foi criada em dezembro de 1996, durante o mandato de Fernando Henrique Cardoso.
-
-  Cabe à ANEEL, dentre outras competências: (1) implementar as políticas e diretrizes do governo federal para a exploração da energia elétrica e o aproveitamento dos potenciais hidráulicos; (2) estabelecer as tarifas para o suprimento de energia elétrica realizado às concessionárias e permissionárias de distribuição; e (3) fazer a gestão dos contratos de concessão ou de permisão de serviços públicos de energia elétrica e fiscalizar, diretamente ou mediante convênios com órgãos estaduais, as concessões, as permissões e a prestação dos serviços de energia elétrica.
-
-  Pode-se conferir a lista completa de atribuições pelo Art. 3° da Lei n° 9.427/96.\footnote{Disponível em: \url{http://www.planalto.gov.br/ccivil_03/leis/l9427cons.htm}. Último acesso em 17 nov 2020.}
-
   \hypertarget{ons}{%
   \subsection{ONS}\label{ons}}
-
-  O Operador Nacional do Sistema Elétrico (ONS) é uma entidade privada sem fins lucrativos que é responsável pela coordenação e controle da operação de instalações de geração e tranmissão de energia elétrica do Sistema Interligado Nacional (SIN), sob fiscalização da ANEEL. O órgão foi criado em agosto de 1998, sob mandato do presidente Fernando Henrique Cardoso.
 
   \hypertarget{ccee}{%
   \subsection{CCEE}\label{ccee}}
 
-  A Câmara de Comercialização de Energia Elétrica (CCEE) tem por finalidade viabilizar a comercialização de energia elétrica no mercado de energia brasileiro. De fato, esta efetua a contabilização e a liquidação financeira das operações realizadas no mercado de curto prazo. As regras e procedimentos que regulam as atividades realizadas da CCEE são aprovados pela ANEEL.
-
-  Foi criada em agosto de 2004, sob mandato do presidente Luiz Inácio Lula da Silva, sucedendo ao antigo Mercado Atacadista de Energia.
-
   \hypertarget{epe}{%
   \subsection{EPE}\label{epe}}
-
-  A Empresa de Pesquisa Energética (EPE) é uma empresa pública vinculada ao Ministério de Minas e Energia, criada em março de 2004, sob mandato do presidente Luiz Inácio Lula da Silva. Tem por finalidade prestar serviços na área de estudos e pesquisas destinadas a subsidiar o planejamento do setor energético.
-
-  Cabe à EPE, dentre outras atribuições: (1) apresentar ao CNPE, anualmente, os Planos Decenais de Expansão (PDE), assim como a cada dois anos os Planos Nacionais de Energia (PNE); (2) identificar e quantificar os potenciais de recursos energéticos; e (3) elaborar e publicar o balanço energético nacional.
-
-  A lista completa de atribuições pode ser vista no Art. 4° da Lei n° 10.847/04.\footnote{Disponível em: \url{http://www.planalto.gov.br/CCivil_03/_Ato2004-2006/2004/Lei/L10.847.htm}. Último acesso em 17 nov 2020.}
-
-  Uma das principais motivações para a criação da EPE foram os racionamentos e apagões ocorridos no início da década, ocorridos durante o governo de Fernando Henrique Cardoso, atribuídos em parte á carência de planejamento. Embora seja uma entidade independente, é vinculada ao Ministério de Minas e Energia.
 
   \hypertarget{o-fluxo-de-energia}{%
   \section{O fluxo de energia}\label{o-fluxo-de-energia}}
 
-  Atualmente, o setor elétrico brasileiro tem uma estrutura predominantemente unidirecional nos fluxos de energia. Assim, são tipicamente dividos em geração, transmissão, comercialização e distribuição. Por se tratarem do final da cadeia de valor convencional, os consumidores então têm efetivamente um comportamento passivo.
-
-  A geração de energia elétrica é a transformação da energia primária -- petróleo, carvão mineral, dentre outros -- em energia elétrica. No Brasil, predomina-se a geração hidráulica devido ao grande potencial hidroenergético dos nossos rios.
-
-  A transmissão efetua o transporte da energia gerada até os centros consumidores de carga. Nessa parte, o sistema brasileiro possui uma particularidade, que é o fato de que os grandes centros de consumidores ficam localizados longe da grande geração energética. Isso faz com que o Brasil tenha uma grande quantidade de linhas de transmissão com algumas centenas de quilômetros.
-
-  A comercialização de energia é atualmente realizada em dois ambientes diferentes: (1) no Ambiente de Contratação Livre, que é destinado ao atendimento de consumidores livres -- o consumidor que pode optar pela compra de energia elétrica junto a qualquer fornecedor, que é atendido em qualquer tensão e com demanda contratada mínima de 3 MW, segundo a Resolução da ANEEL n° 376, de 25 de agosto de 2009\footnote{Disponível em: \url{https://www.legisweb.com.br/legislacao/?id=109898}. Último acesso em 17 nov 2020.} e a Resolução n° 414, de 9 de setembro de 2010\footnote{Disponível em: \url{https://www.legisweb.com.br/legislacao/?id=112868}. Último acesso em 17 nov 2020.}; e (2) no Ambiente de Contratação Regulada, que é destinado ao atendimento de consumidores cativos por meio das distribuidoras, sendo estas supridas por geradores estatais ou independentes que vendem energia em leilões públicos.
-
-  A distribuição é o setor responsável por receber a energia da transmissão e distribuí-la para os centros consumidores.
-
-  Salvo no caso de \emph{holdings}, empresas só podem atuar em uma das áreas ex-comercialização.
-
   \hypertarget{estudos-e-projeuxe7uxf5es-de-longo-prazo}{%
   \section{Estudos e projeções de longo prazo}\label{estudos-e-projeuxe7uxf5es-de-longo-prazo}}
-
-  A EPE cumpre sua finalidade de braço técnico de estudos do setor energético produzindo relatórios e planos de expansão a respeito do setor elétrico. Por se tratar de um \emph{valuation} de uma empresa do setor, é importante ponderar a respeito das ações tomadas e o parecer de \emph{experts} a respeito do futuro do setor como um todo, a fim de aprimorar nossas estimativas da taxa de crescimento.
-
-  São os dois principais estudos, nesse sentido, (1) o Plano Nacional de Energia; (2) e o Plano Decenal de Expansão de Energia
 
   \hypertarget{plano-nacional-de-energia-pne}{%
   \subsection{Plano Nacional de Energia (PNE)}\label{plano-nacional-de-energia-pne}}
 
-  O PNE é um conjunto de estudos que dão suporte ao desenho da estratégia de longo prazo do governo em relação à expansão do setor de energia. A estratégia, por sua vez, consiste em um conjunto de recomendações e diretrizes a serem seguidas na definição das ações e iniciativas a serem implementadas ao longo do horizonte de tempo prescrito. A revisão do PNE deve ser conduzida sempre que houver necessidade de alteração na estratégia de longo prazo do tomador de decisão relevante, sejam por razões ordinárias ou extraordinárias.
-
-  Os PNEs têm relação com os PDEs. Embora haja similaridades, o PNE é um instrumento de planejamento com atribuições distintas do PDE. Em primeiro lugar, o PNE é um documento com visão mais estratégica. Neste contexto, seu enfoque consiste em embasar o posicionamento do governo de modo a orientar e direcionar as estratégias dos agentes do setor de forma a se atingir os objetivos gerais da expansão no longo prazo, com adequação dos recursos, com confiabilidade, modicidade e sustentabilidade. Além disso, o PNE é o alicerce a partir de qual todos os Planos, Políticas, Programas e Iniciativas são elaborados. O PNE é, portanto, um farol que orienta para onde os PDEs devem indicar a expansão do setor de energia no horizonte decenal. Por fim, enquanto o PDE trabalha com um cenário de referência e análises de sensibilidade, anualmente revisto, o PNE deve tratar com mais cenários.
-
-  No caso, foi feito o estudo do PNE 2050 (EPE, \protect\hyperlink{ref-epe2020}{2020}), e assim será entregue um pequeno sumário executivo do mesmo a seguir.
-
-  Foram elaborados dois grandes cenários, formando um cone de incertezas para o desenho da estratégia de longo prazo: o primeiro, chamado Desafio da Expansão, reflete requisitos de expansão do setor de energia para atendimento a um crescimento da demanda de energia mais expressivo. No segundo, chamado de Estagnação, analisam-se as consequências de um cenário em que o consumo de energia per capita mantém-se inalterado ao longo de todo o período. O foco do relatório está voltado para o cenário Desafio da Expansão.
-
-  Os estudos do PNE apontam para um potencial energético de quase 280 bilhões de tep (toneladas equivalentes de petróleo) no horizonte até 2050. A demanda cresce de 300 milhões de tep para 600 milhões de tep e, ao longo de trinta e cinco anos, essa trajetória representa uma demanda de energia total acumulada do período equivalente a pouco menos de 15 bilhões de tep. Tamanha discrepância entre potencial de recursos e a demanda de energia estimada gera uma situação distinta daquela vivida ao longo especialmente da metade do século XX, quando o País viveu grandes crises de energia. Dessa forma, imagina-se uma administração da abundância.
-
-  O cenário Desafio da Expansão considera algumas premissas, que serão levadas em conta para o uso no estudo de caso. São essas: (1) crescimento médio de PIB de 3.1\% a.a. e 2.8\% de PIB per capita; (2) a população brasileira manterá a tendência de crescer a taxas cada vez menores; (3) o consumo potencial de energia elétrica do País pode atingir até 3 vezes o patamar do ano base; (4) a demanda de energia elétrica a ser atendida por geração centralizada cresce até 2.5 vezes em relação aos valores do ano base, mesmo com crescimento de geração distribuída (GD), autoprodução, energia solar térmica e eficiência energética no período; (5) e o consumo de energia e de eletricidade per capita aumenta, a despeito da contribuição da eficiência energética no horizonte até 2050.
-
   \hypertarget{plano-decenal-de-expansuxe3o-de-energia-pde}{%
   \subsection{Plano Decenal de Expansão de Energia (PDE)}\label{plano-decenal-de-expansuxe3o-de-energia-pde}}
-
-  O PDE tem o intuito de de indicar as perspectivas, sob a ótica do Governo, da expansão do setor de energia no horizonte de dez anos, dentro de uma visão integrada para os diversos energéticos. Tal visão permite, então, extrair importantes elementos para o planejamento do setor, com benefícios em termos de aumento de confiabilidade, redução de custos de produção e mitigação de impactos ambientais.
-
-  Como o PDE tem intuitos mais operacionais do que estratégicos, serão utilizadas as premissas e estudos do PNE para nortear as decisões do presente \emph{valuation}.
 
   \hypertarget{referencial-teuxf3rico}{%
   \chapter{Referencial teórico}\label{referencial-teuxf3rico}}
@@ -366,88 +262,20 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \hypertarget{estudo-de-caso}{%
   \chapter{Estudo de caso}\label{estudo-de-caso}}
 
-  Iniciamos, agora, o estudo do caso propriamente dito -- sendo este o da Companhia Paranaense de Energia. Para um estudo próprio de \emph{valuation}, é necessário conhecer-se o ativo a ser estudado. Isso com a finalidade de poder realizar estimativas de crescimento e risco mais apropriadas, assim como realizar um pequeno dossiê da empresa e suas conquistas, elucidando assim práticas de governança e um histórico operacional.
+  Placeholder
 
   \hypertarget{breve-dossiuxea-da-copel}{%
   \section{Breve dossiê da COPEL}\label{breve-dossiuxea-da-copel}}
 
-  Comecemos, desta forma, fazendo um dossiê da empresa, de forma a estudar melhor sua história e operações, assim como expor casos relevantes da empresa.
-
   \hypertarget{histuxf3ria}{%
   \subsection{História}\label{histuxf3ria}}
-
-  É de suma importância comentar que a parte a seguir é uma adaptação de transcritos oriundos do site da própria empresa,\footnote{Versão completa disponível em: \url{https://www.copel.com/hpcopel/root/nivel2.jsp?endereco=\%2Fhpcopel\%2Froot\%2Fpagcopel2.nsf\%2Fdocs\%2F6505401715872FAA032573FA0069734F}. Último acesso em 10 nov 2020.} com pequenos acréscimos por parte do autor.
-
-  A Companhia Paranaense de Energia é a maior empresa do estado do Paraná, tendo sido criada em 26 de outubro de 1954, sob controle acionário do estado do Paraná, abrindo seu capital acionário em abril de 1994 na BM\&FBovespa, e tornou-se em julho de 1997 a primeira do setor elétrico brasileiro a ser listada na Bolsa de Valores de Nova Iorque. A marca está também presente, desde junho de 2002, na Comunidade Econômica Europeia, pela Latibex -- o setor latinoamericano da Bolsa de Valores de Madri. A partir de 7 de maio de 2008, a empresa também passou a figurar oficialmente no Nível 1 de Governança Corporativa da BM\&FBovespa.
-
-  Em 2017, a Companhia atendia diretamente a mais de 4,5 milhões de unidades consumidoras em quase 400 municípios e 1.113 localidades paranaenses. Nesse universo incluem-se 3,6 milhões de lares, 78 mil indústiras, 384 mil estabelecimentos comerciais e 356 mil propriedades rurais. O quadro de pessoal, na época, era integrado por 8.453 empregados.
-
-  Sua estrutura compreende a operação de:
-  \begin{itemize}
-  \tightlist
-  \item
-    Parque gerador próprio composto por 30 usinas próprias e 11 participações, cuja potência instalada totaliza 5.675 MW -- a maior parte proveniente de fontes renováveis como hídrica e eólica -- e que responde pela produção de aproximadamente 4\% de toda a eletricidade gerada no Brasil.
-  \item
-    Sistema de transmissão formado por mais de 4 mil km de linhas e 45 subestações automatizadas.
-  \item
-    Sistema de distribuição com 195 mil km de linhas -- a terceira maior do País -- e 362 subestações automatizadas.
-  \end{itemize}
-  Hoje as usinas, linhas de transmissão e de distribuição da Copel transmitem luz para todo o Paraná e estados vizinhos. Tal cenário de progresso tem sido conquistado ao longo de seis décadas, com base no potencial hidráulico e no domínio tecnológico de seus quadros técnicos e profissionais.
-
-  Comentemos, agora, uma breve linha do tempo da Companhia.
-
-  Foi criada a Copel -- ainda Companhia Paranaense de Energia Elétrica -- através do Decreto n° 14.947 de 26 de outubro de 1954, assinado por Bento Munhoz da Rocha Neto, na época governador do Paraná. Apenas em 1979 tornou-se Companhia Paranaense de Energia, tendo como base principal para a integralização de seu capital o Fundo Estadual de Eletrificação. Em seguida, em 1956, com o Decreto n° 1.412, a Copel passou a centralizar todas as ações governamentais de planejamento, construção e exploração dos sistemas de produção, transmissão, transformação, distribuição e comércio de energia elétrica e serviços correlatos, tendo incorporado, de forma central, todos os bens, serviços e obras em poder de diversos órgãos. Coube à Companhia, então, ser responsável pela construção dos grandes sistemas de integração enerética e dos empreendimentos hidrelétricos previstos no Plano de Eletrificação do Paraná. Inclusive, no mesmo ano, em 1° de agosto, a Companhia assumiu pela primeira vez o serviço de distribuição de energia de um munícip do estado: Maringá. Na época, Maringá possuía um rápido crescimento demográfico. Ora, com a chegada da Copel e da energia elétrica, o desenvolvimento do municípío acelerou ainda mais. Em seguida, vieram outros municípios.
-
-  Durante a década de 60 e 70, pode-se constatar que o maior desafio para a Copel foi encontrar uma solução definitiva para o abastecimento de energia elétrica em larga escala. De fato, iniciaram-se as operações em 1963 da Usina Termelética de Figueira, de fundamental importância para a implantação do Plano Estadual de Eletrificação, viabilizando os sistemas de interligação que beneficiaram as Regiões Norte e Centro. Quatro anos depois, a Copel inaugurava a Usina de Salto Grande do Iguaçu, para atender ao sul do Estado. Entrando na década de 70, entrava em operação a Usina Julio de Mesquita Filho, para abastecer energicamente o oeste e o sudoeste. Um ano após, foi inaugurada a Usina Governador Parigot de Souza, este nome sendo uma homenagem ao governador Pedro Viriato Parigot de Souza, que também tinha sido presidente da Copel. É, atualmente, a maior central subterrânea do sul do Brasil e era a principal unidade geradora da Copel e maior usina em funcionamento no sul do Brasil no momento de sua inauguração, sendo um passo definitivo na constituição de uma infraestrutura energética capaz de suportar o desenvolvimento paranaense.
-
-  Nos anos de 1973 e 1974, a Copel deu um salto no número de consumidores ao assumir a distribuição de energia de diversos municípios do Estado. Em 1° de agosto de 1973, a Companhia incorporava a Companhia Força e Luz do Paraná, que atendia Curitiba. Um ano após, em 1° de junho de 1974, a Copel assumiu, também a distribuição de Londrina. Aliado a isso, foi lançado um programa de inclusão elétrica pela empresa, o que contribuiu para levar energia a ainda mais residências. Dessa forma, tivemos em 1981 a marca de 1 milhão de consumidores ligados à rede.
-
-  Naturalmente, com tamanha expansão de clientela, seria necessário à empresa expandir sua capacidade energética. Dessa forma, em 1980 foi inaugurada a hidrelétrica Governador Bento Munhoz da Rocha Netto, nomeada em honra ao governador Bento Munhoz da Rocha Netto, governador este que assinou o Decreto para a criação da Companhia. Com essa operação, a geração própria da Copel atingiu 2.9 bi kWh, contra 1.9 bi kWh do ano anterior.
-
-  1986 foi um ano de retrospectiva para a Companhia. De fato, ela levou 27 anos (de 1954 a 1981) para alcançar 1 milhão de consumidores, e somente 5 anos para aumentar outros 500 mil. Essa conquista, inclusive, se deu em meio ao racionamento de energia por causa de uma estiagem forte na região. Assim sendo, as décadas seguintes são marcadas por uma expansão exponencial da empresa, assim como um aumento das obras para se expandir a capacidade energética.
-
-  Em setembro de 1992, foi concluída a Usina Hidrelétrica Governador Ney Aminthas de Barros Braga. Contribuiu para reduzir a dependência paranaense de energia comprada de outros Estados. Foi, inclusive, a primeira usina hidrelétrica a ter um Relatório de Impacto Ambiental (RIMA). Em fevereiro de 1999, entra em operação a Usina Hidrelétrica Governador José Richa.
-
-  Em 2004, a Copel completou 50 anos de existência. Apenas dois anos antes, foi anunciado o cancelamento do processo de privatização da Companhia, iniciado em 1998. Com o passar dos anos, a empresa se tornou expoente no que tange a P\&D do setor elétrico, com diversas inovações. Nota-se, por exempo, o marco do funcionamento da primeira célula a combustível a operar no Hemisfério Sul, em 2001, para suprir o CPD da Copel. Houve também a automação da subestação Jardim Tropical, fazendo com que a empresa sae tornasse a primeira do setor elétrico brasileiro a automatizar todas as subestações de transmissão.
-
-  A empresa inaugura, em 2 anos, 2 novas hidreléticas: a de Santa Clara e a do Fundão. No meio tempo da construção de outra usina, ambas Santa Clara e Fundão recebem autorização da ONU e tornam-se as primeiras hidreléticas do Brasil a poderem comercializar certificados de Créditos de Carbono. De fato, existem duas outras usinas com planos de construção, a de Mauá e a Colíder, demonstrando assim a demanda de expansão da Companhia.
-
-  Em 2012, a Copel finalizou todas as fases do programa Luz para Todos, efetivamente conquistando a universalização do fornecimento de energia elétrica no Paraná. O reconhecimento foi formalizado pela ANEEL, marcando assim o início de uma era sob motivação de modernização e automação das redes de energia por parte da empresa. Três anos após, em janeiro, a Copel institui uma empresa de comercialização para atuar no Mercado Livre, atuando assim na compra e venda de energia, além de consultoria. A partir de 2016, a empresa volta seus esforços para além do Paraná, com entradas de operação em linhas de transmissão de conectam o Paraná ao Mato Grosso e um no Maranhão.
-
-  Podemos notar, então, um grau de maturidade elevado por parte da empresa atualmente, em que a mesma segue uma motivação de melhoria dos processos atuais, com objetivo secundário de ampliar para outros estados, à medida que concessões e órgãos reguladores dão seu aval.
 
   \hypertarget{core-business}{%
   \subsection{\texorpdfstring{\emph{Core business}}{Core business}}\label{core-business}}
 
-  As informações retiradas para o estudo do \emph{core business} da Copel foram retiradas diretamente do site deles.\footnote{Disponível em: \url{https://www.copel.com/hpcweb/}. Último acesso em 20 nov 2020.}
-
   \hypertarget{gerauxe7uxe3o}{%
   \subsubsection{Geração}\label{gerauxe7uxe3o}}
 
-  Comecemos comentando sobre uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução n° 875, de 10 de março de 2020,\footnote{Disponível em: \url{https://www.in.gov.br/web/dou/-/resolucao-normativa-n-875-de-10-de-marco-de-2020-248070610}. Último acesso em 17 nov 2020.} a diferenciação é tal:
-
-  A Copel opera um parque gerador de 29 usinas próprias, sendo estas 16 hidrelétricas, 1 termelétrica e 12 eólicas. No total, a capacidade instalada é de 4.838,1 MW. A geração é supervisionada e coordenada pelo Centro de Operação de Geração e Transmissão da empresa, sediado em Curitiba.
-
-  Comecemos enumerando as UHEs, tanto operacionais quanto em construção:
-  \begin{itemize}
-  \tightlist
-  \item
-    \textbf{PCH Bela Vista.} Está sendo instalada no rio Chopim, entre os municípios de Verê e São João, no sudoeste paranaense. O empreendimento recebeu do Instituto Ambiental do Paraná a Licença de Instalação nº 23.569, no dia 10 de maio de 2019. Quando estiver pronta, Bela Vista terá potência instalada de 29 MW e produzirá energia elétrica suficiente para atender até 100 mil pessoas.
-  \item
-    \textbf{UHE Colíder.} Está sendo construída na região norte do Mato Grosso, nos municípios de Nova Canaã do Norte e Itaúba. O empreendimento terá potência instalada estimada de 300 MW, o suficiente para atender ao consumo de uma cidade com 850 mil habitantes. Cabe comentar que essa obra é integrante do PAC do Governo Federal.
-  \item
-    \textbf{UHE Governador Jayme Canet Júnior,} anterior UHE Mauá. Foi construída no rio Tibagi, entre os municípios paranaense de Telêmaco Borba e Ortigueira. Tem potência instalada de 363 MW, suficiente para atender ao consumo de aproximadamente 1 milhão de pessoas. Iniciou sua operação comercial em novembro de 2012. A UHE foi construída pelo Consórcio Energético Cruzeiro do Sul, constituído pela Copel (51\% de participação) e pela Eletrosul Centrais Elétricas S/A, ambas estatais. Ambas adquiriram o direito de construir e operar o empreendimento até, no mínimo, o ano de 2036.
-  \item
-    \textbf{UHE Governador Ney Aminthas de Barros Braga,} anterior UHE Segredo. Esta é a segunda usina da Copel em potência instalada, com capacidade de 1.260 MW. Está localizada no rio Iguaçu, no município de Mangueirinha. Foi inaugurada em 1992, tendo sido a primeira UHE a possuir um Relatório de Impacto Ambiental (Rima) no Brasil.
-  \item
-    \textbf{UHE Governador José Richa,} anterior UHE Salto Caxias. É uma das mais importantes da Copel, tendo 1.240 MW de potência instalada. Foi inaugurada em fevereiro de 1999 e está situada no rio Iguaçu, no município de Capitão Leônidas Marques.
-  \item
-    \textbf{UHE Governador Bento Munhoz da Rocha Netto,} anterior UHE Foz do Areia. Esta é a maior usina da Copel, com capacidade instalada de 1.676 MW. Está localizada no rio Iguaçu, no município de Pinhão. Como um todo, a operação foi iniciada em 1980; suas operações causaram a desativação da PCH Salto Grande do Iguaçu, que contava com 15.2 MW.
-  \item
-    \textbf{UHE Governador Pedro Viriato Parigot de Souza,} anterior UHE Capivari-Cachoeira. Possui potência de 260 MW, estando situada no município de Antonina, com reservatório localizado no município de Campina Grande do Sul. Entrou em operação em 1970, embora tenha sido inaugurada oficialmente em 26 de janeiro de 1971. Ela é a maior central subterrânea do sul do país.
-  \item
-    \textbf{CGH Pitangui.}
-  \end{itemize}
   \hypertarget{transmissuxe3o}{%
   \subsubsection{Transmissão}\label{transmissuxe3o}}
 
@@ -496,37 +324,19 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \hypertarget{conclusuxe3o}{%
   \chapter{Conclusão}\label{conclusuxe3o}}
 
-  \backmatter
-
   \hypertarget{referuxeancias-bibliogruxe1ficas}{%
   \chapter*{Referências Bibliográficas}\label{referuxeancias-bibliogruxe1ficas}}
   \addcontentsline{toc}{chapter}{Referências Bibliográficas}
 
-  \markboth{References}{References}
-
-  \label{bib:begin}
-  \noindent
-
-  \setlength{\parindent}{-0.20in}
-  \setlength{\leftskip}{0.20in}
-  \setlength{\parskip}{8pt}
+  Placeholder
 
   \hypertarget{refs}{}
   \begin{cslreferences}
-  \leavevmode\hypertarget{ref-anbima2019}{}%
-  ANBIMA. \textbf{Raio-X do Investidor Brasileiro}, 2019.
-
   \leavevmode\hypertarget{ref-arnold2008}{}%
   ARNOLD, G. \textbf{Corporate financial management}. New York City, NY: Pearson Education, 2008.
 
-  \leavevmode\hypertarget{ref-beaver1970}{}%
-  BEAVER, W.; KETTLER, P.; SCHOLES, M. The association between market determined and accounting determined risk measures. \textbf{The Accounting Review}, v. 45, n. 4, p. 654--682, 1970.
-
   \leavevmode\hypertarget{ref-beaver1978}{}%
   BEAVER, W.; MORSE, D. What determines price-earnings ratios? \textbf{Financial Analysts Journal}, v. 34, n. 4, p. 65--76, 1978.
-
-  \leavevmode\hypertarget{ref-bogle2015}{}%
-  BOGLE, J. C. \textbf{Bogle on mutual funds: New perspectives for the intelligent investor}. New Jersey: John Wiley \& Sons, 2015.
 
   \leavevmode\hypertarget{ref-damodaran2007}{}%
   DAMODARAN, A. \textbf{Valuation approaches and metrics: a survey of the theory and evidence}. {[}s.l.{]} Now Publishers Inc, 2007.
@@ -534,17 +344,11 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \leavevmode\hypertarget{ref-damodaran2012}{}%
   DAMODARAN, A. \textbf{Investment philosophies: successful strategies and the investors who made them work}. Hoboken, NJ: John Wiley \& Sons, 2012.
 
-  \leavevmode\hypertarget{ref-epe2020}{}%
-  EPE. \textbf{Plano Nacional de Energia 2050}. Brasília: Ministério de Minas e Energia, 2020.
-
   \leavevmode\hypertarget{ref-fama2004}{}%
   FAMA, E. F.; FRENCH, K. R. The capital asset pricing model: Theory and evidence. \textbf{Journal of economic perspectives}, v. 18, n. 3, p. 25--46, 2004.
 
   \leavevmode\hypertarget{ref-fisher1930}{}%
   FISHER, I. \textbf{Theory of interest: as determined by impatience to spend income and opportunity to invest it}. New York City, NY: Augustusm Kelly Publishers, Clifton, 1930.
-
-  \leavevmode\hypertarget{ref-techreport-exampleIn}{}%
-  GARRET, D. A. \textbf{The Microscopic Detection of Corrosion in Aluminum Aircraft Structures with Thermal Neutron Beams and Film Imaging Methods}. Washington, D.C.: National Bureau of Standards, 1977.
 
   \leavevmode\hypertarget{ref-gordon1959}{}%
   GORDON, M. J. Dividends, earnings, and stock prices. \textbf{The review of economics and statistics}, p. 99--105, 1959.
@@ -554,15 +358,6 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
 
   \leavevmode\hypertarget{ref-graham2016}{}%
   GRAHAM, B. \textbf{O investidor inteligente}. Rio de Janeiro: HarperCollins Brasil, 2016.
-
-  \leavevmode\hypertarget{ref-article-example}{}%
-  IESAN, D. Existence Theorems in the Theory of Mixtures. \textbf{Journal of Elasticity}, v. 42, n. 2, p. 145--163, fev. 1996.
-
-  \leavevmode\hypertarget{ref-klayman1995}{}%
-  KLAYMAN, J. Varieties of confirmation bias. \textbf{Psychology of learning and motivation}, v. 32, p. 385--418, 1995.
-
-  \leavevmode\hypertarget{ref-kruger1999}{}%
-  KRUGER, J.; DUNNING, D. Unskilled and unaware of it: how difficulties in recognizing one's own incompetence lead to inflated self-assessments. \textbf{Journal of personality and social psychology}, v. 77, n. 6, p. 1121, 1999.
 
   \leavevmode\hypertarget{ref-lie2002}{}%
   LIE, E.; LIE, H. J. Multiples used to estimate corporate value. \textbf{Financial Analysts Journal}, v. 58, n. 2, p. 44--54, 2002.
@@ -579,26 +374,14 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \leavevmode\hypertarget{ref-modigliani1958}{}%
   MODIGLIANI, F.; MILLER, M. H. The cost of capital, corporation finance and the theory of investment. \textbf{The American economic review}, v. 48, n. 3, p. 261--297, 1958.
 
-  \leavevmode\hypertarget{ref-munger2006}{}%
-  MUNGER, C. T. \textbf{Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger}. Virginia Beach: Donning Company, 2006.
-
-  \leavevmode\hypertarget{ref-assafneto2018}{}%
-  NETO, A. A. \textbf{Mercado financeiro}. 14. ed. São Paulo: Atlas, 2018.
-
   \leavevmode\hypertarget{ref-peasnell1982}{}%
   PEASNELL, K. V. Some formal connections between economic values and yields and accounting numbers. \textbf{Journal of Business Finance \& Accounting}, v. 9, n. 3, p. 361--381, 1982.
 
   \leavevmode\hypertarget{ref-penman1996}{}%
   PENMAN, S. H. The articulation of price-earnings ratios and market-to-book ratios and the evaluation of growth. \textbf{Journal of accounting research}, v. 34, n. 2, p. 235--259, 1996.
 
-  \leavevmode\hypertarget{ref-schwarz1991}{}%
-  SCHWARZ, N. et al. Ease of retrieval as information: another look at the availability heuristic. \textbf{Journal of Personality and Social psychology}, v. 61, n. 2, p. 195, 1991.
-
   \leavevmode\hypertarget{ref-sharpe1964}{}%
   SHARPE, W. F. Capital asset prices: A theory of market equilibrium under conditions of risk. \textbf{The journal of finance}, v. 19, n. 3, p. 425--442, 1964.
-
-  \leavevmode\hypertarget{ref-simon1997}{}%
-  SIMON, H. A. \textbf{Models of bounded rationality: Empirically grounded economic reason}. Massachusetts: MIT press, 1997. v. 3
 
   \leavevmode\hypertarget{ref-stohs1996}{}%
   STOHS, M. H.; MAUER, D. C. The determinants of corporate debt maturity structure. \textbf{Journal of business}, p. 279--312, 1996.
