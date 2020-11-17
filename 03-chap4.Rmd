@@ -1,6 +1,6 @@
 # Estudo de caso
 
-Iniciamos, agora, o estudo do caso propriamente dito -- sendo este o da Companhia Paranaense de Energia. Para um estudo próprio de _valuation_, é necessário conhecer-se o ativo a ser estudado. Isso com a finalidade de poder realizar estimativas de crescimento e risco mais apropriadas, assim como realizar um pequeno dossiê da empresa e suas conquistas, elucidando assim práticas de governança e um histórico operacional.
+Iniciamos, agora, o estudo do caso propriamente dito -- sendo este o da Companhia Paranaense de Energia. Para um estudo próprio de *valuation*, é necessário conhecer-se o ativo a ser estudado. Isso com a finalidade de poder realizar estimativas de crescimento e risco mais apropriadas, assim como realizar um pequeno dossiê da empresa e suas conquistas, elucidando assim práticas de governança e um histórico operacional.
 
 ## Breve dossiê da COPEL
 
@@ -8,7 +8,9 @@ Comecemos, desta forma, fazendo um dossiê da empresa, de forma a estudar melhor
 
 ### História
 
-É de suma importância comentar que a parte a seguir é uma adaptação de transcritos oriundos do site da própria empresa,^[Versão completa disponível em: https://www.copel.com/hpcopel/root/nivel2.jsp?endereco=%2Fhpcopel%2Froot%2Fpagcopel2.nsf%2Fdocs%2F6505401715872FAA032573FA0069734F. Último acesso em 10 nov 2020.] com pequenos acréscimos por parte do autor.
+É de suma importância comentar que a parte a seguir é uma adaptação de transcritos oriundos do site da própria empresa,[^4.1] com pequenos acréscimos por parte do autor.
+
+[^4.1]: Versão completa disponível em: <https://www.copel.com/hpcopel/root/nivel2.jsp?endereco=%2Fhpcopel%2Froot%2Fpagcopel2.nsf%2Fdocs%2F6505401715872FAA032573FA0069734F>. Último acesso em 10 nov 2020.
 
 A Companhia Paranaense de Energia é a maior empresa do estado do Paraná, tendo sido criada em 26 de outubro de 1954, sob controle acionário do estado do Paraná, abrindo seu capital acionário em abril de 1994 na BM&FBovespa, e tornou-se em julho de 1997 a primeira do setor elétrico brasileiro a ser listada na Bolsa de Valores de Nova Iorque. A marca está também presente, desde junho de 2002, na Comunidade Econômica Europeia, pela Latibex -- o setor latinoamericano da Bolsa de Valores de Madri. A partir de 7 de maio de 2008, a empresa também passou a figurar oficialmente no Nível 1 de Governança Corporativa da BM&FBovespa.
 
@@ -16,9 +18,9 @@ Em 2017, a Companhia atendia diretamente a mais de 4,5 milhões de unidades cons
 
 Sua estrutura compreende a operação de:
 
-- Parque gerador próprio composto por 30 usinas próprias e 11 participações, cuja potência instalada totaliza 5.675 MW -- a maior parte proveniente de fontes renováveis como hídrica e eólica -- e que responde pela produção de aproximadamente 4% de toda a eletricidade gerada no Brasil.
-- Sistema de transmissão formado por mais de 4 mil km de linhas e 45 subestações automatizadas.
-- Sistema de distribuição com 195 mil km de linhas -- a terceira maior do País -- e 362 subestações automatizadas.
+-   Parque gerador próprio composto por 30 usinas próprias e 11 participações, cuja potência instalada totaliza 5.675 MW -- a maior parte proveniente de fontes renováveis como hídrica e eólica -- e que responde pela produção de aproximadamente 4% de toda a eletricidade gerada no Brasil.
+-   Sistema de transmissão formado por mais de 4 mil km de linhas e 45 subestações automatizadas.
+-   Sistema de distribuição com 195 mil km de linhas -- a terceira maior do País -- e 362 subestações automatizadas.
 
 Hoje as usinas, linhas de transmissão e de distribuição da Copel transmitem luz para todo o Paraná e estados vizinhos. Tal cenário de progresso tem sido conquistado ao longo de seis décadas, com base no potencial hidráulico e no domínio tecnológico de seus quadros técnicos e profissionais.
 
@@ -40,13 +42,34 @@ Em 2004, a Copel completou 50 anos de existência. Apenas dois anos antes, foi a
 
 A empresa inaugura, em 2 anos, 2 novas hidreléticas: a de Santa Clara e a do Fundão. No meio tempo da construção de outra usina, ambas Santa Clara e Fundão recebem autorização da ONU e tornam-se as primeiras hidreléticas do Brasil a poderem comercializar certificados de Créditos de Carbono. De fato, existem duas outras usinas com planos de construção, a de Mauá e a Colíder, demonstrando assim a demanda de expansão da Companhia.
 
-Em 2012, a Copel finalizou todas as fases do programa Luz para Todos, efetivamente conquistando a universalização do fornecimento de energia elétrica no Paraná. O reconhecimento foi formalizado pela ANEEL, marcando assim o início de uma era sob motivação de modernização e automação das redes de energia por parte da empresa. Três anos após, em janeiro, a Copel institui uma empresa de comercialização para atuar no Mercado Livre, atuando assim na compra e venda de energia, além de consultoria. A partir de 2016, a empresa volta seus esforços para além do Paraná, com entradas de operação em linhas de transmissão de conectam o Paraná ao Mato Grosso e um no Maranhão. 
+Em 2012, a Copel finalizou todas as fases do programa Luz para Todos, efetivamente conquistando a universalização do fornecimento de energia elétrica no Paraná. O reconhecimento foi formalizado pela ANEEL, marcando assim o início de uma era sob motivação de modernização e automação das redes de energia por parte da empresa. Três anos após, em janeiro, a Copel institui uma empresa de comercialização para atuar no Mercado Livre, atuando assim na compra e venda de energia, além de consultoria. A partir de 2016, a empresa volta seus esforços para além do Paraná, com entradas de operação em linhas de transmissão de conectam o Paraná ao Mato Grosso e um no Maranhão.
 
 Podemos notar, então, um grau de maturidade elevado por parte da empresa atualmente, em que a mesma segue uma motivação de melhoria dos processos atuais, com objetivo secundário de ampliar para outros estados, à medida que concessões e órgãos reguladores dão seu aval.
 
-### _Core business_
+### *Core business*
+
+As informações retiradas para o estudo do *core business* da Copel foram retiradas diretamente do site deles.[^4.2]
+
+[^4.2]: Disponível em: <https://www.copel.com/hpcweb/>. Último acesso em 20 nov 2020.
 
 #### Geração
+
+Comecemos comentando sobre uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução n° 875, de 10 de março de 2020,[^4.3] a diferenciação é tal:
+
+[^4.3]: Disponível em: <https://www.in.gov.br/web/dou/-/resolucao-normativa-n-875-de-10-de-marco-de-2020-248070610>. Último acesso em 17 nov 2020.
+
+A Copel opera um parque gerador de 29 usinas próprias, sendo estas 16 hidrelétricas, 1 termelétrica e 12 eólicas. No total, a capacidade instalada é de 4.838,1 MW. A geração é supervisionada e coordenada pelo Centro de Operação de Geração e Transmissão da empresa, sediado em Curitiba.
+
+Comecemos enumerando as UHEs, tanto operacionais quanto em construção:
+
+-  **PCH Bela Vista.** Está sendo instalada no rio Chopim, entre os municípios de Verê e São João, no sudoeste paranaense. O empreendimento recebeu do Instituto Ambiental do Paraná a Licença de Instalação nº 23.569, no dia 10 de maio de 2019. Quando estiver pronta, Bela Vista terá potência instalada de 29 MW e produzirá energia elétrica suficiente para atender até 100 mil pessoas.
+-  **UHE Colíder.** Está sendo construída na região norte do Mato Grosso, nos municípios de Nova Canaã do Norte e Itaúba. O empreendimento terá potência instalada estimada de 300 MW, o suficiente para atender ao consumo de uma cidade com 850 mil habitantes. Cabe comentar que essa obra é integrante do PAC do Governo Federal.
+-  **UHE Governador Jayme Canet Júnior,** anterior UHE Mauá. Foi construída no rio Tibagi, entre os municípios paranaense de Telêmaco Borba e Ortigueira. Tem potência instalada de 363 MW, suficiente para atender ao consumo de aproximadamente 1 milhão de pessoas. Iniciou sua operação comercial em novembro de 2012. A UHE foi construída pelo Consórcio Energético Cruzeiro do Sul, constituído pela Copel (51% de participação) e pela Eletrosul Centrais Elétricas S/A, ambas estatais. Ambas adquiriram o direito de construir e operar o empreendimento até, no mínimo, o ano de 2036.
+-  **UHE Governador Ney Aminthas de Barros Braga,** anterior UHE Segredo. Esta é a segunda usina da Copel em potência instalada, com capacidade de 1.260 MW. Está localizada no rio Iguaçu, no município de Mangueirinha. Foi inaugurada em 1992, tendo sido a primeira UHE a possuir um Relatório de Impacto Ambiental (Rima) no Brasil.
+-  **UHE Governador José Richa,** anterior UHE Salto Caxias. É uma das mais importantes da Copel, tendo 1.240 MW de potência instalada. Foi inaugurada em fevereiro de 1999 e está situada no rio Iguaçu, no município de Capitão Leônidas Marques.
+-  **UHE Governador Bento Munhoz da Rocha Netto,** anterior UHE Foz do Areia. Esta é a maior usina da Copel, com capacidade instalada de 1.676 MW. Está localizada no rio Iguaçu, no município de Pinhão. Como um todo, a operação foi iniciada em 1980; suas operações causaram a desativação da PCH Salto Grande do Iguaçu, que contava com 15.2 MW.
+-  **UHE Governador Pedro Viriato Parigot de Souza,** anterior UHE Capivari-Cachoeira. Possui potência de 260 MW, estando situada no município de Antonina, com reservatório localizado no município de Campina Grande do Sul. Entrou em operação em 1970, embora tenha sido inaugurada oficialmente em 26 de janeiro de 1971. Ela é a maior central subterrânea do sul do país.
+-  **CGH Pitangui.**
 
 #### Transmissão
 
@@ -54,7 +77,7 @@ Podemos notar, então, um grau de maturidade elevado por parte da empresa atualm
 
 #### Outros
 
-## Cálculo do _valuation_ intrínseco
+## Cálculo do *valuation* intrínseco
 
 ### O custo de capital médio ponderado (WACC)
 
@@ -64,7 +87,7 @@ Podemos notar, então, um grau de maturidade elevado por parte da empresa atualm
 
 #### Fluxo de caixa descontado
 
-## Cálculo do _valuation_ relativo
+## Cálculo do *valuation* relativo
 
 ### Margem bruta
 
