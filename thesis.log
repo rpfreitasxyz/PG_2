@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  17 NOV 2020 20:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  17 NOV 2020 20:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -442,15 +442,14 @@ Writing index of symbols file thesis.syx
 \openout4 = `thesis.abx'.
 
 Writing index of abbreviations file thesis.abx
-\cslhangindent=\skip60
 
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longt
 able.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip61
-\LTright=\skip62
-\LTpre=\skip63
-\LTpost=\skip64
+\LTleft=\skip60
+\LTright=\skip61
+\LTpre=\skip62
+\LTpost=\skip63
 \LTchunksize=\count283
 \LTcapwidth=\dimen171
 \LT@head=\box55
@@ -492,25 +491,25 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 ) (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 24.
+(lastpage)             ! on input line 19.
 
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pk
 g/epstopdf-base.sty
@@ -558,7 +557,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 24.
+Package hyperref Info: Link coloring OFF on input line 19.
 
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/na
 meref.sty
@@ -574,29 +573,29 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count293
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
-Package hyperref Info: Option `breaklinks' set `true' on input line 44.
-Package hyperref Info: Option `raiselinks' set `true' on input line 44.
-Package hyperref Info: Option `pageanchor' set `true' on input line 44.
+Package hyperref Info: Option `breaklinks' set `true' on input line 39.
+Package hyperref Info: Option `raiselinks' set `true' on input line 39.
+Package hyperref Info: Option `pageanchor' set `true' on input line 39.
 <poli-logo.pdf, id=164, 708.6475pt x 282.05376pt>
 File: poli-logo.pdf Graphic file (type pdf)
 <use poli-logo.pdf>
-Package pdftex.def Info: poli-logo.pdf  used on input line 44.
+Package pdftex.def Info: poli-logo.pdf  used on input line 39.
 (pdftex.def)             Requested size: 213.39566pt x 84.93526pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
 
 
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/um
 sa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
 
 
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/um
@@ -607,12 +606,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updma
 p/pdftex.map} <./poli-logo.pdf>]
-Underfull \hbox (badness 1436) in paragraph at lines 45--45
+Underfull \hbox (badness 1436) in paragraph at lines 40--40
 \OT1/cmr/m/n/12 PROJETO DE GRADUA[][]AO SUB-ME-TIDO []AO CORPO DOCENTE DO
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 45--45
+Underfull \hbox (badness 1681) in paragraph at lines 40--40
 \OT1/cmr/m/n/12 DA UNIVERSIDADE FEDERAL DO RIO DE JANEIRO COMO PARTE
  []
 
@@ -620,7 +619,7 @@ Underfull \hbox (badness 1681) in paragraph at lines 45--45
 
 ]
 
-LaTeX Warning: Reference `bib:begin' on page iii undefined on input line 45.
+LaTeX Warning: Reference `bib:begin' on page iii undefined on input line 40.
 
 [3
 
@@ -665,17 +664,36 @@ Cap\'{\i }tulo 2.
 Cap\'{\i }tulo 3.
 [3
 
-] [4] [5] [6] [7] [8] [9]
+]
 Cap\'{\i }tulo 4.
-[10
 
-] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
+[][][]\OT1/cmr/m/n/10 Vers~ao com-pleta dis-pon^^S^^Pvel em: []$\OT1/cmtt/m/n/1
+0 https : / / www . copel . com / hpcopel /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
+\OT1/cmtt/m/n/10 root / nivel2 . jsp ? endereco = %2Fhpcopel % 2Froot % 2Fpagco
+pel2 . nsf % 2Fdocs %
+ []
+
+[4
+
+] [5] [6]
+Overfull \hbox (139.39915pt too wide) in paragraph at lines 217--217
+[][][]\OT1/cmr/m/n/10 Dispon^^S^^Pvel em: []$\OT1/cmtt/m/n/10 https : / / www .
+ in . gov . br / web / dou / -[] / resolucao-[]normativa-[]n-[]875-[]de-[]10-[]
+de-[]marco-[]de-[]2020-[]248070610$[]\OT1/cmr/m/n/10 .
+ []
+
+[7] [8] [9] [10]
 Cap\'{\i }tulo 5.
-[12
+[11
 
-] [13
+] [12
 
-] [14]
+]
 No file thesis.bbl.
 
 AED: lastpage setting LastPage
@@ -687,31 +705,30 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8483 strings out of 481446
- 129173 string characters out of 5918545
- 463739 words of memory out of 5000000
- 24864 multiletter control sequences out of 15000+600000
- 543259 words of font info for 58 fonts, out of 8000000 for 9000
+ 8463 strings out of 481446
+ 128972 string characters out of 5918545
+ 464729 words of memory out of 5000000
+ 24874 multiletter control sequences out of 15000+600000
+ 545126 words of font info for 67 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 80i,12n,85p,1549b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 80i,12n,85p,1343b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
  <c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jkn
 appen/ec/tcrm1200.600pk><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/Rafael Pinto/AppData/Roa
 ming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/Users/R
 afael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mex10.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Rafael Pinto/AppDa
-ta/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/User
-s/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/Rafael Pinto/AppD
-ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (25 pages, 223429 bytes).
+mmi12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/Rafael Pinto/AppDat
+a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/
+Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on thesis.pdf (23 pages, 214907 bytes).
 PDF statistics:
- 511 PDF objects out of 1000 (max. 8388607)
- 465 compressed objects within 5 object streams
- 154 named destinations out of 1000 (max. 500000)
+ 452 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
+ 121 named destinations out of 1000 (max. 500000)
  326 words of extra memory for PDF output out of 10000 (max. 10000000)
 
