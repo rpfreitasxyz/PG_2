@@ -54,7 +54,7 @@ As informações retiradas para o estudo do *core business* da Copel foram retir
 
 #### Geração
 
-A Copel opera um parque gerador de 29 usinas próprias, sendo estas 16 hidrelétricas, 1 termelétrica e 12 eólicas. No total, a capacidade instalada é de 4.838,1 MW. A geração é supervisionada e coordenada pelo Centro de Operação de Geração e Transmissão da empresa, sediado em Curitiba.
+A Copel opera um parque gerador com diversas usinas próprias e participações societárias, em um leque diversificado de fontes energéticas, indo de biomassa a solar. A geração é supervisionada e coordenada pelo Centro de Operação de Geração e Transmissão da empresa, sediado em Curitiba.
 
 ```{r, fig.cap = "Usinas da Copel localizadas em mapa do Paraná.", fig.pos = "H", echo = FALSE, out.width = "100%"}
 knitr::include_graphics("img/usinas_copel.jpg")
@@ -70,21 +70,25 @@ Comecemos comentando a respeito das hidrelétricas. Existe uma diferenciação e
 
 Essa diferenciação é relevante, uma vez que o licenciamento destes três tipos de empreendimento ocorre de forma diferenciada. Isso decorre do fato que a extensão dos impactos ambientais provocados pelas CGHs, PCHs e UHEs são, também, diferenciados.
 
-Assim sendo, enumeremos tanto as hidrelétricas operacionais quanto em construção:
+Assim sendo, são as hidrelétricas tanto operacionais quanto em construção, com participação da Copel:
 
 -  **UHE Colíder.** Está sendo construída na região norte do Mato Grosso, nos municípios de Nova Canaã do Norte e Itaúba. O empreendimento terá potência instalada estimada de 300 MW, o suficiente para atender ao consumo de uma cidade com 850 mil habitantes. Cabe comentar que essa obra é integrante do PAC do Governo Federal.
--  **UHE Governador Jayme Canet Júnior,** anterior UHE Mauá. Foi construída no rio Tibagi, entre os municípios paranaense de Telêmaco Borba e Ortigueira. Tem potência instalada de 363 MW, suficiente para atender ao consumo de aproximadamente 1 milhão de pessoas. Iniciou sua operação comercial em novembro de 2012. A UHE foi construída pelo Consórcio Energético Cruzeiro do Sul, constituído pela Copel (51% de participação) e pela Eletrosul Centrais Elétricas S/A, ambas estatais. Ambas adquiriram o direito de construir e operar o empreendimento até, no mínimo, o ano de 2036.
 -  **UHE Governador Ney Aminthas de Barros Braga,** anterior UHE Segredo. Esta é a segunda usina da Copel em potência instalada, com capacidade de 1.260 MW. Está localizada no rio Iguaçu, no município de Mangueirinha. Foi inaugurada em 1992, tendo sido a primeira UHE a possuir um Relatório de Impacto Ambiental (Rima) no Brasil.
 -  **UHE Governador José Richa,** anterior UHE Salto Caxias. É uma das mais importantes da Copel, tendo 1.240 MW de potência instalada. Foi inaugurada em fevereiro de 1999 e está situada no rio Iguaçu, no município de Capitão Leônidas Marques.
 -  **UHE Governador Bento Munhoz da Rocha Netto,** anterior UHE Foz do Areia. Esta é a maior usina da Copel, com capacidade instalada de 1.676 MW. Está localizada no rio Iguaçu, no município de Pinhão. Como um todo, a operação foi iniciada em 1980; suas operações causaram a desativação da PCH Salto Grande do Iguaçu, que contava com 15.2 MW.
+-  **UHE Baixo Iguaçu.** Tem capacidade instalada de 350,2 MW -- suficiente para atender uam cidade com 1 milhão de habitantes. Iniciou suas operações no primeiro semestre de 2019. A Copel detém 30% de participação nesta usina instalada no rio Iguaçu, entre os municípios de Capanema e Capitão Leônidas Marques.
 -  **UHE Governador Pedro Viriato Parigot de Souza,** anterior UHE Capivari-Cachoeira. Possui potência de 260 MW, estando situada no município de Antonina, com reservatório localizado no município de Campina Grande do Sul. Entrou em operação em 1970, embora tenha sido inaugurada oficialmente em 26 de janeiro de 1971. Ela é a maior central subterrânea do sul do país.
+-  **UHE Dona Francisca.** Com potência instalada de 125 MW, a Copel detém participação de 23,03% no capital social da Dona Francisca Energética S/A (Dfesa). Foi inaugurada em maio de 2001.
+-  **UHE Santa Clara.** Tem potência instalada de 120 MW, com garantia física de 69,6 MW médios. Está localizada entre os municípios de Candói e Pinhão, no rio Jordão. Conta, ainda, com uma PCH de potência 3,6 MW e garantia de 2,79 MW médios.
+-  **UHE Fundão.** Possui potência instalada de 120 MW, com garantia física de 65,8 MW médios. Está localizada próximo ao município de Pinhão. Conta, ainda, com uma PCH de potência 2,5 MW e garantia de 2,11 MW médios.
 -  **UHE Guaricana.** Possui potência de 36 MW. Localize-se na margem esquerda do rio Arraial, no município de Guaratuba. A usina foi adquirida pela Copel quando houve a incorporação da Cia. Força e Luz do Paraná, embora tenha sido inaugurada em 1957.
 -  **UHE Derivação do Rio Jordão.** Foi inaugurada em dezembro de 1997, com potência de 6,5 MW. Está localizada no município de Reserva do Iguaçu.
-- **UHE São Jorge.** Possui capacidade instalada de 2,3 MW e está localizada à margem esquerda do rio Pintagui, numa região denominada Alagados. A usina foi inaugurada em 1945, na época pertencendo à Companhia Prada de Eletricidade S.A.; apenas em dezembro de 1974 foi incorporada pela Copel.
-- **PCH Apucaraninha.** Tem capacidade instalada de 10 MW. Foi inaugurada em 1949, pela Empresa Elétrica de Londrina S.A., e incorporada pela Copel em 1974. Está localizada no município de Tamarana, na margem direita do rio Apucaraninha.
-- **PCH Chaminé.** Possui capacidade instalada de 18 MW, e está localizada na margem esquerda do rio São João, no município de São José dos Pinhais. Foi construída pela Cia. Força e Luz do Paraná, começando a operar em 1930. Foi incorporada pela Copel em 1975.
+-  **PCH São Jorge.** Possui capacidade instalada de 2,3 MW e está localizada à margem esquerda do rio Pintagui, numa região denominada Alagados. A usina foi inaugurada em 1945, na época pertencendo à Companhia Prada de Eletricidade S.A.; apenas em dezembro de 1974 foi incorporada pela Copel.
+-  **PCH Apucaraninha.** Tem capacidade instalada de 10 MW. Foi inaugurada em 1949, pela Empresa Elétrica de Londrina S.A., e incorporada pela Copel em 1974. Está localizada no município de Tamarana, na margem direita do rio Apucaraninha.
+-  **PCH Arturo Andreoli,** também conhecida como PCH Foz do Chopim. A Copel detém 35,77% de participação societária da Foz do Chopim Energética Ltda., empresa constituída para exploração da PCH. Tem potência total instalada de 29,1 MW, e a usina como um todo entrou em operação comercial em novembro de 2001.
+-  **PCH Chaminé.** Possui capacidade instalada de 18 MW, e está localizada na margem esquerda do rio São João, no município de São José dos Pinhais. Foi construída pela Cia. Força e Luz do Paraná, começando a operar em 1930. Foi incorporada pela Copel em 1975.
 - **PCH Cavernoso.** Esta possui a potência de 1,3 MW. Está localizada na margem direita do rio Cavernoso no município de Virmond. Interessantemente, ela opera a fio d'água, significando que a geração é feita apenas através da vazão normal do rio. Foi construída no final da década de 50 pelo DNAEE e pela prefeitura de Laranjeiras do Sul; entretanto foi inaugurada em 1965, quando foi incorporada pela Copel e teve sua capacidade ampliada.
-_ **PCH Cavernoso II.** Tem capacidade instalada de 19 MW, com garantia física de 10,6 MW médio. Foi construída no rio Cavernoso, entre os municípios de Virmond e Candói. A Central entrou em operação comercial a plena capacidade em 4 de julho de 2013.
+- **PCH Cavernoso II.** Tem capacidade instalada de 19 MW, com garantia física de 10,6 MW médio. Foi construída no rio Cavernoso, entre os municípios de Virmond e Candói. A Central entrou em operação comercial a plena capacidade em 4 de julho de 2013.
 - **PCH Chopim I.** Tem potência instalada de 1,98 MW e está localizada na margem esquerda do rio Chopim, no município de Itapejara d'Oeste. Foi a primeira usina construída pela Copel, durante a concepção do primeiro plano de eletrificação do Paraná. A operação começou em 1963.
 -  **PCH Bela Vista.** Está sendo instalada no rio Chopim, entre os municípios de Verê e São João, no sudoeste paranaense. O empreendimento recebeu do Instituto Ambiental do Paraná a Licença de Instalação nº 23.569, no dia 10 de maio de 2019. Quando estiver pronta, Bela Vista terá potência instalada de 29 MW e produzirá energia elétrica suficiente para atender até 100 mil pessoas.
 - **CGH Salto do Vau.** Possui potência instalada de 0.94 MW e está localizada na margem esquerda do rio Palmital, no município de União da Vitória. Foi inaugurada em 1959, quando começou a operar. Foi construída pela empresa Alexandre Schlemm e incorporada pela Copel em novembro de 1973.
@@ -92,18 +96,27 @@ _ **PCH Cavernoso II.** Tem capacidade instalada de 19 MW, com garantia física 
 - **CGH Melissa.** Possui capacidade de 1 MW de potência instalada e situa-se no município de Corbélia, à margem direita do rio Melissa. Efetivamente, sua operação iniciou-se em 1969, embora tenha sido pausada para uma reforma geral durante a implantação dos equipamentos que a tornaram automatizada em 1994. Retomou, então, a operação no segundo semestre de 1995.
 - **CGH Marumbi.** Possui uma capacidade de 4,8 MW de potência em duas unidades geradores, e está localizada no município de Morretes, à margem direita do rio Ipiranga. Foi inaugurada em abril de 1961, construída pela RFFSA. Em razão do Plano Nacional de Desestatização, por não se enquadradar nas atividades da RFFSA, a usina foi adquirida pela Copel em novembro de 1997.
 
-No que tange a usinas termelétricas, a Copel possui apenas uma: a **UTE Figueira,** cuja concessão venceu em 27 de março de 2019, segundo o 9° Termo Aditivo ao Contrato de Concessão n° 045/1999 da ANEEL.[^concessao045/1999] Entretanto, a empresa ainda está esperando por um posicionamento do MME quanto a renovação do contrato.
+No que tange a usinas termelétricas, a Copel possui:
 
-[^concessao045/1999]: Disponível em: <https://shorturl.at/dvwBT>. Último acesso em 18 nov 2020.
+-  **UTE Figueira.** Conta com capacidade instalada dae 20 MW, e funciona a base carvão mineral extraído em jazidas da região. A aquisicação da usina foi feita pela Copel em 1969, com posterior instalação de um terceiro grupo gerador, em 1974.
+-  **UTE Araucária.** Com capacidade instalada de 484,5 MW, se faz valer de um ciclo combinado de turbina a gás/turbina a vapor para dispor energia. A usina entrou em operação em 2006 para atender ao SIN, em face da severa estiagem ocorrida no início do seguneto semestre do ano.
 
+Vale comentar, entretanto, que a capacidade instalada das UTEs não deve ser tratada como algo sob "uso constante", como é o caso de UHEs, por exemplo. De fato, as UTEs servem atualmente mais como um mecanismo de segurança do sistema energético do que um método de produção regular, pelo alto custo da energia, assim como os problemas relativos à poluição e gases do efeito estufa [@rosa2007].
 
+Finalmente, no que tange a energia eólica, a Copel conta com:
 
+- **EOL Palmas.** É composta por cinco aerogerados de 500 kW cada, totalizando assim 2,5 MW de potência instalada. Está situada no município de Palmas, ao sul do Paraná. Foi a primeira eólica da região sul do Brasil. Entrou em operação em fevereiro de 1999, mas apenas em 2008 a Copel deteve adquiriu total controle da empresa responsável pela usina, a Centrais Eólicas do Paraná.
+- **Complexo Eólico São Bento Energia.** Está localizado nos municípios de Pedra Grande e São Bento do Norte -- no Rio Grande do Norte. Tem 94 MW de potência instalada.
+- **Complexo Eólico Brisa Potiguar.** Está localizado nos municípios de Parazinho, João Câmara e Touros -- no Rio Grande do Norte. Tem 183,6 MW de potência instalada.
+- **Complexo Eólico Cutia.** Está localizado nos municípios de Pedra Grande e São Bento do Norte -- no Rio Grande do Norte. Tem 180,6 MW de potência instalada.
+- **Complexo Eólico Bento Miguel.** Está localizado no município de São Bento do Norte -- no Rio Grande do Norte. Tem 132,3 MW de potência instalada.
+- **Complexo Eólico Voltalia.** Está localizado nos municípios de São Miguel do Gostoso e Touros -- no Rio Grande do Norte. Conta com 108 MW de potência instalada.
+
+Assim sendo, é possível observar que a matriz energética da Copel é diversificada com maior ênfase em hidrelétricas, com recentes desenvolvimentos na construção de parques eólicos, de forma a se aproveitar de Créditos de Carbono e uma fronte de energias mais limpas.
 
 #### Transmissão
 
 #### Distribuição
-
-#### Outros
 
 ## Cálculo do *valuation* intrínseco
 
