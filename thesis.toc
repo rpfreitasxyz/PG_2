@@ -31,19 +31,19 @@
 \contentsline {subsection}{\numberline {4.1.1}História}{4}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}\emph {Core business}}{7}{subsection.4.1.2}%
 \contentsline {subsubsection}{Geração}{7}{section*.5}%
-\contentsline {subsubsection}{Transmissão}{13}{section*.6}%
-\contentsline {subsubsection}{Distribuição}{13}{section*.7}%
-\contentsline {section}{\numberline {4.2}Cálculo do \emph {valuation} intrínseco}{13}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}O custo de capital médio ponderado (WACC)}{13}{subsection.4.2.1}%
-\contentsline {subsubsection}{Custo de capital próprio}{13}{section*.8}%
-\contentsline {subsubsection}{Custo de capital de terceiros}{13}{section*.9}%
-\contentsline {subsubsection}{Fluxo de caixa descontado}{13}{section*.10}%
-\contentsline {section}{\numberline {4.3}Cálculo do \emph {valuation} relativo}{13}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Margem bruta}{13}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Lucros antes de juros e impostos (EBIT)}{13}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Margem líquida}{13}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Razão preço/lucro (P/E)}{13}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Retorno sobre patrimônio líquido (ROE)}{13}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Comparação com empresas do setor}{13}{subsection.4.3.6}%
-\contentsline {chapter}{\numberline {5}Conclusão}{14}{chapter.5}%
-\contentsline {chapter}{Referências Bibliográficas}{15}{chapter*.11}%
+\contentsline {subsubsection}{Transmissão}{12}{section*.6}%
+\contentsline {subsubsection}{Distribuição}{18}{section*.7}%
+\contentsline {section}{\numberline {4.2}Cálculo do \emph {valuation} intrínseco}{18}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}O custo de capital médio ponderado (WACC)}{18}{subsection.4.2.1}%
+\contentsline {subsubsection}{Custo de capital próprio}{18}{section*.8}%
+\contentsline {subsubsection}{Custo de capital de terceiros}{18}{section*.9}%
+\contentsline {subsubsection}{Fluxo de caixa descontado}{18}{section*.10}%
+\contentsline {section}{\numberline {4.3}Cálculo do \emph {valuation} relativo}{18}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Margem bruta}{18}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Lucros antes de juros e impostos (EBIT)}{18}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Margem líquida}{18}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Razão preço/lucro (P/E)}{18}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Retorno sobre patrimônio líquido (ROE)}{18}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Comparação com empresas do setor}{18}{subsection.4.3.6}%
+\contentsline {chapter}{\numberline {5}Conclusão}{19}{chapter.5}%
+\contentsline {chapter}{Referências Bibliográficas}{20}{chapter*.11}%

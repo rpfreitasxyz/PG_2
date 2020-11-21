@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  19 NOV 2020 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  21 NOV 2020 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -682,7 +682,7 @@ pel2 . nsf % 2Fdocs %
 [4
 
 ] [5] [6]
-<img/usinas_copel.jpg, id=333, 1027.84pt x 578.16pt>
+<img/usinas_copel.jpg, id=343, 1027.84pt x 578.16pt>
 File: img/usinas_copel.jpg Graphic file (type jpg)
 <use img/usinas_copel.jpg>
 Package pdftex.def Info: img/usinas_copel.jpg  used on input line 222.
@@ -694,11 +694,55 @@ Overfull \hbox (139.39915pt too wide) in paragraph at lines 224--224
 de-[]marco-[]de-[]2020-[]248070610$[]\OT1/cmr/m/n/10 .
  []
 
-[8 <./img/usinas_copel.jpg>] [9] [10] [11] [12] [13]
-Cap\'{\i }tulo 5.
-[14
+[8 <./img/usinas_copel.jpg>] [9] [10] [11]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
+21.
 
-] [15
+(c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/omscmr
+.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 321.
+[12]
+<img/mapa_geoeletrico_parana.jpg, id=381, 845.0772pt x 597.1911pt>
+File: img/mapa_geoeletrico_parana.jpg Graphic file (type jpg)
+<use img/mapa_geoeletrico_parana.jpg>
+Package pdftex.def Info: img/mapa_geoeletrico_parana.jpg  used on input line 35
+5.
+(pdftex.def)             Requested size: 426.79135pt x 301.60191pt.
+<img/mapa_geoeletrico_curitiba.jpg, id=382, 540.3387pt x 654.5253pt>
+File: img/mapa_geoeletrico_curitiba.jpg Graphic file (type jpg)
+<use img/mapa_geoeletrico_curitiba.jpg>
+Package pdftex.def Info: img/mapa_geoeletrico_curitiba.jpg  used on input line 
+358.
+(pdftex.def)             Requested size: 426.79135pt x 516.9994pt.
+<img/mapa_geoeletrico_londrina.jpg, id=383, 276.0714pt x 294.3798pt>
+File: img/mapa_geoeletrico_londrina.jpg Graphic file (type jpg)
+<use img/mapa_geoeletrico_londrina.jpg>
+Package pdftex.def Info: img/mapa_geoeletrico_londrina.jpg  used on input line 
+361.
+(pdftex.def)             Requested size: 426.79135pt x 455.1071pt.
+[13 <./img/mapa_geoeletrico_parana.jpg>]
+<img/mapa_geoeletrico_maringa.jpg, id=388, 277.7577pt x 270.0489pt>
+File: img/mapa_geoeletrico_maringa.jpg Graphic file (type jpg)
+<use img/mapa_geoeletrico_maringa.jpg>
+Package pdftex.def Info: img/mapa_geoeletrico_maringa.jpg  used on input line 3
+64.
+(pdftex.def)             Requested size: 426.79135pt x 414.95358pt.
+[14 <./img/mapa_geoeletrico_curitiba.jpg>]
+<img/mapa_geoeletrico_ponta_grossa.jpg, id=394, 279.2031pt x 272.4579pt>
+File: img/mapa_geoeletrico_ponta_grossa.jpg Graphic file (type jpg)
+<use img/mapa_geoeletrico_ponta_grossa.jpg>
+Package pdftex.def Info: img/mapa_geoeletrico_ponta_grossa.jpg  used on input l
+ine 367.
+(pdftex.def)             Requested size: 426.79135pt x 416.50166pt.
+[15 <./img/mapa_geoeletrico_londrina.jpg>] [16 <./img/mapa_geoeletrico_maringa.
+jpg>] [17 <./img/mapa_geoeletrico_ponta_grossa.jpg>] [18]
+Cap\'{\i }tulo 5.
+[19
+
+] [20
 
 ]
 No file thesis.bbl.
@@ -712,10 +756,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8485 strings out of 481446
- 129296 string characters out of 5918545
- 464770 words of memory out of 5000000
- 24888 multiletter control sequences out of 15000+600000
+ 8567 strings out of 481446
+ 131454 string characters out of 5918545
+ 465053 words of memory out of 5000000
+ 24952 multiletter control sequences out of 15000+600000
  545126 words of font info for 67 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  80i,12n,85p,1343b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -730,12 +774,13 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/Rafael Pinto/AppDat
 a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/
 Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr8.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (26 pages, 265092 bytes).
+public/amsfonts/cm/cmsy10.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/Users/Rafael Pinto/AppDa
+ta/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on thesis.pdf (31 pages, 6339424 bytes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 420 compressed objects within 5 object streams
- 125 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 511 PDF objects out of 1000 (max. 8388607)
+ 451 compressed objects within 5 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 356 words of extra memory for PDF output out of 10000 (max. 10000000)
 
