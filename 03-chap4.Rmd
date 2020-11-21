@@ -118,7 +118,7 @@ Assim sendo, é possível observar que a matriz energética da Copel é diversif
 
 Como uma *holding*, a Copel também está presente no setor de transmissão de energia elétrica. De fato, referente a junho de 2016, a Copel possuía 2.521,2 km de linhas e 35 subestações, somando 13.002 MVA de potência de transformação.
 
-As tabelas abaixo apresentam o dimensionamento dos ativos de transmissão da Copel relativos à Rede Básica, para o período de junho de 2016. Cabe comentar que todas as subestações são inteiramente automatizadas.
+As tabelas apresentam o dimensionamento dos ativos de transmissão da Copel relativos à Rede Básica, para o período de junho de 2016. Cabe comentar que todas as subestações são inteiramente automatizadas.
 
 ```{r, tab.pos = "H", echo = FALSE, message = FALSE}
 library(tidyverse)
@@ -163,7 +163,12 @@ kable(
   )
 ```
 
-adasdas
+<!--
+Essa coisa eh so pra dar o espaco e a formatacao voltar ao normal
+-->
+$\,$
+
+É possível, também, observar essa extensão geograficamente, através de mapas geoelétricos do estado do Paraná e as principais regiões, como Curitiba e Londrina.
 
 ```{r, fig.cap = "Mapa geoelétrico do Paraná.", fig.pos = "H", echo = FALSE, out.width = "100%"}
 knitr::include_graphics("img/mapa_geoeletrico_parana.jpg")
@@ -184,6 +189,8 @@ knitr::include_graphics("img/mapa_geoeletrico_maringa.jpg")
 ```{r, fig.cap = "Mapa geoelétrico de Ponta Grossa.", fig.pos = "H", echo = FALSE, out.width = "100%"}
 knitr::include_graphics("img/mapa_geoeletrico_ponta_grossa.jpg")
 ```
+
+Por mais que a Companhia possua projetos de transmissão em andamento -- como, por exemplo, as LT Baixo Iguaçu - Realeza e Londrina - Assis --, ela também atua em consultoria e engenharia de linhas de transmissão e subestações. De fato, a engenharia de linhas de transmissão oda Copel é certiicada pela ISO 9001 e atua em seminários, comitês técnicos, treinamentos e pequisas em áreas avançadas. A experiência da empresa no setor foi utilizada em cercad e 7,6 mil km de linhas, implantadas com baixo custo e alta qualidade. A rede básica da empresa, no final das contas, conta com aproximadamente 5,4 mil km de cabos para-raios com fibras óticas -- de tecnologia OPGW, _Optical Ground Wire._ Relativo à engenharia de subestações, a Copel elabora projetos de subestações nas tensões de 69, 138, 230 e 525 kV; gerencia projetos de subestações, elabora especificações de mateirias e equipamentos para subestações, dimensiona sistemas de aterramento, gerencia a construção; e calcula custos e realiza orçamentos para subestações.
 
 #### Distribuição
 

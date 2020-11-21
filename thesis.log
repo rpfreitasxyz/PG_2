@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  21 NOV 2020 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  21 NOV 2020 19:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,18 +581,196 @@ LaTeX Info: Redefining \nameref on input line 24.
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
-! Undefined control sequence.
-<argument> \local@doctype 
-                          \ de \@degreename \ em \local@deptname \ da COPPE/...
-l.44 
-      
-Here is how much of TeX's memory you used:
- 8263 strings out of 481446
- 126233 string characters out of 5918545
- 453407 words of memory out of 5000000
- 24797 multiletter control sequences out of 15000+600000
- 535386 words of font info for 30 fonts, out of 8000000 for 9000
- 16 hyphenation exceptions out of 8191
- 80i,1n,85p,240b,285s stack positions out of 5000i,500n,10000p,200000b,80000s
+Package hyperref Info: Option `breaklinks' set `true' on input line 44.
+Package hyperref Info: Option `raiselinks' set `true' on input line 44.
+Package hyperref Info: Option `pageanchor' set `true' on input line 44.
+<poli-logo.pdf, id=164, 708.6475pt x 282.05376pt>
+File: poli-logo.pdf Graphic file (type pdf)
+<use poli-logo.pdf>
+Package pdftex.def Info: poli-logo.pdf  used on input line 44.
+(pdftex.def)             Requested size: 213.39566pt x 84.93526pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
 
-!  ==> Fatal error occurred, no output PDF file produced!
+
+(c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/um
+sa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
+
+
+(c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/um
+sb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+{c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updma
+p/pdftex.map} <./poli-logo.pdf>]
+Underfull \hbox (badness 1436) in paragraph at lines 45--45
+\OT1/cmr/m/n/12 PROJETO DE GRADUA[][]AO SUB-ME-TIDO []AO CORPO DOCENTE DO
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 45--45
+\OT1/cmr/m/n/12 DA UNIVERSIDADE FEDERAL DO RIO DE JANEIRO COMO PARTE
+ []
+
+[2
+
+]
+
+LaTeX Warning: Reference `bib:begin' on page iii undefined on input line 45.
+
+[3
+
+] [4
+
+] [5
+
+] [6
+
+] [7
+
+] (./thesis.toc [8
+
+])
+\tf@toc=\write6
+\openout6 = `thesis.toc'.
+
+[9] (./thesis.lof)
+\tf@lof=\write7
+\openout7 = `thesis.lof'.
+
+[10
+
+] (./thesis.lot)
+\tf@lot=\write8
+\openout8 = `thesis.lot'.
+
+No file thesis.los.
+No file thesis.lab.
+[11
+
+]
+Cap\'{\i }tulo 1.
+[1
+
+
+]
+Cap\'{\i }tulo 2.
+[2
+
+]
+Cap\'{\i }tulo 3.
+[3
+
+]
+Cap\'{\i }tulo 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
+[][][]\OT1/cmr/m/n/10 Vers~ao com-pleta dis-pon^^S^^Pvel em: []$\OT1/cmtt/m/n/1
+0 https : / / www . Copel . com / hpCopel /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
+\OT1/cmtt/m/n/10 root / nivel2 . jsp ? endereco = %2FhpCopel % 2Froot % 2FpagCo
+pel2 . nsf % 2Fdocs %
+ []
+
+[4
+
+] [5] [6]
+<img/usinas_Copel.jpg, id=347, 1027.84pt x 578.16pt>
+File: img/usinas_Copel.jpg Graphic file (type jpg)
+<use img/usinas_Copel.jpg>
+Package pdftex.def Info: img/usinas_Copel.jpg  used on input line 222.
+(pdftex.def)             Requested size: 426.79135pt x 240.07307pt.
+[7]
+Overfull \hbox (139.39915pt too wide) in paragraph at lines 224--224
+[][][]\OT1/cmr/m/n/10 Dispon^^S^^Pvel em: []$\OT1/cmtt/m/n/10 https : / / www .
+ in . gov . br / web / dou / -[] / resolucao-[]normativa-[]n-[]875-[]de-[]10-[]
+de-[]marco-[]de-[]2020-[]248070610$[]\OT1/cmr/m/n/10 .
+ []
+
+[8 <./img/usinas_copel.jpg>] [9] [10] [11]
+<img/mapa_geoeletrico_parana.jpg, id=378, 845.0772pt x 597.1911pt>
+File: img/mapa_geoeletrico_parana.jpg Graphic file (type jpg)
+<use img/mapa_geoeletrico_parana.jpg>
+Package pdftex.def Info: img/mapa_geoeletrico_parana.jpg  used on input line 35
+6.
+(pdftex.def)             Requested size: 426.79135pt x 301.60191pt.
+<img/mapa_geoeletrico_curitiba.jpg, id=379, 540.3387pt x 654.5253pt>
+File: img/mapa_geoeletrico_curitiba.jpg Graphic file (type jpg)
+<use img/mapa_geoeletrico_curitiba.jpg>
+Package pdftex.def Info: img/mapa_geoeletrico_curitiba.jpg  used on input line 
+359.
+(pdftex.def)             Requested size: 426.79135pt x 516.9994pt.
+[12]
+<img/mapa_geoeletrico_londrina.jpg, id=386, 276.0714pt x 294.3798pt>
+File: img/mapa_geoeletrico_londrina.jpg Graphic file (type jpg)
+<use img/mapa_geoeletrico_londrina.jpg>
+Package pdftex.def Info: img/mapa_geoeletrico_londrina.jpg  used on input line 
+362.
+(pdftex.def)             Requested size: 426.79135pt x 455.1071pt.
+[13 <./img/mapa_geoeletrico_parana.jpg>]
+<img/mapa_geoeletrico_maringa.jpg, id=391, 277.7577pt x 270.0489pt>
+File: img/mapa_geoeletrico_maringa.jpg Graphic file (type jpg)
+<use img/mapa_geoeletrico_maringa.jpg>
+Package pdftex.def Info: img/mapa_geoeletrico_maringa.jpg  used on input line 3
+65.
+(pdftex.def)             Requested size: 426.79135pt x 414.95358pt.
+[14 <./img/mapa_geoeletrico_curitiba.jpg>]
+<img/mapa_geoeletrico_ponta_grossa.jpg, id=397, 279.2031pt x 272.4579pt>
+File: img/mapa_geoeletrico_ponta_grossa.jpg Graphic file (type jpg)
+<use img/mapa_geoeletrico_ponta_grossa.jpg>
+Package pdftex.def Info: img/mapa_geoeletrico_ponta_grossa.jpg  used on input l
+ine 368.
+(pdftex.def)             Requested size: 426.79135pt x 416.50166pt.
+[15 <./img/mapa_geoeletrico_londrina.jpg>] [16 <./img/mapa_geoeletrico_maringa.
+jpg>] [17 <./img/mapa_geoeletrico_ponta_grossa.jpg>] [18]
+Cap\'{\i }tulo 5.
+[19
+
+] [20
+
+]
+No file thesis.bbl.
+
+AED: lastpage setting LastPage
+(./thesis.aux)
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 5E05F726F6391BF1F8AD8BE4770718E6;2826.
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 8551 strings out of 481446
+ 131117 string characters out of 5918545
+ 465233 words of memory out of 5000000
+ 24937 multiletter control sequences out of 15000+600000
+ 545126 words of font info for 67 fonts, out of 8000000 for 9000
+ 16 hyphenation exceptions out of 8191
+ 80i,12n,85p,1343b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jkn
+appen/ec/tcrm1200.600pk><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/Rafael Pinto/AppData/Roa
+ming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/Users/R
+afael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/Rafael Pinto/AppDat
+a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/
+Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on thesis.pdf (31 pages, 6333495 bytes).
+PDF statistics:
+ 511 PDF objects out of 1000 (max. 8388607)
+ 452 compressed objects within 5 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 356 words of extra memory for PDF output out of 10000 (max. 10000000)
+
