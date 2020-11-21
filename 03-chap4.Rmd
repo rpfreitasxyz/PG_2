@@ -2,7 +2,7 @@
 
 Iniciamos, agora, o estudo do caso propriamente dito -- sendo este o da Companhia Paranaense de Energia. Para um estudo próprio de *valuation*, é necessário conhecer-se o ativo a ser estudado. Isso com a finalidade de poder realizar estimativas de crescimento e risco mais apropriadas, assim como realizar um pequeno dossiê da empresa e suas conquistas, elucidando assim práticas de governança e um histórico operacional.
 
-## Breve dossiê da COPEL
+## Breve dossiê da Copel
 
 Comecemos, desta forma, fazendo um dossiê da empresa, de forma a estudar melhor sua história e operações, assim como expor casos relevantes da empresa.
 
@@ -10,7 +10,7 @@ Comecemos, desta forma, fazendo um dossiê da empresa, de forma a estudar melhor
 
 É de suma importância comentar que a parte a seguir é uma adaptação de transcritos oriundos do site da própria empresa,[^1] com pequenos acréscimos por parte do autor.
 
-[^1]: Versão completa disponível em: <https://www.copel.com/hpcopel/root/nivel2.jsp?endereco=%2Fhpcopel%2Froot%2Fpagcopel2.nsf%2Fdocs%2F6505401715872FAA032573FA0069734F>. Último acesso em 10 nov 2020.
+[^1]: Versão completa disponível em: <https://www.Copel.com/hpCopel/root/nivel2.jsp?endereco=%2FhpCopel%2Froot%2FpagCopel2.nsf%2Fdocs%2F6505401715872FAA032573FA0069734F>. Último acesso em 10 nov 2020.
 
 A Companhia Paranaense de Energia é a maior empresa do estado do Paraná, tendo sido criada em 26 de outubro de 1954, sob controle acionário do estado do Paraná, abrindo seu capital acionário em abril de 1994 na BM&FBovespa, e tornou-se em julho de 1997 a primeira do setor elétrico brasileiro a ser listada na Bolsa de Valores de Nova Iorque. A marca está também presente, desde junho de 2002, na Comunidade Econômica Europeia, pela Latibex -- o setor latinoamericano da Bolsa de Valores de Madri. A partir de 7 de maio de 2008, a empresa também passou a figurar oficialmente no Nível 1 de Governança Corporativa da BM&FBovespa.
 
@@ -50,14 +50,14 @@ Podemos notar, então, um grau de maturidade elevado por parte da empresa atualm
 
 As informações retiradas para o estudo do *core business* da Copel foram retiradas diretamente do site deles.[^2]
 
-[^2]: Disponível em: <https://www.copel.com/hpcweb/>. Último acesso em 20 nov 2020.
+[^2]: Disponível em: <https://www.Copel.com/hpcweb/>. Último acesso em 20 nov 2020.
 
 #### Geração
 
 A Copel opera um parque gerador com diversas usinas próprias e participações societárias, em um leque diversificado de fontes energéticas, indo de biomassa a solar. A geração é supervisionada e coordenada pelo Centro de Operação de Geração e Transmissão da empresa, sediado em Curitiba.
 
 ```{r, fig.cap = "Usinas da Copel localizadas em mapa do Paraná.", fig.pos = "H", echo = FALSE, out.width = "100%"}
-knitr::include_graphics("img/usinas_copel.jpg")
+knitr::include_graphics("img/usinas_Copel.jpg")
 ```
 
 Comecemos comentando a respeito das hidrelétricas. Existe uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução n° 875, de 10 de março de 2020,[^3] a diferenciação é tal:
@@ -118,9 +118,9 @@ Assim sendo, é possível observar que a matriz energética da Copel é diversif
 
 Como uma *holding*, a Copel também está presente no setor de transmissão de energia elétrica. De fato, referente a junho de 2016, a Copel possuía 2.521,2 km de linhas e 35 subestações, somando 13.002 MVA de potência de transformação.
 
-As tabelas \@ref(tab:linhas_trans) e \@ref(tab:subest_trans) apresentam o dimensionamento dos ativos de transmissão da Copel relativos à Rede Básica, para o período de junho de 2016.
+As tabelas abaixo apresentam o dimensionamento dos ativos de transmissão da Copel relativos à Rede Básica, para o período de junho de 2016. Cabe comentar que todas as subestações são inteiramente automatizadas.
 
-```{r linhas_trans, tab.pos = "H", echo = FALSE, message = FALSE}
+```{r, tab.pos = "H", echo = FALSE, message = FALSE}
 library(tidyverse)
 library(knitr)
 library(kableExtra)
@@ -141,7 +141,7 @@ kable(
   )
 ```
 
-```{r subest_trans, tab.pos = "H", echo = FALSE, message = FALSE}
+```{r, tab.pos = "H", echo = FALSE, message = FALSE}
 library(tidyverse)
 library(knitr)
 library(kableExtra)
@@ -163,6 +163,7 @@ kable(
   )
 ```
 
+adasdas
 
 ```{r, fig.cap = "Mapa geoelétrico do Paraná.", fig.pos = "H", echo = FALSE, out.width = "100%"}
 knitr::include_graphics("img/mapa_geoeletrico_parana.jpg")

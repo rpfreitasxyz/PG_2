@@ -2,8 +2,8 @@
 doc_type: 'grad' # 'msc' or 'dscexam' or 'dsc'
 portuguese: true # choose either portuguese or english to be true
 english: false 
-title:  '_Valuation_ Intrínseco e Relativo: O estudo de caso da COPEL'
-foreigntitle: 'Intrinsic and Relative Valuation: The case study of COPEL'
+title: '_Valuation_ Intrínseco e Relativo: O estudo de caso da Copel'
+foreigntitle: 'Intrinsic and Relative Valuation: The case study of Copel'
 department: 'EPR'
 date_month: '`r format(Sys.Date(), "%m")`'
 date_year: '`r format(Sys.Date(), "%Y")`'
@@ -53,7 +53,7 @@ csl: abnt.csl
 biblio-style: "coppe-unsrt"
 link-citations: true
 output: 
-   thesisdown::thesis_pdf: default
+   coppedown::thesis_pdf: default
 ---
 
 <!--
@@ -107,7 +107,7 @@ Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Va
 
 Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros -- o que não quer dizer que o investidor deve investir em todos. De fato, o investidor precisa minimizar seu risco, preferencialmente investindo em empresas que dentre outras características possuem alto *payout* de dividendos, baixo grau de alavancagem; e menor variabilidade de lucros [@beaver1970].
 
-Empresas do setor de utilidades possuem tais características, em sua maioria; dessa forma, escolheu-se um exemplar do mesmo -- a Companhia Paranaense de Energia, COPEL -- como forma de fazer o valuation da empresa, fazer um breve resumo do setor elétrico, comparar os métodos de avaliação; e, evidentemente, exemplificar o processo ao leitor.
+Empresas do setor de utilidades possuem tais características, em sua maioria; dessa forma, escolheu-se um exemplar do mesmo -- a Companhia Paranaense de Energia, Copel -- como forma de fazer o valuation da empresa, fazer um breve resumo do setor elétrico, comparar os métodos de avaliação; e, evidentemente, exemplificar o processo ao leitor.
 
 ## Justificativa
 
