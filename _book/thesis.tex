@@ -316,8 +316,8 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
 
   Como uma \emph{holding}, a Copel também está presente no setor de transmissão de energia elétrica. De fato, referente a junho de 2016, a Copel possuía 2.521,2 km de linhas e 35 subestações, somando 13.002 MVA de potência de transformação.
 
-  As tabelas apresentam o dimensionamento dos ativos de transmissão da Copel relativos à Rede Básica, para o período de junho de 2016. Cabe comentar que todas as subestações são inteiramente automatizadas.
-  \begin{table}
+  As tabelas abaixo apresentam o dimensionamento dos ativos de transmissão da Copel relativos à Rede Básica, para o período de junho de 2016. Cabe comentar que todas as subestações são inteiramente automatizadas.
+  \begin{table}[H]
 
   \caption{\label{tab:unnamed-chunk-2}Extensão de linhas de transmissão da Copel, por nível de tensão.}
   \centering
@@ -334,7 +334,7 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \bottomrule
   \end{tabular}
   \end{table}
-  \begin{table}
+  \begin{table}[H]
 
   \caption{\label{tab:unnamed-chunk-3}Subestações de transmissão da Copel, por nível de tensão.}
   \centering
@@ -372,6 +372,143 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \hypertarget{distribuiuxe7uxe3o}{%
   \subsubsection{Distribuição}\label{distribuiuxe7uxe3o}}
 
+  No que tange a distribuição, a Copel é responsável pela energia de cerca de 4,5 milhões de clientes de 394 municípios do Paraná -- sendo 392 integralmente atendidos e 2 parcialmente. A empresa administra 190 mil km de redes de distribuição, com 2,8 milhões de postes e 361 subestações, assim como potência instalada de 10,5 mil MVA. Todos os dados são referentes ao final do ano de 2019. A empresa conta, também, com postos de atendimento espalhados por todos os municípios da área de concessão.
+  \begin{table}[H]
+
+  \caption{\label{tab:unnamed-chunk-9}Número de consumidores da Copel.}
+  \centering
+  \begin{tabular}[t]{cccc}
+  \toprule
+  \multicolumn{1}{c}{Número de consumidores (em milhares)} & \multicolumn{3}{c}{No mês} \\
+  \cmidrule(l{3pt}r{3pt}){1-1} \cmidrule(l{3pt}r{3pt}){2-4}
+  Classes & set-19 & set-18 & \%\\
+  \midrule
+  Residencial & 3808 & 3732 & 2.0\\
+  Industrial & 73 & 74 & -1.4\\
+  Comercial & 405 & 397 & 2.1\\
+  Rural & 351 & 353 & -0.6\\
+  Outras & 58 & 57 & 1.2\\
+  \bottomrule
+  \end{tabular}
+  \end{table}
+  \begin{table}[H]
+
+  \caption{\label{tab:unnamed-chunk-10}Indicadores de atuação da distribuição.}
+  \centering
+  \begin{tabular}[t]{cc}
+  \toprule
+    & set/19\\
+  \midrule
+  Área de Concessão (km²) & 194854.0\\
+  Municípios Atendidos & 393.0\\
+  Localidades Atendidas & 113.0\\
+  População Atendida PR (Mil Habitantes) & 11434.0\\
+  Taxa de Atendimento Urbana (\%) & 99.9\\
+  \addlinespace
+  Consumo Médio Residencial (kWh/mês) & 167.5\\
+  \bottomrule
+  \end{tabular}
+  \end{table}
+  O perfil de consumo de energia da empresa é diversificado, com a classe Industrial sendo a maior de todas as fatias.
+  \begin{table}[H]
+
+  \caption{\label{tab:unnamed-chunk-11}Perfil de consumo de energia da distribuição.}
+  \centering
+  \begin{tabular}[t]{cccc}
+  \toprule
+  \multicolumn{4}{c}{\textbf{Consumo de Energia Acumulado - GWh}} \\
+  \cmidrule(l{3pt}r{3pt}){1-4}
+  Classes & set-19 & set-18 & \%\\
+  \midrule
+  Residencial & 5571 & 5413 & 2.9\\
+  Industrial & 8451 & 8422 & 0.3\\
+  Comercial & 4509 & 4330 & 4.1\\
+  Rural & 1817 & 1791 & 1.5\\
+  Outras & 1895 & 1856 & 2.1\\
+  \addlinespace
+  Suprim. a Concessionárias e Permissionárias & 146 & 222 & -34.5\\
+  Concessionárias Fio & 483 & 369 & 30.9\\
+  \bottomrule
+  \end{tabular}
+  \end{table}
+  \begin{figure}[H]
+  \includegraphics[width=1\linewidth]{img/consumo_dist} \caption{Gráfico dos perfis de consumo da distribuição.}\label{fig:unnamed-chunk-12}
+  \end{figure}
+  Dentro da classe Industrial, temos ainda subdivisões por atividade, com a fabricação de celulose e alimentos compondo quase metade do consumo como um todo.
+  \begin{table}[H]
+
+  \caption{\label{tab:unnamed-chunk-13}Perfil de consumo de energia da classe Industrial.}
+  \centering
+  \begin{tabular}[t]{cccc}
+  \toprule
+  \multicolumn{4}{c}{\textbf{Consumo de Energia Acumulado - GWh}} \\
+  \cmidrule(l{3pt}r{3pt}){1-4}
+  Descrição & set-19 & set-18 & \%\\
+  \midrule
+  Fabricação de Produtos Alimentícios & 2840 & 2715 & 4.6\\
+  Fabricação de Celulose, Papel e Produtos de Papel & 1113 & 1181 & -5.8\\
+  Fabricação de Produtos Minerais Não Metálicos & 615 & 716 & -14.1\\
+  Fabricação de Produtos de Borracha e de Material Plástico & 510 & 492 & 3.6\\
+  Fabricação de Produtos Químicos & 491 & 443 & 11.1\\
+  \addlinespace
+  Demais Ramos & 2882 & 2875 & 0.2\\
+  \bottomrule
+  \end{tabular}
+  \end{table}
+  \begin{figure}[H]
+  \includegraphics[width=1\linewidth]{img/industrial_dist} \caption{Gráfico dos perfis de consumo da classe Industrial.}\label{fig:unnamed-chunk-14}
+  \end{figure}
+  A Copel disponibiliza também os dados referentes às tarifas pagas pelos clientes, tanto de alta quanto baixa tensão.\footnote{É importante ressaltar que as tarifas já esão disponibilizadas com os impostos (ICMS, PIS e COFINS), vigentes a partir de 09 jul 2020; foram inclusos para facilitar o entendimento por parte do leitor, no entanto, as alíquotas efetivas referentes ao PIS e à COFINS devem ser apuradas mensalmente, com suas variações sendo aplicadas às tarifas tempestivamente.}
+  \begin{table}[H]
+
+  \caption{\label{tab:unnamed-chunk-15}Tarifas aplicadas ao Grupo B.}
+  \centering
+  \resizebox{\linewidth}{!}{
+  \begin{tabular}[t]{ccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|cc}
+  \toprule
+  \multicolumn{1}{c}{\textbf{ }} & \multicolumn{2}{c}{\textbf{Convencional}} & \multicolumn{6}{c}{\textbf{Branca}} \\
+  \cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-9}
+  \multicolumn{3}{c}{ } & \multicolumn{2}{c}{Fora de Ponta} & \multicolumn{2}{c}{Intermediário} & \multicolumn{2}{c}{Ponta} \\
+  \cmidrule(l{3pt}r{3pt}){4-5} \cmidrule(l{3pt}r{3pt}){6-7} \cmidrule(l{3pt}r{3pt}){8-9}
+  \multicolumn{1}{c}{ } & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} \\
+  \cmidrule(l{3pt}r{3pt}){2-2} \cmidrule(l{3pt}r{3pt}){3-3} \cmidrule(l{3pt}r{3pt}){4-4} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-7} \cmidrule(l{3pt}r{3pt}){8-8} \cmidrule(l{3pt}r{3pt}){9-9}
+  B1 - Baixa Renda, até 30 kWh & 0.09441 & 0.06628 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
+  B1 - Baixa Renda, entre 31 e 100 kWh & 0.23076 & 0.16201 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
+  B1 - Baixa Renda, entre 101 e 220 kWh & 0.34614 & 0.24301 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
+  B1 - Baixa Renda, superior a 220 kWh & 0.38460 & 0.27001 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
+  B1 - Residencial & 0.38460 & 0.36837 & 0.36533 & 0.27639 & 0.36533 & 0.53043 & 0.36533 & 0.78446\\
+  \addlinespace
+  B2 - Cooperativa de Eletrificação Rural & 0.30066 & 0.28797 & 0.28559 & 0.21606 & 0.28559 & 0.41465 & 0.28559 & 0.61325\\
+  B2 - Irrigação e Aquicultura em horário especial & 0.12615 & 0.12083 & 0.11982 & 0.09065 & 0.29956 & 0.43495 & 0.29956 & 0.64326\\
+  B2 - Rural & 0.31537 & 0.30207 & 0.29956 & 0.22664 & 0.29956 & 0.43495 & 0.29956 & 0.64326\\
+  B2 - Serviço Público de Irrigação Rural & 0.29229 & 0.27996 & 0.27765 & 0.21006 & 0.27765 & 0.40313 & 0.27765 & 0.59618\\
+  B3 - Água, Esgoto e Saneamento & 0.34998 & 0.33522 & 0.33245 & 0.26347 & 0.33245 & 0.51855 & 0.33245 & 0.77365\\
+  \addlinespace
+  B3 - Demais Classes & 0.38460 & 0.36837 & 0.36533 & 0.28953 & 0.36533 & 0.56984 & 0.36533 & 0.85016\\
+  B3 - Poder Público Estadual & 0.26973 & 0.25835 & 0.25622 & 0.20306 & 0.25622 & 0.39965 & 0.25622 & 0.59625\\
+  B4A - Iluminação Pública & 0.21153 & 0.20260 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
+  B4B - Iluminação Pública & 0.23076 & 0.22103 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
+  \bottomrule
+  \end{tabular}}
+  \end{table}
+  \begin{table}[H]
+
+  \caption{\label{tab:unnamed-chunk-16}Tarifas aplicadas ao Grupo A.}
+  \centering
+  \resizebox{\linewidth}{!}{
+  \begin{tabular}[t]{ccc|cc|c|ccccc|cc|c|ccccc|cc|c|ccccc|cc|c|ccccc|cc|c|ccccc|cc|c|ccccc|cc|c|ccccc|cc|c|cc}
+  \toprule
+  \multicolumn{2}{c}{\textbf{ }} & \multicolumn{3}{c}{\textbf{Fora de Ponta}} & \multicolumn{3}{c}{\textbf{Ponta}} \\
+  \cmidrule(l{3pt}r{3pt}){3-5} \cmidrule(l{3pt}r{3pt}){6-8}
+  \multicolumn{2}{c}{ } & \multicolumn{1}{c}{Demanda} & \multicolumn{2}{c}{Consumo} & \multicolumn{1}{c}{Demanda} & \multicolumn{2}{c}{Consumo} \\
+  \cmidrule(l{3pt}r{3pt}){3-3} \cmidrule(l{3pt}r{3pt}){4-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-8}
+  \multicolumn{1}{c}{Grupo} & \multicolumn{1}{c}{Modalidade} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} \\
+  \cmidrule(l{3pt}r{3pt}){1-1} \cmidrule(l{3pt}r{3pt}){2-2} \cmidrule(l{3pt}r{3pt}){3-3} \cmidrule(l{3pt}r{3pt}){4-4} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-7} \cmidrule(l{3pt}r{3pt}){8-8}
+  A1 & Azul & 6.21 & 0.36533 & 0.07884 & 6.52 & 0.59656 & 0.07884\\
+  \bottomrule
+  \multicolumn{64}{l}{\textit{Nota: } Demanda e Consumo medidos, respectivamente, em R\$/kW e R\$/kWh.}\\
+  \end{tabular}}
+  \end{table}
   \hypertarget{cuxe1lculo-do-valuation-intruxednseco}{%
   \section{\texorpdfstring{Cálculo do \emph{valuation} intrínseco}{Cálculo do valuation intrínseco}}\label{cuxe1lculo-do-valuation-intruxednseco}}
 

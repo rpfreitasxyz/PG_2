@@ -8,9 +8,9 @@ Comecemos, desta forma, fazendo um dossiê da empresa, de forma a estudar melhor
 
 ### História
 
-É de suma importância comentar que a parte a seguir é uma adaptação de transcritos oriundos do site da própria empresa,[^1] com pequenos acréscimos por parte do autor.
+É de suma importância comentar que a parte a seguir é uma adaptação de transcritos oriundos do site da própria empresa,[^histCopel] com pequenos acréscimos por parte do autor.
 
-[^1]: Versão completa disponível em: <https://www.Copel.com/hpCopel/root/nivel2.jsp?endereco=%2FhpCopel%2Froot%2FpagCopel2.nsf%2Fdocs%2F6505401715872FAA032573FA0069734F>. Último acesso em 10 nov 2020.
+[^histCopel]: Versão completa disponível em: <https://www.Copel.com/hpCopel/root/nivel2.jsp?endereco=%2FhpCopel%2Froot%2FpagCopel2.nsf%2Fdocs%2F6505401715872FAA032573FA0069734F>. Último acesso em 10 nov 2020.
 
 A Companhia Paranaense de Energia é a maior empresa do estado do Paraná, tendo sido criada em 26 de outubro de 1954, sob controle acionário do estado do Paraná, abrindo seu capital acionário em abril de 1994 na BM&FBovespa, e tornou-se em julho de 1997 a primeira do setor elétrico brasileiro a ser listada na Bolsa de Valores de Nova Iorque. A marca está também presente, desde junho de 2002, na Comunidade Econômica Europeia, pela Latibex -- o setor latinoamericano da Bolsa de Valores de Madri. A partir de 7 de maio de 2008, a empresa também passou a figurar oficialmente no Nível 1 de Governança Corporativa da BM&FBovespa.
 
@@ -48,9 +48,9 @@ Podemos notar, então, um grau de maturidade elevado por parte da empresa atualm
 
 ### *Core business*
 
-As informações retiradas para o estudo do *core business* da Copel foram retiradas diretamente do site deles.[^2]
+As informações retiradas para o estudo do *core business* da Copel foram retiradas diretamente do site deles.[^siteCopel]
 
-[^2]: Disponível em: <https://www.Copel.com/hpcweb/>. Último acesso em 20 nov 2020.
+[^siteCopel]: Disponível em: <https://www.Copel.com/hpcweb/>. Último acesso em 20 nov 2020.
 
 #### Geração
 
@@ -60,9 +60,9 @@ A Copel opera um parque gerador com diversas usinas próprias e participações 
 knitr::include_graphics("img/usinas_Copel.jpg")
 ```
 
-Comecemos comentando a respeito das hidrelétricas. Existe uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução n° 875, de 10 de março de 2020,[^3] a diferenciação é tal:
+Comecemos comentando a respeito das hidrelétricas. Existe uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução n° 875, de 10 de março de 2020,[^res875] a diferenciação é tal:
 
-[^3]: Disponível em: <https://www.in.gov.br/web/dou/-/resolucao-normativa-n-875-de-10-de-marco-de-2020-248070610>. Último acesso em 17 nov 2020.
+[^res875]: Disponível em: <https://www.in.gov.br/web/dou/-/resolucao-normativa-n-875-de-10-de-marco-de-2020-248070610>. Último acesso em 17 nov 2020.
 
 -   Uma **Central Geradora Hidrelétrica com Capacidade Instalada Reduzida (CGH)** é aquela cuja potência seja igual ou inferior a 5 MW.
 -   Uma **Pequena Central Hidrelétrica (PCH)** é aquela que possuem duas características: (1) potência instalada superior a 5 MW e igual ou inferior a 30 MW; e (2) área de reservatório de até 13 km², excluindo a calha do leito regular do rio. Existem, ainda, cláusulas que regularizam a condição de (2).
@@ -118,7 +118,7 @@ Assim sendo, é possível observar que a matriz energética da Copel é diversif
 
 Como uma *holding*, a Copel também está presente no setor de transmissão de energia elétrica. De fato, referente a junho de 2016, a Copel possuía 2.521,2 km de linhas e 35 subestações, somando 13.002 MVA de potência de transformação.
 
-As tabelas apresentam o dimensionamento dos ativos de transmissão da Copel relativos à Rede Básica, para o período de junho de 2016. Cabe comentar que todas as subestações são inteiramente automatizadas.
+As tabelas abaixo apresentam o dimensionamento dos ativos de transmissão da Copel relativos à Rede Básica, para o período de junho de 2016. Cabe comentar que todas as subestações são inteiramente automatizadas.
 
 ```{r, tab.pos = "H", echo = FALSE, message = FALSE}
 library(tidyverse)
@@ -134,6 +134,9 @@ kable(
   format = "latex",
   booktabs = TRUE,
   align = "cc"
+  ) %>%
+  kable_styling(
+    latex_options = "HOLD_position"
   ) %>%
   add_header_above(
     header = c("LINHAS DE TRANSMISSÃO" = 2), 
@@ -155,7 +158,10 @@ kable(
   caption = "Subestações de transmissão da Copel, por nível de tensão.",
   format = "latex",
   booktabs = TRUE,
-  align = "cc"
+  align = "ccc"
+  ) %>%
+  kable_styling(
+    latex_options = "HOLD_position"
   ) %>%
   add_header_above(
     header = c("SUBESTAÇÕES DE TRANSMISSÃO" = 3), 
@@ -193,6 +199,201 @@ knitr::include_graphics("img/mapa_geoeletrico_ponta_grossa.jpg")
 Por mais que a Companhia possua projetos de transmissão em andamento -- como, por exemplo, as LT Baixo Iguaçu - Realeza e Londrina - Assis --, ela também atua em consultoria e engenharia de linhas de transmissão e subestações. De fato, a engenharia de linhas de transmissão oda Copel é certiicada pela ISO 9001 e atua em seminários, comitês técnicos, treinamentos e pequisas em áreas avançadas. A experiência da empresa no setor foi utilizada em cercad e 7,6 mil km de linhas, implantadas com baixo custo e alta qualidade. A rede básica da empresa, no final das contas, conta com aproximadamente 5,4 mil km de cabos para-raios com fibras óticas -- de tecnologia OPGW, _Optical Ground Wire._ Relativo à engenharia de subestações, a Copel elabora projetos de subestações nas tensões de 69, 138, 230 e 525 kV; gerencia projetos de subestações, elabora especificações de mateirias e equipamentos para subestações, dimensiona sistemas de aterramento, gerencia a construção; e calcula custos e realiza orçamentos para subestações.
 
 #### Distribuição
+
+No que tange a distribuição, a Copel é responsável pela energia de cerca de 4,5 milhões de clientes de 394 municípios do Paraná -- sendo 392 integralmente atendidos e 2 parcialmente. A empresa administra 190 mil km de redes de distribuição, com 2,8 milhões de postes e 361 subestações, assim como potência instalada de 10,5 mil MVA. Todos os dados são referentes ao final do ano de 2019. A empresa conta, também, com postos de atendimento espalhados por todos os municípios da área de concessão.
+
+```{r, tab.pos = "H", echo = FALSE, message = FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+kable(
+  tibble(
+    `Classes` = c("Residencial", "Industrial", "Comercial", "Rural", "Outras"),
+    `set-19` = c(3808, 73, 405, 351, 58),
+    `set-18` = c(3732, 74, 397, 353, 57),
+    `%` = c(2.0, -1.4, 2.1, -0.6, 1.2)
+  ),
+  caption = "Número de consumidores da Copel.",
+  format = "latex",
+  booktabs = TRUE,
+  align = "cccc"
+  ) %>%
+  kable_styling(
+    latex_options = "HOLD_position"
+  ) %>%
+  add_header_above(
+    header = c("Número de consumidores (em milhares)" = 1, "No mês" = 3)
+  )
+```
+
+```{r, tab.pos = "H", echo = FALSE, message = FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+kable(
+  tibble(
+    " " = c("Área de Concessão (km²)", "Municípios Atendidos", "Localidades Atendidas", "População Atendida PR (Mil Habitantes)", "Taxa de Atendimento Urbana (%)", "Consumo Médio Residencial (kWh/mês)"),
+    "set/19" = c(194854, 393, 113, 11434, 99.9, 167.5)
+  ),
+  caption = "Indicadores de atuação da distribuição.",
+  format = "latex",
+  booktabs = TRUE,
+  align = "cc"
+  ) %>%
+  kable_styling(
+    latex_options = "HOLD_position"
+  )
+```
+
+O perfil de consumo de energia da empresa é diversificado, com a classe Industrial sendo a maior de todas as fatias.
+
+```{r, tab.pos = "H", echo = FALSE, message = FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+kable(
+  tibble(
+    `Classes` = c("Residencial", "Industrial", "Comercial", "Rural", "Outras", "Suprim. a Concessionárias e Permissionárias", "Concessionárias Fio"),
+    `set-19` = c(5571, 8451, 4509, 1817, 1895, 146, 483),
+    `set-18` = c(5413, 8422, 4330, 1791, 1856, 222, 369),
+    `%` = c(2.9, 0.3, 4.1, 1.5, 2.1, -34.5, 30.9)
+  ),
+  caption = "Perfil de consumo de energia da distribuição.",
+  format = "latex",
+  booktabs = TRUE,
+  align = "cccc"
+  ) %>%
+  kable_styling(
+    latex_options = "HOLD_position"
+  ) %>%
+  add_header_above(
+    header = c("Consumo de Energia Acumulado - GWh" = 4),
+    bold = TRUE
+  )
+```
+
+```{r, fig.cap = "Gráfico dos perfis de consumo da distribuição.", fig.pos = "H", echo = FALSE, out.width = "100%"}
+knitr::include_graphics("img/consumo_dist.png")
+```
+
+Dentro da classe Industrial, temos ainda subdivisões por atividade, com a fabricação de celulose e alimentos compondo quase metade do consumo como um todo.
+
+```{r, tab.pos = "H", echo = FALSE, message = FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+kable(
+  tibble(
+    `Descrição` = c("Fabricação de Produtos Alimentícios", "Fabricação de Celulose, Papel e Produtos de Papel", "Fabricação de Produtos Minerais Não Metálicos", "Fabricação de Produtos de Borracha e de Material Plástico", "Fabricação de Produtos Químicos", "Demais Ramos"),
+    `set-19` = c(2840, 1113, 615, 510, 491, 2882),
+    `set-18` = c(2715, 1181, 716, 492, 443, 2875),
+    `%` = c(4.6, -5.8, -14.1, 3.6, 11.1, 0.2)
+  ),
+  caption = "Perfil de consumo de energia da classe Industrial.",
+  format = "latex",
+  booktabs = TRUE,
+  align = "cccc"
+  ) %>%
+  kable_styling(
+    latex_options = "HOLD_position"
+  ) %>%
+  add_header_above(
+    header = c("Consumo de Energia Acumulado - GWh" = 4),
+    bold = TRUE
+  )
+```
+
+```{r, fig.cap = "Gráfico dos perfis de consumo da classe Industrial.", fig.pos = "H", echo = FALSE, out.width = "100%"}
+knitr::include_graphics("img/industrial_dist.png")
+```
+
+A Copel disponibiliza também os dados referentes às tarifas pagas pelos clientes, tanto de alta quanto baixa tensão.[^justTarifas]
+
+[^justTarifas]: É importante ressaltar que as tarifas já esão disponibilizadas com os impostos (ICMS, PIS e COFINS), vigentes a partir de 09 jul 2020; foram inclusos para facilitar o entendimento por parte do leitor, no entanto, as alíquotas efetivas referentes ao PIS e à COFINS devem ser apuradas mensalmente, com suas variações sendo aplicadas às tarifas tempestivamente.
+
+```{r, tab.pos = "H", echo = FALSE, message = FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+kable(
+  tibble(
+    `Descrição` = c("B1 - Baixa Renda, até 30 kWh", "B1 - Baixa Renda, entre 31 e 100 kWh", "B1 - Baixa Renda, entre 101 e 220 kWh", "B1 - Baixa Renda, superior a 220 kWh", "B1 - Residencial", "B2 - Cooperativa de Eletrificação Rural", "B2 - Irrigação e Aquicultura em horário especial", "B2 - Rural", "B2 - Serviço Público de Irrigação Rural", "B3 - Água, Esgoto e Saneamento", "B3 - Demais Classes", "B3 - Poder Público Estadual", "B4A - Iluminação Pública", "B4B - Iluminação Pública"),
+    `Convencional.TE` = c(0.09441, 0.23076, 0.34614, 0.38460, 0.3846, 0.30066, 0.12615, 0.31537, 0.29229, 0.34998, 0.38460, 0.26973, 0.21153, 0.23076),
+    `Convencional.TUSD` = c(0.06628, 0.16201, 0.24301, 0.27001, 0.36837, 0.28797, 0.12083, 0.30207, 0.27996, 0.33522, 0.36837, 0.25835, 0.20260, 0.22103),
+    `Branca.FP.TE` = c(0, 0, 0, 0, 0.36533, 0.28559, 0.11982, 0.29956, 0.27765, 0.33245, 0.36533, 0.25622, 0, 0),
+    `Branca.FP.TUSD` = c(0, 0, 0, 0, 0.27639, 0.21606, 0.09065, 0.22664, 0.21006, 0.26347, 0.28953, 0.20306, 0, 0),
+    `Branca.I.TE` = c(0, 0, 0, 0, 0.36533, 0.28559, 0.29956, 0.29956, 0.27765, 0.33245, 0.36533, 0.25622, 0, 0),
+    `Branca.I.TUSD` = c(0, 0, 0, 0, 0.53043, 0.41465, 0.43495, 0.43495, 0.40313, 0.51855, 0.56984, 0.39965, 0, 0),
+    `Branca.P.TE` = c(0, 0, 0, 0, 0.36533, 0.28559, 0.29956, 0.29956, 0.27765, 0.33245, 0.36533, 0.25622, 0, 0),
+    `Branca.P.TUSD` = c(0, 0, 0, 0, 0.78446, 0.61325, 0.64326, 0.64326, 0.59618, 0.77365, 0.85016, 0.59625, 0, 0)
+  ),
+  caption = "Tarifas aplicadas ao Grupo B.",
+  format = "latex",
+  booktabs = TRUE,
+  col.names = NULL,
+  align = "ccc|cc|cc|cc"
+  ) %>%
+  kable_styling(
+    latex_options = c("HOLD_position", "scale_down")
+  ) %>%
+  add_header_above(
+    header = c(" " = 1, "TE" = 1, "TUSD" = 1, "TE" = 1, "TUSD" = 1, "TE" = 1, "TUSD" = 1, "TE" = 1, "TUSD" = 1)
+  ) %>%
+  add_header_above(
+    header = c(" " = 3, "Fora de Ponta" = 2, "Intermediário" = 2, "Ponta" = 2)
+  ) %>%
+  add_header_above(
+    header = c(" " = 1, "Convencional" = 2, "Branca" = 6),
+    bold = TRUE
+  )
+```
+
+```{r, tab.pos = "H", echo = FALSE, message = FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+kable(
+  tibble(
+    `Grupo` = c("A1"),
+    `Modalidade` = c("Azul"),
+    `FP.Demanda.TUSD` = c(6.21),
+    `FP.Consumo.TE` = c(0.36533),
+    `FP.Consumo.TUSD` = c(0.07884),
+    `P.Demanda.TUSD` = c(6.52),
+    `P.Consumo.TE` = c(0.59656),
+    `P.Consumo.TUSD` = c(0.07884),
+    
+  ),
+  caption = "Tarifas aplicadas ao Grupo A.",
+  format = "latex",
+  booktabs = TRUE,
+  col.names = NULL,
+  align = "ccc|cc|c|cc"
+  ) %>%
+  kable_styling(
+    latex_options = c("HOLD_position", "scale_down")
+  ) %>%
+  add_header_above(
+    header = c("Grupo" = 1, "Modalidade" = 1, "TUSD" = 1, "TE" = 1, "TUSD" = 1, "TUSD" = 1, "TE" = 1, "TUSD" = 1)
+  ) %>%
+  add_header_above(
+    header = c(" " = 2, "Demanda" = 1, "Consumo" = 2, "Demanda" = 1, "Consumo" = 2)
+  ) %>%
+  add_header_above(
+    header = c(" " = 2, "Fora de Ponta" = 3, "Ponta" = 3),
+    bold = TRUE
+  ) %>%
+  footnote(general = "Demanda e Consumo medidos, respectivamente, em R$/kW e R$/kWh.",
+           general_title = "Nota: ",
+           title_format = "italic",
+           footnote_as_chunk = T)
+```
 
 ## Cálculo do *valuation* intrínseco
 

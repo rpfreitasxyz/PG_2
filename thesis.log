@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  21 NOV 2020 19:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  22 NOV 2020 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -682,7 +682,7 @@ pel2 . nsf % 2Fdocs %
 [4
 
 ] [5] [6]
-<img/usinas_Copel.jpg, id=347, 1027.84pt x 578.16pt>
+<img/usinas_Copel.jpg, id=363, 1027.84pt x 578.16pt>
 File: img/usinas_Copel.jpg Graphic file (type jpg)
 <use img/usinas_Copel.jpg>
 Package pdftex.def Info: img/usinas_Copel.jpg  used on input line 222.
@@ -694,46 +694,62 @@ Overfull \hbox (139.39915pt too wide) in paragraph at lines 224--224
 de-[]marco-[]de-[]2020-[]248070610$[]\OT1/cmr/m/n/10 .
  []
 
-[8 <./img/usinas_copel.jpg>] [9] [10] [11]
-<img/mapa_geoeletrico_parana.jpg, id=378, 845.0772pt x 597.1911pt>
+[8 <./img/usinas_copel.jpg>] [9] [10] [11] [12]
+<img/mapa_geoeletrico_parana.jpg, id=400, 845.0772pt x 597.1911pt>
 File: img/mapa_geoeletrico_parana.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_parana.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_parana.jpg  used on input line 35
 6.
 (pdftex.def)             Requested size: 426.79135pt x 301.60191pt.
-<img/mapa_geoeletrico_curitiba.jpg, id=379, 540.3387pt x 654.5253pt>
+<img/mapa_geoeletrico_curitiba.jpg, id=401, 540.3387pt x 654.5253pt>
 File: img/mapa_geoeletrico_curitiba.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_curitiba.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_curitiba.jpg  used on input line 
 359.
 (pdftex.def)             Requested size: 426.79135pt x 516.9994pt.
-[12]
-<img/mapa_geoeletrico_londrina.jpg, id=386, 276.0714pt x 294.3798pt>
+[13]
+<img/mapa_geoeletrico_londrina.jpg, id=406, 276.0714pt x 294.3798pt>
 File: img/mapa_geoeletrico_londrina.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_londrina.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_londrina.jpg  used on input line 
 362.
 (pdftex.def)             Requested size: 426.79135pt x 455.1071pt.
-[13 <./img/mapa_geoeletrico_parana.jpg>]
-<img/mapa_geoeletrico_maringa.jpg, id=391, 277.7577pt x 270.0489pt>
+[14 <./img/mapa_geoeletrico_parana.jpg>]
+<img/mapa_geoeletrico_maringa.jpg, id=412, 277.7577pt x 270.0489pt>
 File: img/mapa_geoeletrico_maringa.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_maringa.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_maringa.jpg  used on input line 3
 65.
 (pdftex.def)             Requested size: 426.79135pt x 414.95358pt.
-[14 <./img/mapa_geoeletrico_curitiba.jpg>]
-<img/mapa_geoeletrico_ponta_grossa.jpg, id=397, 279.2031pt x 272.4579pt>
+[15 <./img/mapa_geoeletrico_curitiba.jpg>]
+<img/mapa_geoeletrico_ponta_grossa.jpg, id=418, 279.2031pt x 272.4579pt>
 File: img/mapa_geoeletrico_ponta_grossa.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_ponta_grossa.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_ponta_grossa.jpg  used on input l
 ine 368.
 (pdftex.def)             Requested size: 426.79135pt x 416.50166pt.
-[15 <./img/mapa_geoeletrico_londrina.jpg>] [16 <./img/mapa_geoeletrico_maringa.
-jpg>] [17 <./img/mapa_geoeletrico_ponta_grossa.jpg>] [18]
-Cap\'{\i }tulo 5.
-[19
+[16 <./img/mapa_geoeletrico_londrina.jpg>] [17 <./img/mapa_geoeletrico_maringa.
+jpg>] [18 <./img/mapa_geoeletrico_ponta_grossa.jpg>]
+<img/consumo_dist.png, id=432, 293.59688pt x 303.38344pt>
+File: img/consumo_dist.png Graphic file (type png)
+<use img/consumo_dist.png>
+Package pdftex.def Info: img/consumo_dist.png  used on input line 435.
+(pdftex.def)             Requested size: 426.79135pt x 441.01962pt.
+[19] [20]
+Overfull \hbox (10.50887pt too wide) in paragraph at lines 442--457
+ [][] 
+ []
 
-] [20
+<img/industrial_dist.png, id=444, 283.81032pt x 307.1475pt>
+File: img/industrial_dist.png Graphic file (type png)
+<use img/industrial_dist.png>
+Package pdftex.def Info: img/industrial_dist.png  used on input line 459.
+(pdftex.def)             Requested size: 426.79135pt x 461.92928pt.
+[21 <./img/consumo_dist.png>] [22] [23 <./img/industrial_dist.png>] [24] [25]
+Cap\'{\i }tulo 5.
+[26
+
+] [27
 
 ]
 No file thesis.bbl.
@@ -747,10 +763,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8551 strings out of 481446
- 131117 string characters out of 5918545
- 465233 words of memory out of 5000000
- 24937 multiletter control sequences out of 15000+600000
+ 8592 strings out of 481446
+ 131801 string characters out of 5918545
+ 568685 words of memory out of 5000000
+ 24960 multiletter control sequences out of 15000+600000
  545126 words of font info for 67 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  80i,12n,85p,1343b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -767,10 +783,10 @@ Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr8.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (31 pages, 6333495 bytes).
+Output written on thesis.pdf (38 pages, 6361115 bytes).
 PDF statistics:
- 511 PDF objects out of 1000 (max. 8388607)
- 452 compressed objects within 5 object streams
- 137 named destinations out of 1000 (max. 500000)
- 356 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 570 PDF objects out of 1000 (max. 8388607)
+ 499 compressed objects within 5 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 366 words of extra memory for PDF output out of 10000 (max. 10000000)
 
