@@ -360,15 +360,14 @@ library(kableExtra)
 
 kable(
   tibble(
-    `Grupo` = c("A1"),
-    `Modalidade` = c("Azul"),
-    `FP.Demanda.TUSD` = c(6.21),
-    `FP.Consumo.TE` = c(0.36533),
-    `FP.Consumo.TUSD` = c(0.07884),
-    `P.Demanda.TUSD` = c(6.52),
-    `P.Consumo.TE` = c(0.59656),
-    `P.Consumo.TUSD` = c(0.07884),
-    
+    `Grupo` = c("A1", "A2", "A3", "A3", "A3a", "A3a", "A3a", "A3a", "A3a", "A3a", "A3a", "A3a", "A3a", "A4", "A4", "A4", "A4", "A4", "A4", "A4", "A4", "A4", "AS", "AS", "AS", "AS"),
+    `Modalidade` = c("Azul", "Azul", "Azul", "Azul - Poder Público Estadual", "Azul", "Azul - Cooperativas Autorizadas", "Azul - Poder Público Estadual", "Azul - Rural", "Verde", "Verde - Aquicultura e Irrigação em Horário Especial", "Verde - Cooperativas Autorizadas", "Verde - Poder Público Estadual", "Verde - Rural", "Azul", "Azul - Cooperativas Autorizadas", "Azul - Poder Público Estadual", "Azul - Rural", "Verde", "Verde - Aquicultura e Irrigação em Horário Especial", "Verde - Cooperativas Autorizadas", "Verde - Poder Público Estadual", "Verde - Rural", "Azul", "Azul - Poder Público Estadual", "Verde", "Verde - Poder Público Estadual"),
+    `FP.Demanda.TUSD` = c(6.21, 9.19, 10.65, 7.47, 22.41, 16.76, 15.72, 21.06, 22.41, 22.41, 16.75, 15.72, 21.06, 22.41, 16.83, 15.72, 21.06, 22.41, 22.41, 16.83, 15.72, 21.06, 22.73, 15.94, 22.73, 15.94),
+    `FP.Consumo.TE` = c(0.36533, 0.36533, 0.36533, 0.25622, 0.36533, 0.27323, 0.25622, 0.34341, 0.36533, 0.10960, 0.27323, 0.25622, 0.34341, 0.36533, 0.27433, 0.25622, 0.34341, 0.36533, 0.10960, 0.27433, 0.25622, 0.34341, 0.36533, 0.25622, 0.36533, 0.25622),
+    `FP.Consumo.TUSD` = c(0.07884, 0.08712, 0.08816, 0.06183, 0.11436, 0.08553, 0.08021, 0.10750, 0.11436, 0.03431, 0.08553, 0.08021, 0.10750, 0.11436, 0.08587, 0.08021, 0.10750, 0.11436, 0.03431, 0.08587, 0.08021, 0.10750, 0.15601, 0.10941, 0.15601, 0.10941),
+    `P.Demanda.TUSD` = c(6.52, 22.35, 24.23, 16.99, 50.35, 37.66, 35.31, 47.33, 22.41, 22.41, 16.75, 15.72, 21.06, 50.35, 37.81, 35.31, 47.33, 22.41, 22.41, 16.83, 15.72, 21.06, 98.93, 69.38, 22.73, 15.94),
+    `P.Consumo.TE` = c(0.59656, 0.59656, 0.59656, 0.41839, 0.59656, 0.44617, 0.41839, 0.56077, 0.59656, 0.59656, 0.44617, 0.41839, 0.56077, 0.59656, 0.44796, 0.41839, 0.56077, 0.59656, 0.59656, 0.44796, 0.41839, 0.56077, 0.59656, 0.41839, 0.59656, 0.41839),
+    `P.Consumo.TUSD` = c(0.07884, 0.08712, 0.08816, 0.06183, 0.11436, 0.08553, 0.08021, 0.10750, 1.33891, 1.33891, 1.00137, 0.93903, 1.25858, 0.11436, 0.08587, 0.08021, 0.10750, 1.33891, 1.33891, 1.00539, 0.93903, 1.25858, 0.15601, 0.10941, 2.56357, 1.79793)
   ),
   caption = "Tarifas aplicadas ao Grupo A.",
   format = "latex",
@@ -376,8 +375,9 @@ kable(
   col.names = NULL,
   align = "ccc|cc|c|cc"
   ) %>%
+  column_spec(2, width = "8em") %>%
   kable_styling(
-    latex_options = c("HOLD_position", "scale_down")
+    latex_options = c("HOLD_position")
   ) %>%
   add_header_above(
     header = c("Grupo" = 1, "Modalidade" = 1, "TUSD" = 1, "TE" = 1, "TUSD" = 1, "TUSD" = 1, "TE" = 1, "TUSD" = 1)
