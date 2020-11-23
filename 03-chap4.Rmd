@@ -424,14 +424,34 @@ A empresa, naturalmente, se faz valer de uma Norma aplicável a conexão de micr
 
 ## Cálculo do *valuation* relativo
 
-### Margem bruta
+Naturalmente, ao fazermos uma comparação, é necessário questionar a natureza dos ativos. São similares?
 
-### Lucros antes de juros e impostos (EBIT)
 
-### Margem líquida
+Retirado do site Fundamentus:
+```{r, tab.pos = "H", echo = FALSE, message = FALSE}
+library(tidyverse)
+library(rvest)
+library(kableExtra)
 
-### Razão preço/lucro (P/E)
+page <- read_html("https://www.fundamentus.com.br/resultado.php?segmento=70") %>%
+  html_nodes("table") %>%
+  html_table()
 
-### Retorno sobre patrimônio líquido (ROE)
+page_filtr <- page[[1]] %>%
+  as_tibble() %>%
+  filter(Papel %in% c("CMIG3", "LIGT3", "ENBR3", "NEOE3", "CPLE3")) %>%
+  select(-c("Liq.2meses", "Patrim. Líq")) %>%
+  pivot_longer(cols = -Papel, names_to = "Indicadores", values_to = "Valores") %>%
+  pivot_wider(names_from = "Papel", values_from = "Valores") %>%
+  relocate(CPLE3, .after = Indicadores)
 
-### Comparação com empresas do setor
+kable(page_filtr,
+  caption = "Comparativo de empresas similares à Copel.",
+  format = "latex",
+  booktabs = TRUE,
+  align = "c"
+  ) %>%
+  kable_styling(
+    latex_options = "HOLD_position"
+  )
+```
