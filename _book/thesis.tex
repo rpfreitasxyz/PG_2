@@ -317,6 +317,9 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   Como uma \emph{holding}, a Copel também está presente no setor de transmissão de energia elétrica. De fato, referente a junho de 2016, a Copel possuía 2.521,2 km de linhas e 35 subestações, somando 13.002 MVA de potência de transformação.
 
   As tabelas abaixo apresentam o dimensionamento dos ativos de transmissão da Copel relativos à Rede Básica, para o período de junho de 2016. Cabe comentar que todas as subestações são inteiramente automatizadas.
+\begin{verbatim}
+Warning: package 'knitr' was built under R version 4.0.3
+\end{verbatim}
   \begin{table}[H]
 
   \caption{\label{tab:unnamed-chunk-2}Extensão de linhas de transmissão da Copel, por nível de tensão.}
@@ -459,12 +462,10 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \includegraphics[width=1\linewidth]{img/industrial_dist} \caption{Gráfico dos perfis de consumo da classe Industrial.}\label{fig:unnamed-chunk-14}
   \end{figure}
   A Copel disponibiliza também os dados referentes às tarifas pagas pelos clientes, tanto de alta quanto baixa tensão.\footnote{É importante ressaltar que as tarifas já esão disponibilizadas com os impostos (ICMS, PIS e COFINS), vigentes a partir de 09 jul 2020; foram inclusos para facilitar o entendimento por parte do leitor, no entanto, as alíquotas efetivas referentes ao PIS e à COFINS devem ser apuradas mensalmente, com suas variações sendo aplicadas às tarifas tempestivamente.}
-  \begin{table}[H]
 
-  \caption{\label{tab:unnamed-chunk-15}Tarifas aplicadas ao Grupo B.}
-  \centering
-  \resizebox{\linewidth}{!}{
-  \begin{tabular}[t]{ccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|ccccc|cc|cc|cc}
+  \begingroup\fontsize{10}{12}\selectfont
+  \begin{longtable}[t]{>{\centering\arraybackslash}p{8em}cccccccc}
+  \caption{\label{tab:unnamed-chunk-15}Tarifas aplicadas à baixa tensão.}\\
   \toprule
   \multicolumn{1}{c}{\textbf{ }} & \multicolumn{2}{c}{\textbf{Convencional}} & \multicolumn{6}{c}{\textbf{Branca}} \\
   \cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-9}
@@ -472,6 +473,15 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \cmidrule(l{3pt}r{3pt}){4-5} \cmidrule(l{3pt}r{3pt}){6-7} \cmidrule(l{3pt}r{3pt}){8-9}
   \multicolumn{1}{c}{ } & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} \\
   \cmidrule(l{3pt}r{3pt}){2-2} \cmidrule(l{3pt}r{3pt}){3-3} \cmidrule(l{3pt}r{3pt}){4-4} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-7} \cmidrule(l{3pt}r{3pt}){8-8} \cmidrule(l{3pt}r{3pt}){9-9}
+  \endfirsthead
+  \caption[]{\label{tab:unnamed-chunk-15}Tarifas aplicadas à baixa tensão. \textit{(continuação)}}\\
+  \toprule
+  \endhead
+  \
+  \endfoot
+  \bottomrule
+  \multicolumn{9}{l}{\textit{Nota: } Consumo medido em R\$/kWh.}\\
+  \endlastfoot
   B1 - Baixa Renda, até 30 kWh & 0.09441 & 0.06628 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
   B1 - Baixa Renda, entre 31 e 100 kWh & 0.23076 & 0.16201 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
   B1 - Baixa Renda, entre 101 e 220 kWh & 0.34614 & 0.24301 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
@@ -487,15 +497,13 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   B3 - Demais Classes & 0.38460 & 0.36837 & 0.36533 & 0.28953 & 0.36533 & 0.56984 & 0.36533 & 0.85016\\
   B3 - Poder Público Estadual & 0.26973 & 0.25835 & 0.25622 & 0.20306 & 0.25622 & 0.39965 & 0.25622 & 0.59625\\
   B4A - Iluminação Pública & 0.21153 & 0.20260 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
-  B4B - Iluminação Pública & 0.23076 & 0.22103 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
-  \bottomrule
-  \end{tabular}}
-  \end{table}
-  \begin{table}[H]
+  B4B - Iluminação Pública & 0.23076 & 0.22103 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\*
+  \end{longtable}
+  \endgroup{}
 
-  \caption{\label{tab:unnamed-chunk-16}Tarifas aplicadas ao Grupo A.}
-  \centering
-  \begin{tabular}[t]{ccc|cc|c|ccccc|cc|c|ccccc|cc|c|ccccc|cc|c|ccccc|cc|c|ccccc|cc|c|ccccc|cc|c|ccccc|cc|c|cc}
+  \begingroup\fontsize{10}{12}\selectfont
+  \begin{longtable}[t]{c>{\centering\arraybackslash}p{8em}cccccc}
+  \caption{\label{tab:unnamed-chunk-16}Tarifas aplicadas à alta tensão.}\\
   \toprule
   \multicolumn{2}{c}{\textbf{ }} & \multicolumn{3}{c}{\textbf{Fora de Ponta}} & \multicolumn{3}{c}{\textbf{Ponta}} \\
   \cmidrule(l{3pt}r{3pt}){3-5} \cmidrule(l{3pt}r{3pt}){6-8}
@@ -503,6 +511,15 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \cmidrule(l{3pt}r{3pt}){3-3} \cmidrule(l{3pt}r{3pt}){4-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-8}
   \multicolumn{1}{c}{Grupo} & \multicolumn{1}{c}{Modalidade} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} \\
   \cmidrule(l{3pt}r{3pt}){1-1} \cmidrule(l{3pt}r{3pt}){2-2} \cmidrule(l{3pt}r{3pt}){3-3} \cmidrule(l{3pt}r{3pt}){4-4} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-7} \cmidrule(l{3pt}r{3pt}){8-8}
+  \endfirsthead
+  \caption[]{\label{tab:unnamed-chunk-16}Tarifas aplicadas à alta tensão. \textit{(continuação)}}\\
+  \toprule
+  \endhead
+  \
+  \endfoot
+  \bottomrule
+  \multicolumn{8}{l}{\textit{Nota: } Demanda e consumo medidos, respectivamente, em R\$/kW e R\$/kWh.}\\
+  \endlastfoot
   A1 & Azul & 6.21 & 0.36533 & 0.07884 & 6.52 & 0.59656 & 0.07884\\
   A2 & Azul & 9.19 & 0.36533 & 0.08712 & 22.35 & 0.59656 & 0.08712\\
   A3 & Azul & 10.65 & 0.36533 & 0.08816 & 24.23 & 0.59656 & 0.08816\\
@@ -533,11 +550,10 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   AS & Azul - Poder Público Estadual & 15.94 & 0.25622 & 0.10941 & 69.38 & 0.41839 & 0.10941\\
   AS & Verde & 22.73 & 0.36533 & 0.15601 & 22.73 & 0.59656 & 2.56357\\
   \addlinespace
-  AS & Verde - Poder Público Estadual & 15.94 & 0.25622 & 0.10941 & 15.94 & 0.41839 & 1.79793\\
-  \bottomrule
-  \multicolumn{64}{l}{\textit{Nota: } Demanda e Consumo medidos, respectivamente, em R\$/kW e R\$/kWh.}\\
-  \end{tabular}
-  \end{table}
+  AS & Verde - Poder Público Estadual & 15.94 & 0.25622 & 0.10941 & 15.94 & 0.41839 & 1.79793\\*
+  \end{longtable}
+  \endgroup{}
+
   \hypertarget{cuxe1lculo-do-valuation-intruxednseco}{%
   \section{\texorpdfstring{Cálculo do \emph{valuation} intrínseco}{Cálculo do valuation intrínseco}}\label{cuxe1lculo-do-valuation-intruxednseco}}
 

@@ -332,14 +332,18 @@ kable(
     `Branca.P.TE` = c(0, 0, 0, 0, 0.36533, 0.28559, 0.29956, 0.29956, 0.27765, 0.33245, 0.36533, 0.25622, 0, 0),
     `Branca.P.TUSD` = c(0, 0, 0, 0, 0.78446, 0.61325, 0.64326, 0.64326, 0.59618, 0.77365, 0.85016, 0.59625, 0, 0)
   ),
-  caption = "Tarifas aplicadas ao Grupo B.",
+  caption = "Tarifas aplicadas à baixa tensão.",
   format = "latex",
   booktabs = TRUE,
   col.names = NULL,
-  align = "ccc|cc|cc|cc"
+  align = "c",
+  longtable = TRUE
   ) %>%
+  column_spec(1, width = "8em") %>%
   kable_styling(
-    latex_options = c("HOLD_position", "scale_down")
+    latex_options = c("HOLD_position", "repeat_header"),
+    repeat_header_text = "\\textit{(continuação)}",
+    font_size = 10
   ) %>%
   add_header_above(
     header = c(" " = 1, "TE" = 1, "TUSD" = 1, "TE" = 1, "TUSD" = 1, "TE" = 1, "TUSD" = 1, "TE" = 1, "TUSD" = 1)
@@ -350,7 +354,11 @@ kable(
   add_header_above(
     header = c(" " = 1, "Convencional" = 2, "Branca" = 6),
     bold = TRUE
-  )
+  ) %>%
+  footnote(general = "Consumo medido em R$/kWh.",
+           general_title = "Nota: ",
+           title_format = "italic",
+           footnote_as_chunk = TRUE)
 ```
 
 ```{r, tab.pos = "H", echo = FALSE, message = FALSE}
@@ -369,15 +377,18 @@ kable(
     `P.Consumo.TE` = c(0.59656, 0.59656, 0.59656, 0.41839, 0.59656, 0.44617, 0.41839, 0.56077, 0.59656, 0.59656, 0.44617, 0.41839, 0.56077, 0.59656, 0.44796, 0.41839, 0.56077, 0.59656, 0.59656, 0.44796, 0.41839, 0.56077, 0.59656, 0.41839, 0.59656, 0.41839),
     `P.Consumo.TUSD` = c(0.07884, 0.08712, 0.08816, 0.06183, 0.11436, 0.08553, 0.08021, 0.10750, 1.33891, 1.33891, 1.00137, 0.93903, 1.25858, 0.11436, 0.08587, 0.08021, 0.10750, 1.33891, 1.33891, 1.00539, 0.93903, 1.25858, 0.15601, 0.10941, 2.56357, 1.79793)
   ),
-  caption = "Tarifas aplicadas ao Grupo A.",
+  caption = "Tarifas aplicadas à alta tensão.",
   format = "latex",
   booktabs = TRUE,
   col.names = NULL,
-  align = "ccc|cc|c|cc"
+  align = "c",
+  longtable = T
   ) %>%
   column_spec(2, width = "8em") %>%
   kable_styling(
-    latex_options = c("HOLD_position")
+    latex_options = c("HOLD_position", "repeat_header"),
+    repeat_header_text = "\\textit{(continuação)}",
+    font_size = 10
   ) %>%
   add_header_above(
     header = c("Grupo" = 1, "Modalidade" = 1, "TUSD" = 1, "TE" = 1, "TUSD" = 1, "TUSD" = 1, "TE" = 1, "TUSD" = 1)
@@ -389,10 +400,10 @@ kable(
     header = c(" " = 2, "Fora de Ponta" = 3, "Ponta" = 3),
     bold = TRUE
   ) %>%
-  footnote(general = "Demanda e Consumo medidos, respectivamente, em R$/kW e R$/kWh.",
+  footnote(general = "Demanda e consumo medidos, respectivamente, em R$/kW e R$/kWh.",
            general_title = "Nota: ",
            title_format = "italic",
-           footnote_as_chunk = T)
+           footnote_as_chunk = TRUE)
 ```
 
 ## Cálculo do *valuation* intrínseco
