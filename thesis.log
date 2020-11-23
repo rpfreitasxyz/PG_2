@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  23 NOV 2020 19:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  23 NOV 2020 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -774,11 +774,11 @@ Overfull \hbox (23.43192pt too wide) in alignment at lines 484--501
  [] [] [] [] [] [] [] [] [] 
  []
 
-[23 <./img/industrial_dist.png>] [24] [25] [26]
+[23 <./img/industrial_dist.png>] [24] [25] [26] [27]
 Cap\'{\i }tulo 5.
-[27
+[28
 
-] [28
+] [29
 
 ]
 No file thesis.bbl.
@@ -795,8 +795,8 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8603 strings out of 481446
- 131902 string characters out of 5918545
+ 8606 strings out of 481446
+ 131931 string characters out of 5918545
  491040 words of memory out of 5000000
  24966 multiletter control sequences out of 15000+600000
  546284 words of font info for 71 fonts, out of 8000000 for 9000
@@ -820,10 +820,10 @@ ers/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/Rafael Pinto/AppData/Roaming/Tiny
 TeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (39 pages, 6394601 bytes).
+Output written on thesis.pdf (40 pages, 6397907 bytes).
 PDF statistics:
- 591 PDF objects out of 1000 (max. 8388607)
- 515 compressed objects within 6 object streams
- 154 named destinations out of 1000 (max. 500000)
+ 602 PDF objects out of 1000 (max. 8388607)
+ 525 compressed objects within 6 object streams
+ 157 named destinations out of 1000 (max. 500000)
  366 words of extra memory for PDF output out of 10000 (max. 10000000)
 
