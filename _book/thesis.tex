@@ -559,18 +559,18 @@ Warning: package 'knitr' was built under R version 4.0.3
   \hypertarget{cuxe1lculo-do-valuation-intruxednseco}{%
   \section{\texorpdfstring{Cálculo do \emph{valuation} intrínseco}{Cálculo do valuation intrínseco}}\label{cuxe1lculo-do-valuation-intruxednseco}}
 
-  Para uma análise intrínseca, comecemos nos debruçando sobre as demonstrações financeiras da Companhia. Os dados foram retirados da base de dados do Eikon, da companhia de informação Thomson Reuters.
+  Para uma análise intrínseca, comecemos nos debruçando sobre as demonstrações financeiras da Companhia. Os dados foram retirados da base de dados do Eikon, da companhia de informação Thomson Reuters.\footnote{Para facilidade de tratamento e observação, foi utilizado o Eikon. Naturalmente, todos os dados dispostos poderiam ser obtidos pesquisando-se através do RI da empresa. Os dados foram obtidos pela última vez em 25 nov 2020.}
 
-  \begingroup\fontsize{10}{12}\selectfont
-  \begin{longtable}[t]{>{\raggedright\arraybackslash}p{12em}llllllllllllllllllllllllll}
-  \caption{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel (em milhões de reais).}\\
+  \begingroup\fontsize{8}{10}\selectfont
+  \begin{longtable}[t]{llllllll}
+  \caption{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2019 a 2013.}\\
   \toprule
-  Period End Date & 31-Dec-2019  & 31-Dec-2018  & 31-Dec-2017  & 31-Dec-2016  & 31-Dec-2015  & 31-Dec-2014  & 31-Dec-2013  & 31-Dec-2012  & 31-Dec-2011  & 31-Dec-2010  & 31-Dec-2009  & 31-Dec-2008  & 31-Dec-2007  & 31-Dec-2006  & 31-Dec-2005  & 31-Dec-2004  & 31-Dec-2003  & 31-Dec-2002  & 31-Dec-2001  & 31-Dec-2000  & 31-Dec-1999  & 31-Dec-1998  & 31-Dec-1997  & 31-Dec-1996  & 31-Dec-1995  & 31-Dec-1994 \\
+  Period End Date & 2019 & 2018 & 2017 & 2016 & 2015 & 2014 & 2013\\
   \midrule
   \endfirsthead
-  \caption[]{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel (em milhões de reais). \textit{(continuação)}}\\
+  \caption[]{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2019 a 2013. \textit{(continuação)}}\\
   \toprule
-  Period End Date & 31-Dec-2019  & 31-Dec-2018  & 31-Dec-2017  & 31-Dec-2016  & 31-Dec-2015  & 31-Dec-2014  & 31-Dec-2013  & 31-Dec-2012  & 31-Dec-2011  & 31-Dec-2010  & 31-Dec-2009  & 31-Dec-2008  & 31-Dec-2007  & 31-Dec-2006  & 31-Dec-2005  & 31-Dec-2004  & 31-Dec-2003  & 31-Dec-2002  & 31-Dec-2001  & 31-Dec-2000  & 31-Dec-1999  & 31-Dec-1998  & 31-Dec-1997  & 31-Dec-1996  & 31-Dec-1995  & 31-Dec-1994 \\
+  Period End Date & 2019 & 2018 & 2017 & 2016 & 2015 & 2014 & 2013\\
   \midrule
   \endhead
   \
@@ -578,93 +578,414 @@ Warning: package 'knitr' was built under R version 4.0.3
   \bottomrule
   \endlastfoot
   \addlinespace[0.3em]
-  \multicolumn{27}{l}{\textbf{Assets}}\\
-  \hspace{1em}Cash and Short Term Investments & 3300 & 2494 & 1213 & 1119 & 2798 & 1809 & 2131 & 2095 & 1630 & 2329 & 1884 & 1964 & 1541 & 1469 & 1132 & 519 & 363 & 200 & 166 & 224 & 180 & 213 & 670 & 97 & 40 & 11\\
-  \hspace{1em}\hspace{1em}Cash & 263 & 168 & 157 & 173 & 168 & 152 & 130 & 94 & -- & 59 & 80 & -- & 1541 & 1469 & 1132 & 519 & 363 & 200 & 166 & 224 & 180 & 213 & 14 & 14 & 40 & 11\\
-  \hspace{1em}\hspace{1em}Cash \& Equivalents & 2679 & 1781 & 883 & 809 & 1313 & 588 & 1611 & 1365 & 1048 & 1735 & 1439 & 1649 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Short Term Investments & 359 & 546 & 173 & 137 & 1317 & 1068 & 389 & 636 & 582 & 534 & 365 & 315 & 0 & -- & -- & -- & -- & -- & -- & -- & -- & -- & 656 & 83 & 0 & 0\\
-  \hspace{1em}Accounts Receivable - Trade, Net & 3120 & 2944 & 2733 & 2217 & 3033 & 2179 & 1338 & 1489 & 1368 & 1163 & 1072 & 982 & 1069 & 973 & 879 & 766 & 657 & 516 & 598 & 449 & 289 & 211 & 228 & 249 & 183 & 166\\
-  \hspace{1em}\hspace{1em}Accounts Receivable - Trade, Gross & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & 1090 & 1065 & 946 & 846 & 705 & 553 & -- & -- & -- & -- & 202 & 234 & 184 & 167\\
-  \hspace{1em}\hspace{1em}Provision for Doubtful Accounts & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -72 & -112 & -79 & -86 & -52 & -37 & -- & -- & -- & -- & -4 & -7 & -1 & -1\\
-  \hspace{1em}Total Receivables, Net & 4385 & 3963 & 4205 & 2894 & 3953 & 3225 & 2388 & 2421 & 1958 & 1639 & 1606 & 1396 & 1465 & 1362 & 1130 & 886 & 971 & 706 & 639 & 488 & 299 & 219 & 235 & 285 & 213 & 187\\
-  \hspace{1em}\hspace{1em}Receivables - Other & 1264 & 1019 & 1472 & 677 & 921 & 1047 & 1051 & 931 & 590 & 476 & 534 & 414 & 396 & 389 & 251 & 120 & 314 & 190 & 41 & 39 & 10 & 8 & 7 & 36 & 30 & 21\\
-  \hspace{1em}Total Inventory & 130 & 116 & 111 & 131 & 131 & 151 & 139 & 125 & 104 & 121 & 112 & 84 & 52 & 51 & 37 & 31 & 27 & 10 & 19 & 15 & 12 & 10 & 6 & 12 & 14 & 9\\
-  \hspace{1em}\hspace{1em}Inventories - Raw Materials & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & 84 & 52 & 51 & 37 & 31 & 27 & 10 & 19 & 15 & 12 & 10 & 6 & 12 & 14 & 9\\
-  \hspace{1em}\hspace{1em}Inventories - Other & -- & -- & -- & -- & 131 & 151 & 139 & 125 & -- & 121 & 112 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Prepaid Expenses & 94 & 104 & 114 & 93 & 49 & 20 & 20 & 5 & 5 & 5 & 5 & 4 & -- & -- & -- & -- & -- & -- & 41 & 44 & 232 & 187 & 205 & 26 & 45 & 32\\
-  \hspace{1em}Other Current Assets, Total & 0 & 0 & 59 & 1 & 2 & 13 & 2 & 37 & 3 & 64 & 5 & 0 & 230 & 197 & 172 & 197 & 59 & 115 & 100 & 0 & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Restricted Cash - Current & 0 & 0 & 59 & 1 & 2 & 13 & 2 & 37 & 3 & 64 & 5 & 0 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Asset & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & 64 & 9 & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Current Assets & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & 230 & 197 & 172 & 197 & 59 & 51 & 91 & 0 & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Total Current Assets & 7909 & 6678 & 5702 & 4237 & 6933 & 5218 & 4680 & 4682 & 3700 & 4158 & 3612 & 3447 & 3288 & 3079 & 2471 & 1633 & 1420 & 1031 & 965 & 771 & 723 & 629 & 1116 & 420 & 312 & 239\\
-  \hspace{1em}Property/Plant/Equipment, Total - Gross & 11021 & 12183 & 10987 & 9997 & 10567 & 7133 & 6649 & 8511 & -- & -- & -- & -- & -- & -- & -- & 5399 & 5380 & -129 & 7876 & 1084 & -- & -- & 0 & 0 & 7626 & 7168\\
-  \hspace{1em}\hspace{1em}Buildings - Gross & 1962 & 1501 & 1500 & 1499 & 1654 & 1520 & 1520 & 1379 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Land/Improvements - Gross & 490 & 375 & 278 & 277 & 278 & 278 & 264 & 183 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Machinery/Equipment - Gross & 8923 & 5696 & 5380 & 5371 & 5767 & 5318 & 4854 & 4567 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Construction in Progress - Gross & 573 & 4592 & 3813 & 2834 & 2851 & -- & -- & 2372 & -- & -- & -- & -- & -- & -- & -- & 594 & 483 & 504 & 445 & 700 & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Property/Plant/Equipment - Gross & -927 & 19 & 17 & 17 & 17 & 17 & 12 & 11 & -- & -- & -- & -- & -- & -- & -- & 4805 & 4897 & -633 & 7431 & 384 & -- & -- & 0 & 0 & 7626 & 7168\\
-  \hspace{1em}Property/Plant/Equipment, Total - Net & 7008 & 8414 & 7263 & 6251 & 5859 & 5327 & 4858 & 5105 & 7209 & -7102 & -6777 & 6772 & 6842 & 6733 & 5948 & 5399 & 5380 & -2917 & 5334 & -2456 & 5759 & 5369 & 6422 & 6074 & 5342 & 5102\\
-  \hspace{1em}\hspace{1em}Accumulated Depreciation, Total & -4013 & -3769 & -3725 & -3746 & -4708 & -3851 & -3593 & -3406 & -- & -7102 & -6777 & -- & -- & -- & -- & 0 & 0 & -2788 & -2542 & -3540 & -- & -- & 0 & 0 & -2284 & -2066\\
-  \hspace{1em}Goodwill, Net & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Intangibles, Net & 6333 & 6029 & 6453 & 6460 & 6145 & 2174 & 2035 & 1789 & 1717 & 1749 & 1828 & 1736 & 116 & 125 & 66 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Intangibles - Gross & -- & -- & -- & -- & -- & -- & -- & -- & -- & 4429 & 4353 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Accumulated Intangible Amortization & -- & -- & -- & -- & -- & -- & -- & -- & -- & -2680 & -2525 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Utility Plant, Net & 3677 & 2426 & 2567 & 2684 & 2834 & 2977 & 3126 & 2767 & -- & 13766 & 13437 & -- & -- & -- & -- & -- & -- & 8250 & -- & 10649 & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Utility Plant - Gross & 8082 & 6643 & 6638 & 6596 & 7621 & 7619 & 7619 & 7109 & -- & 13766 & 13437 & -- & -- & -- & -- & -- & -- & 8250 & -- & 10649 & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Utility Plant Accumulated Depreciation & -4406 & -4217 & -4072 & -3912 & -4787 & -4642 & -4493 & -4342 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Total Utility Plant, Net & 3677 & 2426 & 2567 & 2684 & 2834 & 2977 & 3126 & 2767 & -- & 13766 & 13437 & -- & -- & -- & -- & -- & -- & 8250 & -- & 10649 & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Long Term Investments & 2948 & 2865 & 2979 & 2967 & 2451 & 2224 & 1308 & 698 & 618 & 483 & 406 & 407 & 249 & 223 & 392 & 457 & 426 & 498 & 443 & 445 & 328 & 261 & 94 & 74 & 63 & 55\\
-  \hspace{1em}\hspace{1em}LT Investment - Affiliate Companies & 2522 & 2367 & 2569 & 2334 & 2225 & 1660 & 1188 & 569 & 555 & 465 & 385 & 387 & 204 & 210 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}LT Investments - Other & 426 & 498 & 410 & 634 & 226 & 564 & 121 & 129 & 63 & 18 & 20 & 20 & 44 & 13 & 392 & 457 & 426 & 498 & 443 & 445 & 328 & 261 & 94 & 74 & 63 & 55\\
-  \hspace{1em}Note Receivable - Long Term & 7691 & 6635 & 5263 & 4616 & 2085 & 5128 & 4334 & 3553 & 3383 & 2482 & 1897 & 1558 & 147 & 120 & 121 & 185 & 199 & 72 & 124 & 45 & 35 & 60 & 33 & 57 & 59 & 16\\
-  \hspace{1em}Other Long Term Assets, Total & 2746 & 2882 & 2936 & 3093 & 2641 & 2569 & 2770 & 2616 & 2211 & 2323 & 1910 & 2015 & 1831 & 1708 & 1926 & 2205 & 1913 & 1613 & 1264 & 913 & 855 & 753 & 671 & 614 & 564 & 607\\
-  \hspace{1em}\hspace{1em}Deferred Charges & 0 & 3 & 13 & 26 & 25 & 0 & 0 & 9 & 0 & -- & -- & -- & 6 & 0 & 49 & -- & -- & 52 & 212 & 0 & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Defered Income Tax - Long Term Asset & 1012 & 1007 & 915 & 814 & 538 & 526 & 753 & 681 & 462 & 508 & 398 & 399 & -- & -- & -- & -- & -- & 866 & 291 & 216 & 191 & 172 & 47 & 62 & 43 & 36\\
-  \hspace{1em}\hspace{1em}Restricted Cash - Long Term & 603 & 618 & 658 & 731 & 806 & 793 & 721 & 618 & 468 & 427 & 183 & 211 & 144 & 166 & 156 & 147 & 112 & 96 & 47 & 50 & 64 & 73 & 117 & 43 & 18 & 16\\
-  \hspace{1em}\hspace{1em}Other Long Term Assets & 1131 & 1254 & 1349 & 1523 & 1272 & 1250 & 1295 & 1308 & 1281 & 1388 & 1329 & 1404 & 1681 & 1542 & 1721 & 2058 & 1801 & 599 & 714 & 647 & 600 & 508 & 507 & 509 & 503 & 555\\
-  \hspace{1em}Total Assets & 38313 & 35930 & 33162 & 30308 & 28948 & 25618 & 23111 & 21209 & 18837 & 17859 & 16313 & 15934 & 12473 & 11988 & 10924 & 9879 & 9338 & 8547 & 8130 & 10367 & 7700 & 7072 & 8336 & 7239 & 6340 & 6019\\
+  \multicolumn{8}{l}{\textbf{Assets}}\\
+  \hspace{1em}Cash and Short Term Investments & 3300 & 2494 & 1213 & 1119 & 2798 & 1809 & 2131\\
+  \hspace{1em}\hspace{1em}Cash & 263 & 168 & 157 & 173 & 168 & 152 & 130\\
+  \hspace{1em}\hspace{1em}Cash \& Equivalents & 2679 & 1781 & 883 & 809 & 1313 & 588 & 1611\\
+  \hspace{1em}\hspace{1em}Short Term Investments & 359 & 546 & 173 & 137 & 1317 & 1068 & 389\\
+  \hspace{1em}Accounts Receivable - Trade, Net & 3120 & 2944 & 2733 & 2217 & 3033 & 2179 & 1338\\
+  \hspace{1em}\hspace{1em}Accounts Receivable - Trade, Gross & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Provision for Doubtful Accounts & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Receivables, Net & 4385 & 3963 & 4205 & 2894 & 3953 & 3225 & 2388\\
+  \hspace{1em}\hspace{1em}Receivables - Other & 1264 & 1019 & 1472 & 677 & 921 & 1047 & 1051\\
+  \hspace{1em}Total Inventory & 130 & 116 & 111 & 131 & 131 & 151 & 139\\
+  \hspace{1em}\hspace{1em}Inventories - Raw Materials & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Inventories - Other & -- & -- & -- & -- & 131 & 151 & 139\\
+  \hspace{1em}Prepaid Expenses & 94 & 104 & 114 & 93 & 49 & 20 & 20\\
+  \hspace{1em}Other Current Assets, Total & 0 & 0 & 59 & 1 & 2 & 13 & 2\\
+  \hspace{1em}\hspace{1em}Restricted Cash - Current & 0 & 0 & 59 & 1 & 2 & 13 & 2\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Asset & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Current Assets & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Current Assets & 7909 & 6678 & 5702 & 4237 & 6933 & 5218 & 4680\\
+  \hspace{1em}Property/Plant/Equipment, Total - Gross & 11021 & 12183 & 10987 & 9997 & 10567 & 7133 & 6649\\
+  \hspace{1em}\hspace{1em}Buildings - Gross & 1962 & 1501 & 1500 & 1499 & 1654 & 1520 & 1520\\
+  \hspace{1em}\hspace{1em}Land/Improvements - Gross & 490 & 375 & 278 & 277 & 278 & 278 & 264\\
+  \hspace{1em}\hspace{1em}Machinery/Equipment - Gross & 8923 & 5696 & 5380 & 5371 & 5767 & 5318 & 4854\\
+  \hspace{1em}\hspace{1em}Construction in Progress - Gross & 573 & 4592 & 3813 & 2834 & 2851 & -- & --\\
+  \hspace{1em}\hspace{1em}Other Property/Plant/Equipment - Gross & -927 & 19 & 17 & 17 & 17 & 17 & 12\\
+  \hspace{1em}Property/Plant/Equipment, Total - Net & 7008 & 8414 & 7263 & 6251 & 5859 & 5327 & 4858\\
+  \hspace{1em}\hspace{1em}Accumulated Depreciation, Total & -4013 & -3769 & -3725 & -3746 & -4708 & -3851 & -3593\\
+  \hspace{1em}Goodwill, Net & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Intangibles, Net & 6333 & 6029 & 6453 & 6460 & 6145 & 2174 & 2035\\
+  \hspace{1em}\hspace{1em}Intangibles - Gross & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Accumulated Intangible Amortization & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Utility Plant, Net & 3677 & 2426 & 2567 & 2684 & 2834 & 2977 & 3126\\
+  \hspace{1em}\hspace{1em}Utility Plant - Gross & 8082 & 6643 & 6638 & 6596 & 7621 & 7619 & 7619\\
+  \hspace{1em}\hspace{1em}Utility Plant Accumulated Depreciation & -4406 & -4217 & -4072 & -3912 & -4787 & -4642 & -4493\\
+  \hspace{1em}Total Utility Plant, Net & 3677 & 2426 & 2567 & 2684 & 2834 & 2977 & 3126\\
+  \hspace{1em}Long Term Investments & 2948 & 2865 & 2979 & 2967 & 2451 & 2224 & 1308\\
+  \hspace{1em}\hspace{1em}LT Investment - Affiliate Companies & 2522 & 2367 & 2569 & 2334 & 2225 & 1660 & 1188\\
+  \hspace{1em}\hspace{1em}LT Investments - Other & 426 & 498 & 410 & 634 & 226 & 564 & 121\\
+  \hspace{1em}Note Receivable - Long Term & 7691 & 6635 & 5263 & 4616 & 2085 & 5128 & 4334\\
+  \hspace{1em}Other Long Term Assets, Total & 2746 & 2882 & 2936 & 3093 & 2641 & 2569 & 2770\\
+  \hspace{1em}\hspace{1em}Deferred Charges & 0 & 3 & 13 & 26 & 25 & 0 & 0\\
+  \hspace{1em}\hspace{1em}Defered Income Tax - Long Term Asset & 1012 & 1007 & 915 & 814 & 538 & 526 & 753\\
+  \hspace{1em}\hspace{1em}Restricted Cash - Long Term & 603 & 618 & 658 & 731 & 806 & 793 & 721\\
+  \hspace{1em}\hspace{1em}Other Long Term Assets & 1131 & 1254 & 1349 & 1523 & 1272 & 1250 & 1295\\
+  \hspace{1em}Total Assets & 38313 & 35930 & 33162 & 30308 & 28948 & 25618 & 23111\\
   \addlinespace[0.3em]
-  \multicolumn{27}{l}{\textbf{Liabilities}}\\
-  \hspace{1em}Accounts Payable & 1685 & 1419 & 1684 & 1256 & 1613 & 1587 & 1092 & 1132 & 747 & 613 & 544 & 498 & 367 & 392 & 1162 & 768 & 404 & 249 & 271 & 85 & 86 & 54 & 49 & 56 & 52 & 48\\
-  \hspace{1em}Payable/Accrued & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Accrued Expenses & 1280 & 1065 & 995 & 862 & 811 & 603 & 698 & 858 & 705 & 684 & 641 & 575 & 749 & 820 & 490 & 505 & 486 & 228 & 244 & 146 & 137 & 125 & 77 & 106 & 86 & 62\\
-  \hspace{1em}Notes Payable/Short Term Debt & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & -- & -- & 0 & 0 & 0 & 0\\
-  \hspace{1em}Current Port. of LT Debt/Capital Leases & 1453 & 3298 & 2417 & 2602 & 1233 & 1299 & 1015 & 274 & 116 & 704 & 136 & 293 & 265 & 928 & 215 & 671 & 273 & 198 & 272 & 276 & 302 & 174 & 360 & 241 & 147 & 45\\
-  \hspace{1em}Other Current liabilities, Total & 927 & 913 & 1014 & 936 & 1133 & 566 & 543 & 570 & 489 & 536 & 403 & 503 & 560 & 507 & 462 & 304 & 127 & 120 & 154 & 146 & 180 & 211 & 201 & 261 & 136 & 102\\
-  \hspace{1em}\hspace{1em}Dividends Payable & 616 & 376 & 289 & 267 & 346 & 20 & 19 & 205 & 136 & 164 & 91 & 244 & 252 & 277 & 114 & 91 & 46 & 1 & 56 & 97 & 102 & 122 & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Customer Advances & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & 35 & -- & 13 & -- & -- & 13 & 14 & 11 & 11\\
-  \hspace{1em}\hspace{1em}Income Taxes Payable & 60 & 198 & 86 & 41 & 312 & 310 & 298 & 170 & 152 & 203 & 160 & 102 & -- & -- & -- & -- & -- & 39 & 64 & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Payables & 222 & 260 & 184 & 331 & 197 & 213 & 188 & 138 & 131 & 112 & 123 & 114 & 85 & 68 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Liability & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & 0 & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Current Liabilities & 29 & 80 & 455 & 297 & 277 & 23 & 38 & 56 & 71 & 56 & 30 & 43 & 223 & 162 & 348 & 213 & 81 & 45 & 34 & 36 & 78 & 89 & 188 & 247 & 125 & 91\\
-  \hspace{1em}Total Current Liabilities & 5346 & 6695 & 6110 & 5656 & 4789 & 4055 & 3348 & 2833 & 2058 & 2537 & 1723 & 1869 & 1941 & 2647 & 2329 & 2248 & 1290 & 795 & 941 & 653 & 705 & 564 & 687 & 664 & 421 & 257\\
-  \hspace{1em}Total Long Term Debt & 10215 & 8268 & 7414 & 6235 & 6528 & 4755 & 3517 & 2988 & 2058 & 1281 & 1538 & 1571 & 1838 & 1733 & 1895 & 1160 & 1737 & 2016 & 1154 & 1104 & 1117 & 917 & 744 & 478 & 410 & 344\\
-  \hspace{1em}\hspace{1em}Long Term Debt & 10152 & 8268 & 7414 & 6235 & 6528 & 4755 & 3517 & 2988 & 2058 & 1281 & 1538 & 1571 & 1838 & 1733 & 1895 & 1160 & 1737 & 2016 & 1154 & 1104 & 1117 & 917 & 744 & 478 & 410 & 344\\
-  \hspace{1em}\hspace{1em}Capital Lease Obligations & 63 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Total Debt & 11669 & 11565 & 9830 & 8837 & 7761 & 6054 & 4532 & 3262 & 2174 & 1985 & 1673 & 1865 & 2102 & 2661 & 2110 & 1831 & 2010 & 2214 & 1426 & 1380 & 1419 & 1091 & 1104 & 719 & 557 & 389\\
-  \hspace{1em}Deferred Income Tax & 294 & 157 & 157 & 178 & 0 & 102 & 489 & 591 & 650 & 887 & 901 & 935 & -- & -- & -- & -- & -- & 13 & 0 & 821 & 0 & 0 & 462 & 379 & 241 & 335\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - LT Liability & 294 & 157 & 157 & 178 & 0 & 102 & 489 & 591 & 650 & 887 & 901 & 935 & -- & -- & -- & -- & -- & 13 & 0 & 821 & 0 & 0 & 462 & 379 & 241 & 335\\
-  \hspace{1em}Minority Interest & 346 & 303 & 303 & 264 & 339 & 352 & 277 & 265 & 243 & 266 & 228 & 219 & 232 & 206 & 78 & 45 & 29 & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Other Liabilities, Total & 4860 & 4474 & 3972 & 3241 & 3045 & 3022 & 2829 & 2435 & 1993 & 1859 & 1627 & 1598 & 1227 & 1026 & 1135 & 1291 & 1424 & 997 & 987 & 1297 & 1251 & 1135 & 1044 & 1029 & 942 & 784\\
-  \hspace{1em}\hspace{1em}Reserves & 1607 & 1665 & 1400 & 1273 & 1495 & 1220 & 1070 & 1156 & 872 & 813 & 525 & 619 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Pension Benefits - Underfunded & 1129 & 910 & 813 & 722 & 551 & 1187 & 1133 & 675 & 548 & 437 & 388 & 366 & 454 & 496 & 487 & 541 & 566 & 596 & 636 & 487 & 478 & 457 & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Long Term Liabilities & 2124 & 1899 & 1759 & 1246 & 999 & 614 & 625 & 605 & 573 & 608 & 714 & 613 & 772 & 530 & 648 & 750 & 858 & 401 & 351 & 810 & 773 & 678 & 1044 & 1029 & 942 & 784\\
-  \hspace{1em}Total Liabilities & 21060 & 19897 & 17955 & 15575 & 14702 & 12287 & 10460 & 9112 & 7001 & 6829 & 6017 & 6192 & 5237 & 5612 & 5437 & 4744 & 4480 & 3821 & 3082 & 3876 & 3073 & 2616 & 2937 & 2550 & 2014 & 1720\\
+  \multicolumn{8}{l}{\textbf{Liabilities}}\\
+  \hspace{1em}Accounts Payable & 1685 & 1419 & 1684 & 1256 & 1613 & 1587 & 1092\\
+  \hspace{1em}Payable/Accrued & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Accrued Expenses & 1280 & 1065 & 995 & 862 & 811 & 603 & 698\\
+  \hspace{1em}Notes Payable/Short Term Debt & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+  \hspace{1em}Current Port. of LT Debt/Capital Leases & 1453 & 3298 & 2417 & 2602 & 1233 & 1299 & 1015\\
+  \hspace{1em}Other Current liabilities, Total & 927 & 913 & 1014 & 936 & 1133 & 566 & 543\\
+  \hspace{1em}\hspace{1em}Dividends Payable & 616 & 376 & 289 & 267 & 346 & 20 & 19\\
+  \hspace{1em}\hspace{1em}Customer Advances & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Income Taxes Payable & 60 & 198 & 86 & 41 & 312 & 310 & 298\\
+  \hspace{1em}\hspace{1em}Other Payables & 222 & 260 & 184 & 331 & 197 & 213 & 188\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Liability & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Current Liabilities & 29 & 80 & 455 & 297 & 277 & 23 & 38\\
+  \hspace{1em}Total Current Liabilities & 5346 & 6695 & 6110 & 5656 & 4789 & 4055 & 3348\\
+  \hspace{1em}Total Long Term Debt & 10215 & 8268 & 7414 & 6235 & 6528 & 4755 & 3517\\
+  \hspace{1em}\hspace{1em}Long Term Debt & 10152 & 8268 & 7414 & 6235 & 6528 & 4755 & 3517\\
+  \hspace{1em}\hspace{1em}Capital Lease Obligations & 63 & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Debt & 11669 & 11565 & 9830 & 8837 & 7761 & 6054 & 4532\\
+  \hspace{1em}Deferred Income Tax & 294 & 157 & 157 & 178 & 0 & 102 & 489\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - LT Liability & 294 & 157 & 157 & 178 & 0 & 102 & 489\\
+  \hspace{1em}Minority Interest & 346 & 303 & 303 & 264 & 339 & 352 & 277\\
+  \hspace{1em}Other Liabilities, Total & 4860 & 4474 & 3972 & 3241 & 3045 & 3022 & 2829\\
+  \hspace{1em}\hspace{1em}Reserves & 1607 & 1665 & 1400 & 1273 & 1495 & 1220 & 1070\\
+  \hspace{1em}\hspace{1em}Pension Benefits - Underfunded & 1129 & 910 & 813 & 722 & 551 & 1187 & 1133\\
+  \hspace{1em}\hspace{1em}Other Long Term Liabilities & 2124 & 1899 & 1759 & 1246 & 999 & 614 & 625\\
+  \hspace{1em}Total Liabilities & 21060 & 19897 & 17955 & 15575 & 14702 & 12287 & 10460\\
   \addlinespace[0.3em]
-  \multicolumn{27}{l}{\textbf{Shareholders' Equity}}\\
-  \hspace{1em}Redeemable Preferred Stock, Total & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Preferred Stock - Non Redeemable, Net & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Common Stock, Total & 10800 & 7910 & 7910 & 7910 & 6910 & 6910 & 6910 & 6910 & 6910 & 6910 & 4460 & 4460 & 4460 & 3875 & 3480 & 3480 & 2900 & 2900 & 1620 & 2418 & 1620 & 1225 & 1284 & 646 & 601 & 601\\
-  \hspace{1em}\hspace{1em}Common Stock & 10800 & 7910 & 7910 & 7910 & 6910 & 6910 & 6910 & 6910 & 6910 & 6910 & 4460 & 4460 & 4460 & 3875 & 3480 & 3480 & 2900 & 2900 & 1620 & 2418 & 1620 & 1225 & 1284 & 646 & 601 & 601\\
-  \hspace{1em}Additional Paid-In Capital & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Retained Earnings (Accumulated Deficit) & 5860 & 7337 & 6402 & 5825 & 6158 & 5202 & 4523 & 3909 & 3375 & 2535 & 3337 & 2694 & 1938 & 1684 & 1190 & 839 & 1141 & 1009 & 1877 & 1637 & 1461 & 1294 & 1114 & 1074 & 1002 & 1004\\
-  \hspace{1em}Treasury Stock - Common & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}ESOP Debt Guarantee & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Unrealized Gain (Loss) & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Other Equity, Total & 592 & 786 & 896 & 998 & 1177 & 1219 & 1219 & 1279 & 1551 & 1585 & 2499 & 2588 & 838 & 817 & 817 & 817 & 817 & 817 & 1548 & 2438 & 1546 & 1940 & 3000 & 2970 & 2723 & 2695\\
-  \hspace{1em}\hspace{1em}Other Equity & 592 & 786 & 896 & 998 & 1177 & 1219 & 1219 & 1279 & 1551 & 1585 & 2499 & 2588 & 838 & 817 & 817 & 817 & 817 & 817 & 1548 & 2438 & 1546 & 1940 & 3000 & 2970 & 2723 & 2695\\
-  \hspace{1em}Total Equity & 17252 & 16033 & 15208 & 14734 & 14246 & 13331 & 12651 & 12097 & 11836 & 11030 & 10296 & 9742 & 7236 & 6376 & 5487 & 5136 & 4858 & 4726 & 5045 & 6492 & 4627 & 4459 & 5398 & 4690 & 4326 & 4300\\
-  \hspace{1em}Total Liabilities \& Shareholders' Equity & 38313 & 35930 & 33162 & 30308 & 28948 & 25618 & 23111 & 21209 & 18837 & 17859 & 16313 & 15934 & 12473 & 11988 & 10924 & 9880 & 9338 & 8547 & 8127 & 10368 & 7700 & 7075 & 8335 & 7240 & 6340 & 6020\\*
+  \multicolumn{8}{l}{\textbf{Shareholders' Equity}}\\
+  \hspace{1em}Redeemable Preferred Stock, Total & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Preferred Stock - Non Redeemable, Net & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Common Stock, Total & 10800 & 7910 & 7910 & 7910 & 6910 & 6910 & 6910\\
+  \hspace{1em}\hspace{1em}Common Stock & 10800 & 7910 & 7910 & 7910 & 6910 & 6910 & 6910\\
+  \hspace{1em}Additional Paid-In Capital & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Retained Earnings (Accumulated Deficit) & 5860 & 7337 & 6402 & 5825 & 6158 & 5202 & 4523\\
+  \hspace{1em}Treasury Stock - Common & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}ESOP Debt Guarantee & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Unrealized Gain (Loss) & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Other Equity, Total & 592 & 786 & 896 & 998 & 1177 & 1219 & 1219\\
+  \hspace{1em}\hspace{1em}Other Equity & 592 & 786 & 896 & 998 & 1177 & 1219 & 1219\\
+  \hspace{1em}Total Equity & 17252 & 16033 & 15208 & 14734 & 14246 & 13331 & 12651\\
+  \hspace{1em}Total Liabilities \& Shareholders' Equity & 38313 & 35930 & 33162 & 30308 & 28948 & 25618 & 23111\\*
+  \end{longtable}
+  \endgroup{}
+
+  \begingroup\fontsize{8}{10}\selectfont
+  \begin{longtable}[t]{lllllllll}
+  \caption{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2012 a 2005.}\\
+  \toprule
+  Period End Date & 2012 & 2011 & 2010 & 2009 & 2008 & 2007 & 2006 & 2005\\
+  \midrule
+  \endfirsthead
+  \caption[]{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2012 a 2005. \textit{(continuação)}}\\
+  \toprule
+  Period End Date & 2012 & 2011 & 2010 & 2009 & 2008 & 2007 & 2006 & 2005\\
+  \midrule
+  \endhead
+  \
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  \addlinespace[0.3em]
+  \multicolumn{9}{l}{\textbf{Assets}}\\
+  \hspace{1em}Cash and Short Term Investments & 2095 & 1630 & 2329 & 1884 & 1964 & 1541 & 1469 & 1132\\
+  \hspace{1em}\hspace{1em}Cash & 94 & -- & 59 & 80 & -- & 1541 & 1469 & 1132\\
+  \hspace{1em}\hspace{1em}Cash \& Equivalents & 1365 & 1048 & 1735 & 1439 & 1649 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Short Term Investments & 636 & 582 & 534 & 365 & 315 & 0 & -- & --\\
+  \hspace{1em}Accounts Receivable - Trade, Net & 1489 & 1368 & 1163 & 1072 & 982 & 1069 & 973 & 879\\
+  \hspace{1em}\hspace{1em}Accounts Receivable - Trade, Gross & -- & -- & -- & -- & -- & 1090 & 1065 & 946\\
+  \hspace{1em}\hspace{1em}Provision for Doubtful Accounts & -- & -- & -- & -- & -- & -72 & -112 & -79\\
+  \hspace{1em}Total Receivables, Net & 2421 & 1958 & 1639 & 1606 & 1396 & 1465 & 1362 & 1130\\
+  \hspace{1em}\hspace{1em}Receivables - Other & 931 & 590 & 476 & 534 & 414 & 396 & 389 & 251\\
+  \hspace{1em}Total Inventory & 125 & 104 & 121 & 112 & 84 & 52 & 51 & 37\\
+  \hspace{1em}\hspace{1em}Inventories - Raw Materials & -- & -- & -- & -- & 84 & 52 & 51 & 37\\
+  \hspace{1em}\hspace{1em}Inventories - Other & 125 & -- & 121 & 112 & -- & -- & -- & --\\
+  \hspace{1em}Prepaid Expenses & 5 & 5 & 5 & 5 & 4 & -- & -- & --\\
+  \hspace{1em}Other Current Assets, Total & 37 & 3 & 64 & 5 & 0 & 230 & 197 & 172\\
+  \hspace{1em}\hspace{1em}Restricted Cash - Current & 37 & 3 & 64 & 5 & 0 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Asset & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Current Assets & -- & -- & -- & -- & -- & 230 & 197 & 172\\
+  \hspace{1em}Total Current Assets & 4682 & 3700 & 4158 & 3612 & 3447 & 3288 & 3079 & 2471\\
+  \hspace{1em}Property/Plant/Equipment, Total - Gross & 8511 & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Buildings - Gross & 1379 & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Land/Improvements - Gross & 183 & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Machinery/Equipment - Gross & 4567 & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Construction in Progress - Gross & 2372 & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Property/Plant/Equipment - Gross & 11 & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Property/Plant/Equipment, Total - Net & 5105 & 7209 & -7102 & -6777 & 6772 & 6842 & 6733 & 5948\\
+  \hspace{1em}\hspace{1em}Accumulated Depreciation, Total & -3406 & -- & -7102 & -6777 & -- & -- & -- & --\\
+  \hspace{1em}Goodwill, Net & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Intangibles, Net & 1789 & 1717 & 1749 & 1828 & 1736 & 116 & 125 & 66\\
+  \hspace{1em}\hspace{1em}Intangibles - Gross & -- & -- & 4429 & 4353 & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Accumulated Intangible Amortization & -- & -- & -2680 & -2525 & -- & -- & -- & --\\
+  \hspace{1em}Utility Plant, Net & 2767 & -- & 13766 & 13437 & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Utility Plant - Gross & 7109 & -- & 13766 & 13437 & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Utility Plant Accumulated Depreciation & -4342 & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Utility Plant, Net & 2767 & -- & 13766 & 13437 & -- & -- & -- & --\\
+  \hspace{1em}Long Term Investments & 698 & 618 & 483 & 406 & 407 & 249 & 223 & 392\\
+  \hspace{1em}\hspace{1em}LT Investment - Affiliate Companies & 569 & 555 & 465 & 385 & 387 & 204 & 210 & --\\
+  \hspace{1em}\hspace{1em}LT Investments - Other & 129 & 63 & 18 & 20 & 20 & 44 & 13 & 392\\
+  \hspace{1em}Note Receivable - Long Term & 3553 & 3383 & 2482 & 1897 & 1558 & 147 & 120 & 121\\
+  \hspace{1em}Other Long Term Assets, Total & 2616 & 2211 & 2323 & 1910 & 2015 & 1831 & 1708 & 1926\\
+  \hspace{1em}\hspace{1em}Deferred Charges & 9 & 0 & -- & -- & -- & 6 & 0 & 49\\
+  \hspace{1em}\hspace{1em}Defered Income Tax - Long Term Asset & 681 & 462 & 508 & 398 & 399 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Restricted Cash - Long Term & 618 & 468 & 427 & 183 & 211 & 144 & 166 & 156\\
+  \hspace{1em}\hspace{1em}Other Long Term Assets & 1308 & 1281 & 1388 & 1329 & 1404 & 1681 & 1542 & 1721\\
+  \hspace{1em}Total Assets & 21209 & 18837 & 17859 & 16313 & 15934 & 12473 & 11988 & 10924\\
+  \addlinespace[0.3em]
+  \multicolumn{9}{l}{\textbf{Liabilities}}\\
+  \hspace{1em}Accounts Payable & 1132 & 747 & 613 & 544 & 498 & 367 & 392 & 1162\\
+  \hspace{1em}Payable/Accrued & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Accrued Expenses & 858 & 705 & 684 & 641 & 575 & 749 & 820 & 490\\
+  \hspace{1em}Notes Payable/Short Term Debt & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+  \hspace{1em}Current Port. of LT Debt/Capital Leases & 274 & 116 & 704 & 136 & 293 & 265 & 928 & 215\\
+  \hspace{1em}Other Current liabilities, Total & 570 & 489 & 536 & 403 & 503 & 560 & 507 & 462\\
+  \hspace{1em}\hspace{1em}Dividends Payable & 205 & 136 & 164 & 91 & 244 & 252 & 277 & 114\\
+  \hspace{1em}\hspace{1em}Customer Advances & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Income Taxes Payable & 170 & 152 & 203 & 160 & 102 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Payables & 138 & 131 & 112 & 123 & 114 & 85 & 68 & --\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Liability & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Current Liabilities & 56 & 71 & 56 & 30 & 43 & 223 & 162 & 348\\
+  \hspace{1em}Total Current Liabilities & 2833 & 2058 & 2537 & 1723 & 1869 & 1941 & 2647 & 2329\\
+  Total \hspace{1em}\hspace{1em}Long Term Debt & 2988 & 2058 & 1281 & 1538 & 1571 & 1838 & 1733 & 1895\\
+  Long Term Debt & 2988 & 2058 & 1281 & 1538 & 1571 & 1838 & 1733 & 1895\\
+  \hspace{1em}\hspace{1em}Capital Lease Obligations & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Debt & 3262 & 2174 & 1985 & 1673 & 1865 & 2102 & 2661 & 2110\\
+  \hspace{1em}Deferred Income Tax & 591 & 650 & 887 & 901 & 935 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - LT Liability & 591 & 650 & 887 & 901 & 935 & -- & -- & --\\
+  \hspace{1em}Minority Interest & 265 & 243 & 266 & 228 & 219 & 232 & 206 & 78\\
+  \hspace{1em}Other Liabilities, Total & 2435 & 1993 & 1859 & 1627 & 1598 & 1227 & 1026 & 1135\\
+  \hspace{1em}\hspace{1em}Reserves & 1156 & 872 & 813 & 525 & 619 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Pension Benefits - Underfunded & 675 & 548 & 437 & 388 & 366 & 454 & 496 & 487\\
+  \hspace{1em}\hspace{1em}Other Long Term Liabilities & 605 & 573 & 608 & 714 & 613 & 772 & 530 & 648\\
+  \hspace{1em}Total Liabilities & 9112 & 7001 & 6829 & 6017 & 6192 & 5237 & 5612 & 5437\\
+  \addlinespace[0.3em]
+  \multicolumn{9}{l}{\textbf{Shareholders' Equity}}\\
+  \hspace{1em}Redeemable Preferred Stock, Total & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Preferred Stock - Non Redeemable, Net & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Common Stock, Total & 6910 & 6910 & 6910 & 4460 & 4460 & 4460 & 3875 & 3480\\
+  \hspace{1em}\hspace{1em}Common Stock & 6910 & 6910 & 6910 & 4460 & 4460 & 4460 & 3875 & 3480\\
+  \hspace{1em}Additional Paid-In Capital & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Retained Earnings (Accumulated Deficit) & 3909 & 3375 & 2535 & 3337 & 2694 & 1938 & 1684 & 1190\\
+  \hspace{1em}Treasury Stock - Common & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}ESOP Debt Guarantee & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Unrealized Gain (Loss) & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Other Equity, Total & 1279 & 1551 & 1585 & 2499 & 2588 & 838 & 817 & 817\\
+  \hspace{1em}\hspace{1em}Other Equity & 1279 & 1551 & 1585 & 2499 & 2588 & 838 & 817 & 817\\
+  \hspace{1em}Total Equity & 12097 & 11836 & 11030 & 10296 & 9742 & 7236 & 6376 & 5487\\
+  \hspace{1em}Total Liabilities \& Shareholders' Equity & 21209 & 18837 & 17859 & 16313 & 15934 & 12473 & 11988 & 10924\\*
+  \end{longtable}
+  \endgroup{}
+
+  \begingroup\fontsize{8}{10}\selectfont
+  \begin{longtable}[t]{lllllllll}
+  \caption{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2004 a 1997.}\\
+  \toprule
+  Period End Date & 2004 & 2003 & 2002 & 2001 & 2000 & 1999 & 1998 & 1997\\
+  \midrule
+  \endfirsthead
+  \caption[]{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2004 a 1997. \textit{(continuação)}}\\
+  \toprule
+  Period End Date & 2004 & 2003 & 2002 & 2001 & 2000 & 1999 & 1998 & 1997\\
+  \midrule
+  \endhead
+  \
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  \addlinespace[0.3em]
+  \multicolumn{9}{l}{\textbf{Assets}}\\
+  \hspace{1em}Cash and Short Term Investments & 519 & 363 & 200 & 166 & 224 & 180 & 213 & 670\\
+  \hspace{1em}\hspace{1em}Cash & 519 & 363 & 200 & 166 & 224 & 180 & 213 & 14\\
+  \hspace{1em}\hspace{1em}Cash \& Equivalents & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Short Term Investments & -- & -- & -- & -- & -- & -- & -- & 656\\
+  \hspace{1em}Accounts Receivable - Trade, Net & 766 & 657 & 516 & 598 & 449 & 289 & 211 & 228\\
+  \hspace{1em}\hspace{1em}Accounts Receivable - Trade, Gross & 846 & 705 & 553 & -- & -- & -- & -- & 202\\
+  \hspace{1em}\hspace{1em}Provision for Doubtful Accounts & -86 & -52 & -37 & -- & -- & -- & -- & -4\\
+  \hspace{1em}Total Receivables, Net & 886 & 971 & 706 & 639 & 488 & 299 & 219 & 235\\
+  \hspace{1em}\hspace{1em}Receivables - Other & 120 & 314 & 190 & 41 & 39 & 10 & 8 & 7\\
+  \hspace{1em}Total Inventory & 31 & 27 & 10 & 19 & 15 & 12 & 10 & 6\\
+  \hspace{1em}\hspace{1em}Inventories - Raw Materials & 31 & 27 & 10 & 19 & 15 & 12 & 10 & 6\\
+  \hspace{1em}\hspace{1em}Inventories - Other & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Prepaid Expenses & -- & -- & -- & 41 & 44 & 232 & 187 & 205\\
+  \hspace{1em}Other Current Assets, Total & 197 & 59 & 115 & 100 & 0 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Restricted Cash - Current & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Asset & -- & -- & 64 & 9 & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Current Assets & 197 & 59 & 51 & 91 & 0 & -- & -- & --\\
+  \hspace{1em}Total Current Assets & 1633 & 1420 & 1031 & 965 & 771 & 723 & 629 & 1116\\
+  \hspace{1em}Property/Plant/Equipment, Total - Gross & 5399 & 5380 & -129 & 7876 & 1084 & -- & -- & 0\\
+  \hspace{1em}\hspace{1em}Buildings - Gross & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Land/Improvements - Gross & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Machinery/Equipment - Gross & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Construction in Progress - Gross & 594 & 483 & 504 & 445 & 700 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Property/Plant/Equipment - Gross & 4805 & 4897 & -633 & 7431 & 384 & -- & -- & 0\\
+  \hspace{1em}Property/Plant/Equipment, Total - Net & 5399 & 5380 & -2917 & 5334 & -2456 & 5759 & 5369 & 6422\\
+  \hspace{1em}\hspace{1em}Accumulated Depreciation, Total & 0 & 0 & -2788 & -2542 & -3540 & -- & -- & 0\\
+  \hspace{1em}Goodwill, Net & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Intangibles, Net & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Intangibles - Gross & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Accumulated Intangible Amortization & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Utility Plant, Net & -- & -- & 8250 & -- & 10649 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Utility Plant - Gross & -- & -- & 8250 & -- & 10649 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Utility Plant Accumulated Depreciation & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Utility Plant, Net & -- & -- & 8250 & -- & 10649 & -- & -- & --\\
+  \hspace{1em}Long Term Investments & 457 & 426 & 498 & 443 & 445 & 328 & 261 & 94\\
+  \hspace{1em}\hspace{1em}LT Investment - Affiliate Companies & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}LT Investments - Other & 457 & 426 & 498 & 443 & 445 & 328 & 261 & 94\\
+  \hspace{1em}Note Receivable - Long Term & 185 & 199 & 72 & 124 & 45 & 35 & 60 & 33\\
+  \hspace{1em}Other Long Term Assets, Total & 2205 & 1913 & 1613 & 1264 & 913 & 855 & 753 & 671\\
+  \hspace{1em}\hspace{1em}Deferred Charges & -- & -- & 52 & 212 & 0 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Defered Income Tax - Long Term Asset & -- & -- & 866 & 291 & 216 & 191 & 172 & 47\\
+  \hspace{1em}\hspace{1em}Restricted Cash - Long Term & 147 & 112 & 96 & 47 & 50 & 64 & 73 & 117\\
+  \hspace{1em}\hspace{1em}Other Long Term Assets & 2058 & 1801 & 599 & 714 & 647 & 600 & 508 & 507\\
+  \hspace{1em}Total Assets & 9879 & 9338 & 8547 & 8130 & 10367 & 7700 & 7072 & 8336\\
+  \addlinespace[0.3em]
+  \multicolumn{9}{l}{\textbf{Liabilities}}\\
+  \hspace{1em}Accounts Payable & 768 & 404 & 249 & 271 & 85 & 86 & 54 & 49\\
+  \hspace{1em}Payable/Accrued & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Accrued Expenses & 505 & 486 & 228 & 244 & 146 & 137 & 125 & 77\\
+  \hspace{1em}Notes Payable/Short Term Debt & 0 & 0 & 0 & 0 & 0 & -- & -- & 0\\
+  \hspace{1em}Current Port. of LT Debt/Capital Leases & 671 & 273 & 198 & 272 & 276 & 302 & 174 & 360\\
+  \hspace{1em}Other Current liabilities, Total & 304 & 127 & 120 & 154 & 146 & 180 & 211 & 201\\
+  \hspace{1em}\hspace{1em}Dividends Payable & 91 & 46 & 1 & 56 & 97 & 102 & 122 & --\\
+  \hspace{1em}\hspace{1em}Customer Advances & -- & -- & 35 & -- & 13 & -- & -- & 13\\
+  \hspace{1em}\hspace{1em}Income Taxes Payable & -- & -- & 39 & 64 & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Payables & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Liability & -- & -- & -- & 0 & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Current Liabilities & 213 & 81 & 45 & 34 & 36 & 78 & 89 & 188\\
+  \hspace{1em}Total Current Liabilities & 2248 & 1290 & 795 & 941 & 653 & 705 & 564 & 687\\
+  Total \hspace{1em}\hspace{1em}Long Term Debt & 1160 & 1737 & 2016 & 1154 & 1104 & 1117 & 917 & 744\\
+  Long Term Debt & 1160 & 1737 & 2016 & 1154 & 1104 & 1117 & 917 & 744\\
+  \hspace{1em}\hspace{1em}Capital Lease Obligations & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Debt & 1831 & 2010 & 2214 & 1426 & 1380 & 1419 & 1091 & 1104\\
+  \hspace{1em}Deferred Income Tax & -- & -- & 13 & 0 & 821 & 0 & 0 & 462\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - LT Liability & -- & -- & 13 & 0 & 821 & 0 & 0 & 462\\
+  \hspace{1em}Minority Interest & 45 & 29 & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Other Liabilities, Total & 1291 & 1424 & 997 & 987 & 1297 & 1251 & 1135 & 1044\\
+  \hspace{1em}\hspace{1em}Reserves & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Pension Benefits - Underfunded & 541 & 566 & 596 & 636 & 487 & 478 & 457 & --\\
+  \hspace{1em}\hspace{1em}Other Long Term Liabilities & 750 & 858 & 401 & 351 & 810 & 773 & 678 & 1044\\
+  \hspace{1em}Total Liabilities & 4744 & 4480 & 3821 & 3082 & 3876 & 3073 & 2616 & 2937\\
+  \addlinespace[0.3em]
+  \multicolumn{9}{l}{\textbf{Shareholders' Equity}}\\
+  \hspace{1em}Redeemable Preferred Stock, Total & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Preferred Stock - Non Redeemable, Net & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Common Stock, Total & 3480 & 2900 & 2900 & 1620 & 2418 & 1620 & 1225 & 1284\\
+  \hspace{1em}\hspace{1em}Common Stock & 3480 & 2900 & 2900 & 1620 & 2418 & 1620 & 1225 & 1284\\
+  \hspace{1em}Additional Paid-In Capital & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Retained Earnings (Accumulated Deficit) & 839 & 1141 & 1009 & 1877 & 1637 & 1461 & 1294 & 1114\\
+  \hspace{1em}Treasury Stock - Common & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}ESOP Debt Guarantee & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Unrealized Gain (Loss) & -- & -- & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Other Equity, Total & 817 & 817 & 817 & 1548 & 2438 & 1546 & 1940 & 3000\\
+  \hspace{1em}\hspace{1em}Other Equity & 817 & 817 & 817 & 1548 & 2438 & 1546 & 1940 & 3000\\
+  \hspace{1em}Total Equity & 5136 & 4858 & 4726 & 5045 & 6492 & 4627 & 4459 & 5398\\
+  \hspace{1em}Total Liabilities \& Shareholders' Equity & 9880 & 9338 & 8547 & 8127 & 10368 & 7700 & 7075 & 8335\\*
+  \end{longtable}
+  \endgroup{}
+
+  \begingroup\fontsize{8}{10}\selectfont
+  \begin{longtable}[t]{llll}
+  \caption{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 1996 a 1994.}\\
+  \toprule
+  Period End Date & 1996 & 1995 & 1994\\
+  \midrule
+  \endfirsthead
+  \caption[]{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 1996 a 1994. \textit{(continuação)}}\\
+  \toprule
+  Period End Date & 1996 & 1995 & 1994\\
+  \midrule
+  \endhead
+  \
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  \addlinespace[0.3em]
+  \multicolumn{4}{l}{\textbf{Assets}}\\
+  \hspace{1em}Cash and Short Term Investments & 97 & 40 & 11\\
+  \hspace{1em}\hspace{1em}Cash & 14 & 40 & 11\\
+  \hspace{1em}\hspace{1em}Cash \& Equivalents & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Short Term Investments & 83 & 0 & 0\\
+  \hspace{1em}Accounts Receivable - Trade, Net & 249 & 183 & 166\\
+  \hspace{1em}\hspace{1em}Accounts Receivable - Trade, Gross & 234 & 184 & 167\\
+  \hspace{1em}\hspace{1em}Provision for Doubtful Accounts & -7 & -1 & -1\\
+  \hspace{1em}Total Receivables, Net & 285 & 213 & 187\\
+  \hspace{1em}\hspace{1em}Receivables - Other & 36 & 30 & 21\\
+  \hspace{1em}Total Inventory & 12 & 14 & 9\\
+  \hspace{1em}\hspace{1em}Inventories - Raw Materials & 12 & 14 & 9\\
+  \hspace{1em}\hspace{1em}Inventories - Other & -- & -- & --\\
+  \hspace{1em}Prepaid Expenses & 26 & 45 & 32\\
+  \hspace{1em}Other Current Assets, Total & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Restricted Cash - Current & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Asset & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Current Assets & -- & -- & --\\
+  \hspace{1em}Total Current Assets & 420 & 312 & 239\\
+  \hspace{1em}Property/Plant/Equipment, Total - Gross & 0 & 7626 & 7168\\
+  \hspace{1em}\hspace{1em}Buildings - Gross & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Land/Improvements - Gross & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Machinery/Equipment - Gross & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Construction in Progress - Gross & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Property/Plant/Equipment - Gross & 0 & 7626 & 7168\\
+  \hspace{1em}Property/Plant/Equipment, Total - Net & 6074 & 5342 & 5102\\
+  \hspace{1em}\hspace{1em}Accumulated Depreciation, Total & 0 & -2284 & -2066\\
+  \hspace{1em}Goodwill, Net & -- & -- & --\\
+  \hspace{1em}Intangibles, Net & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Intangibles - Gross & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Accumulated Intangible Amortization & -- & -- & --\\
+  \hspace{1em}Utility Plant, Net & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Utility Plant - Gross & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Utility Plant Accumulated Depreciation & -- & -- & --\\
+  \hspace{1em}Total Utility Plant, Net & -- & -- & --\\
+  \hspace{1em}Long Term Investments & 74 & 63 & 55\\
+  \hspace{1em}\hspace{1em}LT Investment - Affiliate Companies & -- & -- & --\\
+  \hspace{1em}\hspace{1em}LT Investments - Other & 74 & 63 & 55\\
+  \hspace{1em}Note Receivable - Long Term & 57 & 59 & 16\\
+  \hspace{1em}Other Long Term Assets, Total & 614 & 564 & 607\\
+  \hspace{1em}\hspace{1em}Deferred Charges & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Defered Income Tax - Long Term Asset & 62 & 43 & 36\\
+  \hspace{1em}\hspace{1em}Restricted Cash - Long Term & 43 & 18 & 16\\
+  \hspace{1em}\hspace{1em}Other Long Term Assets & 509 & 503 & 555\\
+  \hspace{1em}Total Assets & 7239 & 6340 & 6019\\
+  \addlinespace[0.3em]
+  \multicolumn{4}{l}{\textbf{Liabilities}}\\
+  \hspace{1em}Accounts Payable & 56 & 52 & 48\\
+  \hspace{1em}Payable/Accrued & -- & -- & --\\
+  \hspace{1em}Accrued Expenses & 106 & 86 & 62\\
+  \hspace{1em}Notes Payable/Short Term Debt & 0 & 0 & 0\\
+  \hspace{1em}Current Port. of LT Debt/Capital Leases & 241 & 147 & 45\\
+  \hspace{1em}Other Current liabilities, Total & 261 & 136 & 102\\
+  \hspace{1em}\hspace{1em}Dividends Payable & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Customer Advances & 14 & 11 & 11\\
+  \hspace{1em}\hspace{1em}Income Taxes Payable & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Payables & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Liability & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Current Liabilities & 247 & 125 & 91\\
+  \hspace{1em}Total Current Liabilities & 664 & 421 & 257\\
+  Total \hspace{1em}\hspace{1em}Long Term Debt & 478 & 410 & 344\\
+  Long Term Debt & 478 & 410 & 344\\
+  \hspace{1em}\hspace{1em}Capital Lease Obligations & -- & -- & --\\
+  \hspace{1em}Total Debt & 719 & 557 & 389\\
+  \hspace{1em}Deferred Income Tax & 379 & 241 & 335\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - LT Liability & 379 & 241 & 335\\
+  \hspace{1em}Minority Interest & -- & -- & --\\
+  \hspace{1em}Other Liabilities, Total & 1029 & 942 & 784\\
+  \hspace{1em}\hspace{1em}Reserves & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Pension Benefits - Underfunded & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Long Term Liabilities & 1029 & 942 & 784\\
+  \hspace{1em}Total Liabilities & 2550 & 2014 & 1720\\
+  \addlinespace[0.3em]
+  \multicolumn{4}{l}{\textbf{Shareholders' Equity}}\\
+  \hspace{1em}Redeemable Preferred Stock, Total & -- & -- & --\\
+  \hspace{1em}Preferred Stock - Non Redeemable, Net & -- & -- & --\\
+  \hspace{1em}Common Stock, Total & 646 & 601 & 601\\
+  \hspace{1em}\hspace{1em}Common Stock & 646 & 601 & 601\\
+  \hspace{1em}Additional Paid-In Capital & -- & -- & --\\
+  \hspace{1em}Retained Earnings (Accumulated Deficit) & 1074 & 1002 & 1004\\
+  \hspace{1em}Treasury Stock - Common & -- & -- & --\\
+  \hspace{1em}ESOP Debt Guarantee & -- & -- & --\\
+  \hspace{1em}Unrealized Gain (Loss) & -- & -- & --\\
+  \hspace{1em}Other Equity, Total & 2970 & 2723 & 2695\\
+  \hspace{1em}\hspace{1em}Other Equity & 2970 & 2723 & 2695\\
+  \hspace{1em}Total Equity & 4690 & 4326 & 4300\\
+  \hspace{1em}Total Liabilities \& Shareholders' Equity & 7240 & 6340 & 6020\\*
   \end{longtable}
   \endgroup{}
 

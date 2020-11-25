@@ -414,7 +414,9 @@ A empresa, naturalmente, se faz valer de uma Norma aplicável a conexão de micr
 
 ## Cálculo do *valuation* intrínseco
 
-Para uma análise intrínseca, comecemos nos debruçando sobre as demonstrações financeiras da Companhia. Os dados foram retirados da base de dados do Eikon, da companhia de informação Thomson Reuters.
+Para uma análise intrínseca, comecemos nos debruçando sobre as demonstrações financeiras da Companhia. Os dados foram retirados da base de dados do Eikon, da companhia de informação Thomson Reuters.[^acessoReuters]
+
+[^acessoReuters]: Para facilidade de tratamento e observação, foi utilizado o Eikon. Naturalmente, todos os dados dispostos poderiam ser obtidos pesquisando-se através do RI da empresa. Os dados foram obtidos pela última vez em 25 nov 2020.
 
 ```{r, tab.pos = "H", echo = FALSE, message = FALSE}
 library(tidyverse)
@@ -422,10 +424,12 @@ library(readxl)
 
 bp <- read_excel("data/cple_bp.xlsx", skip = 6) %>%
   slice(2:91) %>%
-  slice(-c(19, 46:47, 61, 74:75, 88, 90))
+  slice(-c(19, 46:47, 61, 74:75, 88, 90)) %>%
+  rename_with(.fn = function(x) str_trim(x) %>% str_extract("\\d{4}$"), .cols = 2:ncol(.))
+  
 
-kable(bp,
-  caption = "Balanços patrimoniais da Copel (em milhões de reais).",
+kable(bp %>% select(1:8),
+  caption = "Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2019 a 2013.",
   format = "latex",
   booktabs = TRUE,
   longtable = TRUE
@@ -433,7 +437,7 @@ kable(bp,
   kable_styling(
     latex_options = c("HOLD_position", "repeat_header"),
     repeat_header_text = "\\textit{(continuação)}",
-    font_size = 10
+    font_size = 8
   ) %>%
   # Indentacao dos ativos
   add_indent(c(2:4, 6:7, 9, 11:12, 15:17, 20:24, 26, 29:30, 32:33, 36:37, 40:43)) %>%
@@ -443,7 +447,64 @@ kable(bp,
   add_indent(c(75, 82)-2) %>%
   group_rows(index = c("Assets" = 44, "Liabilities" = 25, "Shareholders' Equity" = 13))
 
+kable(bp %>% select(c(1, 9:16)),
+  caption = "Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2012 a 2005.",
+  format = "latex",
+  booktabs = TRUE,
+  longtable = TRUE
+  ) %>% 
+  kable_styling(
+    latex_options = c("HOLD_position", "repeat_header"),
+    repeat_header_text = "\\textit{(continuação)}",
+    font_size = 8
+  ) %>%
+  # Indentacao dos ativos
+  add_indent(c(2:4, 6:7, 9, 11:12, 15:17, 20:24, 26, 29:30, 32:33, 36:37, 40:43)) %>%
+  # Indentacao dos passivos
+  add_indent(c(52:57, 60:61, 64, 67:69)-1) %>%
+  # Indentacao do PL
+  add_indent(c(75, 82)-2) %>%
+  group_rows(index = c("Assets" = 44, "Liabilities" = 25, "Shareholders' Equity" = 13))
+
+kable(bp %>% select(c(1, 17:24)),
+  caption = "Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2004 a 1997.",
+  format = "latex",
+  booktabs = TRUE,
+  longtable = TRUE
+  ) %>% 
+  kable_styling(
+    latex_options = c("HOLD_position", "repeat_header"),
+    repeat_header_text = "\\textit{(continuação)}",
+    font_size = 8
+  ) %>%
+  # Indentacao dos ativos
+  add_indent(c(2:4, 6:7, 9, 11:12, 15:17, 20:24, 26, 29:30, 32:33, 36:37, 40:43)) %>%
+  # Indentacao dos passivos
+  add_indent(c(52:57, 60:61, 64, 67:69)-1) %>%
+  # Indentacao do PL
+  add_indent(c(75, 82)-2) %>%
+  group_rows(index = c("Assets" = 44, "Liabilities" = 25, "Shareholders' Equity" = 13))
+
+kable(bp %>% select(c(1, 25:ncol(.))),
+  caption = "Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 1996 a 1994.",
+  format = "latex",
+  booktabs = TRUE,
+  longtable = TRUE
+  ) %>% 
+  kable_styling(
+    latex_options = c("HOLD_position", "repeat_header"),
+    repeat_header_text = "\\textit{(continuação)}",
+    font_size = 8
+  ) %>%
+  # Indentacao dos ativos
+  add_indent(c(2:4, 6:7, 9, 11:12, 15:17, 20:24, 26, 29:30, 32:33, 36:37, 40:43)) %>%
+  # Indentacao dos passivos
+  add_indent(c(52:57, 60:61, 64, 67:69)-1) %>%
+  # Indentacao do PL
+  add_indent(c(75, 82)-2) %>%
+  group_rows(index = c("Assets" = 44, "Liabilities" = 25, "Shareholders' Equity" = 13))
 ```
+
 
 
 

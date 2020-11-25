@@ -34,6 +34,6 @@
 \contentsline {subsubsection}{Transmissão}{12}{section*.6}%
 \contentsline {subsubsection}{Distribuição}{19}{section*.7}%
 \contentsline {section}{\numberline {4.2}Cálculo do \emph {valuation} intrínseco}{26}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Cálculo do \emph {valuation} relativo}{30}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Conclusão}{32}{chapter.5}%
-\contentsline {chapter}{Referências Bibliográficas}{33}{chapter*.8}%
+\contentsline {section}{\numberline {4.3}Cálculo do \emph {valuation} relativo}{34}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusão}{36}{chapter.5}%
+\contentsline {chapter}{Referências Bibliográficas}{37}{chapter*.8}%
