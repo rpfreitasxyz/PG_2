@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  23 NOV 2020 20:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  25 NOV 2020 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,6 +493,15 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `tab:unnamed-chunk-16' multiply defined.
 
+
+LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
+
 )
 \openout1 = `thesis.aux'.
 
@@ -588,7 +597,7 @@ LaTeX Info: Redefining \nameref on input line 24.
 Package hyperref Info: Option `breaklinks' set `true' on input line 44.
 Package hyperref Info: Option `raiselinks' set `true' on input line 44.
 Package hyperref Info: Option `pageanchor' set `true' on input line 44.
-<poli-logo.pdf, id=164, 708.6475pt x 282.05376pt>
+<poli-logo.pdf, id=136, 708.6475pt x 282.05376pt>
 File: poli-logo.pdf Graphic file (type pdf)
 <use poli-logo.pdf>
 Package pdftex.def Info: poli-logo.pdf  used on input line 44.
@@ -686,7 +695,7 @@ pel2 . nsf % 2Fdocs %
 [4
 
 ] [5] [6]
-<img/usinas_Copel.jpg, id=365, 1027.84pt x 578.16pt>
+<img/usinas_Copel.jpg, id=332, 1027.84pt x 578.16pt>
 File: img/usinas_Copel.jpg Graphic file (type jpg)
 <use img/usinas_Copel.jpg>
 Package pdftex.def Info: img/usinas_Copel.jpg  used on input line 222.
@@ -699,34 +708,34 @@ de-[]marco-[]de-[]2020-[]248070610$[]\OT1/cmr/m/n/10 .
  []
 
 [8 <./img/usinas_copel.jpg>] [9] [10] [11] [12]
-<img/mapa_geoeletrico_parana.jpg, id=403, 845.0772pt x 597.1911pt>
+<img/mapa_geoeletrico_parana.jpg, id=370, 845.0772pt x 597.1911pt>
 File: img/mapa_geoeletrico_parana.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_parana.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_parana.jpg  used on input line 35
 9.
 (pdftex.def)             Requested size: 426.79135pt x 301.60191pt.
-<img/mapa_geoeletrico_curitiba.jpg, id=404, 540.3387pt x 654.5253pt>
+<img/mapa_geoeletrico_curitiba.jpg, id=371, 540.3387pt x 654.5253pt>
 File: img/mapa_geoeletrico_curitiba.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_curitiba.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_curitiba.jpg  used on input line 
 362.
 (pdftex.def)             Requested size: 426.79135pt x 516.9994pt.
 [13]
-<img/mapa_geoeletrico_londrina.jpg, id=409, 276.0714pt x 294.3798pt>
+<img/mapa_geoeletrico_londrina.jpg, id=376, 276.0714pt x 294.3798pt>
 File: img/mapa_geoeletrico_londrina.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_londrina.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_londrina.jpg  used on input line 
 365.
 (pdftex.def)             Requested size: 426.79135pt x 455.1071pt.
 [14 <./img/mapa_geoeletrico_parana.jpg>]
-<img/mapa_geoeletrico_maringa.jpg, id=415, 277.7577pt x 270.0489pt>
+<img/mapa_geoeletrico_maringa.jpg, id=382, 277.7577pt x 270.0489pt>
 File: img/mapa_geoeletrico_maringa.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_maringa.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_maringa.jpg  used on input line 3
 68.
 (pdftex.def)             Requested size: 426.79135pt x 414.95358pt.
 [15 <./img/mapa_geoeletrico_curitiba.jpg>]
-<img/mapa_geoeletrico_ponta_grossa.jpg, id=421, 279.2031pt x 272.4579pt>
+<img/mapa_geoeletrico_ponta_grossa.jpg, id=387, 279.2031pt x 272.4579pt>
 File: img/mapa_geoeletrico_ponta_grossa.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_ponta_grossa.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_ponta_grossa.jpg  used on input l
@@ -734,7 +743,7 @@ ine 371.
 (pdftex.def)             Requested size: 426.79135pt x 416.50166pt.
 [16 <./img/mapa_geoeletrico_londrina.jpg>] [17 <./img/mapa_geoeletrico_maringa.
 jpg>] [18 <./img/mapa_geoeletrico_ponta_grossa.jpg>]
-<img/consumo_dist.png, id=435, 293.59688pt x 303.38344pt>
+<img/consumo_dist.png, id=401, 293.59688pt x 303.38344pt>
 File: img/consumo_dist.png Graphic file (type png)
 <use img/consumo_dist.png>
 Package pdftex.def Info: img/consumo_dist.png  used on input line 438.
@@ -744,7 +753,7 @@ Overfull \hbox (10.50887pt too wide) in paragraph at lines 445--460
  [][] 
  []
 
-<img/industrial_dist.png, id=447, 283.81032pt x 307.1475pt>
+<img/industrial_dist.png, id=414, 283.81032pt x 307.1475pt>
 File: img/industrial_dist.png Graphic file (type png)
 <use img/industrial_dist.png>
 Package pdftex.def Info: img/industrial_dist.png  used on input line 462.
@@ -774,11 +783,65 @@ Overfull \hbox (23.43192pt too wide) in alignment at lines 484--501
  [] [] [] [] [] [] [] [] [] 
  []
 
-[23 <./img/industrial_dist.png>] [24] [25] [26] [27] [28]
-Cap\'{\i }tulo 5.
-[29
+[23 <./img/industrial_dist.png>] [24] [25]
+Overfull \hbox (1483.60033pt too wide) in alignment at lines 565--570
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+[] 
+ []
 
-] [30
+
+Overfull \hbox (1483.60033pt too wide) in alignment at lines 570--575
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+[] 
+ []
+
+
+Overfull \hbox (1483.60033pt too wide) in alignment at lines 575--577
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+[] 
+ []
+
+
+Overfull \hbox (1483.60033pt too wide) in alignment at lines 577--579
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+[] 
+ []
+
+
+Overfull \hbox (1483.60033pt too wide) in alignment at lines 579--601
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+[] 
+ []
+
+[26]
+Overfull \hbox (1483.60033pt too wide) in alignment at lines 601--621
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+[] 
+ []
+
+
+Overfull \hbox (1483.60033pt too wide) in alignment at lines 621--642
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+[] 
+ []
+
+[27]
+Overfull \hbox (1483.60033pt too wide) in alignment at lines 642--663
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+[] 
+ []
+
+[28]
+Overfull \hbox (1483.60033pt too wide) in alignment at lines 663--668
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+[] 
+ []
+
+[29] [30] [31]
+Cap\'{\i }tulo 5.
+[32
+
+] [33
 
 ]
 No file thesis.bbl.
@@ -786,7 +849,7 @@ No file thesis.bbl.
 AED: lastpage setting LastPage
 (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5E05F726F6391BF1F8AD8BE4770718E6;2826.
+(rerunfilecheck)             Checksum: EF99F63604F513F367BF3FF75757D927;2216.
 
 LaTeX Warning: There were undefined references.
 
@@ -795,10 +858,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8609 strings out of 481446
- 131969 string characters out of 5918545
- 491099 words of memory out of 5000000
- 24967 multiletter control sequences out of 15000+600000
+ 8581 strings out of 481446
+ 131196 string characters out of 5918545
+ 560018 words of memory out of 5000000
+ 24952 multiletter control sequences out of 15000+600000
  546284 words of font info for 71 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  80i,12n,85p,1343b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -820,10 +883,10 @@ ers/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb><c:/Users/Rafael Pinto/AppData/Roaming/Tiny
 TeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (41 pages, 6399135 bytes).
+Output written on thesis.pdf (44 pages, 6413392 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
- 530 compressed objects within 6 object streams
- 159 named destinations out of 1000 (max. 500000)
- 366 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 579 PDF objects out of 1000 (max. 8388607)
+ 499 compressed objects within 5 object streams
+ 146 named destinations out of 1000 (max. 500000)
+ 310 words of extra memory for PDF output out of 10000 (max. 10000000)
 

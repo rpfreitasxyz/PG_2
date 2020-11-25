@@ -33,17 +33,7 @@
 \contentsline {subsubsection}{Geração}{7}{section*.5}%
 \contentsline {subsubsection}{Transmissão}{12}{section*.6}%
 \contentsline {subsubsection}{Distribuição}{19}{section*.7}%
-\contentsline {section}{\numberline {4.2}Cálculo do \emph {valuation} intrínseco}{27}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}O custo de capital médio ponderado (WACC)}{27}{subsection.4.2.1}%
-\contentsline {subsubsection}{Custo de capital próprio}{27}{section*.8}%
-\contentsline {subsubsection}{Custo de capital de terceiros}{27}{section*.9}%
-\contentsline {subsubsection}{Fluxo de caixa descontado}{27}{section*.10}%
-\contentsline {section}{\numberline {4.3}Cálculo do \emph {valuation} relativo}{27}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Margem bruta}{28}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Lucros antes de juros e impostos (EBIT)}{28}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Margem líquida}{28}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Razão preço/lucro (P/E)}{28}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Retorno sobre patrimônio líquido (ROE)}{28}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Comparação com empresas do setor}{28}{subsection.4.3.6}%
-\contentsline {chapter}{\numberline {5}Conclusão}{29}{chapter.5}%
-\contentsline {chapter}{Referências Bibliográficas}{30}{chapter*.11}%
+\contentsline {section}{\numberline {4.2}Cálculo do \emph {valuation} intrínseco}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Cálculo do \emph {valuation} relativo}{30}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusão}{32}{chapter.5}%
+\contentsline {chapter}{Referências Bibliográficas}{33}{chapter*.8}%

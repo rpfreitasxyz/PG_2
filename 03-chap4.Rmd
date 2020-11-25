@@ -414,20 +414,54 @@ A empresa, naturalmente, se faz valer de uma Norma aplicável a conexão de micr
 
 ## Cálculo do *valuation* intrínseco
 
-### O custo de capital médio ponderado (WACC)
+Para uma análise intrínseca, comecemos nos debruçando sobre as demonstrações financeiras da Companhia. Os dados foram retirados da base de dados do Eikon, da companhia de informação Thomson Reuters.
 
-#### Custo de capital próprio
+```{r, tab.pos = "H", echo = FALSE, message = FALSE}
+library(tidyverse)
+library(readxl)
 
-#### Custo de capital de terceiros
+bp <- read_excel("data/cple_bp.xlsx", skip = 6) %>%
+  slice(2:91) %>%
+  slice(-c(19, 46:47, 61, 74:75, 88, 90))
 
-#### Fluxo de caixa descontado
+kable(bp,
+  caption = "Balanços patrimoniais da Copel (em milhões de reais).",
+  format = "latex",
+  booktabs = TRUE,
+  longtable = TRUE
+  ) %>% 
+  kable_styling(
+    latex_options = c("HOLD_position", "repeat_header"),
+    repeat_header_text = "\\textit{(continuação)}",
+    font_size = 10
+  ) %>%
+  # Indentacao dos ativos
+  add_indent(c(2:4, 6:7, 9, 11:12, 15:17, 20:24, 26, 29:30, 32:33, 36:37, 40:43)) %>%
+  # Indentacao dos passivos
+  add_indent(c(52:57, 60:61, 64, 67:69)-1) %>%
+  # Indentacao do PL
+  add_indent(c(75, 82)-2) %>%
+  group_rows(index = c("Assets" = 44, "Liabilities" = 25, "Shareholders' Equity" = 13))
+
+```
+
+
 
 ## Cálculo do *valuation* relativo
 
-Naturalmente, ao fazermos uma comparação, é necessário questionar a natureza dos ativos. São similares?
+Naturalmente, ao fazermos uma comparação, é necessário questionar a natureza dos ativos. São similares? Precisam ser ajustados a um denominador comum? São, ao menos, comparáveis?
 
+No caso de uma empresa como a Copel, uma _holding_ do setor elétrico, faz sentido a comparação com outras _holdings_ do setor. Foram escolhidas, então, outras quatro companhias:
 
-Retirado do site Fundamentus:
+- **Light S.A (LIGT3).** É uma empresa privada de geração, distribuição, comercialização e soluções de energia elétrica. O grupo detém concessão de parte do estado do Rio de Janeiro -- majoritariamente a região metropolitana --, dividindo-o com a Enel, do outro lado da Baía de Guanabara.
+- **EDP Energias do Brasil (ENBR3).** É uma _holding_ brasileira que detém investimentos em geração, distribuição, transmissão e comercialização em 11 das 27 unidades federativas brasileiras. Sua capacidade instalada ao final de setembro de 2020 era de 2,9 GW e 24,7 TWh de energia distribuída.
+- **Neoenergia (NEOE3).** É a _holding_ do Grupo Neoenergia, o maior grupo privado do setor elétrico brasileiro em número de clientes, referentes ao final de setembro de 2020, contando com capacidade instalada de 4,1 GW. Está presente em 16 das 27 UFs brasileiras, tendo como acionistas grandes _players_, como a Caixa de Previdência dos Funcionários do Banco do Brasil (PREVI) e o Banco do Brasil Investimentos (BBI).
+- **Companhia Energética de Minas Gerais (CMIG3).** Frequentemente comparada contra a Copel, a Cemig é uma das principais concessionárias de energia elétrica do Brasil, detendo concessão do estado de Minas Gerais. As semelhanças continuam ao observar-se que os locais de oferta de ações da empresa são os mesmos da Copel: B3, NYSE e Latibex.
+
+Vale comentar, antes de prosseguir, que foram escolhidas as ações ordinárias das empresas porque elas estão necessariamente presentes no mercado de ações brasileiro. Assim, podemos fazer uma comparação através desta classe de ativos. A Copel, por exemplo, tem seu papel mais líquido como sua preferencial do tipo B, CPLE6; a Cemig tem seu papel mais líquido como sendo CMIG4, uma preferencial simples; já o restante das empresas pertence ao Novo Mercado, possuindo apenas ações ordinárias. Justifica-se, então, o uso dos papéis de ações ordinárias como base de comparação.
+
+Feita uma breve descrição das empresas a serem comparadas, é feita também uma escolha de múltiplos para ser realizada a análise. Constam entre estes os comumente utilizados, como P/L, _dividend yield_ e CAGR, assim como alguns mais recentemente utilizados pela indústria, como EV/EBITDA. Os dados foram retirados do site Fundamentus[^fundamentus] e tratados para melhor visualização:
+
 ```{r, tab.pos = "H", echo = FALSE, message = FALSE}
 library(tidyverse)
 library(rvest)
@@ -455,3 +489,8 @@ kable(page_filtr,
     latex_options = "HOLD_position"
   )
 ```
+
+[^fundamentus]: Disponível em <https://www.fundamentus.com.br/resultado.php?segmento=70>. Último acesso em 24 nov 2020.
+
+Através da tabela, é possível perceber que a Copel figura indicadores atraentes, com o maior ROE dentre as selecionadas, assim como o menor P/L não-negativo -- infelizmente, o P/L da Light se traduz em um cenário de prejuízo. Assim, figuraria no topo da lista do método de Greenblatt [-@greenblatt2006; -@greenblatt2010].
+
