@@ -10,7 +10,7 @@ Naturalmente, o mercado, no curto prazo, está sujeito a flutuações que podem 
 
 > "Imagine que você possui uma participação pequena em uma companhia de capital fechado que lhe custou US\$1.000. Um de seus sócios, chamado Sr. Mercado, é de fato muito prestativo. Todo dia ele lhe informa o que pensa ser o valor de sua participação e, além disso, se dispõe a comprar de você ou vender a você uma participação adicional naquelas bases. Às vezes, sua ideia de valor parece plausível e justificada pela evolução e pelas perspectivas do negócio da forma como você as conhece. Por outro lado, o Sr. Mercado deixa frequentemente o entusiasmo ou o receio tomar conta dele e o valor proposto por ele lhe parece pura bobagem. Se você é um investidor prudente ou um empresário inteligente, deixaria as comunicações diárias do Sr. Mercado influenciarem sua opinião sobre o valor de uma participação de US\$1.000 na companhia? Só se você concordasse com ele ou então desejasse negociar com ele. Você pode ficar feliz em vender para ele quando ele cota um preço ridiculamente alto e igualmente feliz em comprar dele quando seu preço é baixo. No entanto, no resto do tempo, você seria mais esperto se formulasse suas próprias ideias acerca do valor de sua carteira com base nos relatório completos da companhia sobre suas operações e posições financeiras."
 
-Dessa forma, a discrepância entre preço de mercado e a estimativa do valor intrísenco feita por um analista torna-se uma medida para oportunidade de investimento. Aqueles que considerarem tais modelos como estimativas razoáveis de valor intrínseco, e que tomarem ação baseando-se nessas estimativas, são conhecidos como investidores de valor [@damodaran2012].
+Dessa forma, a discrepância entre preço de mercado e a estimativa do valor intrínseco feita por um analista torna-se uma medida para oportunidade de investimento. Aqueles que considerarem tais modelos como estimativas razoáveis de valor intrínseco, e que tomarem ação baseando-se nessas estimativas, são conhecidos como investidores de valor [@damodaran2012].
 
 ### Análise de Fluxo de Caixa Descontado
 
@@ -20,7 +20,7 @@ Seguindo a queda do mercado em 1929, o método ganhou popularidade para se avali
 
 O valor presente líquido pode ser expresso matematicamente como: $$
 VPL = \sum_{i=0}^N\frac{FC_t}{(1+r)^t}
-$$ onde $FC_t$ é o fluxo de caixa no tempo $t$ e $r$ é a taxa de desconto. Naturalmente, para que o somatório acima esteja correto, assume-se que a taxa de desconto permaneça constante através do período todo. Caso assuma-se que o fluxo de caixa continue indefinidamente, a previsão finita é geralmente combinada com a premissa de um crescimento constante de fluxo de caixa além do período de projeção discreto -- a dita perpetuidade. Matematicamente: $$
+$$ onde $FC_t$ é o fluxo de caixa no tempo $t$ e $r$ é a taxa de desconto. Naturalmente, para que o somatório acima esteja correto, assume-se que a taxa de desconto permaneça constante através do período todo. Caso se assuma que o fluxo de caixa continue indefinidamente, a previsão finita é geralmente combinada com a premissa de um crescimento constante de fluxo de caixa além do período de projeção discreto -- a dita perpetuidade. Matematicamente: $$
 VPL = \sum_{i=0}^N\frac{FC_t}{(1+r)^t} + \frac{FC_{N+2}}{(1+r)^{N+1}(r-g)}
 $$ onde o somatório é o período de crescimento normal, e além do somatório, temos o fluxo de caixa em perpetuidade, sendo descontado.
 
@@ -39,7 +39,7 @@ $$ onde o segundo lado denota uma equivalência interessante. Dessa forma, podem
 De fato, o modelo leva em conta diversas premissas, dentre as quais todos os investidores [@arnold2008]:
 
 1.  Têm por objetivo maximizar utilidades econômicas (quantidades de ativos são dadas e fixas).
-2.  São racionais e aversos a risco.
+2.  São racionais e avessos a risco.
 3.  São amplamente diversificados sobre uma grande gama de investimentos.
 4.  São tomadores de preço, isto é, não influenciam nos preços.
 5.  Podem emprestar e tomar quantias ilimitadas sob a taxa livre de risco de juros.
@@ -48,7 +48,7 @@ De fato, o modelo leva em conta diversas premissas, dentre as quais todos os inv
 8.  Têm expectativas homogêneas.
 9.  Têm todas as informações disponíveis ao mesmo tempo.
 
-Naturalmente, pela quantidade e teor das premissas, este é um modelo que fortemente simplifica a realidade. De fato, pela sua lógica simples e fácil aplicabilidade, ainda é muito utilizado na indústria, embora a maior parte das aplicações utilizando-se este modelo sejam consideradas inválidas [@fama2004].
+Naturalmente, pela quantidade e teor das premissas, este é um modelo que fortemente simplifica a realidade. De fato, pela sua lógica simples e fácil aplicabilidade, ainda é muito utilizado na indústria, embora a maior parte das aplicações utilizando-se deste modelo sejam consideradas inválidas [@fama2004].
 
 Para os propósitos deste trabalho, entretanto, será feita uma análise de fluxos de caixa descontados utilizando-se, também, o CAPM.
 
@@ -61,9 +61,9 @@ $$ onde $P_0$ é o valor atual da ação, $g$ é a taxa de crescimento constante
 Naturalmente, existem alguns pressupostos deste modelo:
 
 i.  Uma taxa de crescimento constante e perpétua, menor que o custo de capital.
-ii. A ação deve pagar dividendos regularmente; do contrário, versões mais generalizadas do modelo de desconto de dividendos devem ser usados para se descobrir o valor da ação.
+ii. A ação deve pagar dividendos regularmente; do contrário, versões mais generalizadas do modelo de desconto de dividendos devem ser usadas para se descobrir o valor da ação.
 
-A partir destes pontos, temos que as violações de (i) identifica uma ação de valor negativo; e (ii) provê um valor errôneo -- caso seja levado ao extremo, uma empresa que não paga dividendos efetivamente não valeria nada.
+A partir destes pontos, temos que as violações de (i) identificam uma ação de valor negativo; e (ii) provê um valor errôneo -- caso seja levado ao extremo, uma empresa que não paga dividendos efetivamente não valeria nada.
 
 A solução para (i) é se considerar um modelo de desconto de dividendos de dois estágios, isto é: $$
 P_0 = \frac{D_0 (1+g)}{r-g} \left[1 - \frac{(1+g)^N}{(1+r)^N}\right] + \frac{D_0 (1+g)^N (1+g_\infty)}{(1+r)^N (r-g_\infty)}
@@ -77,20 +77,20 @@ $$ o que significa que o *dividend yield* ($D_1/P_0$) mais o crescimento ($g$) �
 
 ## *Valuation* relativo
 
-Em *valuation* relativo, um determinado ativo é avaliado baseado em quão precificados estão os ativos similares no mercado. Como exemplo, uma comprador de imóveis pode, antes de realizar uma compra à vista/financiamento abrupto, pode pesquisar por imóveis similares na vizinhança. Ora, uma pessoa que coleciona selos pode fazer um julgamento de quanto vai pagar em outro selo raro ao checar preços de transações desse mesmo selo em outras épocas. Dessa forma, um investidor em potencial pode estimar o preço de uma ação a comprar fazendo uma pesquisa através da precificação de ações "similares".
+Em *valuation* relativo, um determinado ativo é avaliado baseado em quão precificados estão os ativos similares no mercado. Como exemplo, um comprador de imóveis pode, antes de realizar uma compra à vista/financiamento abrupto, pode pesquisar por imóveis similares na vizinhança. Ora, uma pessoa que coleciona selos pode fazer um julgamento de quanto vai pagar em outro selo raro ao checar preços de transações desse mesmo selo em outras épocas. Dessa forma, um investidor em potencial pode estimar o preço de uma ação a comprar fazendo uma pesquisa através da precificação de ações "similares".
 
 Pela descrição acima, existem três fatores a se considerar:
 
 1.  **É necessário encontrar ativos comparáveis, precificados pelo mercado.** Esta é uma tarefa que é mais fácil de se cumprir com ativos tangíveis do que com imateriais, como ações. Frequentemente, analistas consideram outras empresas do mesmo setor como comparáveis, comparando por exemplo, empresas de utilidade com outras empresas de utilidade.
 2.  **É importante traduzir os preços de mercado a uma variável comum.** A finalidade disso é gerar preços padronizados que sejam comparáveis. Embora isso não seja necessário com ativos idênticos, é necessário quando existe heterogenia. Considere, por exemplo, o exemplo dos imóveis. Uma casa tem 200 m² e outra, 100 m². Reduziria-se um fator à metragem. Naturalmente, com empresas acontece algo similar, geralmente reduzindo-se a múltiplos de lucros, valor contábil, dentre outros.
-3.  **É necessário ajustar-se diferenças entre ativos.** Novamente, consideremos o exemplo da casa. Ambas possuem a mesma metragem, mas uma acabou de ser construída, e outra tem mais de 200 anos de idade. Ora, havendo essa diferença de idades, *ceteris paribus*, a casa mais nova deve valer mais. Com ações, pode haver algo similar. Empresas de maior crescimento, *ceteris paribus*, devem valer mais do que empresas de menor crescimento, por exemplo.
+3.  **É necessário ajustar diferenças entre ativos.** Novamente, consideremos o exemplo da casa. Ambas possuem a mesma metragem, mas uma acabou de ser construída, e outra tem mais de 200 anos de idade. Ora, havendo essa diferença de idades, *ceteris paribus*, a casa mais nova deve valer mais. Com ações, pode haver algo similar. Empresas de maior crescimento, *ceteris paribus*, devem valer mais do que empresas de menor crescimento, por exemplo.
 
 Cabe comentar que existe uma diferença filosófica significativa entre as abordagens intrínseca e relativa. Através de *valuation* intrínseco, tentamos estimar o valor de um ativo baseado na sua capacidade de gerar fluxos de caixa no futuro. No *valuation* relativo, estamos fazendo um julgamento em quanto um ativo vale ao olharmos para o que o mercado está pagando por ativos similares -- implicitamente, estamos "confiando" no julgamento de valor do mercado. Dessa forma, caso o mercado esteja sistematicamente superestimando ou subestimando -- *bull* e *bear market*, respectivamente -- um grupo de ativos ou um setor inteiro, ambos os tipos de *valuation* podem diferir entre si.
 
 ### Análise por múltiplos
 
-Múltiplos, efetivamente, são uma tentativa de reduzir empresas a "fatores comuns", para que possam ser feitas comparações tão precisas quanto possíveis. No geral, valores podem ser padronizados relativo aos lucros que as firmas geram, aos valores contábeis; ou valores de substituição das firmas em si mesmas, às receitas que firmas geram, ou para medidas que são específicas para as firmas em um setor.
+Múltiplos, efetivamente, são uma tentativa de reduzir empresas a "fatores comuns", para que possam ser feitas comparações tão precisas quanto possíveis. No geral, valores podem ser padronizados relativo aos lucros que as firmas geram, aos valores contábeis; ou valores de substituição das firmas em si mesmas, às receitas que as firmas geram, ou para medidas que são específicas para as firmas em um setor.
 
 Pelo interesse de se desenvolver melhores ferramentas de filtragem, o estudo de tais indicadores foi iniciado. Vale, então, comentar a respeito da precisão histórica de tais múltiplos.
 
-Existiram, naturalmente, estudos que relacionaram múltiplos com fundamentais de *valuation* [@beaver1978; @peasnell1982]. De fato, há uma forte conexão entre o valor contábil e retorno sobre patrimônio líquido, como notado por Wilcox [-@wilcox1984], fazendo o argumento de que ações baratas são aquelas que são vendidas a múltiplos de valor contábil baixos enquanto mantém retornos sobre o patrimônio líquidos altos ou, no mínimo, razoáveis. Na verdade, Penman [-@penman1996] também traça uma distinção entre múltiplos de preço sobre lucro e múltiplos de valor contábil no que tange a sua ligação com o retorno sobre o patrimônio líquido, ao mencionar que, à medida que múltiplos de PBV aumentam com o ROE, a relação entre múltiplos de P/L e ROE é mais fraca. Múltiplos de lucros por ação são os melhores em explicar diferenças em precificação, múltiplos de vendas e fluxos de caixa operacionais são os piores, e múltiplos de valor contábil e EBITDA tendem a ficar no meio [@liu2002; @liu2007; @lie2002]. Curiosamente, existe ainda uma relação inversa entre volatilidade do mercado e múltiplos de P/L [@stohs1996], demostrando a aversão ao risco do investidor.
+Existiram, naturalmente, estudos que relacionaram múltiplos com fundamentais de *valuation* [@beaver1978; @peasnell1982]. De fato, há uma forte conexão entre o valor contábil e retorno sobre patrimônio líquido, como notado por Wilcox [-@wilcox1984], fazendo o argumento de que ações baratas são aquelas que são vendidas a múltiplos de valor contábil baixos enquanto mantém retornos sobre o patrimônio líquidos altos ou, no mínimo, razoáveis. Na verdade, Penman [-@penman1996] também traça uma distinção entre múltiplos de preço sobre lucro e múltiplos de valor contábil no que tange a sua ligação com o retorno sobre o patrimônio líquido, ao mencionar que, à medida que múltiplos de PBV aumentam com o ROE, a relação entre múltiplos de P/L e ROE é mais fraca. Múltiplos de lucros por ação são os melhores em explicar diferenças em precificação, múltiplos de vendas e fluxos de caixa operacionais são os piores, e múltiplos de valor contábil e EBITDA tendem a ficar no meio [@liu2002; @liu2007; @lie2002]. Curiosamente, existe ainda uma relação inversa entre volatilidade do mercado e múltiplos de P/L [@stohs1996], demonstrando a aversão ao risco do investidor.

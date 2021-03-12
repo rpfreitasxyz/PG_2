@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  25 NOV 2020 15:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.8)  17 DEC 2020 11:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
 LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-10-27> xparse <2020-03-03> (./coppe.cls
+L3 programming layer <2020-12-05> xparse <2020-03-03> (./coppe.cls
 Document Class: coppe 2011/02/08\ v2.2\ COPPE Dissertations and Thesis
 
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.c
@@ -16,15 +16,15 @@ Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
 lo
 File: bk12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count175
-\c@chapter=\count176
-\c@section=\count177
-\c@subsection=\count178
-\c@subsubsection=\count179
-\c@paragraph=\count180
-\c@subparagraph=\count181
-\c@figure=\count182
-\c@table=\count183
+\c@part=\count177
+\c@chapter=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
@@ -35,7 +35,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip49
 \bibsep=\skip50
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count184
+\c@NAT@ctr=\count186
 )
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyphenat/hy
 phenat.sty
@@ -54,7 +54,7 @@ Package: babel 2020/10/27 3.51 The Babel package
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/bab
 el.def
 File: babel.def 2020/10/27 3.51 Babel common definitions
-\babel@savecnt=\count185
+\babel@savecnt=\count187
 \U@D=\dimen139
 \l@babelnohyphens=\language5
 
@@ -62,7 +62,7 @@ File: babel.def 2020/10/27 3.51 Babel common definitions
 babel.def)
 \bbl@readstream=\read2
 )
-\bbl@dirlevel=\count186
+\bbl@dirlevel=\count188
 
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel-eng
 lish/english.ldf
@@ -143,7 +143,7 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \TX@old@col=\dimen146
 \TX@target=\dimen147
 \TX@delta=\dimen148
-\TX@cols=\count187
+\TX@cols=\count189
 \TX@ftn=\toks17
 )
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eqparbox/eq
@@ -181,9 +181,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 ex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count188
-\Gm@cntv=\count189
-\c@Gm@tempcnt=\count190
+\Gm@cnth=\count190
+\Gm@cntv=\count191
+\c@Gm@tempcnt=\count192
 \Gm@bindingoffset=\dimen149
 \Gm@wd@mp=\dimen150
 \Gm@odd@mp=\dimen151
@@ -201,15 +201,15 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float
 .sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count191
+\c@float@type=\count193
 \float@exts=\toks20
 \float@box=\box51
 \@float@everytoks=\toks21
 \@floatcapt=\box52
 )
-\@advisor=\count192
-\@examiner=\count193
-\c@keywords=\count194
+\@advisor=\count194
+\@examiner=\count195
+\c@keywords=\count196
 \bibindent=\dimen157
 )
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inpute
@@ -243,13 +243,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 opn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count195
+\inf@bad=\count197
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count196
-\leftroot@=\count197
+\uproot@=\count198
+\leftroot@=\count199
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count198
-\DOTSCASE@=\count199
+\classnum@=\count266
+\DOTSCASE@=\count267
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -258,15 +258,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen160
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count266
-\c@MaxMatrixCols=\count267
+\macc@depth=\count268
+\c@MaxMatrixCols=\count269
 \dotsspace@=\muskip16
-\c@parentequation=\count268
-\dspbrk@lvl=\count269
+\c@parentequation=\count270
+\dspbrk@lvl=\count271
 \tag@help=\toks25
-\row@=\count270
-\column@=\count271
-\maxfields@=\count272
+\row@=\count272
+\column@=\count273
+\maxfields@=\count274
 \andhelp@=\toks26
 \eqnshift@=\dimen161
 \alignsep@=\dimen162
@@ -340,8 +340,8 @@ voptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen167
-\Hy@linkcounter=\count273
-\Hy@pagecounter=\count274
+\Hy@linkcounter=\count275
+\Hy@pagecounter=\count276
 
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd
 1enc.def
@@ -357,7 +357,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count275
+\Hy@SavedSpaceFactor=\count277
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
 Package hyperref Info: Hyper index ON on input line 4472.
@@ -365,7 +365,7 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count276
+\c@Hy@tempcnt=\count278
 
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -383,7 +383,7 @@ c/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count277
+\Fld@menulength=\count279
 \Field@Width=\dimen169
 \Fld@charsize=\dimen170
 Package hyperref Info: Hyper figures OFF on input line 6347.
@@ -402,9 +402,9 @@ Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\Hy@abspage=\count278
-\c@Item=\count279
-\c@Hfootnote=\count280
+\Hy@abspage=\count280
+\c@Item=\count281
+\c@Hfootnote=\count282
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -418,8 +418,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count281
-\c@bookmark@seq@number=\count282
+\Fld@listcount=\count283
+\c@bookmark@seq@number=\count284
 
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilech
 eck/rerunfilecheck.sty
@@ -451,16 +451,16 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTright=\skip62
 \LTpre=\skip63
 \LTpost=\skip64
-\LTchunksize=\count283
+\LTchunksize=\count285
 \LTcapwidth=\dimen171
 \LT@head=\box55
 \LT@firsthead=\box56
 \LT@foot=\box57
 \LT@lastfoot=\box58
-\LT@cols=\count284
-\LT@rows=\count285
-\c@LT@tables=\count286
-\c@LT@chunks=\count287
+\LT@cols=\count286
+\LT@rows=\count287
+\c@LT@tables=\count288
+\c@LT@chunks=\count289
 \LT@p@ftn=\toks29
 )
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/bo
@@ -476,52 +476,52 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen179
 \cmidrulekern=\dimen180
 \defaultaddspace=\dimen181
-\@cmidla=\count288
-\@cmidlb=\count289
+\@cmidla=\count290
+\@cmidlb=\count291
 \@aboverulesep=\dimen182
 \@belowrulesep=\dimen183
-\@thisruleclass=\count290
-\@lastruleclass=\count291
+\@thisruleclass=\count292
+\@lastruleclass=\count293
 \@thisrulewidth=\dimen184
 )
 (c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l
 3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count292
+\l__kernel_color_stack_int=\count294
 \l__pdf_internal_box=\box59
 ) (./thesis.aux
 
-LaTeX Warning: Label `tab:unnamed-chunk-16' multiply defined.
-
-
 LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-18' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-18' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-18' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-18' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-18' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-18' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-18' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-18' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-17' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-18' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-18' multiply defined.
 
 )
 \openout1 = `thesis.aux'.
@@ -606,7 +606,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 tring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count293
+\c@section@level=\count295
 )
 LaTeX Info: Redefining \ref on input line 24.
 LaTeX Info: Redefining \pageref on input line 24.
@@ -652,11 +652,7 @@ Underfull \hbox (badness 1681) in paragraph at lines 45--45
 
 [2
 
-]
-
-LaTeX Warning: Reference `bib:begin' on page iii undefined on input line 45.
-
-[3
+] [3
 
 ] [4
 
@@ -688,174 +684,193 @@ No file thesis.lab.
 
 ]
 Cap\'{\i }tulo 1.
+
+Underfull \hbox (badness 3108) in paragraph at lines 98--98
+[][][]\OT1/cmr/m/n/10 Pode-se con-fe-rir a evolu^^Xc~ao dos mes-mos bai-xando a
+ pla-ni-lha pre-sente neste link:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[]$\OT1/cmtt/m/n/10 http : / / www . b3 . com . br / pt _ br / market-[]data-[]
+e-[]indices / servicos-[]de-[]dados / market-[]data /
+ []
+
 [1
 
 
 ]
+<img/ibov-poupanca.png, id=301, 563.10374pt x 414.79968pt>
+File: img/ibov-poupanca.png Graphic file (type png)
+<use img/ibov-poupanca.png>
+Package pdftex.def Info: img/ibov-poupanca.png  used on input line 109.
+(pdftex.def)             Requested size: 426.79135pt x 314.39024pt.
+[2] [3 <./img/ibov-poupanca.png>] [4] [5]
 Cap\'{\i }tulo 2.
-[2
+[6
 
-]
+] [7] [8] [9] [10] [11]
 Cap\'{\i }tulo 3.
-[3
+[12
 
-]
+] [13] [14] [15] [16] [17] [18]
 Cap\'{\i }tulo 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
 [][][]\OT1/cmr/m/n/10 Vers~ao com-pleta dis-pon^^S^^Pvel em: []$\OT1/cmtt/m/n/1
 0 https : / / www . Copel . com / hpCopel /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
 \OT1/cmtt/m/n/10 root / nivel2 . jsp ? endereco = %2FhpCopel % 2Froot % 2FpagCo
 pel2 . nsf % 2Fdocs %
  []
 
-[4
+[19
 
-] [5] [6]
-<img/usinas_Copel.jpg, id=342, 1027.84pt x 578.16pt>
+] [20] [21]
+<img/usinas_Copel.jpg, id=510, 1027.84pt x 578.16pt>
 File: img/usinas_Copel.jpg Graphic file (type jpg)
 <use img/usinas_Copel.jpg>
-Package pdftex.def Info: img/usinas_Copel.jpg  used on input line 222.
+Package pdftex.def Info: img/usinas_Copel.jpg  used on input line 429.
 (pdftex.def)             Requested size: 426.79135pt x 240.07307pt.
-[7]
-Overfull \hbox (139.39915pt too wide) in paragraph at lines 224--224
+[22]
+Overfull \hbox (139.39915pt too wide) in paragraph at lines 431--431
 [][][]\OT1/cmr/m/n/10 Dispon^^S^^Pvel em: []$\OT1/cmtt/m/n/10 https : / / www .
  in . gov . br / web / dou / -[] / resolucao-[]normativa-[]n-[]875-[]de-[]10-[]
 de-[]marco-[]de-[]2020-[]248070610$[]\OT1/cmr/m/n/10 .
  []
 
-[8 <./img/usinas_copel.jpg>] [9] [10] [11] [12]
-<img/mapa_geoeletrico_parana.jpg, id=380, 845.0772pt x 597.1911pt>
+[23 <./img/usinas_copel.jpg>] [24] [25] [26] [27]
+<img/mapa_geoeletrico_parana.jpg, id=547, 845.0772pt x 597.1911pt>
 File: img/mapa_geoeletrico_parana.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_parana.jpg>
-Package pdftex.def Info: img/mapa_geoeletrico_parana.jpg  used on input line 35
-9.
+Package pdftex.def Info: img/mapa_geoeletrico_parana.jpg  used on input line 56
+3.
 (pdftex.def)             Requested size: 426.79135pt x 301.60191pt.
-<img/mapa_geoeletrico_curitiba.jpg, id=381, 540.3387pt x 654.5253pt>
+<img/mapa_geoeletrico_curitiba.jpg, id=548, 540.3387pt x 654.5253pt>
 File: img/mapa_geoeletrico_curitiba.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_curitiba.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_curitiba.jpg  used on input line 
-362.
+566.
 (pdftex.def)             Requested size: 426.79135pt x 516.9994pt.
-[13]
-<img/mapa_geoeletrico_londrina.jpg, id=386, 276.0714pt x 294.3798pt>
+[28]
+<img/mapa_geoeletrico_londrina.jpg, id=553, 276.0714pt x 294.3798pt>
 File: img/mapa_geoeletrico_londrina.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_londrina.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_londrina.jpg  used on input line 
-365.
+569.
 (pdftex.def)             Requested size: 426.79135pt x 455.1071pt.
-[14 <./img/mapa_geoeletrico_parana.jpg>]
-<img/mapa_geoeletrico_maringa.jpg, id=392, 277.7577pt x 270.0489pt>
+[29 <./img/mapa_geoeletrico_parana.jpg>]
+<img/mapa_geoeletrico_maringa.jpg, id=558, 277.7577pt x 270.0489pt>
 File: img/mapa_geoeletrico_maringa.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_maringa.jpg>
-Package pdftex.def Info: img/mapa_geoeletrico_maringa.jpg  used on input line 3
-68.
+Package pdftex.def Info: img/mapa_geoeletrico_maringa.jpg  used on input line 5
+72.
 (pdftex.def)             Requested size: 426.79135pt x 414.95358pt.
-[15 <./img/mapa_geoeletrico_curitiba.jpg>]
-<img/mapa_geoeletrico_ponta_grossa.jpg, id=397, 279.2031pt x 272.4579pt>
+[30 <./img/mapa_geoeletrico_curitiba.jpg>]
+<img/mapa_geoeletrico_ponta_grossa.jpg, id=564, 279.2031pt x 272.4579pt>
 File: img/mapa_geoeletrico_ponta_grossa.jpg Graphic file (type jpg)
 <use img/mapa_geoeletrico_ponta_grossa.jpg>
 Package pdftex.def Info: img/mapa_geoeletrico_ponta_grossa.jpg  used on input l
-ine 371.
+ine 575.
 (pdftex.def)             Requested size: 426.79135pt x 416.50166pt.
-[16 <./img/mapa_geoeletrico_londrina.jpg>] [17 <./img/mapa_geoeletrico_maringa.
-jpg>] [18 <./img/mapa_geoeletrico_ponta_grossa.jpg>]
-<img/consumo_dist.png, id=412, 293.59688pt x 303.38344pt>
+[31 <./img/mapa_geoeletrico_londrina.jpg>] [32 <./img/mapa_geoeletrico_maringa.
+jpg>] [33 <./img/mapa_geoeletrico_ponta_grossa.jpg>]
+<img/consumo_dist.png, id=579, 293.59688pt x 303.38344pt>
 File: img/consumo_dist.png Graphic file (type png)
 <use img/consumo_dist.png>
-Package pdftex.def Info: img/consumo_dist.png  used on input line 438.
+Package pdftex.def Info: img/consumo_dist.png  used on input line 642.
 (pdftex.def)             Requested size: 426.79135pt x 441.01962pt.
-[19] [20]
-Overfull \hbox (10.50887pt too wide) in paragraph at lines 445--460
+[34] [35]
+Overfull \hbox (10.50887pt too wide) in paragraph at lines 649--664
  [][] 
  []
 
-<img/industrial_dist.png, id=424, 283.81032pt x 307.1475pt>
+<img/industrial_dist.png, id=590, 283.81032pt x 307.1475pt>
 File: img/industrial_dist.png Graphic file (type png)
 <use img/industrial_dist.png>
-Package pdftex.def Info: img/industrial_dist.png  used on input line 462.
+Package pdftex.def Info: img/industrial_dist.png  used on input line 666.
 (pdftex.def)             Requested size: 426.79135pt x 461.92928pt.
-[21 <./img/consumo_dist.png>] [22]
-Overfull \hbox (23.43192pt too wide) in alignment at lines 467--476
+[36 <./img/consumo_dist.png>] [37]
+Overfull \hbox (23.43192pt too wide) in alignment at lines 671--680
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (23.43192pt too wide) in alignment at lines 476--479
+Overfull \hbox (23.43192pt too wide) in alignment at lines 680--683
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (23.43192pt too wide) in alignment at lines 479--481
+Overfull \hbox (23.43192pt too wide) in alignment at lines 683--685
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (23.43192pt too wide) in alignment at lines 481--484
+Overfull \hbox (23.43192pt too wide) in alignment at lines 685--688
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (23.43192pt too wide) in alignment at lines 484--501
+Overfull \hbox (23.43192pt too wide) in alignment at lines 688--705
  [] [] [] [] [] [] [] [] [] 
  []
 
-[23 <./img/industrial_dist.png>] [24] [25] [26] [27]
-Overfull \hbox (24.56789pt too wide) in alignment at lines 672--677
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (24.56789pt too wide) in alignment at lines 677--682
+[38 <./img/industrial_dist.png>] [39] [40] [41] [42]
+Overfull \hbox (24.56789pt too wide) in alignment at lines 876--881
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (24.56789pt too wide) in alignment at lines 682--684
+Overfull \hbox (24.56789pt too wide) in alignment at lines 881--886
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (24.56789pt too wide) in alignment at lines 684--686
+Overfull \hbox (24.56789pt too wide) in alignment at lines 886--888
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (24.56789pt too wide) in alignment at lines 686--708
+Overfull \hbox (24.56789pt too wide) in alignment at lines 888--890
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (24.56789pt too wide) in alignment at lines 708--728
- [] [] [] [] [] [] [] [] [] 
- []
-
-[28]
-Overfull \hbox (24.56789pt too wide) in alignment at lines 728--749
+Overfull \hbox (24.56789pt too wide) in alignment at lines 890--912
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (24.56789pt too wide) in alignment at lines 749--770
+Overfull \hbox (24.56789pt too wide) in alignment at lines 912--932
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+[43]
+Overfull \hbox (24.56789pt too wide) in alignment at lines 932--953
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (24.56789pt too wide) in alignment at lines 770--775
+Overfull \hbox (24.56789pt too wide) in alignment at lines 953--974
  [] [] [] [] [] [] [] [] [] 
  []
 
-[29] [30] [31] [32] [33] [34] [35]
+
+Overfull \hbox (24.56789pt too wide) in alignment at lines 974--979
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+[44] [45] [46] [47] [48] [49] [50]
 Cap\'{\i }tulo 5.
-[36
+[51
 
-] [37
+] [52
 
-]
+
+] [53] [54]
 No file thesis.bbl.
 
 AED: lastpage setting LastPage
@@ -863,20 +878,17 @@ AED: lastpage setting LastPage
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: EF99F63604F513F367BF3FF75757D927;2216.
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8596 strings out of 481446
- 131317 string characters out of 5918545
- 512077 words of memory out of 5000000
- 24957 multiletter control sequences out of 15000+600000
- 546945 words of font info for 73 fonts, out of 8000000 for 9000
+ 8674 strings out of 481344
+ 132258 string characters out of 5915955
+ 513870 words of memory out of 5000000
+ 25067 multiletter control sequences out of 15000+600000
+ 415118 words of font info for 70 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 80i,12n,85p,1343b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 80i,12n,85p,1549b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
  <c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jkn
 appen/ec/tcrm1000.600pk> <c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-v
 ar/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk><c:/Users/Rafael Pinto/AppData/Ro
@@ -885,23 +897,26 @@ fael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 bx12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmbx8.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/Users/Rafael Pinto/AppD
-ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/Us
+ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Us
 ers/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTe
-X/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/Rafael Pinto/App
-Data/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Use
-rs/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmti10.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyT
-eX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/Rafael Pinto/A
-ppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:
-/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmtt12.pfb>
-Output written on thesis.pdf (48 pages, 6449330 bytes).
+/cm/cmmi12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyT
+eX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Rafael Pinto/A
+ppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/
+Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr8.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTe
+X/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Rafael Pinto/A
+ppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/
+Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti10.pfb><c:/Users/Rafael Pinto/AppData/Roaming/TinyTeX/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti12.pfb><c:/Users/Rafael Pinto/AppData/Roaming/Ti
+nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/Rafael Pint
+o/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on thesis.pdf (65 pages, 6540991 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 530 compressed objects within 6 object streams
- 154 named destinations out of 1000 (max. 500000)
- 310 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 821 PDF objects out of 1000 (max. 8388607)
+ 709 compressed objects within 8 object streams
+ 224 named destinations out of 1000 (max. 500000)
+ 315 words of extra memory for PDF output out of 10000 (max. 10000000)
 
