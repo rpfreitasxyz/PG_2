@@ -414,9 +414,9 @@ A empresa, naturalmente, se faz valer de uma Norma aplicável a conexão de micr
 
 ## Cálculo do *valuation* intrínseco
 
-Para uma análise intrínseca, comecemos nos debruçando sobre as demonstrações financeiras da Companhia. Os dados foram retirados da base de dados do Eikon, da companhia de informação Thomson Reuters.[^acessoReuters]
+Para uma análise intrínseca, comecemos nos debruçando sobre as demonstrações financeiras da Companhia. Conforme recomendação de Graham e Dodd [-@graham2009], para uma estimativa do futuro, será usada uma janela de 10 anos. Os dados foram obtidos através do site Fundamentus.[^acessoFundamentus]
 
-[^acessoReuters]: Para facilidade de tratamento e observação, foi utilizado o Eikon. Naturalmente, todos os dados dispostos poderiam ser obtidos pesquisando-se através do RI da empresa. Os dados foram obtidos pela última vez em 25 nov 2020.
+[^acessoFundamentus]: Disponível em: <https://www.fundamentus.com.br/balancos.php?papel=CPLE3&tipo=1>. Dados obtidos pela última vez em 23 mar 2021.
 
 ```{r, tab.pos = "H", echo = FALSE, message = FALSE}
 library(tidyverse)
@@ -428,8 +428,8 @@ bp <- read_excel("data/cple_bp.xlsx", skip = 6) %>%
   rename_with(.fn = function(x) str_trim(x) %>% str_extract("\\d{4}$"), .cols = 2:ncol(.))
  
 
-kable(bp %>% select(1:8),
-  caption = "Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2019 a 2013.",
+kable(bp %>% select(1:7),
+  caption = "Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2019 a 2014.",
   format = "latex",
   booktabs = TRUE,
   longtable = TRUE
@@ -447,46 +447,8 @@ kable(bp %>% select(1:8),
   add_indent(c(75, 82)-2) %>%
   group_rows(index = c("Assets" = 44, "Liabilities" = 25, "Shareholders' Equity" = 13))
 
-kable(bp %>% select(c(1, 9:16)),
-  caption = "Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2012 a 2005.",
-  format = "latex",
-  booktabs = TRUE,
-  longtable = TRUE
-  ) %>%
-  kable_styling(
-    latex_options = c("HOLD_position", "repeat_header"),
-    repeat_header_text = "\\textit{(continuação)}",
-    font_size = 8
-  ) %>%
-  # Indentacao dos ativos
-  add_indent(c(2:4, 6:7, 9, 11:12, 15:17, 20:24, 26, 29:30, 32:33, 36:37, 40:43)) %>%
-  # Indentacao dos passivos
-  add_indent(c(52:57, 60:61, 64, 67:69)-1) %>%
-  # Indentacao do PL
-  add_indent(c(75, 82)-2) %>%
-  group_rows(index = c("Assets" = 44, "Liabilities" = 25, "Shareholders' Equity" = 13))
-
-kable(bp %>% select(c(1, 17:24)),
-  caption = "Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2004 a 1997.",
-  format = "latex",
-  booktabs = TRUE,
-  longtable = TRUE
-  ) %>%
-  kable_styling(
-    latex_options = c("HOLD_position", "repeat_header"),
-    repeat_header_text = "\\textit{(continuação)}",
-    font_size = 8
-  ) %>%
-  # Indentacao dos ativos
-  add_indent(c(2:4, 6:7, 9, 11:12, 15:17, 20:24, 26, 29:30, 32:33, 36:37, 40:43)) %>%
-  # Indentacao dos passivos
-  add_indent(c(52:57, 60:61, 64, 67:69)-1) %>%
-  # Indentacao do PL
-  add_indent(c(75, 82)-2) %>%
-  group_rows(index = c("Assets" = 44, "Liabilities" = 25, "Shareholders' Equity" = 13))
-
-kable(bp %>% select(c(1, 25:ncol(.))),
-  caption = "Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 1996 a 1994.",
+kable(bp %>% select(c(1, 7:12)),
+  caption = "Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2014 a 2009.",
   format = "latex",
   booktabs = TRUE,
   longtable = TRUE
@@ -505,8 +467,122 @@ kable(bp %>% select(c(1, 25:ncol(.))),
   group_rows(index = c("Assets" = 44, "Liabilities" = 25, "Shareholders' Equity" = 13))
 ```
 
+```{r, tab.pos = "H", echo = FALSE, message = FALSE}
+library(readxl)
+library(tidyverse)
+library(lubridate)
+
+bp <- read_excel("data/balCOPEL.xlsx", sheet = "Bal. Patrim.", skip = 1)
+
+ordem <- bp[1] %>%
+  rename(Conta = ...1) %>%
+  unlist() %>%
+  as_factor() %>%
+  factor(ordered = TRUE)
+
+bp_trat <- bp %>%
+  rename(Conta = ...1) %>%
+  pivot_longer(cols = 2:ncol(.), names_to = "Data", values_to = "Valor") %>%
+  mutate(Data = dmy(Data),
+         ano = year(Data)) %>%
+  group_by(Conta, ano) %>%
+  summarise(Valor = first(Valor)) %>%
+  ungroup() %>%
+  pivot_wider(names_from = "ano", values_from = "Valor") %>%
+  mutate(Conta = as_factor(Conta)) %>%
+  .[order(match(.$Conta, ordem)),] %>%
+  select(-2) %>%
+  drop_na() %>%
+  mutate_at(2:ncol(.), round)
+
+kable(bp_trat %>% select(1:6),
+  caption = "Balanço Patrimonial da Copel, em milhares de reais. Base contábil de 2011 a 2015.",
+  format = "latex",
+  booktabs = TRUE,
+  longtable = TRUE
+  ) %>%
+  kable_styling(
+    latex_options = c("HOLD_position", "repeat_header"),
+    repeat_header_text = "\\textit{(continuação)}",
+    font_size = 8
+  ) %>%
+  # Indentacao dos ativos
+  add_indent(c(2:4, 6:7, 9, 11:12, 15:17, 20:24, 26, 29:30, 32:33, 36:37, 40:43)) %>%
+  # Indentacao dos passivos
+  add_indent(c(52:57, 60:61, 64, 67:69)-1) %>%
+  # Indentacao do PL
+  add_indent(c(75, 82)-2) %>%
+  group_rows(index = c("Ativos" = 44, "Liabilities" = 25, "Shareholders' Equity" = 13))
+
+kable(bp_trat %>% select(1, 7:11),
+  caption = "Balanço Patrimonial da Copel, em milhares de reais. Base contábil de 2016 a 2020.",
+  format = "latex",
+  booktabs = TRUE,
+  longtable = TRUE
+  ) %>%
+  kable_styling(
+    latex_options = c("HOLD_position", "repeat_header"),
+    repeat_header_text = "\\textit{(continuação)}",
+    font_size = 8
+  )
+  
+```
 
 
+
+```{r, tab.pos = "H", echo = FALSE, message = FALSE}
+library(readxl)
+library(tidyverse)
+library(lubridate)
+
+dre <- read_xlsx("data/balCOPEL.xlsx", skip = 1, sheet = "Dem. Result.")
+
+ordem <- dre[1] %>%
+  rename(Conta = ...1) %>%
+  unlist() %>%
+  as_factor() %>%
+  factor(ordered = TRUE)
+
+dre_trat <- dre %>%
+  pivot_longer(cols = 2:ncol(.), names_to = "Data", values_to = "Valor") %>%
+  mutate(Data = dmy(Data),
+         ano = year(Data)) %>%
+  rename(Conta = ...1) %>%
+  group_by(Conta, ano) %>%
+  summarise(Valor = sum(Valor)) %>%
+  ungroup() %>%
+  pivot_wider(names_from = "ano", values_from = "Valor") %>%
+  mutate(Conta = as_factor(Conta)) %>%
+  .[order(match(.$Conta, ordem)),] %>%
+  select(-2) %>%
+  drop_na() %>%
+  mutate_at(2:ncol(.), round)
+
+kable(dre_trat %>% select(1:6),
+  caption = "Demonstrativos de Resultado da Copel, em milhares de reais. Base contábil de 2011 a 2015.",
+  format = "latex",
+  booktabs = TRUE,
+  longtable = TRUE
+  ) %>%
+  kable_styling(
+    latex_options = c("HOLD_position", "repeat_header"),
+    repeat_header_text = "\\textit{(continuação)}",
+    font_size = 8
+  )
+
+kable(dre_trat %>% select(1, 7:11),
+  caption = "Demonstrativos de Resultado da Copel, em milhares de reais. Base contábil de 2016 a 2020.",
+  format = "latex",
+  booktabs = TRUE,
+  longtable = TRUE
+  ) %>%
+  kable_styling(
+    latex_options = c("HOLD_position", "repeat_header"),
+    repeat_header_text = "\\textit{(continuação)}",
+    font_size = 8
+  )
+
+```
 
 ## Cálculo do *valuation* relativo
 
@@ -528,17 +604,7 @@ library(tidyverse)
 library(rvest)
 library(kableExtra)
 
-page <- read_html("https://www.fundamentus.com.br/resultado.php?segmento=70") %>%
-  html_nodes("table") %>%
-  html_table()
-
-page_filtr <- page[[1]] %>%
-  as_tibble() %>%
-  filter(Papel %in% c("CMIG3", "LIGT3", "ENBR3", "NEOE3", "CPLE3")) %>%
-  select(-c("Liq.2meses", "Patrim. Líq")) %>%
-  pivot_longer(cols = -Papel, names_to = "Indicadores", values_to = "Valores") %>%
-  pivot_wider(names_from = "Papel", values_from = "Valores") %>%
-  relocate(CPLE3, .after = Indicadores)
+page_filtr <- read_csv("data/fundamentus-23-03-2021.csv")
 
 kable(page_filtr,
   caption = "Comparativo de empresas similares à Copel.",
@@ -551,7 +617,7 @@ kable(page_filtr,
   )
 ```
 
-[^fundamentus]: Disponível em <https://www.fundamentus.com.br/resultado.php?segmento=70>. Último acesso em 24 nov 2020.
+[^fundamentus]: Disponível em <https://www.fundamentus.com.br/resultado.php?setor=14>. Último acesso em 23 mar 2021.
 
 Através da tabela, é possível perceber que a Copel figura indicadores atraentes, com o maior ROE dentre as selecionadas, assim como o menor P/L não-negativo -- infelizmente, o P/L da Light se traduz em um cenário de prejuízo. Assim, figuraria no topo da lista do método de Greenblatt [-@greenblatt2006; -@greenblatt2010].
 

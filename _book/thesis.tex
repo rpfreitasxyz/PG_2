@@ -35,7 +35,7 @@
     \examiner{Prof.}{Nome Completo do Terceiro Examinador}{Ph.D}
   
   \department{EPR}
-  \date{12}{2020}
+  \date{03}{2021}
 
     \keyword{Valuation}
     \keyword{Análise de investimentos}
@@ -84,284 +84,77 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \hypertarget{introduuxe7uxe3o}{%
   \chapter{Introdução}\label{introduuxe7uxe3o}}
 
-  Cabe, antes de começar o desenvolvimento do trabalho propriamente dito, contextualizar e justificar o trabalho, assim como explicitar aos leitores os objetivos, as limitações e a estrutura do mesmo.
+  Placeholder
 
   \hypertarget{contextualizauxe7uxe3o}{%
   \section{Contextualização}\label{contextualizauxe7uxe3o}}
 
-  É necessário definir Bolsas de Valores, assim como retratar uma breve história da brasileira a partir de 1967 -- ano a partir do qual começou a se chamar Bolsa de Valores de São Paulo, a Bovespa. Segundo Assaf Neto (\protect\hyperlink{ref-assafneto2018}{2018}), as Bolsas são entidades, cujo objetivo básico é o de manter um local em condições adequadas para a realização de operações de compra e venda de títulos e valores mobiliários.
-
-  Um ano após 1967, foi criado o principal índice de ações brasileiro: o Ibovespa. Resumidamente, este índice é uma média ponderada das ações com maior volume de negociação. Após certo tempo, foi criada a Cetip -- a Central de Custódia e de Liquidação Financeira de Títulos -- em 1984, começando a operar em 1986.
-
-  A partir de 2007, as bolsas de valores deixaram de ser entidades sem fins lucrativos e tornaram-se empresas de capital aberto. No ano seguinte, a BM\&F e a Bovespa se uniram, resultando na criação da Bolsa de Valores, Mercadorias e Futuros de São Paulo -- a BM\&F Bovespa. Em 2017, são fundidas a BM\&F Bovespa e Cetip, dando origem à B3 S.A., sob a supervisão da Comissão de Valores Mobiliários -- esta é a bolsa brasileira atualmente.
-
-  Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Valores ano a ano, sendo em 2020 o recorde, um aumento de 47.7\% relativo a maio de 2019\footnote{Pode-se conferir a evolução dos mesmos baixando a planilha presente neste link: \url{http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-a-vista/historico-pessoas-fisicas/}. Último acesso em 07 jul 2020.}.
-
-  Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros -- o que não quer dizer que o investidor deve investir em todos. De fato, o investidor precisa minimizar seu risco, preferencialmente investindo em empresas que dentre outras características possuem alto \emph{payout} de dividendos, baixo grau de alavancagem; e menor variabilidade de lucros (BEAVER; KETTLER; SCHOLES, \protect\hyperlink{ref-beaver1970}{1970}).
-
-  Empresas do setor de utilidades possuem tais características, em sua maioria; dessa forma, escolheu-se um exemplar do mesmo -- a Companhia Paranaense de Energia, Copel -- como forma de fazer o valuation da empresa, fazer um breve resumo do setor elétrico, comparar os métodos de avaliação; e, evidentemente, exemplificar o processo ao leitor.
-
   \hypertarget{justificativa}{%
   \section{Justificativa}\label{justificativa}}
-
-  Por mais que a caderneta de poupança seja o investimento preferido dos brasileiros, segundo a Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais (\protect\hyperlink{ref-anbima2019}{2019}) -- esta modalidade conta com 88\% da população -- é evidente que o rendimento nominal\footnote{Nominal, pois os retornos reais são contextuais devido ao pagamento de impostos, dividendos; e, a depender do ativo, dos custos do mesmo.} do IBOV é superior no longo prazo. Pelo IPEA, pode-se obter tanto os rendimentos nominais (em \% a.m.) da poupança quanto os retornos do IBOV (também em \% a.m.), ambos em intervalos mensais desde 1990.\footnote{Ambas as séries podem ser obtidas em \url{http://www.ipeadata.gov.br/Default.aspx}. Último acesso em 10 jul 2020.} A partir daí, acumulamos as taxas recursivamente. Definindo \(i\) como a taxa de retorno nominal total, e \(i_t\) como sendo a taxa de retorno nominal no mês \(t\), temos \(i = \prod_{t=1}^n (1+i_t),\) sendo \(n\) o mês que se deseja calcular o retorno nominal total. Exposto isso, foi feito um gráfico dos retornos totais de ambas as modalidades:
-  \begin{figure}[H]
-  \includegraphics[width=1\linewidth]{img/ibov-poupanca} \caption{Uma comparação entre o IBOV e a poupança.}\label{fig:unnamed-chunk-1}
-  \end{figure}
-  Com o passar do tempo, entretanto, a maturação no mercado financeiro pode, naturalmente, levar o investidor a se interessar por retornos acima do mercado -- fundos de índice, por definição, impossibilitam o objetivo. Isso leva a uma exploração de diferentes classes de ativos, desde ações ordinárias a fundos de investimento em ações. Um investidor, entretanto, há de ter em mente que raramente fundos de investimento com administração ativa, no longo prazo, superam os retornos dos fundos de índice, em termos reais (BOGLE, \protect\hyperlink{ref-bogle2015}{2015}).
-
-  Assim sendo, caso o investidor deseja ter sucesso, é importante que as escolhas de ativos sejam racionais. Ao menos, tão racionais quanto possível forem para humanos. De fato, indivíduos estão sujeitos a uma racionalidade restrita (SIMON, \protect\hyperlink{ref-simon1997}{1997}), o que leva a diversas heurísticas -- inclusive, mas não limitadas a: enfatizar evidências que apoiam visões próprias (KLAYMAN, \protect\hyperlink{ref-klayman1995}{1995}), superestimar probabilidades por maior ``disponibilidade'' em memória (SCHWARZ et al., \protect\hyperlink{ref-schwarz1991}{1991}); e superestimar a própria habilidade, quando se é novato, assim como subestimar, quando se é um \emph{expert} (KRUGER; DUNNING, \protect\hyperlink{ref-kruger1999}{1999}) -- para simplificar o processo de raciocínio e, permitir, assim, que o agente consiga satisfazer as restrições -- tempo, recursos, dentre outros -- para a tomada de decisões.
-
-  De fato, a abordagem de realizar tanto o \emph{valuation} intrínseco quanto o relativo de uma empresa é, além de uma interessante comparação entre métodos, uma forma de evitar a ``síndrome do homem com martelo'', popularizado por Munger (\protect\hyperlink{ref-munger2006}{2006}). Este cita um provérbio, que diz: ``Para um homem com um martelo, todo problema se parece com um prego.''
 
   \hypertarget{objetivos}{%
   \section{Objetivos}\label{objetivos}}
 
-  São os principais objetivos do trabalho (1) fazer o \emph{valuation} da Companhia Paranaense de Energia através de, no mínimo, dois métodos de valuation, sendo no mínimo um deles intrísenco e no mínimo, um relativo e (2) realizar a comparação entre os resultados dos métodos.
-
-  Com o desenvolver do trabalho, poderão ser percebidas outras motivações, entretanto seriam estas consideradas secundárias.
-
   \hypertarget{delimitauxe7uxf5es}{%
   \section{Delimitações}\label{delimitauxe7uxf5es}}
-
-  Este trabalho se limita a prover um breve prospecto do cenário energético brasileiro, assim como possíveis desenvolvimentos. Não serão discutidas políticas energéticas e afins. Se limita, também, a tomar como verdadeira a teoria moderna do portfólio como exposta por Markowitz (\protect\hyperlink{ref-markowitz1952}{1952}), para o cálculo do custo de capital. Não será discutido economia comportamental, nem modelos mais sofisticados para tal cálculo.
 
   \hypertarget{estrutura-do-trabalho}{%
   \section{Estrutura do trabalho}\label{estrutura-do-trabalho}}
 
-  O trabalho possui, em sua integridade, cinco capítulos.
-
-  O primeiro capítulo é uma introdução ao restante do trabalho, e é efetivamente um resumo do que o leitor verá pela frente.
-
-  O segundo capítulo é uma examinação do setor energético brasileiro, a ser feito pela leitura e examinação do Plano Decenal de Expansão de Energia (PDE) e o Plano Nacioanl de Energia (PNE), ambos elaborados pela Empresa de Pesquisa Energética (EPE). Através destes, podemos ter uma melhor noção do setor no qual a empresa está inserido, possibilitando um melhor cálculo e previsão dos fluxos de caixa.
-
-  O terceiro capítulo é a documentação do referencial teórico utilizado, a ser escrito seguindo uma lógica linear, de forma tal que possa também ser visto como uma metodologia, com exemplos para auxiliar o leitor.
-
-  O quarto capítulo é o estudo de caso de fato. Será dada uma contextualização da empresa, assim como a aplicação dos métodos discutidos.
-
-  O quinto e último capítulo é a conclusão, em que será feita a exposição dos resultados, assim como a comparação entre os métodos de \emph{valuation} discutidos durante o texto.
-
   \hypertarget{o-mercado-de-energia}{%
   \chapter{O mercado de energia}\label{o-mercado-de-energia}}
 
-  É importante, antes de partir para o estudo de caso em questão, estabelecer o contexto do trabalho em questão. De fato, neste capítulo serão tratados os fundamentais do mercado de energia no Brasil, desde os órgãos aos estudos principais do setor.
+  Placeholder
 
   \hypertarget{uxf3rguxe3os-presentes-no-estudo}{%
   \section{Órgãos presentes no estudo}\label{uxf3rguxe3os-presentes-no-estudo}}
 
-  Nesta seção, serão tratados os cinco principais órgãos do setor, sendo eles: (1) o Ministério de Minas e Energia; (2) a Agência Nacional de Energia Elétrica; (3) o Operador Nacional do Sistema Elétrico; (4) a Câmara Comercializadora de Energia Elétrica; e (5) a Empresa de Pesquisa Energética.
-
   \hypertarget{mme}{%
   \subsection{MME}\label{mme}}
-
-  O Ministério de Minas e Energia (MME) foi criado em 1960, no governo do presidente Juscelino Kubitschek. Assim seguiu por 30 anos, até ser extinto em 1990 e recriado em 1992.
-
-  Em 1997, foi criado o Conselho Nacional de Política Energética (CNPE), vinculado à Presidência da República e presidido pelo ministro de Minas e Energia, com a atribuição de propor ao presidente da República políticas nacionais e medidas para o setor.
-
-  Logo em seguida, em 2003, foram definidas as competências do MME como sendo as áreas de (1) geologia, recursos minerais e energéticos; (2) aproveitamento da energia hidráulica; mineração e metalurgia; e (3) petróleo, combustível e energia elétrica.
-
-  No ano seguinte foi criado o Comitê de Monitoramento do Setor Elétrico (CMSE), cuja função é acompanhar e avaliar permanentemente a continuidade e a segurança do suprimento eletroenergético em todo o território nacional. No mesmo ano, foi permitida também a criação da Empresa de Pesquisa Energética (EPE), vinculada ao Ministério, que tem por finalidade prestar serviços na área de estudos e pesquisas destinadas a subsidiar o planejamento do setor energético.
-
-  O MME tem como empresas vinculadas a Eletrobras e Petrobras. Estão, também, vinculadas algumas autarquias ao Ministério, dentre elas: a Agência Nacional de Energia Elétrica (ANEEL); Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP); e a Agência Nacional de Mineração (ANM).
 
   \hypertarget{aneel}{%
   \subsection{ANEEL}\label{aneel}}
 
-  A Agência Nacional de Energia Elétrica (ANEEL) é uma autarquia vinculada ao Ministério de Minas e Energia. Tem como finalidade regular e fiscalizar a produção, transmissão, distribuição e comercialização de energia elétrica, de acordo com a legislação e em conformidade com as diretrizes e as políticas do governo federal. A autarquia foi criada em dezembro de 1996, durante o mandato de Fernando Henrique Cardoso.
-
-  Cabe à ANEEL, dentre outras competências: (1) implementar as políticas e diretrizes do governo federal para a exploração da energia elétrica e o aproveitamento dos potenciais hidráulicos; (2) estabelecer as tarifas para o suprimento de energia elétrica realizado às concessionárias e permissionárias de distribuição; e (3) fazer a gestão dos contratos de concessão ou de permisão de serviços públicos de energia elétrica e fiscalizar, diretamente ou mediante convênios com órgãos estaduais, as concessões, as permissões e a prestação dos serviços de energia elétrica.
-
-  Pode-se conferir a lista completa de atribuições pelo Art. 3° da Lei n° 9.427/96.\footnote{Disponível em: \url{http://www.planalto.gov.br/ccivil_03/leis/l9427cons.htm}. Último acesso em 17 nov 2020.}
-
   \hypertarget{ons}{%
   \subsection{ONS}\label{ons}}
-
-  O Operador Nacional do Sistema Elétrico (ONS) é uma entidade privada sem fins lucrativos que é responsável pela coordenação e controle da operação de instalações de geração e tranmissão de energia elétrica do Sistema Interligado Nacional (SIN), sob fiscalização da ANEEL. O órgão foi criado em agosto de 1998, sob mandato do presidente Fernando Henrique Cardoso.
 
   \hypertarget{ccee}{%
   \subsection{CCEE}\label{ccee}}
 
-  A Câmara de Comercialização de Energia Elétrica (CCEE) tem por finalidade viabilizar a comercialização de energia elétrica no mercado de energia brasileiro. De fato, esta efetua a contabilização e a liquidação financeira das operações realizadas no mercado de curto prazo. As regras e procedimentos que regulam as atividades realizadas da CCEE são aprovados pela ANEEL.
-
-  Foi criada em agosto de 2004, sob mandato do presidente Luiz Inácio Lula da Silva, sucedendo ao antigo Mercado Atacadista de Energia.
-
   \hypertarget{epe}{%
   \subsection{EPE}\label{epe}}
-
-  A Empresa de Pesquisa Energética (EPE) é uma empresa pública vinculada ao Ministério de Minas e Energia, criada em março de 2004, sob mandato do presidente Luiz Inácio Lula da Silva. Tem por finalidade prestar serviços na área de estudos e pesquisas destinadas a subsidiar o planejamento do setor energético.
-
-  Cabe à EPE, dentre outras atribuições: (1) apresentar ao CNPE, anualmente, os Planos Decenais de Expansão (PDE), assim como a cada dois anos os Planos Nacionais de Energia (PNE); (2) identificar e quantificar os potenciais de recursos energéticos; e (3) elaborar e publicar o balanço energético nacional.
-
-  A lista completa de atribuições pode ser vista no Art. 4° da Lei n° 10.847/04.\footnote{Disponível em: \url{http://www.planalto.gov.br/CCivil_03/_Ato2004-2006/2004/Lei/L10.847.htm}. Último acesso em 17 nov 2020.}
-
-  Uma das principais motivações para a criação da EPE foram os racionamentos e apagões ocorridos no início da década, ocorridos durante o governo de Fernando Henrique Cardoso, atribuídos em parte á carência de planejamento. Embora seja uma entidade independente, é vinculada ao Ministério de Minas e Energia.
 
   \hypertarget{o-fluxo-de-energia}{%
   \section{O fluxo de energia}\label{o-fluxo-de-energia}}
 
-  Atualmente, o setor elétrico brasileiro tem uma estrutura predominantemente unidirecional nos fluxos de energia. Assim, são tipicamente dividos em geração, transmissão, comercialização e distribuição. Por se tratarem do final da cadeia de valor convencional, os consumidores então têm efetivamente um comportamento passivo.
-
-  A geração de energia elétrica é a transformação da energia primária -- petróleo, carvão mineral, dentre outros -- em energia elétrica. No Brasil, predomina-se a geração hidráulica devido ao grande potencial hidroenergético dos nossos rios.
-
-  A transmissão efetua o transporte da energia gerada até os centros consumidores de carga. Nessa parte, o sistema brasileiro possui uma particularidade, que é o fato de que os grandes centros de consumidores ficam localizados longe da grande geração energética. Isso faz com que o Brasil tenha uma grande quantidade de linhas de transmissão com algumas centenas de quilômetros.
-
-  A comercialização de energia é atualmente realizada em dois ambientes diferentes: (1) no Ambiente de Contratação Livre, que é destinado ao atendimento de consumidores livres -- o consumidor que pode optar pela compra de energia elétrica junto a qualquer fornecedor, que é atendido em qualquer tensão e com demanda contratada mínima de 3 MW, segundo a Resolução da ANEEL n° 376, de 25 de agosto de 2009\footnote{Disponível em: \url{https://www.legisweb.com.br/legislacao/?id=109898}. Último acesso em 17 nov 2020.} e a Resolução n° 414, de 9 de setembro de 2010\footnote{Disponível em: \url{https://www.legisweb.com.br/legislacao/?id=112868}. Último acesso em 17 nov 2020.}; e (2) no Ambiente de Contratação Regulada, que é destinado ao atendimento de consumidores cativos por meio das distribuidoras, sendo estas supridas por geradores estatais ou independentes que vendem energia em leilões públicos.
-
-  A distribuição é o setor responsável por receber a energia da transmissão e distribuí-la para os centros consumidores.
-
-  Salvo no caso de \emph{holdings}, empresas só podem atuar em uma das áreas ex-comercialização.
-
   \hypertarget{estudos-e-projeuxe7uxf5es-de-longo-prazo}{%
   \section{Estudos e projeções de longo prazo}\label{estudos-e-projeuxe7uxf5es-de-longo-prazo}}
-
-  A EPE cumpre sua finalidade de braço técnico de estudos do setor energético produzindo relatórios e planos de expansão a respeito do setor elétrico. Por se tratar de um \emph{valuation} de uma empresa do setor, é importante ponderar a respeito das ações tomadas e o parecer de \emph{experts} a respeito do futuro do setor como um todo, a fim de aprimorar nossas estimativas da taxa de crescimento.
-
-  São os dois principais estudos, nesse sentido, (1) o Plano Nacional de Energia; (2) e o Plano Decenal de Expansão de Energia
 
   \hypertarget{plano-nacional-de-energia-pne}{%
   \subsection{Plano Nacional de Energia (PNE)}\label{plano-nacional-de-energia-pne}}
 
-  O PNE é um conjunto de estudos que dão suporte ao desenho da estratégia de longo prazo do governo em relação à expansão do setor de energia. A estratégia, por sua vez, consiste em um conjunto de recomendações e diretrizes a serem seguidas na definição das ações e iniciativas a serem implementadas ao longo do horizonte de tempo prescrito. A revisão do PNE deve ser conduzida sempre que houver necessidade de alteração na estratégia de longo prazo do tomador de decisão relevante, sejam por razões ordinárias ou extraordinárias.
-
-  Os PNEs têm relação com os PDEs. Embora haja similaridades, o PNE é um instrumento de planejamento com atribuições distintas do PDE. Em primeiro lugar, o PNE é um documento com visão mais estratégica. Neste contexto, seu enfoque consiste em embasar o posicionamento do governo de modo a orientar e direcionar as estratégias dos agentes do setor de forma a se atingir os objetivos gerais da expansão no longo prazo, com adequação dos recursos, com confiabilidade, modicidade e sustentabilidade. Além disso, o PNE é o alicerce a partir de qual todos os Planos, Políticas, Programas e Iniciativas são elaborados. O PNE é, portanto, um farol que orienta para onde os PDEs devem indicar a expansão do setor de energia no horizonte decenal. Por fim, enquanto o PDE trabalha com um cenário de referência e análises de sensibilidade, anualmente revisto, o PNE deve tratar com mais cenários.
-
-  No caso, foi feito o estudo do PNE 2050 (EPE, \protect\hyperlink{ref-epe2020}{2020}), e assim será entregue um pequeno sumário executivo do mesmo a seguir.
-
-  Foram elaborados dois grandes cenários, formando um cone de incertezas para o desenho da estratégia de longo prazo: o primeiro, chamado Desafio da Expansão, reflete requisitos de expansão do setor de energia para atendimento a um crescimento da demanda de energia mais expressivo. No segundo, chamado de Estagnação, analisam-se as consequências de um cenário em que o consumo de energia per capita mantém-se inalterado ao longo de todo o período. O foco do relatório está voltado para o cenário Desafio da Expansão.
-
-  Os estudos do PNE apontam para um potencial energético de quase 280 bilhões de tep (toneladas equivalentes de petróleo) no horizonte até 2050. A demanda cresce de 300 milhões de tep para 600 milhões de tep e, ao longo de trinta e cinco anos, essa trajetória representa uma demanda de energia total acumulada do período equivalente a pouco menos de 15 bilhões de tep. Tamanha discrepância entre potencial de recursos e a demanda de energia estimada gera uma situação distinta daquela vivida ao longo especialmente da metade do século XX, quando o País viveu grandes crises de energia. Dessa forma, imagina-se uma administração da abundância.
-
-  O cenário Desafio da Expansão considera algumas premissas, que serão levadas em conta para o uso no estudo de caso. São essas: (1) crescimento médio de PIB de 3.1\% a.a. e 2.8\% de PIB per capita; (2) a população brasileira manterá a tendência de crescer a taxas cada vez menores; (3) o consumo potencial de energia elétrica do País pode atingir até 3 vezes o patamar do ano base; (4) a demanda de energia elétrica a ser atendida por geração centralizada cresce até 2.5 vezes em relação aos valores do ano base, mesmo com crescimento de geração distribuída (GD), autoprodução, energia solar térmica e eficiência energética no período; (5) e o consumo de energia e de eletricidade per capita aumenta, a despeito da contribuição da eficiência energética no horizonte até 2050.
-
   \hypertarget{plano-decenal-de-expansuxe3o-de-energia-pde}{%
   \subsection{Plano Decenal de Expansão de Energia (PDE)}\label{plano-decenal-de-expansuxe3o-de-energia-pde}}
-
-  O PDE tem o intuito de de indicar as perspectivas, sob a ótica do Governo, da expansão do setor de energia no horizonte de dez anos, dentro de uma visão integrada para os diversos energéticos. Tal visão permite, então, extrair importantes elementos para o planejamento do setor, com benefícios em termos de aumento de confiabilidade, redução de custos de produção e mitigação de impactos ambientais.
-
-  Como o PDE tem intuitos mais operacionais do que estratégicos, serão utilizadas as premissas e estudos do PNE para nortear as decisões do presente \emph{valuation}.
 
   \hypertarget{referencial-teuxf3rico}{%
   \chapter{Referencial teórico}\label{referencial-teuxf3rico}}
 
-  Nesta seção será feita uma consideração a respeito dos métodos e conceitos utilizados ao longo do estudo. É de interesse do leitor prestar especial atenção ao enunciado abaixo, uma vez que é um breve alicerce teórico que serve não apenas para esse estudo, como para diversos outros similares. Recomenda-se, ainda, a leitura de Damodaran (\protect\hyperlink{ref-damodaran2007}{2007}) para se ter um panorama de diversos outros modelos a serem aplicados, assim como uma discussão a respeito de seus usos e efetividade.
+  Placeholder
 
   \hypertarget{valuation-intruxednseco}{%
   \section{\texorpdfstring{\emph{Valuation} intrínseco}{Valuation intrínseco}}\label{valuation-intruxednseco}}
 
-  Comecemos discutindo brevemente a respeito do que é possuir ``valor intrínseco''. Este é um conceito filosófico, em que o valor de um objeto ou projeto é derivado de, e por si só -- em outras palavras, livre de fatores externos. Analistas financeiros constroem modelos para estimar o que se imagina ser o valor intrínseco de uma empresa sem considerar o seu valor de mercado em determinado dia.
-
-  Naturalmente, o mercado, no curto prazo, está sujeito a flutuações que podem ser atribuídas a diversos fatores, desde manipulação de preços em papéis mais ilíquidos a pensamento de manada por parte de investidores. Cabe, nesse momento, utilizar a analogia popularizada por Graham (\protect\hyperlink{ref-graham2016}{2016}, pp.~204-205), do Sr.~Mercado:
-  \begin{quote}
-  ``Imagine que você possui uma participação pequena em uma companhia de capital fechado que lhe custou US\$1.000. Um de seus sócios, chamado Sr.~Mercado, é de fato muito prestativo. Todo dia ele lhe informa o que pensa ser o valor de sua participação e, além disso, se dispõe a comprar de você ou vender a você uma participação adicional naquelas bases. Às vezes, sua ideia de valor parece plausível e justificada pela evolução e pelas perspectivas do negócio da forma como você as conhece. Por outro lado, o Sr.~Mercado deixa frequentemente o entusiasmo ou o receio tomar conta dele e o valor proposto por ele lhe parece pura bobagem. Se você é um investidor prudente ou um empresário inteligente, deixaria as comunicações diárias do Sr.~Mercado influenciarem sua opinião sobre o valor de uma participação de US\$1.000 na companhia? Só se você concordasse com ele ou então desejasse negociar com ele. Você pode ficar feliz em vender para ele quando ele cota um preço ridiculamente alto e igualmente feliz em comprar dele quando seu preço é baixo. No entanto, no resto do tempo, você seria mais esperto se formulasse suas próprias ideias acerca do valor de sua carteira com base nos relatório completos da companhia sobre suas operações e posições financeiras.''
-  \end{quote}
-  Dessa forma, a discrepância entre preço de mercado e a estimativa do valor intrísenco feita por um analista torna-se uma medida para oportunidade de investimento. Aqueles que considerarem tais modelos como estimativas razoáveis de valor intrínseco, e que tomarem ação baseando-se nessas estimativas, são conhecidos como investidores de valor (DAMODARAN, \protect\hyperlink{ref-damodaran2012}{2012}).
-
   \hypertarget{anuxe1lise-de-fluxo-de-caixa-descontado}{%
   \subsection{Análise de Fluxo de Caixa Descontado}\label{anuxe1lise-de-fluxo-de-caixa-descontado}}
-
-  A análise de fluxos de caixa descontados (DCF) é um método de se descobrir o valor de uma ação, projeto, empresa, ou ativo usando os conceitos do valor temporal do dinheiro. Para se aplicar o método, todos os fluxos de caixa futuros são estimados e descontados ao se utilizar o custo de capital para dar seus valores presentes. A soma de todos os futuros fluxos de caixa, tanto de entrada quanto de saída, resulta no valor presente líquido, que é tomado como o valor dos fluxos de caixa em questão, no momento.
-
-  Seguindo a queda do mercado em 1929, o método ganhou popularidade para se avaliar ações. De fato, provavelmente o primeiro a formalizar a expressão do método em termos econômicos modernos foi Fisher (\protect\hyperlink{ref-fisher1930}{1930}).
-
-  O valor presente líquido pode ser expresso matematicamente como: \[
-  VPL = \sum_{i=0}^N\frac{FC_t}{(1+r)^t}
-  \] onde \(FC_t\) é o fluxo de caixa no tempo \(t\) e \(r\) é a taxa de desconto. Naturalmente, para que o somatório acima esteja correto, assume-se que a taxa de desconto permaneça constante através do período todo. Caso assuma-se que o fluxo de caixa continue indefinidamente, a previsão finita é geralmente combinada com a premissa de um crescimento constante de fluxo de caixa além do período de projeção discreto -- a dita perpetuidade. Matematicamente: \[
-  VPL = \sum_{i=0}^N\frac{FC_t}{(1+r)^t} + \frac{FC_{N+2}}{(1+r)^{N+1}(r-g)}
-  \] onde o somatório é o período de crescimento normal, e além do somatório, temos o fluxo de caixa em perpetuidade, sendo descontado.
-
-  A pergunta, entretanto, repousa sobre encontrar a taxa de desconto. Diversos modelos foram apresentados com tal finalidade, sendo o mais utilizado o \emph{capital asset pricing model}, doravante mencionado pela sua abreviatura, CAPM.
-
-  Este modelo foi introduzido por Sharpe (\protect\hyperlink{ref-sharpe1964}{1964}), desenvolvendo em cima do trabalho iniciado em diversificação e teoria moderna do portfólio (MARKOWITZ, \protect\hyperlink{ref-markowitz1952}{1952}). O CAPM leva em conta a sensibilidade de um ativo ao risco não diversificável -- também conhecido como risco sistemático, ou risco de mercado -- geralmente representado por \(\beta\). De fato, a equação é como segue: \[
-  E(R_i) = R_f + \beta_i(E(R_m)-R_f)
-  \] onde \(E(R_i)\) é o retorno esperado do ativo, \(R_f\) é a taxa de juros livre de risco -- oriunda geralmente de títulos do governo -- e \(E(R_m)\) é o retorno esperado do mercado. \(\beta\), como comentado, é a sensibilidade do ativo em relação ao mercado, de forma tal que: \[
-  \beta_i = \frac{Cov(R_i, R_m)}{Var(R_m)} = \rho_{i,m}\frac{\sigma_i}{\sigma_m}
-  \] onde \(\rho_{i,m}\) denota o coeficiente de correlação entre o investimento \(i\) e o mercado \(m\), \(\sigma_i\) é o desvio padrão para o investimento \(i\), e \(\sigma_m\) é o desvio padrão para o mercado \(m\).
-
-  Podemos entender essa equação melhor se a rearranjarmos: \[
-  E(R_i) = R_f + \beta_i(E(R_m)-R_f) \iff E(R_i) - R_f = \beta_i(E(R_m)-R_f)
-  \] onde o segundo lado denota uma equivalência interessante. Dessa forma, podemos dizer que o prêmio de risco para o ativo individual é igual ao prêmio pelo risco de mercado, multiplicado pela sensibilidade do ativo (\(\beta\)).
-
-  De fato, o modelo leva em conta diversas premissas, dentre as quais todos os investidores (ARNOLD, \protect\hyperlink{ref-arnold2008}{2008}):
-  \begin{enumerate}
-  \def\labelenumi{\arabic{enumi}.}
-  \tightlist
-  \item
-    Têm por objetivo maximizar utilidades econômicas (quantidades de ativos são dadas e fixas).
-  \item
-    São racionais e aversos a risco.
-  \item
-    São amplamente diversificados sobre uma grande gama de investimentos.
-  \item
-    São tomadores de preço, isto é, não influenciam nos preços.
-  \item
-    Podem emprestar e tomar quantias ilimitadas sob a taxa livre de risco de juros.
-  \item
-    Fazem trocas sem custo de transação ou impostos.
-  \item
-    Lidam com ativos que são todos altamente diversificáveis em pequenas parcelas -- são perfeitamente divisíveis e líquidos).
-  \item
-    Têm expectativas homogêneas.
-  \item
-    Têm todas as informações disponíveis ao mesmo tempo.
-  \end{enumerate}
-  Naturalmente, pela quantidade e teor das premissas, este é um modelo que fortemente simplifica a realidade. De fato, pela sua lógica simples e fácil aplicabilidade, ainda é muito utilizado na indústria, embora a maior parte das aplicações utilizando-se este modelo sejam consideradas inválidas (FAMA; FRENCH, \protect\hyperlink{ref-fama2004}{2004}).
-
-  Para os propósitos deste trabalho, entretanto, será feita uma análise de fluxos de caixa descontados utilizando-se, também, o CAPM.
 
   \hypertarget{modelo-de-desconto-de-dividendos}{%
   \subsection{Modelo de Desconto de Dividendos}\label{modelo-de-desconto-de-dividendos}}
 
-  O modelo de desconto de dividendos (DDM) é um método de se fazer o \emph{valuation} de uma ação baseado na teoria de que a ação vale a soma de todos os seus pagamentos de dividendos futuros, descontados de volta ao seu valor presente líquido (VPL). A equação mais utilizada amplamente é o chamado modelo de crescimento de Gordon (GGM). É nomeada assim por causa da publicação de Gordon e Shapiro (\protect\hyperlink{ref-gordon1959}{1959}), embora tenha sido originalmente desenvolvida três anos antes (GORDON; SHAPIRO, \protect\hyperlink{ref-gordon1956}{1956}). Trata-se da equação: \[
-  P_0 = \frac{D_1}{r-g}
-  \] onde \(P_0\) é o valor atual da ação, \(g\) é a taxa de crescimento constante em perpetuidade esperada dos dividendos, \(r\) é o custo de capital próprio da empresa; e \(D_1\) é o valor dos dividendos do próximo ano.
-
-  Naturalmente, existem alguns pressupostos deste modelo:
-  \begin{enumerate}
-  \def\labelenumi{\roman{enumi}.}
-  \tightlist
-  \item
-    Uma taxa de crescimento constante e perpétua, menor que o custo de capital.
-  \item
-    A ação deve pagar dividendos regularmente; do contrário, versões mais generalizadas do modelo de desconto de dividendos devem ser usados para se descobrir o valor da ação.
-  \end{enumerate}
-  A partir destes pontos, temos que as violações de (i) identifica uma ação de valor negativo; e (ii) provê um valor errôneo -- caso seja levado ao extremo, uma empresa que não paga dividendos efetivamente não valeria nada.
-
-  A solução para (i) é se considerar um modelo de desconto de dividendos de dois estágios, isto é: \[
-  P_0 = \frac{D_0 (1+g)}{r-g} \left[1 - \frac{(1+g)^N}{(1+r)^N}\right] + \frac{D_0 (1+g)^N (1+g_\infty)}{(1+r)^N (r-g_\infty)}
-  \] onde \(D_0\) denota os dividendos deste ano, \(g\) a taxa de crescimento esperada de curto prazo, \(g_\infty\) a taxa de crescimento de longo prazo, e \(N\) o período (em número de anos), através do qual a taxa de curto prazo é aplicada.
-
-  Uma solução comum para (ii) seria assumir que a hipótese de Modigliani-Miller de irrelevância de dividendos (MODIGLIANI; MILLER, \protect\hyperlink{ref-modigliani1958}{1958}) seja verdadeira, e então substituir os dividendos \(D\) por \(E\), os lucros por ação. Entretanto, isso requer o uso de crescimento dos lucros, ao invés dos de dividendos, que podem ser diferentes.
-
-  A equação de Gordon pode ser entendida como o fato de que o retorno total de uma ação é igual à soma da sua receita e seus ganhos de capital. De fato, se rearranjada, teremos que: \[
-  P_0 = \frac{D_1}{r-g} \iff \frac{D_1}{P_0} + g = r
-  \] o que significa que o \emph{dividend yield} (\(D_1/P_0\)) mais o crescimento (\(g\)) é igual ao custo de capital próprio (\(r\)). Ora, caso consideremos a taxa de crescimento de dividendos no modelo como um \emph{proxy} para o crescimento de lucros e, por extensão, o preço da ação e os ganhos de capital. Consideraríamos, então, o custo de capital próprio como um \emph{proxy} para o retorno total requerida pelo investidor.
-
   \hypertarget{valuation-relativo}{%
   \section{\texorpdfstring{\emph{Valuation} relativo}{Valuation relativo}}\label{valuation-relativo}}
 
-  Em \emph{valuation} relativo, um determinado ativo é avaliado baseado em quão precificados estão os ativos similares no mercado. Como exemplo, uma comprador de imóveis pode, antes de realizar uma compra à vista/financiamento abrupto, pode pesquisar por imóveis similares na vizinhança. Ora, uma pessoa que coleciona selos pode fazer um julgamento de quanto vai pagar em outro selo raro ao checar preços de transações desse mesmo selo em outras épocas. Dessa forma, um investidor em potencial pode estimar o preço de uma ação a comprar fazendo uma pesquisa através da precificação de ações ``similares''.
-
-  Pela descrição acima, existem três fatores a se considerar:
-  \begin{enumerate}
-  \def\labelenumi{\arabic{enumi}.}
-  \tightlist
-  \item
-    \textbf{É necessário encontrar ativos comparáveis, precificados pelo mercado.} Esta é uma tarefa que é mais fácil de se cumprir com ativos tangíveis do que com imateriais, como ações. Frequentemente, analistas consideram outras empresas do mesmo setor como comparáveis, comparando por exemplo, empresas de utilidade com outras empresas de utilidade.
-  \item
-    \textbf{É importante traduzir os preços de mercado a uma variável comum.} A finalidade disso é gerar preços padronizados que sejam comparáveis. Embora isso não seja necessário com ativos idênticos, é necessário quando existe heterogenia. Considere, por exemplo, o exemplo dos imóveis. Uma casa tem 200 m² e outra, 100 m². Reduziria-se um fator à metragem. Naturalmente, com empresas acontece algo similar, geralmente reduzindo-se a múltiplos de lucros, valor contábil, dentre outros.
-  \item
-    \textbf{É necessário ajustar-se diferenças entre ativos.} Novamente, consideremos o exemplo da casa. Ambas possuem a mesma metragem, mas uma acabou de ser construída, e outra tem mais de 200 anos de idade. Ora, havendo essa diferença de idades, \emph{ceteris paribus}, a casa mais nova deve valer mais. Com ações, pode haver algo similar. Empresas de maior crescimento, \emph{ceteris paribus}, devem valer mais do que empresas de menor crescimento, por exemplo.
-  \end{enumerate}
-  Cabe comentar que existe uma diferença filosófica significativa entre as abordagens intrínseca e relativa. Através de \emph{valuation} intrínseco, tentamos estimar o valor de um ativo baseado na sua capacidade de gerar fluxos de caixa no futuro. No \emph{valuation} relativo, estamos fazendo um julgamento em quanto um ativo vale ao olharmos para o que o mercado está pagando por ativos similares -- implicitamente, estamos ``confiando'' no julgamento de valor do mercado. Dessa forma, caso o mercado esteja sistematicamente superestimando ou subestimando -- \emph{bull} e \emph{bear market}, respectivamente -- um grupo de ativos ou um setor inteiro, ambos os tipos de \emph{valuation} podem diferir entre si.
-
   \hypertarget{anuxe1lise-por-muxfaltiplos}{%
   \subsection{Análise por múltiplos}\label{anuxe1lise-por-muxfaltiplos}}
-
-  Múltiplos, efetivamente, são uma tentativa de reduzir empresas a ``fatores comuns'', para que possam ser feitas comparações tão precisas quanto possíveis. No geral, valores podem ser padronizados relativo aos lucros que as firmas geram, aos valores contábeis; ou valores de substituição das firmas em si mesmas, às receitas que firmas geram, ou para medidas que são específicas para as firmas em um setor.
-
-  Pelo interesse de se desenvolver melhores ferramentas de filtragem, o estudo de tais indicadores foi iniciado. Vale, então, comentar a respeito da precisão histórica de tais múltiplos.
-
-  Existiram, naturalmente, estudos que relacionaram múltiplos com fundamentais de \emph{valuation} (BEAVER; MORSE, \protect\hyperlink{ref-beaver1978}{1978}; PEASNELL, \protect\hyperlink{ref-peasnell1982}{1982}). De fato, há uma forte conexão entre o valor contábil e retorno sobre patrimônio líquido, como notado por Wilcox (\protect\hyperlink{ref-wilcox1984}{1984}), fazendo o argumento de que ações baratas são aquelas que são vendidas a múltiplos de valor contábil baixos enquanto mantém retornos sobre o patrimônio líquidos altos ou, no mínimo, razoáveis. Na verdade, Penman (\protect\hyperlink{ref-penman1996}{1996}) também traça uma distinção entre múltiplos de preço sobre lucro e múltiplos de valor contábil no que tange a sua ligação com o retorno sobre o patrimônio líquido, ao mencionar que, à medida que múltiplos de PBV aumentam com o ROE, a relação entre múltiplos de P/L e ROE é mais fraca. Múltiplos de lucros por ação são os melhores em explicar diferenças em precificação, múltiplos de vendas e fluxos de caixa operacionais são os piores, e múltiplos de valor contábil e EBITDA tendem a ficar no meio (LIE; LIE, \protect\hyperlink{ref-lie2002}{2002}; LIU; NISSIM; THOMAS, \protect\hyperlink{ref-liu2002}{2002}, \protect\hyperlink{ref-liu2007}{2007}). Curiosamente, existe ainda uma relação inversa entre volatilidade do mercado e múltiplos de P/L (STOHS; MAUER, \protect\hyperlink{ref-stohs1996}{1996}), demostrando a aversão ao risco do investidor.
 
   \hypertarget{estudo-de-caso}{%
   \chapter{Estudo de caso}\label{estudo-de-caso}}
@@ -380,7 +173,7 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
 
   A Companhia Paranaense de Energia é a maior empresa do estado do Paraná, tendo sido criada em 26 de outubro de 1954, sob controle acionário do estado do Paraná, abrindo seu capital acionário em abril de 1994 na BM\&FBovespa, e tornou-se em julho de 1997 a primeira do setor elétrico brasileiro a ser listada na Bolsa de Valores de Nova Iorque. A marca está também presente, desde junho de 2002, na Comunidade Econômica Europeia, pela Latibex -- o setor latinoamericano da Bolsa de Valores de Madri. A partir de 7 de maio de 2008, a empresa também passou a figurar oficialmente no Nível 1 de Governança Corporativa da BM\&FBovespa.
 
-  Em 2017, a Companhia atendia diretamente a mais de 4,5 milhões de unidades consumidoras em quase 400 municípios e 1.113 localidades paranaenses. Nesse universo incluem-se 3,6 milhões de lares, 78 mil indústiras, 384 mil estabelecimentos comerciais e 356 mil propriedades rurais. O quadro de pessoal, na época, era integrado por 8.453 empregados.
+  Em 2017, a Companhia atendia diretamente a mais de 4,5 milhões de unidades consumidoras em quase 400 municípios e 1.113 localidades paranaenses. Nesse universo incluem-se 3,6 milhões de lares, 78 mil indústrias, 384 mil estabelecimentos comerciais e 356 mil propriedades rurais. O quadro de pessoal, na época, era integrado por 8.453 empregados.
 
   Sua estrutura compreende a operação de:
   \begin{itemize}
@@ -394,13 +187,13 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \end{itemize}
   Hoje as usinas, linhas de transmissão e de distribuição da Copel transmitem luz para todo o Paraná e estados vizinhos. Tal cenário de progresso tem sido conquistado ao longo de seis décadas, com base no potencial hidráulico e no domínio tecnológico de seus quadros técnicos e profissionais.
 
-  Comentemos, agora, uma breve linha do tempo da Companhia.
+  Comentaremos, agora, uma breve linha do tempo da Companhia.
 
-  Foi criada a Copel -- ainda Companhia Paranaense de Energia Elétrica -- através do Decreto n° 14.947 de 26 de outubro de 1954, assinado por Bento Munhoz da Rocha Neto, na época governador do Paraná. Apenas em 1979 tornou-se Companhia Paranaense de Energia, tendo como base principal para a integralização de seu capital o Fundo Estadual de Eletrificação. Em seguida, em 1956, com o Decreto n° 1.412, a Copel passou a centralizar todas as ações governamentais de planejamento, construção e exploração dos sistemas de produção, transmissão, transformação, distribuição e comércio de energia elétrica e serviços correlatos, tendo incorporado, de forma central, todos os bens, serviços e obras em poder de diversos órgãos. Coube à Companhia, então, ser responsável pela construção dos grandes sistemas de integração enerética e dos empreendimentos hidrelétricos previstos no Plano de Eletrificação do Paraná. Inclusive, no mesmo ano, em 1° de agosto, a Companhia assumiu pela primeira vez o serviço de distribuição de energia de um munícip do estado: Maringá. Na época, Maringá possuía um rápido crescimento demográfico. Ora, com a chegada da Copel e da energia elétrica, o desenvolvimento do municípío acelerou ainda mais. Em seguida, vieram outros municípios.
+  Foi criada a Copel -- ainda Companhia Paranaense de Energia Elétrica -- através do Decreto n° 14.947 de 26 de outubro de 1954, assinado por Bento Munhoz da Rocha Neto, na época governador do Paraná. Apenas em 1979 tornou-se Companhia Paranaense de Energia, tendo como base principal para a integralização de seu capital o Fundo Estadual de Eletrificação. Em seguida, em 1956, com o Decreto n° 1.412, a Copel passou a centralizar todas as ações governamentais de planejamento, construção e exploração dos sistemas de produção, transmissão, transformação, distribuição e comércio de energia elétrica e serviços correlatos, tendo incorporado, de forma central, todos os bens, serviços e obras em poder de diversos órgãos. Coube à Companhia, então, ser responsável pela construção dos grandes sistemas de integração enerética e dos empreendimentos hidrelétricos previstos no Plano de Eletrificação do Paraná. Inclusive, no mesmo ano, em 1° de agosto, a Companhia assumiu pela primeira vez o serviço de distribuição de energia de um município do estado: Maringá. Na época, Maringá possuía um rápido crescimento demográfico. Ora, com a chegada da Copel e da energia elétrica, o desenvolvimento do município acelerou ainda mais. Em seguida, vieram outros municípios.
 
-  Durante a década de 60 e 70, pode-se constatar que o maior desafio para a Copel foi encontrar uma solução definitiva para o abastecimento de energia elétrica em larga escala. De fato, iniciaram-se as operações em 1963 da Usina Termelética de Figueira, de fundamental importância para a implantação do Plano Estadual de Eletrificação, viabilizando os sistemas de interligação que beneficiaram as Regiões Norte e Centro. Quatro anos depois, a Copel inaugurava a Usina de Salto Grande do Iguaçu, para atender ao sul do Estado. Entrando na década de 70, entrava em operação a Usina Julio de Mesquita Filho, para abastecer energicamente o oeste e o sudoeste. Um ano após, foi inaugurada a Usina Governador Parigot de Souza, este nome sendo uma homenagem ao governador Pedro Viriato Parigot de Souza, que também tinha sido presidente da Copel. É, atualmente, a maior central subterrânea do sul do Brasil e era a principal unidade geradora da Copel e maior usina em funcionamento no sul do Brasil no momento de sua inauguração, sendo um passo definitivo na constituição de uma infraestrutura energética capaz de suportar o desenvolvimento paranaense.
+  Durante a década de 60 e 70, pode-se constatar que o maior desafio para a Copel foi encontrar uma solução definitiva para o abastecimento de energia elétrica em larga escala. De fato, iniciaram-se as operações em 1963 da Usina Termelétrica de Figueira, de fundamental importância para a implantação do Plano Estadual de Eletrificação, viabilizando os sistemas de interligação que beneficiam as Regiões Norte e Centro. Quatro anos depois, a Copel inaugurou a Usina de Salto Grande do Iguaçu, para atender ao sul do Estado. Entrando na década de 70, entrava em operação a Usina Julio de Mesquita Filho, para abastecer energeticamente o oeste e o sudoeste. Um ano após, foi inaugurada a Usina Governador Parigot de Souza, este nome sendo uma homenagem ao governador Pedro Viriato Parigot de Souza, que também tinha sido presidente da Copel. É, atualmente, a maior central subterrânea do sul do Brasil e era a principal unidade geradora da Copel e maior usina em funcionamento no sul do Brasil no momento de sua inauguração, sendo um passo definitivo na constituição de uma infraestrutura energética capaz de suportar o desenvolvimento paranaense.
 
-  Nos anos de 1973 e 1974, a Copel deu um salto no número de consumidores ao assumir a distribuição de energia de diversos municípios do Estado. Em 1° de agosto de 1973, a Companhia incorporava a Companhia Força e Luz do Paraná, que atendia Curitiba. Um ano após, em 1° de junho de 1974, a Copel assumiu, também a distribuição de Londrina. Aliado a isso, foi lançado um programa de inclusão elétrica pela empresa, o que contribuiu para levar energia a ainda mais residências. Dessa forma, tivemos em 1981 a marca de 1 milhão de consumidores ligados à rede.
+  Nos anos de 1973 e 1974, a Copel deu um salto no número de consumidores ao assumir a distribuição de energia de diversos municípios do Estado. Em 1° de agosto de 1973, a Companhia incorporou a Companhia Força e Luz do Paraná, que atendia Curitiba. Um ano após, em 1° de junho de 1974, a Copel assumiu, também, a distribuição de Londrina. Aliado a isso, foi lançado um programa de inclusão elétrica pela empresa, o que contribuiu para levar energia a ainda mais residências. Dessa forma, tivemos em 1981 a marca de 1 milhão de consumidores ligados à rede.
 
   Naturalmente, com tamanha expansão de clientela, seria necessário à empresa expandir sua capacidade energética. Dessa forma, em 1980 foi inaugurada a hidrelétrica Governador Bento Munhoz da Rocha Netto, nomeada em honra ao governador Bento Munhoz da Rocha Netto, governador este que assinou o Decreto para a criação da Companhia. Com essa operação, a geração própria da Copel atingiu 2.9 bi kWh, contra 1.9 bi kWh do ano anterior.
 
@@ -408,11 +201,11 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
 
   Em setembro de 1992, foi concluída a Usina Hidrelétrica Governador Ney Aminthas de Barros Braga. Contribuiu para reduzir a dependência paranaense de energia comprada de outros Estados. Foi, inclusive, a primeira usina hidrelétrica a ter um Relatório de Impacto Ambiental (RIMA). Em fevereiro de 1999, entra em operação a Usina Hidrelétrica Governador José Richa.
 
-  Em 2004, a Copel completou 50 anos de existência. Apenas dois anos antes, foi anunciado o cancelamento do processo de privatização da Companhia, iniciado em 1998. Com o passar dos anos, a empresa se tornou expoente no que tange a P\&D do setor elétrico, com diversas inovações. Nota-se, por exempo, o marco do funcionamento da primeira célula a combustível a operar no Hemisfério Sul, em 2001, para suprir o CPD da Copel. Houve também a automação da subestação Jardim Tropical, fazendo com que a empresa sae tornasse a primeira do setor elétrico brasileiro a automatizar todas as subestações de transmissão.
+  Em 2004, a Copel completou 50 anos de existência. Apenas dois anos antes, foi anunciado o cancelamento do processo de privatização da Companhia, iniciado em 1998. Com o passar dos anos, a empresa se tornou expoente no que tange a P\&D do setor elétrico, com diversas inovações. Nota-se, por exemplo, o marco do funcionamento da primeira célula a combustível a operar no Hemisfério Sul, em 2001, para suprir o CPD da Copel. Houve também a automação da subestação Jardim Tropical, fazendo com que a empresa sae tornasse a primeira do setor elétrico brasileiro a automatizar todas as subestações de transmissão.
 
-  A empresa inaugura, em 2 anos, 2 novas hidreléticas: a de Santa Clara e a do Fundão. No meio tempo da construção de outra usina, ambas Santa Clara e Fundão recebem autorização da ONU e tornam-se as primeiras hidreléticas do Brasil a poderem comercializar certificados de Créditos de Carbono. De fato, existem duas outras usinas com planos de construção, a de Mauá e a Colíder, demonstrando assim a demanda de expansão da Companhia.
+  A empresa inaugura, em 2 anos, 2 novas hidrelétricas: a de Santa Clara e a do Fundão. No meio tempo da construção de outra usina, ambas Santa Clara e Fundão recebem autorização da ONU e tornam-se as primeiras hidrelétricas do Brasil a poderem comercializar certificados de Créditos de Carbono. De fato, existem duas outras usinas com planos de construção, a de Mauá e a Colíder, demonstrando assim a demanda de expansão da Companhia.
 
-  Em 2012, a Copel finalizou todas as fases do programa Luz para Todos, efetivamente conquistando a universalização do fornecimento de energia elétrica no Paraná. O reconhecimento foi formalizado pela ANEEL, marcando assim o início de uma era sob motivação de modernização e automação das redes de energia por parte da empresa. Três anos após, em janeiro, a Copel institui uma empresa de comercialização para atuar no Mercado Livre, atuando assim na compra e venda de energia, além de consultoria. A partir de 2016, a empresa volta seus esforços para além do Paraná, com entradas de operação em linhas de transmissão de conectam o Paraná ao Mato Grosso e um no Maranhão.
+  Em 2012, a Copel finalizou todas as fases do programa Luz para Todos, efetivamente conquistando a universalização do fornecimento de energia elétrica no Paraná. O reconhecimento foi formalizado pela ANEEL, marcando assim o início de uma era sob motivação de modernização e automação das redes de energia por parte da empresa. Três anos após, em janeiro, a Copel institui uma empresa de comercialização para atuar no Mercado Livre, atuando assim na compra e venda de energia, além de consultoria. A partir de 2016, a empresa volta seus esforços para além do Paraná, com entradas de operação em linhas de transmissão que conectam o Paraná ao Mato Grosso e um no Maranhão.
 
   Podemos notar, então, um grau de maturidade elevado por parte da empresa atualmente, em que a mesma segue uma motivação de melhoria dos processos atuais, com objetivo secundário de ampliar para outros estados, à medida que concessões e órgãos reguladores dão seu aval.
 
@@ -426,7 +219,7 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
 
   A Copel opera um parque gerador com diversas usinas próprias e participações societárias, em um leque diversificado de fontes energéticas, indo de biomassa a solar. A geração é supervisionada e coordenada pelo Centro de Operação de Geração e Transmissão da empresa, sediado em Curitiba.
   \begin{figure}[H]
-  \includegraphics[width=1\linewidth]{img/usinas_Copel} \caption{Usinas da Copel localizadas em mapa do Paraná.}\label{fig:unnamed-chunk-2}
+  \includegraphics[width=1\linewidth]{img/usinas_Copel} \caption{Usinas da Copel localizadas em mapa do Paraná.}\label{fig:unnamed-chunk-1}
   \end{figure}
   Comecemos comentando a respeito das hidrelétricas. Existe uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução n° 875, de 10 de março de 2020,\footnote{Disponível em: \url{https://www.in.gov.br/web/dou/-/resolucao-normativa-n-875-de-10-de-marco-de-2020-248070610}. Último acesso em 17 nov 2020.} a diferenciação é tal:
   \begin{itemize}
@@ -434,7 +227,7 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \item
     Uma \textbf{Central Geradora Hidrelétrica com Capacidade Instalada Reduzida (CGH)} é aquela cuja potência seja igual ou inferior a 5 MW.
   \item
-    Uma \textbf{Pequena Central Hidrelétrica (PCH)} é aquela que possuem duas características: (1) potência instalada superior a 5 MW e igual ou inferior a 30 MW; e (2) área de reservatório de até 13 km², excluindo a calha do leito regular do rio. Existem, ainda, cláusulas que regularizam a condição de (2).
+    Uma \textbf{Pequena Central Hidrelétrica (PCH)} é aquela que possui duas características: (1) potência instalada superior a 5 MW e igual ou inferior a 30 MW; e (2) área de reservatório de até 13 km², excluindo a calha do leito regular do rio. Existem, ainda, cláusulas que regularizam a condição de (2).
   \item
     Uma \textbf{Usina Hidrelétrica (UHE)} é aquela que possui quaisquer uma das seguintes características: (1) potência instalada superior a 5 MW e igual ou inferior a 50 MW, desde que não sejam enquadrados como PCH e estejam sujeitos à outorga de autorização; (2) potência instalada superior a 50 MW, sujeitos à outorga de concessão; ou (3) independente da potência instalada, tenham sido objeto de outorga de concessão ou de autorização.
   \end{itemize}
@@ -466,7 +259,7 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \item
     \textbf{UHE Derivação do Rio Jordão.} Foi inaugurada em dezembro de 1997, com potência de 6,5 MW. Está localizada no município de Reserva do Iguaçu.
   \item
-    \textbf{PCH São Jorge.} Possui capacidade instalada de 2,3 MW e está localizada à margem esquerda do rio Pintagui, numa região denominada Alagados. A usina foi inaugurada em 1945, na época pertencendo à Companhia Prada de Eletricidade S.A.; apenas em dezembro de 1974 foi incorporada pela Copel.
+    \textbf{PCH São Jorge.} Possui capacidade instalada de 2,3 MW e está localizada à margem esquerda do rio Pitangui, numa região denominada Alagados. A usina foi inaugurada em 1945, na época pertencendo à Companhia Prada de Eletricidade S.A.; apenas em dezembro de 1974 foi incorporada pela Copel.
   \item
     \textbf{PCH Apucaraninha.} Tem capacidade instalada de 10 MW. Foi inaugurada em 1949, pela Empresa Elétrica de Londrina S.A., e incorporada pela Copel em 1974. Está localizada no município de Tamarana, na margem direita do rio Apucaraninha.
   \item
@@ -488,15 +281,15 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \item
     \textbf{CGH Melissa.} Possui capacidade de 1 MW de potência instalada e situa-se no município de Corbélia, à margem direita do rio Melissa. Efetivamente, sua operação iniciou-se em 1969, embora tenha sido pausada para uma reforma geral durante a implantação dos equipamentos que a tornaram automatizada em 1994. Retomou, então, a operação no segundo semestre de 1995.
   \item
-    \textbf{CGH Marumbi.} Possui uma capacidade de 4,8 MW de potência em duas unidades geradores, e está localizada no município de Morretes, à margem direita do rio Ipiranga. Foi inaugurada em abril de 1961, construída pela RFFSA. Em razão do Plano Nacional de Desestatização, por não se enquadradar nas atividades da RFFSA, a usina foi adquirida pela Copel em novembro de 1997.
+    \textbf{CGH Marumbi.} Possui uma capacidade de 4,8 MW de potência em duas unidades geradoras, e está localizada no município de Morretes, à margem direita do rio Ipiranga. Foi inaugurada em abril de 1961, construída pela RFFSA. Em razão do Plano Nacional de Desestatização, por não se enquadrar nas atividades da RFFSA, a usina foi adquirida pela Copel em novembro de 1997.
   \end{itemize}
   No que tange a usinas termelétricas, a Copel possui:
   \begin{itemize}
   \tightlist
   \item
-    \textbf{UTE Figueira.} Conta com capacidade instalada dae 20 MW, e funciona a base carvão mineral extraído em jazidas da região. A aquisicação da usina foi feita pela Copel em 1969, com posterior instalação de um terceiro grupo gerador, em 1974.
+    \textbf{UTE Figueira.} Conta com capacidade instalada de 20 MW, e funciona a base carvão mineral extraído em jazidas da região. A aquisição da usina foi feita pela Copel em 1969, com posterior instalação de um terceiro grupo gerador, em 1974.
   \item
-    \textbf{UTE Araucária.} Com capacidade instalada de 484,5 MW, se faz valer de um ciclo combinado de turbina a gás/turbina a vapor para dispor energia. A usina entrou em operação em 2006 para atender ao SIN, em face da severa estiagem ocorrida no início do seguneto semestre do ano.
+    \textbf{UTE Araucária.} Com capacidade instalada de 484,5 MW, se faz valer de um ciclo combinado de turbina a gás/turbina a vapor para dispor energia. A usina entrou em operação em 2006 para atender ao SIN, em face da severa estiagem ocorrida no início do segundo semestre do ano.
   \end{itemize}
   Vale comentar, entretanto, que a capacidade instalada das UTEs não deve ser tratada como algo sob ``uso constante'', como é o caso de UHEs, por exemplo. De fato, as UTEs servem atualmente mais como um mecanismo de segurança do sistema energético do que um método de produção regular, pelo alto custo da energia, assim como os problemas relativos à poluição e gases do efeito estufa (ROSA, \protect\hyperlink{ref-rosa2007}{2007}).
 
@@ -504,7 +297,7 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \begin{itemize}
   \tightlist
   \item
-    \textbf{EOL Palmas.} É composta por cinco aerogerados de 500 kW cada, totalizando assim 2,5 MW de potência instalada. Está situada no município de Palmas, ao sul do Paraná. Foi a primeira eólica da região sul do Brasil. Entrou em operação em fevereiro de 1999, mas apenas em 2008 a Copel deteve adquiriu total controle da empresa responsável pela usina, a Centrais Eólicas do Paraná.
+    \textbf{EOL Palmas.} É composta por cinco aerogeradores de 500 kW cada, totalizando assim 2,5 MW de potência instalada. Está situada no município de Palmas, ao sul do Paraná. Foi a primeira eólica da região sul do Brasil. Entrou em operação em fevereiro de 1999, mas apenas em 2008 a Copel deteve adquiriu total controle da empresa responsável pela usina, a Centrais Eólicas do Paraná.
   \item
     \textbf{Complexo Eólico São Bento Energia.} Está localizado nos municípios de Pedra Grande e São Bento do Norte -- no Rio Grande do Norte. Tem 94 MW de potência instalada.
   \item
@@ -524,9 +317,27 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   Como uma \emph{holding}, a Copel também está presente no setor de transmissão de energia elétrica. De fato, referente a junho de 2016, a Copel possuía 2.521,2 km de linhas e 35 subestações, somando 13.002 MVA de potência de transformação.
 
   As tabelas abaixo apresentam o dimensionamento dos ativos de transmissão da Copel relativos à Rede Básica, para o período de junho de 2016. Cabe comentar que todas as subestações são inteiramente automatizadas.
+\begin{verbatim}
+Warning: package 'tibble' was built under R version 4.0.3
+\end{verbatim}
+\begin{verbatim}
+Warning: package 'tidyr' was built under R version 4.0.3
+\end{verbatim}
+\begin{verbatim}
+Warning: package 'readr' was built under R version 4.0.3
+\end{verbatim}
+\begin{verbatim}
+Warning: package 'dplyr' was built under R version 4.0.3
+\end{verbatim}
+\begin{verbatim}
+Warning: package 'knitr' was built under R version 4.0.3
+\end{verbatim}
+\begin{verbatim}
+Warning: package 'kableExtra' was built under R version 4.0.3
+\end{verbatim}
   \begin{table}[H]
 
-  \caption{\label{tab:unnamed-chunk-3}Extensão de linhas de transmissão da Copel, por nível de tensão.}
+  \caption{\label{tab:unnamed-chunk-2}Extensão de linhas de transmissão da Copel, por nível de tensão.}
   \centering
   \begin{tabular}[t]{cc}
   \toprule
@@ -543,7 +354,7 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \end{table}
   \begin{table}[H]
 
-  \caption{\label{tab:unnamed-chunk-4}Subestações de transmissão da Copel, por nível de tensão.}
+  \caption{\label{tab:unnamed-chunk-3}Subestações de transmissão da Copel, por nível de tensão.}
   \centering
   \begin{tabular}[t]{ccc}
   \toprule
@@ -560,21 +371,21 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
 
   É possível, também, observar essa extensão geograficamente, através de mapas geoelétricos do estado do Paraná e as principais regiões, como Curitiba e Londrina.
   \begin{figure}[H]
-  \includegraphics[width=1\linewidth]{img/mapa_geoeletrico_parana} \caption{Mapa geoelétrico do Paraná.}\label{fig:unnamed-chunk-5}
+  \includegraphics[width=1\linewidth]{img/mapa_geoeletrico_parana} \caption{Mapa geoelétrico do Paraná.}\label{fig:unnamed-chunk-4}
   \end{figure}
   \begin{figure}[H]
-  \includegraphics[width=1\linewidth]{img/mapa_geoeletrico_curitiba} \caption{Mapa geoelétrico de Curitiba.}\label{fig:unnamed-chunk-6}
+  \includegraphics[width=1\linewidth]{img/mapa_geoeletrico_curitiba} \caption{Mapa geoelétrico de Curitiba.}\label{fig:unnamed-chunk-5}
   \end{figure}
   \begin{figure}[H]
-  \includegraphics[width=1\linewidth]{img/mapa_geoeletrico_londrina} \caption{Mapa geoelétrico de Londrina.}\label{fig:unnamed-chunk-7}
+  \includegraphics[width=1\linewidth]{img/mapa_geoeletrico_londrina} \caption{Mapa geoelétrico de Londrina.}\label{fig:unnamed-chunk-6}
   \end{figure}
   \begin{figure}[H]
-  \includegraphics[width=1\linewidth]{img/mapa_geoeletrico_maringa} \caption{Mapa geoelétrico de Maringá.}\label{fig:unnamed-chunk-8}
+  \includegraphics[width=1\linewidth]{img/mapa_geoeletrico_maringa} \caption{Mapa geoelétrico de Maringá.}\label{fig:unnamed-chunk-7}
   \end{figure}
   \begin{figure}[H]
-  \includegraphics[width=1\linewidth]{img/mapa_geoeletrico_ponta_grossa} \caption{Mapa geoelétrico de Ponta Grossa.}\label{fig:unnamed-chunk-9}
+  \includegraphics[width=1\linewidth]{img/mapa_geoeletrico_ponta_grossa} \caption{Mapa geoelétrico de Ponta Grossa.}\label{fig:unnamed-chunk-8}
   \end{figure}
-  Por mais que a Companhia possua projetos de transmissão em andamento -- como, por exemplo, as LT Baixo Iguaçu - Realeza e Londrina - Assis --, ela também atua em consultoria e engenharia de linhas de transmissão e subestações. De fato, a engenharia de linhas de transmissão oda Copel é certiicada pela ISO 9001 e atua em seminários, comitês técnicos, treinamentos e pequisas em áreas avançadas. A experiência da empresa no setor foi utilizada em cercad e 7,6 mil km de linhas, implantadas com baixo custo e alta qualidade. A rede básica da empresa, no final das contas, conta com aproximadamente 5,4 mil km de cabos para-raios com fibras óticas -- de tecnologia OPGW, \emph{Optical Ground Wire.} Relativo à engenharia de subestações, a Copel elabora projetos de subestações nas tensões de 69, 138, 230 e 525 kV; gerencia projetos de subestações, elabora especificações de mateirias e equipamentos para subestações, dimensiona sistemas de aterramento, gerencia a construção; e calcula custos e realiza orçamentos para subestações.
+  Por mais que a Companhia possua projetos de transmissão em andamento -- como, por exemplo, as LT Baixo Iguaçu - Realeza e Londrina - Assis --, ela também atua em consultoria e engenharia de linhas de transmissão e subestações. De fato, a engenharia de linhas de transmissão da Copel é certificada pela ISO 9001 e atua em seminários, comitês técnicos, treinamentos e pesquisas em áreas avançadas. A experiência da empresa no setor foi utilizada em cerca de 7,6 mil km de linhas, implantadas com baixo custo e alta qualidade. A rede básica da empresa, no final das contas, conta com aproximadamente 5,4 mil km de cabos para-raios com fibras óticas -- de tecnologia OPGW, \emph{Optical Ground Wire.} Relativo à engenharia de subestações, a Copel elabora projetos de subestações nas tensões de 69, 138, 230 e 525 kV; gerencia projetos de subestações, elabora especificações de materiais e equipamentos para subestações, dimensiona sistemas de aterramento, gerencia a construção; e calcula custos e realiza orçamentos para subestações.
 
   \hypertarget{distribuiuxe7uxe3o}{%
   \subsubsection{Distribuição}\label{distribuiuxe7uxe3o}}
@@ -582,7 +393,7 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   No que tange a distribuição, a Copel é responsável pela energia de cerca de 4,5 milhões de clientes de 394 municípios do Paraná -- sendo 392 integralmente atendidos e 2 parcialmente. A empresa administra 190 mil km de redes de distribuição, com 2,8 milhões de postes e 361 subestações, assim como potência instalada de 10,5 mil MVA. Todos os dados são referentes ao final do ano de 2019. A empresa conta, também, com postos de atendimento espalhados por todos os municípios da área de concessão.
   \begin{table}[H]
 
-  \caption{\label{tab:unnamed-chunk-10}Número de consumidores da Copel.}
+  \caption{\label{tab:unnamed-chunk-9}Número de consumidores da Copel.}
   \centering
   \begin{tabular}[t]{cccc}
   \toprule
@@ -600,7 +411,7 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \end{table}
   \begin{table}[H]
 
-  \caption{\label{tab:unnamed-chunk-11}Indicadores de atuação da distribuição.}
+  \caption{\label{tab:unnamed-chunk-10}Indicadores de atuação da distribuição.}
   \centering
   \begin{tabular}[t]{cc}
   \toprule
@@ -619,7 +430,7 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   O perfil de consumo de energia da empresa é diversificado, com a classe Industrial sendo a maior de todas as fatias.
   \begin{table}[H]
 
-  \caption{\label{tab:unnamed-chunk-12}Perfil de consumo de energia da distribuição.}
+  \caption{\label{tab:unnamed-chunk-11}Perfil de consumo de energia da distribuição.}
   \centering
   \begin{tabular}[t]{cccc}
   \toprule
@@ -639,12 +450,12 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \end{tabular}
   \end{table}
   \begin{figure}[H]
-  \includegraphics[width=1\linewidth]{img/consumo_dist} \caption{Gráfico dos perfis de consumo da distribuição.}\label{fig:unnamed-chunk-13}
+  \includegraphics[width=1\linewidth]{img/consumo_dist} \caption{Gráfico dos perfis de consumo da distribuição.}\label{fig:unnamed-chunk-12}
   \end{figure}
   Dentro da classe Industrial, temos ainda subdivisões por atividade, com a fabricação de celulose e alimentos compondo quase metade do consumo como um todo.
   \begin{table}[H]
 
-  \caption{\label{tab:unnamed-chunk-14}Perfil de consumo de energia da classe Industrial.}
+  \caption{\label{tab:unnamed-chunk-13}Perfil de consumo de energia da classe Industrial.}
   \centering
   \begin{tabular}[t]{cccc}
   \toprule
@@ -663,13 +474,13 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \end{tabular}
   \end{table}
   \begin{figure}[H]
-  \includegraphics[width=1\linewidth]{img/industrial_dist} \caption{Gráfico dos perfis de consumo da classe Industrial.}\label{fig:unnamed-chunk-15}
+  \includegraphics[width=1\linewidth]{img/industrial_dist} \caption{Gráfico dos perfis de consumo da classe Industrial.}\label{fig:unnamed-chunk-14}
   \end{figure}
-  A Copel disponibiliza também os dados referentes às tarifas pagas pelos clientes, tanto de alta quanto baixa tensão.\footnote{É importante ressaltar que as tarifas já esão disponibilizadas com os impostos (ICMS, PIS e COFINS), vigentes a partir de 09 jul 2020; foram inclusos para facilitar o entendimento por parte do leitor, no entanto, as alíquotas efetivas referentes ao PIS e à COFINS devem ser apuradas mensalmente, com suas variações sendo aplicadas às tarifas tempestivamente.}
+  A Copel disponibiliza também os dados referentes às tarifas pagas pelos clientes, tanto de alta quanto baixa tensão.\footnote{É importante ressaltar que as tarifas já estão disponibilizadas com os impostos (ICMS, PIS e COFINS), vigentes a partir de 09 jul 2020; foram incluídos para facilitar o entendimento por parte do leitor, no entanto, as alíquotas efetivas referentes ao PIS e à COFINS devem ser apuradas mensalmente, com suas variações sendo aplicadas às tarifas tempestivamente.}
 
   \begingroup\fontsize{10}{12}\selectfont
   \begin{longtable}[t]{>{\centering\arraybackslash}p{8em}cccccccc}
-  \caption{\label{tab:unnamed-chunk-16}Tarifas aplicadas à baixa tensão.}\\
+  \caption{\label{tab:unnamed-chunk-15}Tarifas aplicadas à baixa tensão.}\\
   \toprule
   \multicolumn{1}{c}{\textbf{ }} & \multicolumn{2}{c}{\textbf{Convencional}} & \multicolumn{6}{c}{\textbf{Branca}} \\
   \cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-9}
@@ -678,13 +489,13 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \multicolumn{1}{c}{ } & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} \\
   \cmidrule(l{3pt}r{3pt}){2-2} \cmidrule(l{3pt}r{3pt}){3-3} \cmidrule(l{3pt}r{3pt}){4-4} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-7} \cmidrule(l{3pt}r{3pt}){8-8} \cmidrule(l{3pt}r{3pt}){9-9}
   \endfirsthead
-  \caption[]{\label{tab:unnamed-chunk-16}Tarifas aplicadas à baixa tensão. \textit{(continuação)}}\\
+  \caption[]{\label{tab:unnamed-chunk-15}Tarifas aplicadas à baixa tensão. \textit{(continuação)}}\\
   \toprule
   \endhead
-  \
+
   \endfoot
   \bottomrule
-  \multicolumn{9}{l}{\textit{Nota: } Consumo medido em R\$/kWh.}\\
+  \multicolumn{9}{l}{\rule{0pt}{1em}\textit{Nota: } Consumo medido em R\$/kWh.}\\
   \endlastfoot
   B1 - Baixa Renda, até 30 kWh & 0.09441 & 0.06628 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
   B1 - Baixa Renda, entre 31 e 100 kWh & 0.23076 & 0.16201 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000 & 0.00000\\
@@ -707,7 +518,7 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
 
   \begingroup\fontsize{10}{12}\selectfont
   \begin{longtable}[t]{c>{\centering\arraybackslash}p{8em}cccccc}
-  \caption{\label{tab:unnamed-chunk-17}Tarifas aplicadas à alta tensão.}\\
+  \caption{\label{tab:unnamed-chunk-16}Tarifas aplicadas à alta tensão.}\\
   \toprule
   \multicolumn{2}{c}{\textbf{ }} & \multicolumn{3}{c}{\textbf{Fora de Ponta}} & \multicolumn{3}{c}{\textbf{Ponta}} \\
   \cmidrule(l{3pt}r{3pt}){3-5} \cmidrule(l{3pt}r{3pt}){6-8}
@@ -716,13 +527,13 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \multicolumn{1}{c}{Grupo} & \multicolumn{1}{c}{Modalidade} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TUSD} & \multicolumn{1}{c}{TE} & \multicolumn{1}{c}{TUSD} \\
   \cmidrule(l{3pt}r{3pt}){1-1} \cmidrule(l{3pt}r{3pt}){2-2} \cmidrule(l{3pt}r{3pt}){3-3} \cmidrule(l{3pt}r{3pt}){4-4} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-7} \cmidrule(l{3pt}r{3pt}){8-8}
   \endfirsthead
-  \caption[]{\label{tab:unnamed-chunk-17}Tarifas aplicadas à alta tensão. \textit{(continuação)}}\\
+  \caption[]{\label{tab:unnamed-chunk-16}Tarifas aplicadas à alta tensão. \textit{(continuação)}}\\
   \toprule
   \endhead
-  \
+
   \endfoot
   \bottomrule
-  \multicolumn{8}{l}{\textit{Nota: } Demanda e consumo medidos, respectivamente, em R\$/kW e R\$/kWh.}\\
+  \multicolumn{8}{l}{\rule{0pt}{1em}\textit{Nota: } Demanda e consumo medidos, respectivamente, em R\$/kW e R\$/kWh.}\\
   \endlastfoot
   A1 & Azul & 6.21 & 0.36533 & 0.07884 & 6.52 & 0.59656 & 0.07884\\
   A2 & Azul & 9.19 & 0.36533 & 0.08712 & 22.35 & 0.59656 & 0.08712\\
@@ -758,438 +569,446 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \end{longtable}
   \endgroup{}
 
-  A empresa, naturalmente, se faz valer de uma Norma aplicável a conexão de micro e mini geração no sistema de compensação -- esta é a NTC 905200\footnote{Disponível em: \url{https://bit.ly/35Ze9Xv}. Último acesso em 23 nov 2020.}. Isso decorre do fato que conforme o estabelecido pela Resolução da ANEEL n° 482/2012,\footnote{Disponível em: \url{http://www.aneel.gov.br/cedoc/bren2012482.pdf}. Último acesso em 23 nov 2020.} é permitido aos consumidores instalar geradores de pequeno porte em suas unidades consumidoras e utilizar o sistema elétrico da distribuidora para injetar o excedente de eneria, que é convertido em crédito de energia válido por 60 meses. Tais créditos poderão ser utilizados para abater do consumo da própria unidade consumidora nos meses seguintes ou de outras unidades consumidoras que precisam estar previamente cadastradas para esse fim e atendidas pela mesma distribuidora -- no caso, a Copel --, cujo titular seja o mesmo da unidade com sistema de compensação de energia elétrica, possuidor do mesmo CPF ou CNPJ junto ao Ministério da Fazenda. Outra forma para adicionar unidades consumidoras para o abatimento do consumo é através de empreendimento com múltiplas unidades consumidoras ou geração compartilhada.
+  A empresa, naturalmente, se faz valer de uma Norma aplicável a conexão de micro e minigeração no sistema de compensação -- esta é a NTC 905200\footnote{Disponível em: \url{https://bit.ly/35Ze9Xv}. Último acesso em 23 nov 2020.}. Isso decorre do fato que conforme o estabelecido pela Resolução da ANEEL n° 482/2012,\footnote{Disponível em: \url{http://www.aneel.gov.br/cedoc/bren2012482.pdf}. Último acesso em 23 nov 2020.} é permitido aos consumidores instalar geradores de pequeno porte em suas unidades consumidoras e utilizar o sistema elétrico da distribuidora para injetar o excedente de energia, que é convertido em crédito de energia válido por 60 meses. Tais créditos poderão ser utilizados para abater do consumo da própria unidade consumidora nos meses seguintes ou de outras unidades consumidoras que precisam estar previamente cadastradas para esse fim e atendidas pela mesma distribuidora -- no caso, a Copel --, cujo titular seja o mesmo da unidade com sistema de compensação de energia elétrica, possuidor do mesmo CPF ou CNPJ junto ao Ministério da Fazenda. Outra forma para adicionar unidades consumidoras para o abatimento do consumo é através de empreendimento com múltiplas unidades consumidoras ou geração compartilhada.
 
   \hypertarget{cuxe1lculo-do-valuation-intruxednseco}{%
   \section{\texorpdfstring{Cálculo do \emph{valuation} intrínseco}{Cálculo do valuation intrínseco}}\label{cuxe1lculo-do-valuation-intruxednseco}}
 
-  Para uma análise intrínseca, comecemos nos debruçando sobre as demonstrações financeiras da Companhia. Os dados foram retirados da base de dados do Eikon, da companhia de informação Thomson Reuters.\footnote{Para facilidade de tratamento e observação, foi utilizado o Eikon. Naturalmente, todos os dados dispostos poderiam ser obtidos pesquisando-se através do RI da empresa. Os dados foram obtidos pela última vez em 25 nov 2020.}
+  Para uma análise intrínseca, comecemos nos debruçando sobre as demonstrações financeiras da Companhia. Conforme recomendação de Graham e Dodd (\protect\hyperlink{ref-graham2009}{2009}), para uma estimativa do futuro, será usada uma janela de 10 anos. Os dados foram obtidos através do site Fundamentus.\footnote{Disponível em: \url{https://www.fundamentus.com.br/balancos.php?papel=CPLE3\&tipo=1}. Dados obtidos pela última vez em 23 mar 2021.}
 
   \begingroup\fontsize{8}{10}\selectfont
-  \begin{longtable}[t]{llllllll}
-  \caption{\label{tab:unnamed-chunk-18}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2019 a 2013.}\\
+  \begin{longtable}[t]{lllllll}
+  \caption{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2019 a 2014.}\\
   \toprule
-  Period End Date & 2019 & 2018 & 2017 & 2016 & 2015 & 2014 & 2013\\
+  Period End Date & 2019 & 2018 & 2017 & 2016 & 2015 & 2014\\
   \midrule
   \endfirsthead
-  \caption[]{\label{tab:unnamed-chunk-18}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2019 a 2013. \textit{(continuação)}}\\
+  \caption[]{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2019 a 2014. \textit{(continuação)}}\\
   \toprule
-  Period End Date & 2019 & 2018 & 2017 & 2016 & 2015 & 2014 & 2013\\
+  Period End Date & 2019 & 2018 & 2017 & 2016 & 2015 & 2014\\
   \midrule
   \endhead
-  \
+
   \endfoot
   \bottomrule
   \endlastfoot
   \addlinespace[0.3em]
-  \multicolumn{8}{l}{\textbf{Assets}}\\
-  \hspace{1em}Cash and Short Term Investments & 3300 & 2494 & 1213 & 1119 & 2798 & 1809 & 2131\\
-  \hspace{1em}\hspace{1em}Cash & 263 & 168 & 157 & 173 & 168 & 152 & 130\\
-  \hspace{1em}\hspace{1em}Cash \& Equivalents & 2679 & 1781 & 883 & 809 & 1313 & 588 & 1611\\
-  \hspace{1em}\hspace{1em}Short Term Investments & 359 & 546 & 173 & 137 & 1317 & 1068 & 389\\
-  \hspace{1em}Accounts Receivable - Trade, Net & 3120 & 2944 & 2733 & 2217 & 3033 & 2179 & 1338\\
-  \hspace{1em}\hspace{1em}Accounts Receivable - Trade, Gross & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Provision for Doubtful Accounts & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Total Receivables, Net & 4385 & 3963 & 4205 & 2894 & 3953 & 3225 & 2388\\
-  \hspace{1em}\hspace{1em}Receivables - Other & 1264 & 1019 & 1472 & 677 & 921 & 1047 & 1051\\
-  \hspace{1em}Total Inventory & 130 & 116 & 111 & 131 & 131 & 151 & 139\\
-  \hspace{1em}\hspace{1em}Inventories - Raw Materials & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Inventories - Other & -- & -- & -- & -- & 131 & 151 & 139\\
-  \hspace{1em}Prepaid Expenses & 94 & 104 & 114 & 93 & 49 & 20 & 20\\
-  \hspace{1em}Other Current Assets, Total & 0 & 0 & 59 & 1 & 2 & 13 & 2\\
-  \hspace{1em}\hspace{1em}Restricted Cash - Current & 0 & 0 & 59 & 1 & 2 & 13 & 2\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Asset & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Current Assets & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Total Current Assets & 7909 & 6678 & 5702 & 4237 & 6933 & 5218 & 4680\\
-  \hspace{1em}Property/Plant/Equipment, Total - Gross & 11021 & 12183 & 10987 & 9997 & 10567 & 7133 & 6649\\
-  \hspace{1em}\hspace{1em}Buildings - Gross & 1962 & 1501 & 1500 & 1499 & 1654 & 1520 & 1520\\
-  \hspace{1em}\hspace{1em}Land/Improvements - Gross & 490 & 375 & 278 & 277 & 278 & 278 & 264\\
-  \hspace{1em}\hspace{1em}Machinery/Equipment - Gross & 8923 & 5696 & 5380 & 5371 & 5767 & 5318 & 4854\\
-  \hspace{1em}\hspace{1em}Construction in Progress - Gross & 573 & 4592 & 3813 & 2834 & 2851 & -- & --\\
-  \hspace{1em}\hspace{1em}Other Property/Plant/Equipment - Gross & -927 & 19 & 17 & 17 & 17 & 17 & 12\\
-  \hspace{1em}Property/Plant/Equipment, Total - Net & 7008 & 8414 & 7263 & 6251 & 5859 & 5327 & 4858\\
-  \hspace{1em}\hspace{1em}Accumulated Depreciation, Total & -4013 & -3769 & -3725 & -3746 & -4708 & -3851 & -3593\\
-  \hspace{1em}Goodwill, Net & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Intangibles, Net & 6333 & 6029 & 6453 & 6460 & 6145 & 2174 & 2035\\
-  \hspace{1em}\hspace{1em}Intangibles - Gross & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Accumulated Intangible Amortization & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Utility Plant, Net & 3677 & 2426 & 2567 & 2684 & 2834 & 2977 & 3126\\
-  \hspace{1em}\hspace{1em}Utility Plant - Gross & 8082 & 6643 & 6638 & 6596 & 7621 & 7619 & 7619\\
-  \hspace{1em}\hspace{1em}Utility Plant Accumulated Depreciation & -4406 & -4217 & -4072 & -3912 & -4787 & -4642 & -4493\\
-  \hspace{1em}Total Utility Plant, Net & 3677 & 2426 & 2567 & 2684 & 2834 & 2977 & 3126\\
-  \hspace{1em}Long Term Investments & 2948 & 2865 & 2979 & 2967 & 2451 & 2224 & 1308\\
-  \hspace{1em}\hspace{1em}LT Investment - Affiliate Companies & 2522 & 2367 & 2569 & 2334 & 2225 & 1660 & 1188\\
-  \hspace{1em}\hspace{1em}LT Investments - Other & 426 & 498 & 410 & 634 & 226 & 564 & 121\\
-  \hspace{1em}Note Receivable - Long Term & 7691 & 6635 & 5263 & 4616 & 2085 & 5128 & 4334\\
-  \hspace{1em}Other Long Term Assets, Total & 2746 & 2882 & 2936 & 3093 & 2641 & 2569 & 2770\\
-  \hspace{1em}\hspace{1em}Deferred Charges & 0 & 3 & 13 & 26 & 25 & 0 & 0\\
-  \hspace{1em}\hspace{1em}Defered Income Tax - Long Term Asset & 1012 & 1007 & 915 & 814 & 538 & 526 & 753\\
-  \hspace{1em}\hspace{1em}Restricted Cash - Long Term & 603 & 618 & 658 & 731 & 806 & 793 & 721\\
-  \hspace{1em}\hspace{1em}Other Long Term Assets & 1131 & 1254 & 1349 & 1523 & 1272 & 1250 & 1295\\
-  \hspace{1em}Total Assets & 38313 & 35930 & 33162 & 30308 & 28948 & 25618 & 23111\\
+  \multicolumn{7}{l}{\textbf{Assets}}\\
+  \hspace{1em}Cash and Short Term Investments & 3300 & 2494 & 1213 & 1119 & 2798 & 1809\\
+  \hspace{1em}\hspace{1em}Cash & 263 & 168 & 157 & 173 & 168 & 152\\
+  \hspace{1em}\hspace{1em}Cash \& Equivalents & 2679 & 1781 & 883 & 809 & 1313 & 588\\
+  \hspace{1em}\hspace{1em}Short Term Investments & 359 & 546 & 173 & 137 & 1317 & 1068\\
+  \hspace{1em}Accounts Receivable - Trade, Net & 3120 & 2944 & 2733 & 2217 & 3033 & 2179\\
+  \hspace{1em}\hspace{1em}Accounts Receivable - Trade, Gross & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Provision for Doubtful Accounts & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Receivables, Net & 4385 & 3963 & 4205 & 2894 & 3953 & 3225\\
+  \hspace{1em}\hspace{1em}Receivables - Other & 1264 & 1019 & 1472 & 677 & 921 & 1047\\
+  \hspace{1em}Total Inventory & 130 & 116 & 111 & 131 & 131 & 151\\
+  \hspace{1em}\hspace{1em}Inventories - Raw Materials & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Inventories - Other & -- & -- & -- & -- & 131 & 151\\
+  \hspace{1em}Prepaid Expenses & 94 & 104 & 114 & 93 & 49 & 20\\
+  \hspace{1em}Other Current Assets, Total & 0 & 0 & 59 & 1 & 2 & 13\\
+  \hspace{1em}\hspace{1em}Restricted Cash - Current & 0 & 0 & 59 & 1 & 2 & 13\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Asset & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Current Assets & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Current Assets & 7909 & 6678 & 5702 & 4237 & 6933 & 5218\\
+  \hspace{1em}Property/Plant/Equipment, Total - Gross & 11021 & 12183 & 10987 & 9997 & 10567 & 7133\\
+  \hspace{1em}\hspace{1em}Buildings - Gross & 1962 & 1501 & 1500 & 1499 & 1654 & 1520\\
+  \hspace{1em}\hspace{1em}Land/Improvements - Gross & 490 & 375 & 278 & 277 & 278 & 278\\
+  \hspace{1em}\hspace{1em}Machinery/Equipment - Gross & 8923 & 5696 & 5380 & 5371 & 5767 & 5318\\
+  \hspace{1em}\hspace{1em}Construction in Progress - Gross & 573 & 4592 & 3813 & 2834 & 2851 & --\\
+  \hspace{1em}\hspace{1em}Other Property/Plant/Equipment - Gross & -927 & 19 & 17 & 17 & 17 & 17\\
+  \hspace{1em}Property/Plant/Equipment, Total - Net & 7008 & 8414 & 7263 & 6251 & 5859 & 5327\\
+  \hspace{1em}\hspace{1em}Accumulated Depreciation, Total & -4013 & -3769 & -3725 & -3746 & -4708 & -3851\\
+  \hspace{1em}Goodwill, Net & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Intangibles, Net & 6333 & 6029 & 6453 & 6460 & 6145 & 2174\\
+  \hspace{1em}\hspace{1em}Intangibles - Gross & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Accumulated Intangible Amortization & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Utility Plant, Net & 3677 & 2426 & 2567 & 2684 & 2834 & 2977\\
+  \hspace{1em}\hspace{1em}Utility Plant - Gross & 8082 & 6643 & 6638 & 6596 & 7621 & 7619\\
+  \hspace{1em}\hspace{1em}Utility Plant Accumulated Depreciation & -4406 & -4217 & -4072 & -3912 & -4787 & -4642\\
+  \hspace{1em}Total Utility Plant, Net & 3677 & 2426 & 2567 & 2684 & 2834 & 2977\\
+  \hspace{1em}Long Term Investments & 2948 & 2865 & 2979 & 2967 & 2451 & 2224\\
+  \hspace{1em}\hspace{1em}LT Investment - Affiliate Companies & 2522 & 2367 & 2569 & 2334 & 2225 & 1660\\
+  \hspace{1em}\hspace{1em}LT Investments - Other & 426 & 498 & 410 & 634 & 226 & 564\\
+  \hspace{1em}Note Receivable - Long Term & 7691 & 6635 & 5263 & 4616 & 2085 & 5128\\
+  \hspace{1em}Other Long Term Assets, Total & 2746 & 2882 & 2936 & 3093 & 2641 & 2569\\
+  \hspace{1em}\hspace{1em}Deferred Charges & 0 & 3 & 13 & 26 & 25 & 0\\
+  \hspace{1em}\hspace{1em}Defered Income Tax - Long Term Asset & 1012 & 1007 & 915 & 814 & 538 & 526\\
+  \hspace{1em}\hspace{1em}Restricted Cash - Long Term & 603 & 618 & 658 & 731 & 806 & 793\\
+  \hspace{1em}\hspace{1em}Other Long Term Assets & 1131 & 1254 & 1349 & 1523 & 1272 & 1250\\
+  \hspace{1em}Total Assets & 38313 & 35930 & 33162 & 30308 & 28948 & 25618\\
   \addlinespace[0.3em]
-  \multicolumn{8}{l}{\textbf{Liabilities}}\\
-  \hspace{1em}Accounts Payable & 1685 & 1419 & 1684 & 1256 & 1613 & 1587 & 1092\\
-  \hspace{1em}Payable/Accrued & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Accrued Expenses & 1280 & 1065 & 995 & 862 & 811 & 603 & 698\\
-  \hspace{1em}Notes Payable/Short Term Debt & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
-  \hspace{1em}Current Port. of LT Debt/Capital Leases & 1453 & 3298 & 2417 & 2602 & 1233 & 1299 & 1015\\
-  \hspace{1em}Other Current liabilities, Total & 927 & 913 & 1014 & 936 & 1133 & 566 & 543\\
-  \hspace{1em}\hspace{1em}Dividends Payable & 616 & 376 & 289 & 267 & 346 & 20 & 19\\
-  \hspace{1em}\hspace{1em}Customer Advances & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Income Taxes Payable & 60 & 198 & 86 & 41 & 312 & 310 & 298\\
-  \hspace{1em}\hspace{1em}Other Payables & 222 & 260 & 184 & 331 & 197 & 213 & 188\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Liability & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Current Liabilities & 29 & 80 & 455 & 297 & 277 & 23 & 38\\
-  \hspace{1em}Total Current Liabilities & 5346 & 6695 & 6110 & 5656 & 4789 & 4055 & 3348\\
-  \hspace{1em}Total Long Term Debt & 10215 & 8268 & 7414 & 6235 & 6528 & 4755 & 3517\\
-  \hspace{1em}\hspace{1em}Long Term Debt & 10152 & 8268 & 7414 & 6235 & 6528 & 4755 & 3517\\
-  \hspace{1em}\hspace{1em}Capital Lease Obligations & 63 & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Total Debt & 11669 & 11565 & 9830 & 8837 & 7761 & 6054 & 4532\\
-  \hspace{1em}Deferred Income Tax & 294 & 157 & 157 & 178 & 0 & 102 & 489\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - LT Liability & 294 & 157 & 157 & 178 & 0 & 102 & 489\\
-  \hspace{1em}Minority Interest & 346 & 303 & 303 & 264 & 339 & 352 & 277\\
-  \hspace{1em}Other Liabilities, Total & 4860 & 4474 & 3972 & 3241 & 3045 & 3022 & 2829\\
-  \hspace{1em}\hspace{1em}Reserves & 1607 & 1665 & 1400 & 1273 & 1495 & 1220 & 1070\\
-  \hspace{1em}\hspace{1em}Pension Benefits - Underfunded & 1129 & 910 & 813 & 722 & 551 & 1187 & 1133\\
-  \hspace{1em}\hspace{1em}Other Long Term Liabilities & 2124 & 1899 & 1759 & 1246 & 999 & 614 & 625\\
-  \hspace{1em}Total Liabilities & 21060 & 19897 & 17955 & 15575 & 14702 & 12287 & 10460\\
+  \multicolumn{7}{l}{\textbf{Liabilities}}\\
+  \hspace{1em}Accounts Payable & 1685 & 1419 & 1684 & 1256 & 1613 & 1587\\
+  \hspace{1em}Payable/Accrued & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Accrued Expenses & 1280 & 1065 & 995 & 862 & 811 & 603\\
+  \hspace{1em}Notes Payable/Short Term Debt & 0 & 0 & 0 & 0 & 0 & 0\\
+  \hspace{1em}Current Port. of LT Debt/Capital Leases & 1453 & 3298 & 2417 & 2602 & 1233 & 1299\\
+  \hspace{1em}Other Current liabilities, Total & 927 & 913 & 1014 & 936 & 1133 & 566\\
+  \hspace{1em}\hspace{1em}Dividends Payable & 616 & 376 & 289 & 267 & 346 & 20\\
+  \hspace{1em}\hspace{1em}Customer Advances & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Income Taxes Payable & 60 & 198 & 86 & 41 & 312 & 310\\
+  \hspace{1em}\hspace{1em}Other Payables & 222 & 260 & 184 & 331 & 197 & 213\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Liability & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Current Liabilities & 29 & 80 & 455 & 297 & 277 & 23\\
+  \hspace{1em}Total Current Liabilities & 5346 & 6695 & 6110 & 5656 & 4789 & 4055\\
+  \hspace{1em}Total Long Term Debt & 10215 & 8268 & 7414 & 6235 & 6528 & 4755\\
+  \hspace{1em}\hspace{1em}Long Term Debt & 10152 & 8268 & 7414 & 6235 & 6528 & 4755\\
+  \hspace{1em}\hspace{1em}Capital Lease Obligations & 63 & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Debt & 11669 & 11565 & 9830 & 8837 & 7761 & 6054\\
+  \hspace{1em}Deferred Income Tax & 294 & 157 & 157 & 178 & 0 & 102\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - LT Liability & 294 & 157 & 157 & 178 & 0 & 102\\
+  \hspace{1em}Minority Interest & 346 & 303 & 303 & 264 & 339 & 352\\
+  \hspace{1em}Other Liabilities, Total & 4860 & 4474 & 3972 & 3241 & 3045 & 3022\\
+  \hspace{1em}\hspace{1em}Reserves & 1607 & 1665 & 1400 & 1273 & 1495 & 1220\\
+  \hspace{1em}\hspace{1em}Pension Benefits - Underfunded & 1129 & 910 & 813 & 722 & 551 & 1187\\
+  \hspace{1em}\hspace{1em}Other Long Term Liabilities & 2124 & 1899 & 1759 & 1246 & 999 & 614\\
+  \hspace{1em}Total Liabilities & 21060 & 19897 & 17955 & 15575 & 14702 & 12287\\
   \addlinespace[0.3em]
-  \multicolumn{8}{l}{\textbf{Shareholders' Equity}}\\
-  \hspace{1em}Redeemable Preferred Stock, Total & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Preferred Stock - Non Redeemable, Net & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Common Stock, Total & 10800 & 7910 & 7910 & 7910 & 6910 & 6910 & 6910\\
-  \hspace{1em}\hspace{1em}Common Stock & 10800 & 7910 & 7910 & 7910 & 6910 & 6910 & 6910\\
-  \hspace{1em}Additional Paid-In Capital & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Retained Earnings (Accumulated Deficit) & 5860 & 7337 & 6402 & 5825 & 6158 & 5202 & 4523\\
-  \hspace{1em}Treasury Stock - Common & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}ESOP Debt Guarantee & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Unrealized Gain (Loss) & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Other Equity, Total & 592 & 786 & 896 & 998 & 1177 & 1219 & 1219\\
-  \hspace{1em}\hspace{1em}Other Equity & 592 & 786 & 896 & 998 & 1177 & 1219 & 1219\\
-  \hspace{1em}Total Equity & 17252 & 16033 & 15208 & 14734 & 14246 & 13331 & 12651\\
-  \hspace{1em}Total Liabilities \& Shareholders' Equity & 38313 & 35930 & 33162 & 30308 & 28948 & 25618 & 23111\\*
+  \multicolumn{7}{l}{\textbf{Shareholders' Equity}}\\
+  \hspace{1em}Redeemable Preferred Stock, Total & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Preferred Stock - Non Redeemable, Net & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Common Stock, Total & 10800 & 7910 & 7910 & 7910 & 6910 & 6910\\
+  \hspace{1em}\hspace{1em}Common Stock & 10800 & 7910 & 7910 & 7910 & 6910 & 6910\\
+  \hspace{1em}Additional Paid-In Capital & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Retained Earnings (Accumulated Deficit) & 5860 & 7337 & 6402 & 5825 & 6158 & 5202\\
+  \hspace{1em}Treasury Stock - Common & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}ESOP Debt Guarantee & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Unrealized Gain (Loss) & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Other Equity, Total & 592 & 786 & 896 & 998 & 1177 & 1219\\
+  \hspace{1em}\hspace{1em}Other Equity & 592 & 786 & 896 & 998 & 1177 & 1219\\
+  \hspace{1em}Total Equity & 17252 & 16033 & 15208 & 14734 & 14246 & 13331\\
+  \hspace{1em}Total Liabilities \& Shareholders' Equity & 38313 & 35930 & 33162 & 30308 & 28948 & 25618\\*
   \end{longtable}
   \endgroup{}
 
   \begingroup\fontsize{8}{10}\selectfont
-  \begin{longtable}[t]{lllllllll}
-  \caption{\label{tab:unnamed-chunk-18}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2012 a 2005.}\\
+  \begin{longtable}[t]{lllllll}
+  \caption{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2014 a 2009.}\\
   \toprule
-  Period End Date & 2012 & 2011 & 2010 & 2009 & 2008 & 2007 & 2006 & 2005\\
+  Period End Date & 2014 & 2013 & 2012 & 2011 & 2010 & 2009\\
   \midrule
   \endfirsthead
-  \caption[]{\label{tab:unnamed-chunk-18}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2012 a 2005. \textit{(continuação)}}\\
+  \caption[]{\label{tab:unnamed-chunk-17}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2014 a 2009. \textit{(continuação)}}\\
   \toprule
-  Period End Date & 2012 & 2011 & 2010 & 2009 & 2008 & 2007 & 2006 & 2005\\
+  Period End Date & 2014 & 2013 & 2012 & 2011 & 2010 & 2009\\
   \midrule
   \endhead
-  \
+
   \endfoot
   \bottomrule
   \endlastfoot
   \addlinespace[0.3em]
-  \multicolumn{9}{l}{\textbf{Assets}}\\
-  \hspace{1em}Cash and Short Term Investments & 2095 & 1630 & 2329 & 1884 & 1964 & 1541 & 1469 & 1132\\
-  \hspace{1em}\hspace{1em}Cash & 94 & -- & 59 & 80 & -- & 1541 & 1469 & 1132\\
-  \hspace{1em}\hspace{1em}Cash \& Equivalents & 1365 & 1048 & 1735 & 1439 & 1649 & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Short Term Investments & 636 & 582 & 534 & 365 & 315 & 0 & -- & --\\
-  \hspace{1em}Accounts Receivable - Trade, Net & 1489 & 1368 & 1163 & 1072 & 982 & 1069 & 973 & 879\\
-  \hspace{1em}\hspace{1em}Accounts Receivable - Trade, Gross & -- & -- & -- & -- & -- & 1090 & 1065 & 946\\
-  \hspace{1em}\hspace{1em}Provision for Doubtful Accounts & -- & -- & -- & -- & -- & -72 & -112 & -79\\
-  \hspace{1em}Total Receivables, Net & 2421 & 1958 & 1639 & 1606 & 1396 & 1465 & 1362 & 1130\\
-  \hspace{1em}\hspace{1em}Receivables - Other & 931 & 590 & 476 & 534 & 414 & 396 & 389 & 251\\
-  \hspace{1em}Total Inventory & 125 & 104 & 121 & 112 & 84 & 52 & 51 & 37\\
-  \hspace{1em}\hspace{1em}Inventories - Raw Materials & -- & -- & -- & -- & 84 & 52 & 51 & 37\\
-  \hspace{1em}\hspace{1em}Inventories - Other & 125 & -- & 121 & 112 & -- & -- & -- & --\\
-  \hspace{1em}Prepaid Expenses & 5 & 5 & 5 & 5 & 4 & -- & -- & --\\
-  \hspace{1em}Other Current Assets, Total & 37 & 3 & 64 & 5 & 0 & 230 & 197 & 172\\
-  \hspace{1em}\hspace{1em}Restricted Cash - Current & 37 & 3 & 64 & 5 & 0 & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Asset & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Current Assets & -- & -- & -- & -- & -- & 230 & 197 & 172\\
-  \hspace{1em}Total Current Assets & 4682 & 3700 & 4158 & 3612 & 3447 & 3288 & 3079 & 2471\\
-  \hspace{1em}Property/Plant/Equipment, Total - Gross & 8511 & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Buildings - Gross & 1379 & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Land/Improvements - Gross & 183 & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Machinery/Equipment - Gross & 4567 & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Construction in Progress - Gross & 2372 & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Property/Plant/Equipment - Gross & 11 & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Property/Plant/Equipment, Total - Net & 5105 & 7209 & -7102 & -6777 & 6772 & 6842 & 6733 & 5948\\
-  \hspace{1em}\hspace{1em}Accumulated Depreciation, Total & -3406 & -- & -7102 & -6777 & -- & -- & -- & --\\
-  \hspace{1em}Goodwill, Net & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Intangibles, Net & 1789 & 1717 & 1749 & 1828 & 1736 & 116 & 125 & 66\\
-  \hspace{1em}\hspace{1em}Intangibles - Gross & -- & -- & 4429 & 4353 & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Accumulated Intangible Amortization & -- & -- & -2680 & -2525 & -- & -- & -- & --\\
-  \hspace{1em}Utility Plant, Net & 2767 & -- & 13766 & 13437 & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Utility Plant - Gross & 7109 & -- & 13766 & 13437 & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Utility Plant Accumulated Depreciation & -4342 & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Total Utility Plant, Net & 2767 & -- & 13766 & 13437 & -- & -- & -- & --\\
-  \hspace{1em}Long Term Investments & 698 & 618 & 483 & 406 & 407 & 249 & 223 & 392\\
-  \hspace{1em}\hspace{1em}LT Investment - Affiliate Companies & 569 & 555 & 465 & 385 & 387 & 204 & 210 & --\\
-  \hspace{1em}\hspace{1em}LT Investments - Other & 129 & 63 & 18 & 20 & 20 & 44 & 13 & 392\\
-  \hspace{1em}Note Receivable - Long Term & 3553 & 3383 & 2482 & 1897 & 1558 & 147 & 120 & 121\\
-  \hspace{1em}Other Long Term Assets, Total & 2616 & 2211 & 2323 & 1910 & 2015 & 1831 & 1708 & 1926\\
-  \hspace{1em}\hspace{1em}Deferred Charges & 9 & 0 & -- & -- & -- & 6 & 0 & 49\\
-  \hspace{1em}\hspace{1em}Defered Income Tax - Long Term Asset & 681 & 462 & 508 & 398 & 399 & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Restricted Cash - Long Term & 618 & 468 & 427 & 183 & 211 & 144 & 166 & 156\\
-  \hspace{1em}\hspace{1em}Other Long Term Assets & 1308 & 1281 & 1388 & 1329 & 1404 & 1681 & 1542 & 1721\\
-  \hspace{1em}Total Assets & 21209 & 18837 & 17859 & 16313 & 15934 & 12473 & 11988 & 10924\\
+  \multicolumn{7}{l}{\textbf{Assets}}\\
+  \hspace{1em}Cash and Short Term Investments & 1809 & 2131 & 2095 & 1630 & 2329 & 1884\\
+  \hspace{1em}\hspace{1em}Cash & 152 & 130 & 94 & -- & 59 & 80\\
+  \hspace{1em}\hspace{1em}Cash \& Equivalents & 588 & 1611 & 1365 & 1048 & 1735 & 1439\\
+  \hspace{1em}\hspace{1em}Short Term Investments & 1068 & 389 & 636 & 582 & 534 & 365\\
+  \hspace{1em}Accounts Receivable - Trade, Net & 2179 & 1338 & 1489 & 1368 & 1163 & 1072\\
+  \hspace{1em}\hspace{1em}Accounts Receivable - Trade, Gross & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Provision for Doubtful Accounts & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Receivables, Net & 3225 & 2388 & 2421 & 1958 & 1639 & 1606\\
+  \hspace{1em}\hspace{1em}Receivables - Other & 1047 & 1051 & 931 & 590 & 476 & 534\\
+  \hspace{1em}Total Inventory & 151 & 139 & 125 & 104 & 121 & 112\\
+  \hspace{1em}\hspace{1em}Inventories - Raw Materials & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Inventories - Other & 151 & 139 & 125 & -- & 121 & 112\\
+  \hspace{1em}Prepaid Expenses & 20 & 20 & 5 & 5 & 5 & 5\\
+  \hspace{1em}Other Current Assets, Total & 13 & 2 & 37 & 3 & 64 & 5\\
+  \hspace{1em}\hspace{1em}Restricted Cash - Current & 13 & 2 & 37 & 3 & 64 & 5\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Asset & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Current Assets & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Current Assets & 5218 & 4680 & 4682 & 3700 & 4158 & 3612\\
+  \hspace{1em}Property/Plant/Equipment, Total - Gross & 7133 & 6649 & 8511 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Buildings - Gross & 1520 & 1520 & 1379 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Land/Improvements - Gross & 278 & 264 & 183 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Machinery/Equipment - Gross & 5318 & 4854 & 4567 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Construction in Progress - Gross & -- & -- & 2372 & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Property/Plant/Equipment - Gross & 17 & 12 & 11 & -- & -- & --\\
+  \hspace{1em}Property/Plant/Equipment, Total - Net & 5327 & 4858 & 5105 & 7209 & -7102 & -6777\\
+  \hspace{1em}\hspace{1em}Accumulated Depreciation, Total & -3851 & -3593 & -3406 & -- & -7102 & -6777\\
+  \hspace{1em}Goodwill, Net & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Intangibles, Net & 2174 & 2035 & 1789 & 1717 & 1749 & 1828\\
+  \hspace{1em}\hspace{1em}Intangibles - Gross & -- & -- & -- & -- & 4429 & 4353\\
+  \hspace{1em}\hspace{1em}Accumulated Intangible Amortization & -- & -- & -- & -- & -2680 & -2525\\
+  \hspace{1em}Utility Plant, Net & 2977 & 3126 & 2767 & -- & 13766 & 13437\\
+  \hspace{1em}\hspace{1em}Utility Plant - Gross & 7619 & 7619 & 7109 & -- & 13766 & 13437\\
+  \hspace{1em}\hspace{1em}Utility Plant Accumulated Depreciation & -4642 & -4493 & -4342 & -- & -- & --\\
+  \hspace{1em}Total Utility Plant, Net & 2977 & 3126 & 2767 & -- & 13766 & 13437\\
+  \hspace{1em}Long Term Investments & 2224 & 1308 & 698 & 618 & 483 & 406\\
+  \hspace{1em}\hspace{1em}LT Investment - Affiliate Companies & 1660 & 1188 & 569 & 555 & 465 & 385\\
+  \hspace{1em}\hspace{1em}LT Investments - Other & 564 & 121 & 129 & 63 & 18 & 20\\
+  \hspace{1em}Note Receivable - Long Term & 5128 & 4334 & 3553 & 3383 & 2482 & 1897\\
+  \hspace{1em}Other Long Term Assets, Total & 2569 & 2770 & 2616 & 2211 & 2323 & 1910\\
+  \hspace{1em}\hspace{1em}Deferred Charges & 0 & 0 & 9 & 0 & -- & --\\
+  \hspace{1em}\hspace{1em}Defered Income Tax - Long Term Asset & 526 & 753 & 681 & 462 & 508 & 398\\
+  \hspace{1em}\hspace{1em}Restricted Cash - Long Term & 793 & 721 & 618 & 468 & 427 & 183\\
+  \hspace{1em}\hspace{1em}Other Long Term Assets & 1250 & 1295 & 1308 & 1281 & 1388 & 1329\\
+  \hspace{1em}Total Assets & 25618 & 23111 & 21209 & 18837 & 17859 & 16313\\
   \addlinespace[0.3em]
-  \multicolumn{9}{l}{\textbf{Liabilities}}\\
-  \hspace{1em}Accounts Payable & 1132 & 747 & 613 & 544 & 498 & 367 & 392 & 1162\\
-  \hspace{1em}Payable/Accrued & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Accrued Expenses & 858 & 705 & 684 & 641 & 575 & 749 & 820 & 490\\
-  \hspace{1em}Notes Payable/Short Term Debt & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
-  \hspace{1em}Current Port. of LT Debt/Capital Leases & 274 & 116 & 704 & 136 & 293 & 265 & 928 & 215\\
-  \hspace{1em}Other Current liabilities, Total & 570 & 489 & 536 & 403 & 503 & 560 & 507 & 462\\
-  \hspace{1em}\hspace{1em}Dividends Payable & 205 & 136 & 164 & 91 & 244 & 252 & 277 & 114\\
-  \hspace{1em}\hspace{1em}Customer Advances & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Income Taxes Payable & 170 & 152 & 203 & 160 & 102 & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Payables & 138 & 131 & 112 & 123 & 114 & 85 & 68 & --\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Liability & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Current Liabilities & 56 & 71 & 56 & 30 & 43 & 223 & 162 & 348\\
-  \hspace{1em}Total Current Liabilities & 2833 & 2058 & 2537 & 1723 & 1869 & 1941 & 2647 & 2329\\
-  Total \hspace{1em}\hspace{1em}Long Term Debt & 2988 & 2058 & 1281 & 1538 & 1571 & 1838 & 1733 & 1895\\
-  Long Term Debt & 2988 & 2058 & 1281 & 1538 & 1571 & 1838 & 1733 & 1895\\
-  \hspace{1em}\hspace{1em}Capital Lease Obligations & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Total Debt & 3262 & 2174 & 1985 & 1673 & 1865 & 2102 & 2661 & 2110\\
-  \hspace{1em}Deferred Income Tax & 591 & 650 & 887 & 901 & 935 & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - LT Liability & 591 & 650 & 887 & 901 & 935 & -- & -- & --\\
-  \hspace{1em}Minority Interest & 265 & 243 & 266 & 228 & 219 & 232 & 206 & 78\\
-  \hspace{1em}Other Liabilities, Total & 2435 & 1993 & 1859 & 1627 & 1598 & 1227 & 1026 & 1135\\
-  \hspace{1em}\hspace{1em}Reserves & 1156 & 872 & 813 & 525 & 619 & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Pension Benefits - Underfunded & 675 & 548 & 437 & 388 & 366 & 454 & 496 & 487\\
-  \hspace{1em}\hspace{1em}Other Long Term Liabilities & 605 & 573 & 608 & 714 & 613 & 772 & 530 & 648\\
-  \hspace{1em}Total Liabilities & 9112 & 7001 & 6829 & 6017 & 6192 & 5237 & 5612 & 5437\\
+  \multicolumn{7}{l}{\textbf{Liabilities}}\\
+  \hspace{1em}Accounts Payable & 1587 & 1092 & 1132 & 747 & 613 & 544\\
+  \hspace{1em}Payable/Accrued & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Accrued Expenses & 603 & 698 & 858 & 705 & 684 & 641\\
+  \hspace{1em}Notes Payable/Short Term Debt & 0 & 0 & 0 & 0 & 0 & 0\\
+  \hspace{1em}Current Port. of LT Debt/Capital Leases & 1299 & 1015 & 274 & 116 & 704 & 136\\
+  \hspace{1em}Other Current liabilities, Total & 566 & 543 & 570 & 489 & 536 & 403\\
+  \hspace{1em}\hspace{1em}Dividends Payable & 20 & 19 & 205 & 136 & 164 & 91\\
+  \hspace{1em}\hspace{1em}Customer Advances & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Income Taxes Payable & 310 & 298 & 170 & 152 & 203 & 160\\
+  \hspace{1em}\hspace{1em}Other Payables & 213 & 188 & 138 & 131 & 112 & 123\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Liability & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}\hspace{1em}Other Current Liabilities & 23 & 38 & 56 & 71 & 56 & 30\\
+  \hspace{1em}Total Current Liabilities & 4055 & 3348 & 2833 & 2058 & 2537 & 1723\\
+  Total \hspace{1em}\hspace{1em}Long Term Debt & 4755 & 3517 & 2988 & 2058 & 1281 & 1538\\
+  Long Term Debt & 4755 & 3517 & 2988 & 2058 & 1281 & 1538\\
+  \hspace{1em}\hspace{1em}Capital Lease Obligations & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Total Debt & 6054 & 4532 & 3262 & 2174 & 1985 & 1673\\
+  \hspace{1em}Deferred Income Tax & 102 & 489 & 591 & 650 & 887 & 901\\
+  \hspace{1em}\hspace{1em}Deferred Income Tax - LT Liability & 102 & 489 & 591 & 650 & 887 & 901\\
+  \hspace{1em}Minority Interest & 352 & 277 & 265 & 243 & 266 & 228\\
+  \hspace{1em}Other Liabilities, Total & 3022 & 2829 & 2435 & 1993 & 1859 & 1627\\
+  \hspace{1em}\hspace{1em}Reserves & 1220 & 1070 & 1156 & 872 & 813 & 525\\
+  \hspace{1em}\hspace{1em}Pension Benefits - Underfunded & 1187 & 1133 & 675 & 548 & 437 & 388\\
+  \hspace{1em}\hspace{1em}Other Long Term Liabilities & 614 & 625 & 605 & 573 & 608 & 714\\
+  \hspace{1em}Total Liabilities & 12287 & 10460 & 9112 & 7001 & 6829 & 6017\\
   \addlinespace[0.3em]
-  \multicolumn{9}{l}{\textbf{Shareholders' Equity}}\\
-  \hspace{1em}Redeemable Preferred Stock, Total & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Preferred Stock - Non Redeemable, Net & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Common Stock, Total & 6910 & 6910 & 6910 & 4460 & 4460 & 4460 & 3875 & 3480\\
-  \hspace{1em}\hspace{1em}Common Stock & 6910 & 6910 & 6910 & 4460 & 4460 & 4460 & 3875 & 3480\\
-  \hspace{1em}Additional Paid-In Capital & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Retained Earnings (Accumulated Deficit) & 3909 & 3375 & 2535 & 3337 & 2694 & 1938 & 1684 & 1190\\
-  \hspace{1em}Treasury Stock - Common & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}ESOP Debt Guarantee & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Unrealized Gain (Loss) & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Other Equity, Total & 1279 & 1551 & 1585 & 2499 & 2588 & 838 & 817 & 817\\
-  \hspace{1em}\hspace{1em}Other Equity & 1279 & 1551 & 1585 & 2499 & 2588 & 838 & 817 & 817\\
-  \hspace{1em}Total Equity & 12097 & 11836 & 11030 & 10296 & 9742 & 7236 & 6376 & 5487\\
-  \hspace{1em}Total Liabilities \& Shareholders' Equity & 21209 & 18837 & 17859 & 16313 & 15934 & 12473 & 11988 & 10924\\*
+  \multicolumn{7}{l}{\textbf{Shareholders' Equity}}\\
+  \hspace{1em}Redeemable Preferred Stock, Total & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Preferred Stock - Non Redeemable, Net & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Common Stock, Total & 6910 & 6910 & 6910 & 6910 & 6910 & 4460\\
+  \hspace{1em}\hspace{1em}Common Stock & 6910 & 6910 & 6910 & 6910 & 6910 & 4460\\
+  \hspace{1em}Additional Paid-In Capital & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Retained Earnings (Accumulated Deficit) & 5202 & 4523 & 3909 & 3375 & 2535 & 3337\\
+  \hspace{1em}Treasury Stock - Common & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}ESOP Debt Guarantee & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Unrealized Gain (Loss) & -- & -- & -- & -- & -- & --\\
+  \hspace{1em}Other Equity, Total & 1219 & 1219 & 1279 & 1551 & 1585 & 2499\\
+  \hspace{1em}\hspace{1em}Other Equity & 1219 & 1219 & 1279 & 1551 & 1585 & 2499\\
+  \hspace{1em}Total Equity & 13331 & 12651 & 12097 & 11836 & 11030 & 10296\\
+  \hspace{1em}Total Liabilities \& Shareholders' Equity & 25618 & 23111 & 21209 & 18837 & 17859 & 16313\\*
+  \end{longtable}
+  \endgroup{}
+\begin{verbatim}
+Warning: package 'lubridate' was built under R version 4.0.3
+\end{verbatim}
+  \begingroup\fontsize{8}{10}\selectfont
+  \begin{longtable}[t]{lrrrrr}
+  \caption{\label{tab:unnamed-chunk-18}Balanço Patrimonial da Copel, em milhares de reais. Base contábil de 2011 a 2015.}\\
+  \toprule
+  Conta & 2011 & 2012 & 2013 & 2014 & 2015\\
+  \midrule
+  \endfirsthead
+  \caption[]{\label{tab:unnamed-chunk-18}Balanço Patrimonial da Copel, em milhares de reais. Base contábil de 2011 a 2015. \textit{(continuação)}}\\
+  \toprule
+  Conta & 2011 & 2012 & 2013 & 2014 & 2015\\
+  \midrule
+  \endhead
+
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  Ativo Total & 19121664 & 21211554 & 23111444 & 25618141 & 28947657\\
+  Ativo Circulante & 3702013 & 4699255 & 4680284 & 5218176 & 6933397\\
+  Caixa e Equivalentes de Caixa & 1049125 & 1483137 & 1741632 & 740131 & 1480727\\
+  Aplicações Financeiras & 584687 & 672313 & 391198 & 472612 & 408274\\
+  Contas a Receber & 1694073 & 2171343 & 2185023 & 3633319 & 4599127\\
+  \addlinespace
+  Estoques & 103802 & 124809 & 139278 & 150622 & 131018\\
+  Ativos Biológicos & 0 & 0 & 0 & 0 & 0\\
+  Tributos a Recuperar & 265738 & 242649 & 203171 & 201359 & 264969\\
+  Despesas Antecipadas & 4588 & 5004 & 19982 & 20133 & 49282\\
+  Outros Ativos Circulantes & 0 & 0 & 0 & 0 & 0\\
+  \addlinespace
+  Ativo Realizável a Longo Prazo & 5939512 & 6302904 & 7224241 & 8261472 & 4951792\\
+  Aplicações Financeiras Avaliadas a Valor Justo & 88953 & 159581 & 154766 & 189166 & 177254\\
+  Aplicações Financeiras Avaliadas ao Custo Amortizado & 11189 & 12180 & 11141 & 0 & 0\\
+  Tributos Diferidos & 745180 & 647804 & 753413 & 526046 & 537562\\
+  Créditos com Partes Relacionadas & 0 & 0 & 0 & 137137 & 192803\\
+  \addlinespace
+  Outros Ativos Não Circulantes & 5061738 & 5448336 & 6171836 & 7333252 & 3943618\\
+  Investimentos & 549158 & 543036 & 1187927 & 1660150 & 2224710\\
+  Imobilizado & 7209123 & 7871849 & 7983632 & 8304188 & 8692682\\
+  Intangível & 1721857 & 1794510 & 2035361 & 2174156 & 6145076\\
+  Diferido & 0 & 0 & 0 & 0 & 0\\
+  \addlinespace
+  Passivo Total & 19121664 & 21211554 & 23111444 & 25618141 & 28947657\\
+  Passivo Circulante & 2058821 & 2847818 & 3347885 & 4055393 & 4789118\\
+  Obrigações Sociais e Trabalhistas & 224095 & 384150 & 239685 & 252618 & 258401\\
+  Fornecedores & 747453 & 1136359 & 1092239 & 1587205 & 1613126\\
+  Obrigações Fiscais & 440247 & 461085 & 598351 & 447210 & 652864\\
+  \addlinespace
+  Empréstimos e Financiamentos & 116487 & 274009 & 1014568 & 1299117 & 1232563\\
+  Passivos com Partes Relacionadas & 0 & 0 & 0 & 0 & 0\\
+  Dividendos e JCP a Pagar & 0 & 0 & 18713 & 19691 & 346007\\
+  Outros & 530539 & 592215 & 384329 & 449552 & 686157\\
+  Provisões & 0 & 0 & 0 & 0 & 0\\
+  \addlinespace
+  Passivos sobre Ativos Não-Correntes a Venda e Descontinuados & 0 & 0 & 0 & 0 & 0\\
+  Passivo Não Circulante & 4993314 & 5866238 & 6834808 & 7879969 & 9574061\\
+  Adiantamento para Futuro Aumento Capital & 0 & 0 & 0 & 0 & 0\\
+  Lucros e Receitas a Apropriar & 0 & 0 & 0 & 0 & 0\\
+  Participação dos Acionistas Não Controladores & 242834 & 264506 & 277413 & 352091 & 338750\\
+  \addlinespace
+  Patrimônio Líquido & 11826694 & 12232992 & 12651339 & 13330689 & 14245728\\
+  Capital Social Realizado & 6910000 & 6910000 & 6910000 & 6910000 & 6910000\\
+  Reservas de Capital & 0 & 0 & 0 & 0 & 0\\
+  Reservas de Reavaliação & 0 & 0 & 0 & 0 & 0\\
+  Reservas de Lucros & 3459613 & 3972990 & 4758180 & 5443725 & 6158356\\
+  \addlinespace
+  Lucros/Prejuízos Acumulados & 0 & 0 & 0 & 0 & 0\\
+  Ajustes de Avaliação Patrimonial & 1457081 & 1350002 & 983159 & 976964 & 1177372\\
+  Ajustes Acumulados de Conversão & 0 & 0 & 0 & 0 & 0\\
+  Outros Resultados Abrangentes & 0 & 0 & 0 & 0 & 0\\*
   \end{longtable}
   \endgroup{}
 
   \begingroup\fontsize{8}{10}\selectfont
-  \begin{longtable}[t]{lllllllll}
-  \caption{\label{tab:unnamed-chunk-18}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2004 a 1997.}\\
+  \begin{longtable}[t]{lrrrrr}
+  \caption{\label{tab:unnamed-chunk-18}Balanço Patrimonial da Copel, em milhares de reais. Base contábil de 2016 a 2020.}\\
   \toprule
-  Period End Date & 2004 & 2003 & 2002 & 2001 & 2000 & 1999 & 1998 & 1997\\
+  Conta & 2016 & 2017 & 2018 & 2019 & 2020\\
   \midrule
   \endfirsthead
-  \caption[]{\label{tab:unnamed-chunk-18}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 2004 a 1997. \textit{(continuação)}}\\
+  \caption[]{\label{tab:unnamed-chunk-18}Balanço Patrimonial da Copel, em milhares de reais. Base contábil de 2016 a 2020. \textit{(continuação)}}\\
   \toprule
-  Period End Date & 2004 & 2003 & 2002 & 2001 & 2000 & 1999 & 1998 & 1997\\
+  Conta & 2016 & 2017 & 2018 & 2019 & 2020\\
   \midrule
   \endhead
-  \
+
   \endfoot
   \bottomrule
   \endlastfoot
-  \addlinespace[0.3em]
-  \multicolumn{9}{l}{\textbf{Assets}}\\
-  \hspace{1em}Cash and Short Term Investments & 519 & 363 & 200 & 166 & 224 & 180 & 213 & 670\\
-  \hspace{1em}\hspace{1em}Cash & 519 & 363 & 200 & 166 & 224 & 180 & 213 & 14\\
-  \hspace{1em}\hspace{1em}Cash \& Equivalents & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Short Term Investments & -- & -- & -- & -- & -- & -- & -- & 656\\
-  \hspace{1em}Accounts Receivable - Trade, Net & 766 & 657 & 516 & 598 & 449 & 289 & 211 & 228\\
-  \hspace{1em}\hspace{1em}Accounts Receivable - Trade, Gross & 846 & 705 & 553 & -- & -- & -- & -- & 202\\
-  \hspace{1em}\hspace{1em}Provision for Doubtful Accounts & -86 & -52 & -37 & -- & -- & -- & -- & -4\\
-  \hspace{1em}Total Receivables, Net & 886 & 971 & 706 & 639 & 488 & 299 & 219 & 235\\
-  \hspace{1em}\hspace{1em}Receivables - Other & 120 & 314 & 190 & 41 & 39 & 10 & 8 & 7\\
-  \hspace{1em}Total Inventory & 31 & 27 & 10 & 19 & 15 & 12 & 10 & 6\\
-  \hspace{1em}\hspace{1em}Inventories - Raw Materials & 31 & 27 & 10 & 19 & 15 & 12 & 10 & 6\\
-  \hspace{1em}\hspace{1em}Inventories - Other & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Prepaid Expenses & -- & -- & -- & 41 & 44 & 232 & 187 & 205\\
-  \hspace{1em}Other Current Assets, Total & 197 & 59 & 115 & 100 & 0 & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Restricted Cash - Current & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Asset & -- & -- & 64 & 9 & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Current Assets & 197 & 59 & 51 & 91 & 0 & -- & -- & --\\
-  \hspace{1em}Total Current Assets & 1633 & 1420 & 1031 & 965 & 771 & 723 & 629 & 1116\\
-  \hspace{1em}Property/Plant/Equipment, Total - Gross & 5399 & 5380 & -129 & 7876 & 1084 & -- & -- & 0\\
-  \hspace{1em}\hspace{1em}Buildings - Gross & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Land/Improvements - Gross & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Machinery/Equipment - Gross & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Construction in Progress - Gross & 594 & 483 & 504 & 445 & 700 & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Property/Plant/Equipment - Gross & 4805 & 4897 & -633 & 7431 & 384 & -- & -- & 0\\
-  \hspace{1em}Property/Plant/Equipment, Total - Net & 5399 & 5380 & -2917 & 5334 & -2456 & 5759 & 5369 & 6422\\
-  \hspace{1em}\hspace{1em}Accumulated Depreciation, Total & 0 & 0 & -2788 & -2542 & -3540 & -- & -- & 0\\
-  \hspace{1em}Goodwill, Net & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Intangibles, Net & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Intangibles - Gross & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Accumulated Intangible Amortization & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Utility Plant, Net & -- & -- & 8250 & -- & 10649 & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Utility Plant - Gross & -- & -- & 8250 & -- & 10649 & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Utility Plant Accumulated Depreciation & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Total Utility Plant, Net & -- & -- & 8250 & -- & 10649 & -- & -- & --\\
-  \hspace{1em}Long Term Investments & 457 & 426 & 498 & 443 & 445 & 328 & 261 & 94\\
-  \hspace{1em}\hspace{1em}LT Investment - Affiliate Companies & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}LT Investments - Other & 457 & 426 & 498 & 443 & 445 & 328 & 261 & 94\\
-  \hspace{1em}Note Receivable - Long Term & 185 & 199 & 72 & 124 & 45 & 35 & 60 & 33\\
-  \hspace{1em}Other Long Term Assets, Total & 2205 & 1913 & 1613 & 1264 & 913 & 855 & 753 & 671\\
-  \hspace{1em}\hspace{1em}Deferred Charges & -- & -- & 52 & 212 & 0 & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Defered Income Tax - Long Term Asset & -- & -- & 866 & 291 & 216 & 191 & 172 & 47\\
-  \hspace{1em}\hspace{1em}Restricted Cash - Long Term & 147 & 112 & 96 & 47 & 50 & 64 & 73 & 117\\
-  \hspace{1em}\hspace{1em}Other Long Term Assets & 2058 & 1801 & 599 & 714 & 647 & 600 & 508 & 507\\
-  \hspace{1em}Total Assets & 9879 & 9338 & 8547 & 8130 & 10367 & 7700 & 7072 & 8336\\
-  \addlinespace[0.3em]
-  \multicolumn{9}{l}{\textbf{Liabilities}}\\
-  \hspace{1em}Accounts Payable & 768 & 404 & 249 & 271 & 85 & 86 & 54 & 49\\
-  \hspace{1em}Payable/Accrued & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Accrued Expenses & 505 & 486 & 228 & 244 & 146 & 137 & 125 & 77\\
-  \hspace{1em}Notes Payable/Short Term Debt & 0 & 0 & 0 & 0 & 0 & -- & -- & 0\\
-  \hspace{1em}Current Port. of LT Debt/Capital Leases & 671 & 273 & 198 & 272 & 276 & 302 & 174 & 360\\
-  \hspace{1em}Other Current liabilities, Total & 304 & 127 & 120 & 154 & 146 & 180 & 211 & 201\\
-  \hspace{1em}\hspace{1em}Dividends Payable & 91 & 46 & 1 & 56 & 97 & 102 & 122 & --\\
-  \hspace{1em}\hspace{1em}Customer Advances & -- & -- & 35 & -- & 13 & -- & -- & 13\\
-  \hspace{1em}\hspace{1em}Income Taxes Payable & -- & -- & 39 & 64 & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Payables & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Liability & -- & -- & -- & 0 & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Current Liabilities & 213 & 81 & 45 & 34 & 36 & 78 & 89 & 188\\
-  \hspace{1em}Total Current Liabilities & 2248 & 1290 & 795 & 941 & 653 & 705 & 564 & 687\\
-  Total \hspace{1em}\hspace{1em}Long Term Debt & 1160 & 1737 & 2016 & 1154 & 1104 & 1117 & 917 & 744\\
-  Long Term Debt & 1160 & 1737 & 2016 & 1154 & 1104 & 1117 & 917 & 744\\
-  \hspace{1em}\hspace{1em}Capital Lease Obligations & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Total Debt & 1831 & 2010 & 2214 & 1426 & 1380 & 1419 & 1091 & 1104\\
-  \hspace{1em}Deferred Income Tax & -- & -- & 13 & 0 & 821 & 0 & 0 & 462\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - LT Liability & -- & -- & 13 & 0 & 821 & 0 & 0 & 462\\
-  \hspace{1em}Minority Interest & 45 & 29 & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Other Liabilities, Total & 1291 & 1424 & 997 & 987 & 1297 & 1251 & 1135 & 1044\\
-  \hspace{1em}\hspace{1em}Reserves & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Pension Benefits - Underfunded & 541 & 566 & 596 & 636 & 487 & 478 & 457 & --\\
-  \hspace{1em}\hspace{1em}Other Long Term Liabilities & 750 & 858 & 401 & 351 & 810 & 773 & 678 & 1044\\
-  \hspace{1em}Total Liabilities & 4744 & 4480 & 3821 & 3082 & 3876 & 3073 & 2616 & 2937\\
-  \addlinespace[0.3em]
-  \multicolumn{9}{l}{\textbf{Shareholders' Equity}}\\
-  \hspace{1em}Redeemable Preferred Stock, Total & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Preferred Stock - Non Redeemable, Net & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Common Stock, Total & 3480 & 2900 & 2900 & 1620 & 2418 & 1620 & 1225 & 1284\\
-  \hspace{1em}\hspace{1em}Common Stock & 3480 & 2900 & 2900 & 1620 & 2418 & 1620 & 1225 & 1284\\
-  \hspace{1em}Additional Paid-In Capital & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Retained Earnings (Accumulated Deficit) & 839 & 1141 & 1009 & 1877 & 1637 & 1461 & 1294 & 1114\\
-  \hspace{1em}Treasury Stock - Common & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}ESOP Debt Guarantee & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Unrealized Gain (Loss) & -- & -- & -- & -- & -- & -- & -- & --\\
-  \hspace{1em}Other Equity, Total & 817 & 817 & 817 & 1548 & 2438 & 1546 & 1940 & 3000\\
-  \hspace{1em}\hspace{1em}Other Equity & 817 & 817 & 817 & 1548 & 2438 & 1546 & 1940 & 3000\\
-  \hspace{1em}Total Equity & 5136 & 4858 & 4726 & 5045 & 6492 & 4627 & 4459 & 5398\\
-  \hspace{1em}Total Liabilities \& Shareholders' Equity & 9880 & 9338 & 8547 & 8127 & 10368 & 7700 & 7075 & 8335\\*
+  Ativo Total & 30434208 & 33162375 & 35930100 & 38312550 & 46784664\\
+  Ativo Circulante & 4402990 & 5701834 & 6677846 & 7909196 & 11407431\\
+  Caixa e Equivalentes de Caixa & 982073 & 1040075 & 1948409 & 2941727 & 3222768\\
+  Aplicações Financeiras & 303692 & 60713 & 125065 & 3259 & 1662\\
+  Contas a Receber & 2690609 & 3750703 & 4134269 & 4358216 & 5100944\\
+  \addlinespace
+  Estoques & 130637 & 110559 & 116285 & 130442 & 162791\\
+  Ativos Biológicos & 0 & 0 & 0 & 0 & 0\\
+  Tributos a Recuperar & 256883 & 699917 & 312999 & 441989 & 1651733\\
+  Despesas Antecipadas & 39096 & 39867 & 40819 & 33563 & 36987\\
+  Outros Ativos Circulantes & 0 & 0 & 0 & 0 & 1230546\\
+  \addlinespace
+  Ativo Realizável a Longo Prazo & 8302154 & 8607626 & 10014260 & 10955461 & 16222800\\
+  Aplicações Financeiras Avaliadas a Valor Justo & 676467 & 312714 & 238945 & 306703 & 321450\\
+  Aplicações Financeiras Avaliadas ao Custo Amortizado & 0 & 0 & 0 & 0 & 0\\
+  Tributos Diferidos & 803477 & 915492 & 0 & 0 & 0\\
+  Créditos com Partes Relacionadas & 155141 & 130156 & 3290 & 132 & 44\\
+  \addlinespace
+  Outros Ativos Não Circulantes & 6370700 & 6975498 & 0 & 0 & 0\\
+  Investimentos & 2334950 & 2570643 & 2368234 & 2523179 & 2729517\\
+  Imobilizado & 8934303 & 9829450 & 10840663 & 10592103 & 9495460\\
+  Intangível & 6459812 & 6452824 & 6029097 & 6332611 & 6929456\\
+  Diferido & 0 & 0 & 0 & 0 & 0\\
+  \addlinespace
+  Passivo Total & 30434208 & 33162375 & 35930100 & 38312550 & 46784664\\
+  Passivo Circulante & 5656036 & 6109914 & 6695114 & 5345621 & 9654392\\
+  Obrigações Sociais e Trabalhistas & 287797 & 313967 & 284179 & 337044 & 684046\\
+  Fornecedores & 1255639 & 1683577 & 1419243 & 1685280 & 2291307\\
+  Obrigações Fiscais & 336448 & 431797 & 649382 & 561200 & 1172439\\
+  \addlinespace
+  Empréstimos e Financiamentos & 2601940 & 2416728 & 3297928 & 1419822 & 2599088\\
+  Passivos com Partes Relacionadas & 0 & 0 & 0 & 0 & 0\\
+  Dividendos e JCP a Pagar & 266831 & 288981 & 375675 & 616356 & 991887\\
+  Outros & 907381 & 862864 & 668707 & 725919 & 1159220\\
+  Provisões & 0 & 112000 & 0 & 0 & 0\\
+  \addlinespace
+  Passivos sobre Ativos Não-Correntes a Venda e Descontinuados & 0 & 0 & 0 & 0 & 756405\\
+  Passivo Não Circulante & 9622727 & 11541960 & 12898772 & 15368717 & 16879754\\
+  Adiantamento para Futuro Aumento Capital & 0 & 0 & 0 & 0 & 0\\
+  Lucros e Receitas a Apropriar & 0 & 0 & 0 & 0 & 0\\
+  Participação dos Acionistas Não Controladores & 291281 & 302661 & 303289 & 345798 & 291407\\
+  \addlinespace
+  Patrimônio Líquido & 14864165 & 15207842 & 16032925 & 17252414 & 19959110\\
+  Capital Social Realizado & 7910000 & 7910000 & 7910000 & 10800000 & 10800000\\
+  Reservas de Capital & 0 & 0 & 0 & 0 & 0\\
+  Reservas de Reavaliação & 0 & 0 & 0 & 0 & 0\\
+  Reservas de Lucros & 5955699 & 6402241 & 7337315 & 5860487 & 8805762\\
+  \addlinespace
+  Lucros/Prejuízos Acumulados & 0 & 0 & 0 & 0 & 0\\
+  Ajustes de Avaliação Patrimonial & 998466 & 895601 & 785610 & 591927 & 353349\\
+  Ajustes Acumulados de Conversão & 0 & 0 & 0 & 0 & 0\\
+  Outros Resultados Abrangentes & 0 & 0 & 0 & 0 & 0\\*
   \end{longtable}
   \endgroup{}
 
   \begingroup\fontsize{8}{10}\selectfont
-  \begin{longtable}[t]{llll}
-  \caption{\label{tab:unnamed-chunk-18}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 1996 a 1994.}\\
+  \begin{longtable}[t]{lrrrrr}
+  \caption{\label{tab:unnamed-chunk-19}Demonstrativos de Resultado da Copel, em milhares de reais. Base contábil de 2011 a 2015.}\\
   \toprule
-  Period End Date & 1996 & 1995 & 1994\\
+  Conta & 2011 & 2012 & 2013 & 2014 & 2015\\
   \midrule
   \endfirsthead
-  \caption[]{\label{tab:unnamed-chunk-18}Balanços patrimoniais da Copel, em milhões de reais. Base contábil de 1996 a 1994. \textit{(continuação)}}\\
+  \caption[]{\label{tab:unnamed-chunk-19}Demonstrativos de Resultado da Copel, em milhares de reais. Base contábil de 2011 a 2015. \textit{(continuação)}}\\
   \toprule
-  Period End Date & 1996 & 1995 & 1994\\
+  Conta & 2011 & 2012 & 2013 & 2014 & 2015\\
   \midrule
   \endhead
-  \
+
   \endfoot
   \bottomrule
   \endlastfoot
-  \addlinespace[0.3em]
-  \multicolumn{4}{l}{\textbf{Assets}}\\
-  \hspace{1em}Cash and Short Term Investments & 97 & 40 & 11\\
-  \hspace{1em}\hspace{1em}Cash & 14 & 40 & 11\\
-  \hspace{1em}\hspace{1em}Cash \& Equivalents & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Short Term Investments & 83 & 0 & 0\\
-  \hspace{1em}Accounts Receivable - Trade, Net & 249 & 183 & 166\\
-  \hspace{1em}\hspace{1em}Accounts Receivable - Trade, Gross & 234 & 184 & 167\\
-  \hspace{1em}\hspace{1em}Provision for Doubtful Accounts & -7 & -1 & -1\\
-  \hspace{1em}Total Receivables, Net & 285 & 213 & 187\\
-  \hspace{1em}\hspace{1em}Receivables - Other & 36 & 30 & 21\\
-  \hspace{1em}Total Inventory & 12 & 14 & 9\\
-  \hspace{1em}\hspace{1em}Inventories - Raw Materials & 12 & 14 & 9\\
-  \hspace{1em}\hspace{1em}Inventories - Other & -- & -- & --\\
-  \hspace{1em}Prepaid Expenses & 26 & 45 & 32\\
-  \hspace{1em}Other Current Assets, Total & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Restricted Cash - Current & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Asset & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Current Assets & -- & -- & --\\
-  \hspace{1em}Total Current Assets & 420 & 312 & 239\\
-  \hspace{1em}Property/Plant/Equipment, Total - Gross & 0 & 7626 & 7168\\
-  \hspace{1em}\hspace{1em}Buildings - Gross & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Land/Improvements - Gross & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Machinery/Equipment - Gross & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Construction in Progress - Gross & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Property/Plant/Equipment - Gross & 0 & 7626 & 7168\\
-  \hspace{1em}Property/Plant/Equipment, Total - Net & 6074 & 5342 & 5102\\
-  \hspace{1em}\hspace{1em}Accumulated Depreciation, Total & 0 & -2284 & -2066\\
-  \hspace{1em}Goodwill, Net & -- & -- & --\\
-  \hspace{1em}Intangibles, Net & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Intangibles - Gross & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Accumulated Intangible Amortization & -- & -- & --\\
-  \hspace{1em}Utility Plant, Net & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Utility Plant - Gross & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Utility Plant Accumulated Depreciation & -- & -- & --\\
-  \hspace{1em}Total Utility Plant, Net & -- & -- & --\\
-  \hspace{1em}Long Term Investments & 74 & 63 & 55\\
-  \hspace{1em}\hspace{1em}LT Investment - Affiliate Companies & -- & -- & --\\
-  \hspace{1em}\hspace{1em}LT Investments - Other & 74 & 63 & 55\\
-  \hspace{1em}Note Receivable - Long Term & 57 & 59 & 16\\
-  \hspace{1em}Other Long Term Assets, Total & 614 & 564 & 607\\
-  \hspace{1em}\hspace{1em}Deferred Charges & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Defered Income Tax - Long Term Asset & 62 & 43 & 36\\
-  \hspace{1em}\hspace{1em}Restricted Cash - Long Term & 43 & 18 & 16\\
-  \hspace{1em}\hspace{1em}Other Long Term Assets & 509 & 503 & 555\\
-  \hspace{1em}Total Assets & 7239 & 6340 & 6019\\
-  \addlinespace[0.3em]
-  \multicolumn{4}{l}{\textbf{Liabilities}}\\
-  \hspace{1em}Accounts Payable & 56 & 52 & 48\\
-  \hspace{1em}Payable/Accrued & -- & -- & --\\
-  \hspace{1em}Accrued Expenses & 106 & 86 & 62\\
-  \hspace{1em}Notes Payable/Short Term Debt & 0 & 0 & 0\\
-  \hspace{1em}Current Port. of LT Debt/Capital Leases & 241 & 147 & 45\\
-  \hspace{1em}Other Current liabilities, Total & 261 & 136 & 102\\
-  \hspace{1em}\hspace{1em}Dividends Payable & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Customer Advances & 14 & 11 & 11\\
-  \hspace{1em}\hspace{1em}Income Taxes Payable & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Payables & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - Current Liability & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Current Liabilities & 247 & 125 & 91\\
-  \hspace{1em}Total Current Liabilities & 664 & 421 & 257\\
-  Total \hspace{1em}\hspace{1em}Long Term Debt & 478 & 410 & 344\\
-  Long Term Debt & 478 & 410 & 344\\
-  \hspace{1em}\hspace{1em}Capital Lease Obligations & -- & -- & --\\
-  \hspace{1em}Total Debt & 719 & 557 & 389\\
-  \hspace{1em}Deferred Income Tax & 379 & 241 & 335\\
-  \hspace{1em}\hspace{1em}Deferred Income Tax - LT Liability & 379 & 241 & 335\\
-  \hspace{1em}Minority Interest & -- & -- & --\\
-  \hspace{1em}Other Liabilities, Total & 1029 & 942 & 784\\
-  \hspace{1em}\hspace{1em}Reserves & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Pension Benefits - Underfunded & -- & -- & --\\
-  \hspace{1em}\hspace{1em}Other Long Term Liabilities & 1029 & 942 & 784\\
-  \hspace{1em}Total Liabilities & 2550 & 2014 & 1720\\
-  \addlinespace[0.3em]
-  \multicolumn{4}{l}{\textbf{Shareholders' Equity}}\\
-  \hspace{1em}Redeemable Preferred Stock, Total & -- & -- & --\\
-  \hspace{1em}Preferred Stock - Non Redeemable, Net & -- & -- & --\\
-  \hspace{1em}Common Stock, Total & 646 & 601 & 601\\
-  \hspace{1em}\hspace{1em}Common Stock & 646 & 601 & 601\\
-  \hspace{1em}Additional Paid-In Capital & -- & -- & --\\
-  \hspace{1em}Retained Earnings (Accumulated Deficit) & 1074 & 1002 & 1004\\
-  \hspace{1em}Treasury Stock - Common & -- & -- & --\\
-  \hspace{1em}ESOP Debt Guarantee & -- & -- & --\\
-  \hspace{1em}Unrealized Gain (Loss) & -- & -- & --\\
-  \hspace{1em}Other Equity, Total & 2970 & 2723 & 2695\\
-  \hspace{1em}\hspace{1em}Other Equity & 2970 & 2723 & 2695\\
-  \hspace{1em}Total Equity & 4690 & 4326 & 4300\\
-  \hspace{1em}Total Liabilities \& Shareholders' Equity & 7240 & 6340 & 6020\\*
+  Receita Líquida de Vendas e/ou Serviços & 7776165 & 8532217 & 9180214 & 13918517 & 14728131\\
+  Custo de Bens e/ou Serviços Vendidos & -5457015 & -6578971 & -7037998 & -11165078 & -11799316\\
+  Resultado Bruto & 2319150 & 1953246 & 2142216 & 2753440 & 2928815\\
+  Despesas Com Vendas & -113764 & -65659 & -95615 & -120987 & -283397\\
+  Despesas Gerais e Administrativas & -461452 & -544828 & -530104 & -552116 & -670606\\
+  \addlinespace
+  Perdas pela Não Recuperabilidade de Ativos & 0 & 0 & 0 & 0 & 0\\
+  Outras Receitas Operacionais & 2870 & 2755 & 18473 & 13054 & 29432\\
+  Outras Despesas Operacionais & -443310 & -356035 & -422383 & -543432 & -188051\\
+  Resultado da Equivalência Patrimonial & 55654 & 11040 & 113606 & 159955 & 92545\\
+  Financeiras & 224768 & -27821 & 280311 & 147717 & -110958\\
+  \addlinespace
+  Receitas Financeiras & 577532 & 648938 & 652363 & 694523 & 987340\\
+  Despesas Financeiras & -352764 & -676759 & -372052 & -546806 & -1098298\\
+  Resultado Antes Tributação/Participações & 1583916 & 972698 & 1506504 & 1857631 & 1797780\\
+  Provisão para IR e Contribuição Social & -611601 & -458312 & -554520 & -747869 & -698023\\
+  IR Diferido & 204539 & 212134 & 149451 & 225853 & 165794\\
+  \addlinespace
+  Part. de Acionistas Não Controladores & -19164 & -25832 & -28875 & -129665 & -72813\\
+  Lucro/Prejuízo do Período & 1157690 & 700688 & 1072560 & 1205950 & 1192738\\*
+  \end{longtable}
+  \endgroup{}
+
+  \begingroup\fontsize{8}{10}\selectfont
+  \begin{longtable}[t]{lrrrrr}
+  \caption{\label{tab:unnamed-chunk-19}Demonstrativos de Resultado da Copel, em milhares de reais. Base contábil de 2016 a 2020.}\\
+  \toprule
+  Conta & 2016 & 2017 & 2018 & 2019 & 2020\\
+  \midrule
+  \endfirsthead
+  \caption[]{\label{tab:unnamed-chunk-19}Demonstrativos de Resultado da Copel, em milhares de reais. Base contábil de 2016 a 2020. \textit{(continuação)}}\\
+  \toprule
+  Conta & 2016 & 2017 & 2018 & 2019 & 2020\\
+  \midrule
+  \endhead
+
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  Receita Líquida de Vendas e/ou Serviços & 13101753 & 14024573 & 14934780 & 16244274 & 18633249\\
+  Custo de Bens e/ou Serviços Vendidos & -10234115 & -10665890 & -11501688 & -11760176 & -13347822\\
+  Resultado Bruto & 2867638 & 3358683 & 3433092 & 4484098 & 5285427\\
+  Despesas Com Vendas & -250448 & -169050 & -148709 & -207059 & -159825\\
+  Despesas Gerais e Administrativas & -741145 & -685675 & -723534 & -734300 & -809408\\
+  \addlinespace
+  Perdas pela Não Recuperabilidade de Ativos & 0 & 0 & 0 & 0 & 0\\
+  Outras Receitas Operacionais & 81241 & 57239 & 246071 & 49276 & 24012\\
+  Outras Despesas Operacionais & -134879 & -521555 & -548761 & -508091 & -280487\\
+  Resultado da Equivalência Patrimonial & 221695 & 101739 & 135888 & 106757 & 193547\\
+  Financeiras & -565744 & -748440 & -438050 & -488486 & 866271\\
+  \addlinespace
+  Receitas Financeiras & 896553 & 699310 & 813915 & 750241 & 1839668\\
+  Despesas Financeiras & -1462297 & -1447750 & -1251965 & -1238727 & -973397\\
+  Resultado Antes Tributação/Participações & 1478358 & 1392941 & 1955997 & 2702195 & 5119537\\
+  Provisão para IR e Contribuição Social & -589322 & -379943 & -580065 & -433555 & -1260469\\
+  IR Diferido & 58754 & 105257 & 68072 & -205771 & -24896\\
+  \addlinespace
+  Part. de Acionistas Não Controladores & 10860 & -84629 & -36941 & -72923 & -5548\\
+  Lucro/Prejuízo do Período & 958650 & 1033626 & 1407063 & 1989946 & 3904202\\*
   \end{longtable}
   \endgroup{}
 
@@ -1212,36 +1031,39 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \end{itemize}
   Vale comentar, antes de prosseguir, que foram escolhidas as ações ordinárias das empresas porque elas estão necessariamente presentes no mercado de ações brasileiro. Assim, podemos fazer uma comparação através desta classe de ativos. A Copel, por exemplo, tem seu papel mais líquido como sua preferencial do tipo B, CPLE6; a Cemig tem seu papel mais líquido como sendo CMIG4, uma preferencial simples; já o restante das empresas pertence ao Novo Mercado, possuindo apenas ações ordinárias. Justifica-se, então, o uso dos papéis de ações ordinárias como base de comparação.
 
-  Feita uma breve descrição das empresas a serem comparadas, é feita também uma escolha de múltiplos para ser realizada a análise. Constam entre estes os comumente utilizados, como P/L, \emph{dividend yield} e CAGR, assim como alguns mais recentemente utilizados pela indústria, como EV/EBITDA. Os dados foram retirados do site Fundamentus\footnote{Disponível em \url{https://www.fundamentus.com.br/resultado.php?segmento=70}. Último acesso em 24 nov 2020.} e tratados para melhor visualização:
+  Feita uma breve descrição das empresas a serem comparadas, é feita também uma escolha de múltiplos para ser realizada a análise. Constam entre estes os comumente utilizados, como P/L, \emph{dividend yield} e CAGR, assim como alguns mais recentemente utilizados pela indústria, como EV/EBITDA. Os dados foram retirados do site Fundamentus\footnote{Disponível em \url{https://www.fundamentus.com.br/resultado.php?setor=14}. Último acesso em 23 mar 2021.} e tratados para melhor visualização:
+\begin{verbatim}
+Warning: package 'rvest' was built under R version 4.0.3
+\end{verbatim}
   \begin{table}[H]
 
-  \caption{\label{tab:unnamed-chunk-19}Comparativo de empresas similares à Copel.}
+  \caption{\label{tab:unnamed-chunk-20}Comparativo de empresas similares à Copel.}
   \centering
   \begin{tabular}[t]{cccccc}
   \toprule
-  Indicadores & CPLE3 & LIGT3 & NEOE3 & ENBR3 & CMIG3\\
+  Indicadores & CPLE3 & NEOE3 & ENBR3 & LIGT3 & CMIG3\\
   \midrule
-  Cotação & 68,95 & 23,90 & 17,31 & 19,86 & 15,50\\
-  P/L & 5,59 & -66,99 & 8,64 & 9,22 & 11,60\\
-  P/VP & 0,94 & 1,07 & 1,01 & 1,22 & 1,36\\
-  PSR & 1,073 & 0,602 & 0,726 & 0,815 & 0,951\\
-  Div.Yield & 3,25\% & 0,00\% & 2,36\% & 2,94\% & 3,76\%\\
+  Cotação & 6,84 & 16,58 & 19,50 & 19,29 & 15,06\\
+  P/L & 4,79 & 7,16 & 7,85 & 10,39 & 11,27\\
+  P/VP & 0,94 & 0,95 & 1,17 & 1,02 & 1,32\\
+  PSR & 1,005 & 0,629 & 0,790 & 0,550 & 0,924\\
+  Div.Yield & 4,12\% & 2,71\% & 2,38\% & 0,00\% & 4,01\%\\
   \addlinespace
-  P/Ativo & 0,419 & 0,284 & 0,337 & 0,422 & 0,441\\
-  P/Cap.Giro & 6,57 & 6,73 & 6,79 & 20,17 & 3,69\\
-  P/EBIT & 4,41 & 13,89 & 4,14 & 5,08 & 4,66\\
-  P/Ativ Circ.Liq & -1,29 & -0,64 & -0,81 & -1,17 & -1,14\\
-  EV/EBIT & 5,98 & 27,62 & 8,23 & 7,53 & 6,84\\
+  P/Ativo & 0,400 & 0,304 & 0,391 & 0,272 & 0,429\\
+  P/Cap.Giro & 10,68 & 6,76 & -20,06 & 9,50 & 3,59\\
+  P/EBIT & 4,34 & 3,62 & 4,12 & 3,77 & 4,53\\
+  P/Ativ Circ.Liq & -1,24 & -0,68 & -1,02 & -0,63 & -1,11\\
+  EV/EBIT & 5,89 & 7,46 & 6,27 & 7,24 & 6,71\\
   \addlinespace
-  EV/EBITDA & 4,76 & 12,95 & 6,29 & 5,91 & 5,74\\
-  Mrg Ebit & 24,32\% & 4,33\% & 17,54\% & 16,04\% & 20,40\%\\
-  Mrg. Líq. & 19,24\% & -0,90\% & 8,70\% & 9,74\% & 8,20\%\\
-  Liq. Corr. & 1,40 & 1,17 & 1,26 & 1,09 & 1,70\\
-  ROIC & 10,69\% & 2,62\% & 9,48\% & 10,10\% & 10,92\%\\
+  EV/EBITDA & 4,78 & 5,76 & 5,08 & 5,52 & 5,63\\
+  Mrg Ebit & 23,16\% & 17,37\% & 19,15\% & 14,56\% & 20,40\%\\
+  Mrg. Líq. & 20,98\% & 9,08\% & 11,44\% & 5,29\% & 8,20\%\\
+  Liq. Corr. & 1,18 & 1,25 & 0,93 & 1,10 & 1,70\\
+  ROIC & 10,46\% & 9,76\% & 11,41\% & 9,58\% & 10,92\%\\
   \addlinespace
-  ROE & 16,84\% & -1,59\% & 11,66\% & 13,23\% & 11,73\%\\
-  Dív.Brut/ Patrim. & 0,51 & 1,49 & 1,28 & 0,92 & 0,93\\
-  Cresc. Rec.5a & 7,64\% & 6,64\% & 19,15\% & 11,16\% & 7,26\%\\
+  ROE & 19,56\% & 13,27\% & 14,90\% & 9,78\% & 11,73\%\\
+  Dív.Brut/ Patrim. & 0,50 & 1,25 & 0,89 & 1,37 & 0,93\\
+  Cresc. Rec.5a & 8,89\% & 20,48\% & 12,16\% & 8,08\% & 7,26\%\\
   \bottomrule
   \end{tabular}
   \end{table}
@@ -1250,64 +1072,16 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \hypertarget{conclusuxe3o}{%
   \chapter{Conclusão}\label{conclusuxe3o}}
 
-  \backmatter
-
   \hypertarget{referuxeancias-bibliogruxe1ficas}{%
   \chapter*{Referências Bibliográficas}\label{referuxeancias-bibliogruxe1ficas}}
   \addcontentsline{toc}{chapter}{Referências Bibliográficas}
 
-  \markboth{References}{References}
-
-  \label{bib:begin}
-  \noindent
-
-  \setlength{\parindent}{-0.20in}
-  \setlength{\leftskip}{0.20in}
-  \setlength{\parskip}{8pt}
+  Placeholder
 
   \hypertarget{refs}{}
   \begin{cslreferences}
-  \leavevmode\hypertarget{ref-anbima2019}{}%
-  ANBIMA. \textbf{Raio-X do Investidor Brasileiro}, 2019.
-
-  \leavevmode\hypertarget{ref-arnold2008}{}%
-  ARNOLD, G. \textbf{Corporate financial management}. New York City, NY: Pearson Education, 2008.
-
-  \leavevmode\hypertarget{ref-beaver1970}{}%
-  BEAVER, W.; KETTLER, P.; SCHOLES, M. The association between market determined and accounting determined risk measures. \textbf{The Accounting Review}, v. 45, n. 4, p. 654--682, 1970.
-
-  \leavevmode\hypertarget{ref-beaver1978}{}%
-  BEAVER, W.; MORSE, D. What determines price-earnings ratios? \textbf{Financial Analysts Journal}, v. 34, n. 4, p. 65--76, 1978.
-
-  \leavevmode\hypertarget{ref-bogle2015}{}%
-  BOGLE, J. C. \textbf{Bogle on mutual funds: New perspectives for the intelligent investor}. New Jersey: John Wiley \& Sons, 2015.
-
-  \leavevmode\hypertarget{ref-damodaran2007}{}%
-  DAMODARAN, A. \textbf{Valuation approaches and metrics: a survey of the theory and evidence}. {[}s.l.{]} Now Publishers Inc, 2007.
-
-  \leavevmode\hypertarget{ref-damodaran2012}{}%
-  DAMODARAN, A. \textbf{Investment philosophies: successful strategies and the investors who made them work}. Hoboken, NJ: John Wiley \& Sons, 2012.
-
-  \leavevmode\hypertarget{ref-epe2020}{}%
-  EPE. \textbf{Plano Nacional de Energia 2050}. Brasília: Ministério de Minas e Energia, 2020.
-
-  \leavevmode\hypertarget{ref-fama2004}{}%
-  FAMA, E. F.; FRENCH, K. R. The capital asset pricing model: Theory and evidence. \textbf{Journal of economic perspectives}, v. 18, n. 3, p. 25--46, 2004.
-
-  \leavevmode\hypertarget{ref-fisher1930}{}%
-  FISHER, I. \textbf{Theory of interest: as determined by impatience to spend income and opportunity to invest it}. New York City, NY: Augustusm Kelly Publishers, Clifton, 1930.
-
-  \leavevmode\hypertarget{ref-techreport-exampleIn}{}%
-  GARRET, D. A. \textbf{The Microscopic Detection of Corrosion in Aluminum Aircraft Structures with Thermal Neutron Beams and Film Imaging Methods}. Washington, D.C.: National Bureau of Standards, 1977.
-
-  \leavevmode\hypertarget{ref-gordon1959}{}%
-  GORDON, M. J. Dividends, earnings, and stock prices. \textbf{The review of economics and statistics}, p. 99--105, 1959.
-
-  \leavevmode\hypertarget{ref-gordon1956}{}%
-  GORDON, M. J.; SHAPIRO, E. Capital equipment analysis: the required rate of profit. \textbf{Management science}, v. 3, n. 1, p. 102--110, 1956.
-
-  \leavevmode\hypertarget{ref-graham2016}{}%
-  GRAHAM, B. \textbf{O investidor inteligente}. Rio de Janeiro: HarperCollins Brasil, 2016.
+  \leavevmode\hypertarget{ref-graham2009}{}%
+  GRAHAM, B.; DODD, D. L. \textbf{Security analysis}. {[}s.l.{]} McGraw-Hill Companies, Inc, 2009.
 
   \leavevmode\hypertarget{ref-greenblatt2006}{}%
   GREENBLATT, J. \textbf{The little book that beats the market}. Hoboken, NJ: John Wiley \& Sons, 2006.
@@ -1315,59 +1089,8 @@ Consectetur platea augue vitae vitae integer ad tincidunt torquent ac. Pharetra 
   \leavevmode\hypertarget{ref-greenblatt2010}{}%
   GREENBLATT, J. \textbf{The little book that still beats the market}. Hoboken, NJ: John Wiley \& Sons, 2010.
 
-  \leavevmode\hypertarget{ref-article-example}{}%
-  IESAN, D. Existence Theorems in the Theory of Mixtures. \textbf{Journal of Elasticity}, v. 42, n. 2, p. 145--163, fev. 1996.
-
-  \leavevmode\hypertarget{ref-klayman1995}{}%
-  KLAYMAN, J. Varieties of confirmation bias. \textbf{Psychology of learning and motivation}, v. 32, p. 385--418, 1995.
-
-  \leavevmode\hypertarget{ref-kruger1999}{}%
-  KRUGER, J.; DUNNING, D. Unskilled and unaware of it: how difficulties in recognizing one's own incompetence lead to inflated self-assessments. \textbf{Journal of personality and social psychology}, v. 77, n. 6, p. 1121, 1999.
-
-  \leavevmode\hypertarget{ref-lie2002}{}%
-  LIE, E.; LIE, H. J. Multiples used to estimate corporate value. \textbf{Financial Analysts Journal}, v. 58, n. 2, p. 44--54, 2002.
-
-  \leavevmode\hypertarget{ref-liu2002}{}%
-  LIU, J.; NISSIM, D.; THOMAS, J. Equity valuation using multiples. \textbf{Journal of Accounting Research}, v. 40, n. 1, p. 135--172, 2002.
-
-  \leavevmode\hypertarget{ref-liu2007}{}%
-  LIU, J.; NISSIM, D.; THOMAS, J. Is cash flow king in valuations? \textbf{Financial Analysts Journal}, v. 63, n. 2, p. 56--68, 2007.
-
-  \leavevmode\hypertarget{ref-markowitz1952}{}%
-  MARKOWITZ, H. Portfolio selection. \textbf{The Journal of Finance}, v. 7, n. 1, p. 77--91, 1952.
-
-  \leavevmode\hypertarget{ref-modigliani1958}{}%
-  MODIGLIANI, F.; MILLER, M. H. The cost of capital, corporation finance and the theory of investment. \textbf{The American economic review}, v. 48, n. 3, p. 261--297, 1958.
-
-  \leavevmode\hypertarget{ref-munger2006}{}%
-  MUNGER, C. T. \textbf{Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger}. Virginia Beach: Donning Company, 2006.
-
-  \leavevmode\hypertarget{ref-assafneto2018}{}%
-  NETO, A. A. \textbf{Mercado financeiro}. 14. ed. São Paulo: Atlas, 2018.
-
-  \leavevmode\hypertarget{ref-peasnell1982}{}%
-  PEASNELL, K. V. Some formal connections between economic values and yields and accounting numbers. \textbf{Journal of Business Finance \& Accounting}, v. 9, n. 3, p. 361--381, 1982.
-
-  \leavevmode\hypertarget{ref-penman1996}{}%
-  PENMAN, S. H. The articulation of price-earnings ratios and market-to-book ratios and the evaluation of growth. \textbf{Journal of accounting research}, v. 34, n. 2, p. 235--259, 1996.
-
   \leavevmode\hypertarget{ref-rosa2007}{}%
   ROSA, L. P. Geração hidrelétrica, termelétrica e nuclear. \textbf{Estudos Avançados}, v. 21, n. 59, p. 39--58, 2007.
-
-  \leavevmode\hypertarget{ref-schwarz1991}{}%
-  SCHWARZ, N. et al. Ease of retrieval as information: another look at the availability heuristic. \textbf{Journal of Personality and Social psychology}, v. 61, n. 2, p. 195, 1991.
-
-  \leavevmode\hypertarget{ref-sharpe1964}{}%
-  SHARPE, W. F. Capital asset prices: A theory of market equilibrium under conditions of risk. \textbf{The journal of finance}, v. 19, n. 3, p. 425--442, 1964.
-
-  \leavevmode\hypertarget{ref-simon1997}{}%
-  SIMON, H. A. \textbf{Models of bounded rationality: Empirically grounded economic reason}. Massachusetts: MIT press, 1997. v. 3
-
-  \leavevmode\hypertarget{ref-stohs1996}{}%
-  STOHS, M. H.; MAUER, D. C. The determinants of corporate debt maturity structure. \textbf{Journal of business}, p. 279--312, 1996.
-
-  \leavevmode\hypertarget{ref-wilcox1984}{}%
-  WILCOX, J. W. The P/B-roe valuation model. \textbf{Financial Analysts Journal}, v. 40, n. 1, p. 58--66, 1984.
   \end{cslreferences}
   \backmatter
   \bibliographystyle{coppe-unsrt}
