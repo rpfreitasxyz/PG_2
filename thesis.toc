@@ -5,35 +5,37 @@
 \contentsline {chapter}{Lista de Tabelas}{xi}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Introdução}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Contextualização}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Justificativa}{1}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Objetivos}{1}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Delimitações}{1}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Estrutura do trabalho}{1}{section.1.5}%
-\contentsline {chapter}{\numberline {2}O mercado de energia}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Órgãos presentes no estudo}{2}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}MME}{2}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}ANEEL}{2}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}ONS}{2}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}CCEE}{2}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}EPE}{2}{subsection.2.1.5}%
-\contentsline {section}{\numberline {2.2}O fluxo de energia}{2}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Estudos e projeções de longo prazo}{2}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Plano Nacional de Energia (PNE)}{2}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Plano Decenal de Expansão de Energia (PDE)}{2}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}Referencial teórico}{3}{chapter.3}%
-\contentsline {section}{\numberline {3.1}\emph {Valuation} intrínseco}{3}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Análise de Fluxo de Caixa Descontado}{3}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Modelo de Desconto de Dividendos}{3}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}\emph {Valuation} relativo}{3}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Análise por múltiplos}{3}{subsection.3.2.1}%
-\contentsline {chapter}{\numberline {4}Estudo de caso}{4}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Breve dossiê da Copel}{4}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}História}{4}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}\emph {Core business}}{7}{subsection.4.1.2}%
-\contentsline {subsubsection}{Geração}{7}{section*.5}%
-\contentsline {subsubsection}{Transmissão}{12}{section*.6}%
-\contentsline {subsubsection}{Distribuição}{19}{section*.7}%
-\contentsline {section}{\numberline {4.2}Cálculo do \emph {valuation} intrínseco}{26}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Cálculo do \emph {valuation} relativo}{33}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Conclusão}{36}{chapter.5}%
-\contentsline {chapter}{Referências Bibliográficas}{37}{chapter*.8}%
+\contentsline {section}{\numberline {1.2}Justificativa}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Objetivos}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Delimitações}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Estrutura do trabalho}{4}{section.1.5}%
+\contentsline {chapter}{\numberline {2}O mercado de energia}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Órgãos presentes no estudo}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}MME}{6}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}ANEEL}{7}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}ONS}{7}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}CCEE}{7}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}EPE}{8}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}O fluxo de energia}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Estudos e projeções de longo prazo}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Plano Nacional de Energia (PNE)}{9}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Plano Decenal de Expansão de Energia (PDE)}{11}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}Referencial teórico}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\emph {Valuation} intrínseco}{12}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Análise de Fluxo de Caixa Descontado}{13}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Modelo de Desconto de Dividendos}{15}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}\emph {Valuation} relativo}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Análise por múltiplos}{17}{subsection.3.2.1}%
+\contentsline {chapter}{\numberline {4}Estudo de caso}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Breve dossiê da Copel}{19}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}História}{19}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}\emph {Core business}}{22}{subsection.4.1.2}%
+\contentsline {subsubsection}{Geração}{22}{section*.5}%
+\contentsline {subsubsection}{Transmissão}{27}{section*.6}%
+\contentsline {subsubsection}{Distribuição}{34}{section*.7}%
+\contentsline {section}{\numberline {4.2}Cálculo do \emph {valuation} intrínseco}{41}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}\emph {Valuation} através de Fluxos de Caixa Descontados (DCF)}{46}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}\emph {Valuation} através do Modelo do Desconto de Dividendos (DDM)}{46}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Cálculo do \emph {valuation} relativo}{46}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusão}{49}{chapter.5}%
+\contentsline {chapter}{Referências Bibliográficas}{50}{chapter*.8}%
