@@ -557,7 +557,27 @@ Grande parte é por causa do resultado financeiro, associado a um reconhecimento
 
 ### *Valuation* através de Fluxos de Caixa Descontados (DCF)
 
-Conforme comentado no preâmbulo anterior, é razoável supor que esse crescimento de lucro líquido no DRE – mais de 100%, comparando 2020 a 2019 – não é sustentável. De fato, é de se esperar que esse lucro caia em 2021. Dessa forma, pressupõe-se um valor de EBIT
+Conforme comentado no preâmbulo anterior, é razoável supor que esse crescimento de lucro líquido no DRE – mais de 100%, comparando 2020 a 2019 – não é sustentável. De fato, é de se esperar que esse lucro caia em 2021. Dessa forma, pressupõe-se um valor de EBIT de 3.1 bilhões de reais para o ano de 2021.
+
+Relativo à taxa de crescimento do EBIT, de 1.36 bilhões de reais em 2011, para 3.1 bilhões de reais em 2021, temos uma taxa de crescimento de aproximadamente 7.8% a.a.
+
+No que tange à sensibilidade do ativo perante o mercado, através de uma visita ao Yahoo! Finance[^BetaCPLE], temos que $\beta$ vale 0.66. Este foi calculado através de base mensal com duração de 5 anos.
+
+[^BetaCPLE]: Disponível em: <https://finance.yahoo.com/quote/CPLE3.SA/>. Último acesso em 27 abr 2021.
+
+A seguir, os componentes para o cálculo de CAPM. Com uma visita ao site de Aswath Damodaran[^DamodaranPremio] foi possível constatar que o prêmio de risco do mercado brasileiro é de 7.63%, atualizado pela última vez em 8 de janeiro de 2021.
+
+[^DamodaranPremio]: Obtido através da página pessoal do professor. Disponível em: <http://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html>. Último acesso em 27 abr 2021.
+
+A taxa livre de risco, no Brasil, é a Selic. Esta é 2.75%, no momento da escrita, em 27 de abril de 2021.
+
+Assim, podemos calcular o retorno esperado do ativo – essa será a taxa de desconto para o DCF.
+
+\begin{align*}
+E(R_i) &= R_f + \beta_i(E(R_m)-R_f) \\
+E(R_i) &= 2.75 + 0.66 * 7.63 \\
+E(R_i) &= 7.7858
+\end{align*}
 
 ### *Valuation* através do Modelo do Desconto de Dividendos (DDM)
 
@@ -598,6 +618,7 @@ kable(page_filtr,
 [^fundamentus]: Disponível em <https://www.fundamentus.com.br/resultado.php?setor=14>. Último acesso em 23 mar 2021.
 
 Através da tabela, é possível perceber que a Copel figura indicadores atraentes, com o maior ROE dentre as selecionadas, assim como o menor P/L não-negativo -- infelizmente, o P/L da Light se traduz em um cenário de prejuízo. Assim, figuraria no topo da lista do método de Greenblatt [-@greenblatt2006; -@greenblatt2010], caso este aceitasse utilidades ou financeiras.
+
 
 
 
