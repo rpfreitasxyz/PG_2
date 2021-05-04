@@ -24,13 +24,40 @@ $$ onde $FC_t$ é o fluxo de caixa no tempo $t$ e $r$ é a taxa de desconto. Nat
 VPL = \sum_{i=0}^N\frac{FC_t}{(1+r)^t} + \frac{FC_{N+2}}{(1+r)^{N+1}(r-g)}
 $$ onde o somatório é o período de crescimento normal, e além do somatório, temos o fluxo de caixa em perpetuidade, sendo descontado.
 
-A pergunta, entretanto, repousa sobre encontrar a taxa de desconto. Diversos modelos foram apresentados com tal finalidade, sendo o mais utilizado o *capital asset pricing model*, doravante mencionado pela sua abreviatura, CAPM.
+A pergunta, entretanto, repousa sobre encontrar a taxa de desconto. Em geral, utiliza-se como taxa de desconto o custo médio ponderado de capital (WACC), enunciado da seguinte forma, em um mundo sem impostos:
+
+$$
+WACC = \frac{E}{V}*R_e + \frac{D}{V}*R_d
+$$
+Onde $E$ é o valor de mercado do patrimônio líquido da empresa, $D$, o valor de mercado da dívida da empresa, $V$ como a soma de $E$ e $D$, $R_e$ como o custo de capital próprio e $R_d$ como o custo de capital de terceiros.
+
+É necessário, entretanto, adicionar impostos, uma vez que o Brasil possibilita que empresas deduzam pagamentos de juros do lucro operacional para efeito de IR. Assim, expandimos a equação a adicionar $T_C$, a tributação sobre empresas:
+
+$$
+WACC = \frac{E}{V}*R_e + (1-T_C)*\frac{D}{V}*R_d
+$$
+
+$T_C$ muda de país para país; especificamente no Brasil, esta é de 34%.[^CorpTaxBrasil]
+
+[^CorpTaxBrasil]: Disponível em: <https://tradingeconomics.com/brazil/corporate-tax-rate>. Último acesso em 04 mai 2021.
+
+Com os valores de patrimônio líquido e dívida em mãos, resta saber os custos de capital próprio e de terceiros. O custo de capital de terceiros é, efetivamente, a taxa de juros da dívida. Isso pode ser aferido através de um cálculo de passivo oneroso – isto é, aquele que gera despesas financeiras, como empréstimos, financiamentos e debêntures – de forma tal que:
+
+$$
+R_d = \frac{J}{P_O}
+$$
+
+Onde $R_d$ é o custo de capital de terceiros, $J$ como sendo as despesas pagas e $P_O$ como sendo o passivo oneroso total em determinado período. Note: este cálculo não leva em conta o abatimento da tributação. Isso para que não haja abatimento duplo, caso venha a ser utilizado o WACC com tributação.
+
+Nos resta, então, saber qual o custo de capital próprio. Esta é uma questão mais sensível.
+
+Diversos modelos foram apresentados com tal finalidade, sendo o mais utilizado o *capital asset pricing model*, doravante mencionado pela sua abreviatura, CAPM.
 
 Este modelo foi introduzido por Sharpe [-@sharpe1964], desenvolvendo em cima do trabalho iniciado em diversificação e teoria moderna do portfólio [@markowitz1952]. O CAPM leva em conta a sensibilidade de um ativo ao risco não diversificável -- também conhecido como risco sistemático, ou risco de mercado -- geralmente representado por $\beta$. De fato, a equação é como segue: $$
 E(R_i) = R_f + \beta_i(E(R_m)-R_f)
 $$ onde $E(R_i)$ é o retorno esperado do ativo, $R_f$ é a taxa de juros livre de risco -- oriunda geralmente de títulos do governo -- e $E(R_m)$ é o retorno esperado do mercado. $\beta$, como comentado, é a sensibilidade do ativo em relação ao mercado, de forma tal que: $$
 \beta_i = \frac{Cov(R_i, R_m)}{Var(R_m)} = \rho_{i,m}\frac{\sigma_i}{\sigma_m}
-$$ onde $\rho_{i,m}$ denota o coeficiente de correlação entre o investimento $i$ e o mercado $m$, $\sigma_i$ é o desvio padrão para o investimento $i$, e $\sigma_m$ é o desvio padrão para o mercado $m$.
+$$ onde $\rho_{i,m}$ denota o coeficiente de correlação entre o investimento $i$ e o mercado $m$, $\sigma_i$ é o desvio padrão para o investimento $i$, e $\sigma_m$ é o desvio padrão para o mercado $m$. Assim, é possível considerar $R_d$ como sendo $E(R_i)$.
 
 Podemos entender essa equação melhor se a rearranjarmos: $$
 E(R_i) = R_f + \beta_i(E(R_m)-R_f) \iff E(R_i) - R_f = \beta_i(E(R_m)-R_f)
