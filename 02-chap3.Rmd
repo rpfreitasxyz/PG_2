@@ -19,9 +19,9 @@ A análise de fluxos de caixa descontados (DCF) é um método de se descobrir o 
 Seguindo a queda do mercado em 1929, o método ganhou popularidade para se avaliar ações. De fato, provavelmente o primeiro a formalizar a expressão do método em termos econômicos modernos foi Fisher [-@fisher1930].
 
 O valor presente líquido pode ser expresso matematicamente como: $$
-VPL = \sum_{i=0}^N\frac{FC_t}{(1+r)^t}
+VPL = \sum_{i=1}^N\frac{FC_t}{(1+r)^t}
 $$ onde $FC_t$ é o fluxo de caixa no tempo $t$ e $r$ é a taxa de desconto. Naturalmente, para que o somatório acima esteja correto, assume-se que a taxa de desconto permaneça constante através do período todo. Caso se assuma que o fluxo de caixa continue indefinidamente, a previsão finita é geralmente combinada com a premissa de um crescimento constante de fluxo de caixa além do período de projeção discreto -- a dita perpetuidade. Matematicamente: $$
-VPL = \sum_{i=0}^N\frac{FC_t}{(1+r)^t} + \frac{FC_{N+2}}{(1+r)^{N+1}(r-g)}
+VPL = \sum_{i=1}^N\frac{FC_t}{(1+r)^t} + \frac{FC_{N+2}}{(1+r)^{N+1}(r-g)}
 $$ onde o somatório é o período de crescimento normal, e além do somatório, temos o fluxo de caixa em perpetuidade, sendo descontado.
 
 A pergunta, entretanto, repousa sobre encontrar a taxa de desconto. Em geral, utiliza-se como taxa de desconto o custo médio ponderado de capital (WACC), enunciado da seguinte forma, em um mundo sem impostos:

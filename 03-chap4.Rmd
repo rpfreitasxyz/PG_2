@@ -551,7 +551,7 @@ kable(dre_trat %>% select(1, 7:11),
 
 No que tange ao demonstrativo de resultado, é notável a crescente na receita líquida, demonstrando em conjunto com o crescimento da base de consumidores, um aumento na arrecadação por cliente. De fato, relativo a 2011, o último ano contou com um crescimento de 139,6%.
 
-Salta aos olhos, entretanto, algumas irregularidades no que tange ao lucro líquido do ano de 2020. Ora, sendo esta uma companhia que funciona em sua maioria à base de concessões, qual a razão para tal flutuação? 
+Salta aos olhos, entretanto, algumas irregularidades no que tange ao lucro líquido do ano de 2020. Ora, sendo esta uma companhia que funciona em sua maioria à base de concessões, qual a razão para tal flutuação?
 
 Grande parte é por causa do resultado financeiro, associado a um reconhecimento de crédito tributário, assim como juros e variação monetária sobre repasse do CRC – a Conta de Resultados a Compensar. Evidentemente, existe também um crescimento de receita líquida obtida por parte dos clientes, entretanto isso é de se esperar por parte de empresas operando com base em concessões.
 
@@ -569,18 +569,107 @@ A seguir, os componentes para o cálculo de CAPM. Com uma visita ao site de Aswa
 
 [^DamodaranPremio]: Obtido através da página pessoal do professor. Disponível em: <http://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html>. Último acesso em 27 abr 2021.
 
-A taxa livre de risco, no Brasil, é a Selic. Esta é 2.75%, no momento da escrita, em 27 de abril de 2021.
+A taxa livre de risco, no Brasil, é regida pelos títulos do Tesouro Direto. O título prefixado de maior validade, o de 2031, apresenta juros de 9.38% no momento da escrita, em 27 de abril de 2021.[^NTNBLink]
 
-Assim, podemos calcular o retorno esperado do ativo – essa será a taxa de desconto para o DCF.
+[^NTNBLink]: Obtido através da página do Tesouro Direto. Disponível em: <https://www.tesourodireto.com.br/titulos/precos-e-taxas.htm>. Último acesso em 17 mai 2021.
+
+Assim, podemos calcular o retorno esperado do ativo – será usado para embasar o cálculo do custo ponderado de capital.
 
 \begin{align*}
 E(R_i) &= R_f + \beta_i(E(R_m)-R_f) \\
-E(R_i) &= 2.75 + 0.66 * 7.63 \\
-E(R_i) &= 7.7858
+E(R_i) &= 0.0938 + 0.66 * 0.0763 \\
+E(R_i) &= 0.144158
 \end{align*}
+
+Assim, com a taxa esperada de retorno do ativo, é razoável inferir que este será o custo de capital próprio; o custo de capital de terceiros pode ser descoberto através de um cálculo relativo ao passivo oneroso, obtido através do balanço patrimonial. Dessa forma, temos:
+
+$$
+R_d = \frac{J}{P_O} = \frac{1.10\,bi}{9.95\,bi} \sim 0.1104
+$$
+
+Finalmente, podemos juntar as partes para calcular o WACC:
+
+\begin{align*}
+WACC &= \frac{E}{V}*R_e + (1-T_C)*\frac{D}{V}*R_d \\
+WACC &= \frac{19.96\,bi}{46.78\,bi} * 0.144158 + (1-0.34)*\frac{26.82\,bi}{46.78\,bi}*0.1104 \\
+WACC &= 0.4267 * 0.144158 + 0.66 * 0.57332 * 0.1104 \\
+WACC &= 0.06151 + 0.04178 \\
+WACC &= 0.10329
+\end{align*}
+
+Dessa forma, a taxa de desconto para o DCF é 10.3%. Então, será considerada que a taxa de crescimento será mantida para os próximos 5 anos, em seguida tendo o crescimento similar à taxa de crescimento médio da economia, tendo em vista que o setor elétrico possui uma causalidade de consumo de energia total para o PIB [@gadelha2014], embora não seja descartada a possibilidade de uma bidirecionalidade [@neto2016].
+
+Conforme estabelecido pelo site do FMI,[^pibFMI] é razoável assumir que o PIB real brasileiro crescerá em 3% a.a. Dessa forma, no DCF:
+
+[^pibFMI]: Disponível em: <https://www.imf.org/external/datamapper/NGDP_RPCH@WEO/OEMDC/ADVEC/WEOWORLD/BRA>. Último acesso em 05 mai 2021.
+
+\begin{align*}
+VPL &= \sum_{i=1}^N\frac{FC_t}{(1+r)^t} + \frac{FC_{N+2}}{(1+r)^{N+1}(r-g)} \\
+VPL &= \sum_{i=1}^5\frac{FC_t}{(1+0.103)^t} + \frac{FC_{7}}{(1+0.103)^{6}(0.103-0.03)} \\
+VPL &= \frac{FC_1}{(1+0.103)^1} + \frac{FC_1(1+0.078)}{(1+0.103)^2} + \dots + \frac{FC_1(1+0.078)^6}{(1+0.103)^6(0.103-0.03)} \\
+VPL &= \frac{3.1\,bi}{1.103} + \frac{3.1\,bi(1.078)}{(1+0.103)^2} + \dots + \frac{3.1\,bi(1.078)^6}{(1.103)^6(0.073)} \\
+VPL &= 2.811\,bi + 2.747\,bi + 2.685\,bi + 2.624\,bi + 2.564\,bi + 34.330\,bi \\
+VPL &= 47.761\,bi
+\end{align*}
+
+Assim, realizando a divisão pelo número de ações disponíveis no mercado,[^acoesDisponiveisCPLE] R$17.45 é o resultado de EBIT por ação.
+
+[^acoesDisponiveisCPLE]: Em momento de escrita, são 2.736.550.000, somando-se ações ordinárias e preferenciais. Disponível em: <https://www.fundamentus.com.br/detalhes.php?papel=CPLE3>. Último acesso em 7 mai 2021.
+
+Esse valor é consideravelmente alto relativo ao preço atual do ativo devido a diversos fatores, a elucidar alguns:
+
+1. **Taxas básicas baixas.** Warren Buffett, um dos maiores renomados investidores do mundo, realiza o paralelo de que “taxas de juros estão para o valor de ativos assim como gravidade está para matéria”.[^BuffettRates] De fato, caso a taxa livre de risco aumente, o retorno a ser esperado pelo ativo também aumenta.
+2. **Crise hídrica no estado do Paraná.** Desde julho de 2019, com agravamento em março de 2020, até o momento de escrita, o estado passa por uma das piores estiagens da história. Por se tratar de uma companhia com matriz elétrica predominantemente hidráulica, a empresa acaba por perder então espaço no ambiente de contratação livre, assim como ser exposta a um índice mais alto de inadimplência no ambiente regulado, tendo em vista os acréscimos nas contas de luz.
+3. **Possíveis interferências públicas.** Assim como ocorreu com a Companhia de Saneamento do Paraná em 2020, existe a possibilidade da Agência Reguladora de Serviços Públicos Delegados do Paraná (Agepar) suspender revisões tarifárias. Continuando pela analogia, a agência suspendeu 3 vezes o reajuste de saneamento e, ao final, reduziu o valor de 9.62% para 5.11%. Cabe comentar, o acionista majoritário é o próprio estado do Paraná. Naturalmente, o poder público demonstra assim uma possível falha de governança, ao passo que nem sempre as ações do governo estarão alinhadas com os interesses dos acionistas.
+
+[^BuffettRates]: Disponível em: <https://www.youtube.com/watch?v=8e7PjU1XCig>. Último acesso em 7 mai 2021.
+
+Dessa forma, uma confluência de fortes fatores colaboram para fazer com que uma empresa, mesmo que sólida em termos financeiros, possua um preço baixo relativa aos seus pares.
 
 ### *Valuation* através do Modelo do Desconto de Dividendos (DDM)
 
+Recordemos a expressão do modelo de crescimento de Gordon, previamente disposta no referencial teórico:
+$$
+P_0 = \frac{D_1}{r-g}
+$$
+onde $P_0$ é o valor atual da ação, $g$ é a taxa de crescimento constante em perpetuidade esperada dos dividendos, $r$ é o custo de capital próprio da empresa; e $D_1$ é o valor dos dividendos do próximo ano.
+
+Ora, temos o custo de capital próprio da empresa, calculado como $E(R_i)$ através do CAPM. Este é, então, $r$, que vale aproximadamente 10.3%. Temos, também, $g$, que foi considerado na seção anterior como sendo o crescimento estável do PIB real brasileiro; este é 3%. Resta, então, saber $D_1$.
+
+Conforme fato relevante[^novaPoliticaDividendosCPLE] publicado em 20 de janeiro de 2021, a política de dividendos da empresa sofrerá mudanças, de modo a aumentar a regularidade de pagamentos (de 1 para 2 vezes ao ano) e definir valores ao *payout* dos mesmos.
+
+De fato, conforme diz o documento:
+
+“A Nova Política tem o objetivo de proporcionar mais transparência e previsibilidade do fluxo de pagamentos de proventos aos acionistas, definindo criteriosos parâmetros que preservam as diretrizes estratégicas e financeiras da Companhia de médio e longo prazo, sendo eles:
+
+- Limites para Índice de Alavancagem Financeira = Dívida Líquida/EBITDA (“Alavancagem”);
+- Preservação do Fluxo de Caixa Disponível (“FCD”), sendo o FCD o caixa gerado pelas atividades operacionais, deduzidos dos investimentos realizados (“CAPEX”) no período (FCD = Caixa Operacional – CAPEX);
+- Aumento na frequência de distribuição de 1 para, no mínimo, 2 eventos de pagamentos no ano.
+
+Desse modo, considerando o nível de endividamento, a geração de caixa operacional e o CAPEX, as propostas de dividendos regulares serão calculados conforme os critérios abaixo:
+
+a) Alavancagem abaixo de 1,5x = 65% do Lucro Líquido Ajustado
+b) Alavancagem entre 1,5x e 2,7x= 50% do Lucro Líquido Ajustado
+c) Alavancagem acima de 2,7x = 25% do Lucro Líquido Ajustado
+
+Com o objetivo de preservar a capacidade de investimentos sustentáveis, os valores calculados acima estarão sempre limitados pelo FCD, exceto o dividendo obrigatório. Adicionalmente, a Companhia buscará não ultrapassar a alavancagem de 2,7x.”
+
+[^novaPoliticaDividendosCPLE]: Disponível em: <https://api.mziq.com/mzfilemanager/v2/d/16a31b1b-5ecd-4214-a2e0-308a2393e330/add9afa3-86a9-a30c-c620-6bc5d6ddd5a5?origin=1>. Último acesso em 11 mai 2021.
+
+Dessa forma, é relevante então calcular a dita Alavancagem. Conforme retratado no documento, trata-se da Dívida Líquida dividida pelo EBITDA. Dívida Líquida sendo a Dívida Bruta menos as Disponibilidades, e EBITDA como sendo EBIT, acrescido das Depreciações e Amortizações.
+
+Realizando um breve cálculo, esta razão pelos últimos 12 meses, no momento de escrita – 11 de maio de 2021 –, é de $\frac{6.709,89\,mi}{3.478,34\,mi} = 1,93$.
+
+Assumindo que as margens da empresa se mantenham, e com a expectativa de 3.1 bilhões de EBIT, é possível considerar então que o lucro líquido esperado é de 2.8 bilhões. Dessa forma, tem-se que o _payout_ será de 1.4 bilhões, conforme a política de dividendos da empresa. Dividindo esse valor pelo atual número de ações,[^acoesDisponiveisCPLE] obtém-se um dividendo esperado de aproximadamente 51 centavos, considerando que cada ação tenha distribuição homogênea de dividendos – de fato, não é o caso, mas serve como simplificação para nossos propósitos. Assim sendo:
+
+\begin{align*}
+P_0 &= \frac{D_1}{r-g} \\
+P_0 &= \frac{0.51}{0.103 - 0.03} \\
+P_0 &= \frac{0.51}{0.073} \\
+P_0 &= 7.01
+\end{align*}
+
+Finalmente, é possível concluir que o valor de uma ação ordinária da Copel, segundo o DDM, é de aproximadamente 7.01 reais por ação.
 
 ## Cálculo do *valuation* relativo
 
@@ -618,7 +707,3 @@ kable(page_filtr,
 [^fundamentus]: Disponível em <https://www.fundamentus.com.br/resultado.php?setor=14>. Último acesso em 23 mar 2021.
 
 Através da tabela, é possível perceber que a Copel figura indicadores atraentes, com o maior ROE dentre as selecionadas, assim como o menor P/L não-negativo -- infelizmente, o P/L da Light se traduz em um cenário de prejuízo. Assim, figuraria no topo da lista do método de Greenblatt [-@greenblatt2006; -@greenblatt2010], caso este aceitasse utilidades ou financeiras.
-
-
-
-
