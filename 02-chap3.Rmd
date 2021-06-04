@@ -24,7 +24,17 @@ $$ onde $FC_t$ é o fluxo de caixa no tempo $t$ e $r$ é a taxa de desconto. Nat
 VPL = \sum_{i=1}^N\frac{FC_t}{(1+r)^t} + \frac{FC_{N+2}}{(1+r)^{N+1}(r-g)}
 $$ onde o somatório é o período de crescimento normal, e além do somatório, temos o fluxo de caixa em perpetuidade, sendo descontado.
 
-A pergunta, entretanto, repousa sobre encontrar a taxa de desconto. Em geral, utiliza-se como taxa de desconto o custo médio ponderado de capital (WACC), enunciado da seguinte forma, em um mundo sem impostos:
+A pergunta, entretanto, repousa sobre encontrar a taxa de desconto, assim como qual o valor dos fluxos de caixa. A forma predominante atualmente é realizar a distinção entre fluxos de caixa livres para a firma (FCFF) ou para o patrimônio líquido (FCFE), conforme explica Damodaran [-@damodaran2006].
+
+O fluxo de caixa livre para o patrimônio líquido (FCFE) representa o que é destinado apenas aos acionistas da empresa e está, afinal, associado à dívida – pagamentos de juros, principais, novas emissões de dívidas, entre outros. Embora dividendos sirvam como uma medida observável desses fluxos, uma definição mais expansiva pode ser computada como segue:
+
+O FCFE é igual ao (1) lucro líquido (2) menos os dispêndios de capital, excluindo-se a depreciação e amortização, (3) assim como as mudanças em capital de giro, isto é, o ativo circulante menos o passivo circulante; e finalmente (4) adicionando-se a nova dívida líquida, que é a nova dívida contraída, menos o pagamento de dívidas antigas.
+
+Já o fluxo de caixa para a firma (FCFF) são os fluxos de caixa gerados para todos os _stakeholders_ da firma, e são fluxos de caixa pré-dívida. Enuncia-se:
+
+O FCFF é equivalente ao (1) EBIT multiplicado pelo escudo fiscal [1-Taxa de juros] (2) menos os dispêndios de capital, excluindo-se a depreciação e amortização, (3) assim como as mudanças em capital de giro.
+
+Para a taxa de desconto, então, existe uma diferença na hora da escolha entre FCFE e FCFF. De forma geral, utiliza-se o custo médio ponderado de capital (WACC), sendo que para o FCFE, este custo de capital é inteiramente o custo de capital próprio, sem componente de dívida. O WACC é enunciado da seguinte forma, em um mundo sem impostos:
 
 $$
 WACC = \frac{E}{V}*R_e + \frac{D}{V}*R_d

@@ -555,6 +555,37 @@ Salta aos olhos, entretanto, algumas irregularidades no que tange ao lucro líqu
 
 Grande parte é por causa do resultado financeiro, associado a um reconhecimento de crédito tributário, assim como juros e variação monetária sobre repasse do CRC – a Conta de Resultados a Compensar. Evidentemente, existe também um crescimento de receita líquida obtida por parte dos clientes, entretanto isso é de se esperar por parte de empresas operando com base em concessões.
 
+```{r, tab.pos = "H", echo = FALSE, message = FALSE, warning = FALSE}
+library(readxl)
+library(tidyverse)
+
+dfc <- read_csv2("data/DFC_Copel.csv") %>%
+  select(-2) %>%
+  rename("Conta" = "Detalhamento",
+         "2020" = "31/12/2020",
+         "2019" = "31/12/2019",
+         "2018" = "31/12/2018",
+         "2017" = "31/12/2017") %>%
+  relocate("2019", .after = "Conta") %>%
+  relocate("2018", .after = "Conta") %>%
+  relocate("2017", .after = "Conta") %>%
+  mutate_at(2:ncol(.), function(x) replace_na(x, "-") %>% str_replace("-", " "))
+
+kable(dfc,
+  caption = "Demonstrativos de Fluxo de Caixa da Copel, em milhares de reais. Base contábil de 2017 a 2020.",
+  format = "latex",
+  booktabs = TRUE,
+  longtable = TRUE
+  ) %>%
+  kable_styling(
+    latex_options = c("HOLD_position", "repeat_header"),
+    repeat_header_text = "\\textit{(continuação)}",
+    font_size = 8
+  )
+```
+
+O DFC não está apresentado desde 2011 por causa das possíveis mutações dentro da nomenclatura das contas, assim como ser de uso mais pontual, para calcular o fluxo de caixa livre.
+
 ### *Valuation* através de Fluxos de Caixa Descontados (DCF)
 
 Conforme comentado no preâmbulo anterior, é razoável supor que esse crescimento de lucro líquido no DRE – mais de 100%, comparando 2020 a 2019 – não é sustentável. De fato, é de se esperar que esse lucro caia em 2021. Dessa forma, pressupõe-se um valor de EBIT de 3.1 bilhões de reais para o ano de 2021.
@@ -601,7 +632,7 @@ Dessa forma, a taxa de desconto para o DCF é 10.3%. Então, será considerada q
 
 Conforme estabelecido pelo site do FMI,[^pibFMI] é razoável assumir que o PIB real brasileiro crescerá em 3% a.a. Dessa forma, no DCF:
 
-[^pibFMI]: Disponível em: <https://www.imf.org/external/datamapper/NGDP_RPCH@WEO/OEMDC/ADVEC/WEOWORLD/BRA>. Último acesso em 05 mai 2021.
+[^pibFMI]: Disponível em: <https://bit.ly/3fqg4I4>. Último acesso em 05 mai 2021.
 
 \begin{align*}
 VPL &= \sum_{i=1}^N\frac{FC_t}{(1+r)^t} + \frac{FC_{N+2}}{(1+r)^{N+1}(r-g)} \\
