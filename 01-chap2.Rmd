@@ -5,57 +5,74 @@ This is for including Chapter 1.  Notice that it's also good practice to name yo
 The {#rmd-basics} text after the chapter declaration will allow us to link throughout the document back to the beginning of Chapter 1.  These labels will automatically be generated (if not specified) by changing the spaces to hyphens and capital letters to lowercase.  Look for the reference to this label at the beginning of Chapter 2.
 -->
 
-# O mercado de energia
+# O setor elétrico
 
-É importante, antes de partir para o estudo de caso em questão, estabelecer o contexto do trabalho em questão. De fato, neste capítulo serão tratados os fundamentais do mercado de energia no Brasil, desde os órgãos aos estudos principais do setor.
+É importante, antes de partir para o estudo de caso em questão, estabelecer o contexto do trabalho em questão. De fato, neste capítulo serão tratados os fundamentos do setor elétrico no Brasil, desde os órgãos aos produtos principais do setor, como o Plano Decenal de Expansão (PDE), que contemplam o presente estudo.
 
 ## Órgãos presentes no estudo
 
-Nesta seção, serão tratados os cinco principais órgãos do setor, sendo eles: (1) o Ministério de Minas e Energia; (2) a Agência Nacional de Energia Elétrica; (3) o Operador Nacional do Sistema Elétrico; (4) a Câmara Comercializadora de Energia Elétrica; e (5) a Empresa de Pesquisa Energética.
-
 ### MME
 
-O Ministério de Minas e Energia (MME) foi criado em 1960, no governo do presidente Juscelino Kubitschek. Assim seguiu por 30 anos, até ser extinto em 1990 e recriado em 1992.
+O Ministério de Minas e Energia (MME) foi criado em pela Lei nº 3.782/1960, no governo do presidente Juscelino Kubitschek, e posteriormente regulamentado pelo Decreto nº 50.390/1961. Assim seguiu por 30 anos, até ser extinto em 1990 e recriado em 1992.
 
-Em 1997, foi criado o Conselho Nacional de Política Energética (CNPE), vinculado à Presidência da República e presidido pelo ministro de Minas e Energia, com a atribuição de propor ao presidente da República políticas nacionais e medidas para o setor.
-
-Logo em seguida, em 2003, foram definidas as competências do MME como sendo as áreas de (1) geologia, recursos minerais e energéticos; (2) aproveitamento da energia hidráulica; mineração e metalurgia; e (3) petróleo, combustível e energia elétrica.
-
-No ano seguinte foi criado o Comitê de Monitoramento do Setor Elétrico (CMSE), cuja função é acompanhar e avaliar permanentemente a continuidade e a segurança do suprimento eletroenergético em todo o território nacional. No mesmo ano, foi permitida também a criação da Empresa de Pesquisa Energética (EPE), vinculada ao Ministério, que tem por finalidade prestar serviços na área de estudos e pesquisas destinadas a subsidiar o planejamento do setor energético.
+Logo em seguida, com a Lei nº 10.683/2003, foram definidas as competências do MME como sendo as áreas de (1) geologia, recursos minerais e energéticos; (2) aproveitamento da energia hidráulica; mineração e metalurgia; e (3) petróleo, combustível e energia elétrica.
 
 O MME tem como empresas vinculadas a Eletrobras e a Petrobras. Estão, também, vinculadas algumas autarquias ao Ministério, dentre elas: a Agência Nacional de Energia Elétrica (ANEEL); Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP); e a Agência Nacional de Mineração (ANM).
 
 ### ANEEL
 
-A Agência Nacional de Energia Elétrica (ANEEL) é uma autarquia vinculada ao Ministério de Minas e Energia. Tem como finalidade regular e fiscalizar a produção, transmissão, distribuição e comercialização de energia elétrica, de acordo com a legislação e em conformidade com as diretrizes e as políticas do governo federal. A autarquia foi criada em dezembro de 1996, durante o mandato de Fernando Henrique Cardoso.
+A Agência Nacional de Energia Elétrica (ANEEL) é uma autarquia vinculada ao Ministério de Minas e Energia. Tem como finalidade regular e fiscalizar a produção, transmissão, distribuição e comercialização de energia elétrica, de acordo com a legislação e em conformidade com as diretrizes e as políticas do governo federal. A autarquia foi criada pela Lei nº 9.427/1996, durante o mandato de Fernando Henrique Cardoso.
 
 Cabe à ANEEL, dentre outras competências: (1) implementar as políticas e diretrizes do governo federal para a exploração da energia elétrica e o aproveitamento dos potenciais hidráulicos; (2) estabelecer as tarifas para o suprimento de energia elétrica realizado às concessionárias e permissionárias de distribuição; e (3) fazer a gestão dos contratos de concessão ou de permissão de serviços públicos de energia elétrica e fiscalizar, diretamente ou mediante convênios com órgãos estaduais, as concessões, as permissões e a prestação dos serviços de energia elétrica.
 
-Pode-se conferir a lista completa de atribuições pelo Art. 3° da Lei n° 9.427/96.[^lei9427]
-
-[^lei9427]: Disponível em: <http://www.planalto.gov.br/ccivil_03/leis/l9427cons.htm>. Último acesso em 17 nov 2020.
+Pode-se conferir a lista completa de atribuições pelo Art. 3° da Lei n° 9.427/1996.
 
 ### ONS
 
-O Operador Nacional do Sistema Elétrico (ONS) é uma entidade privada sem fins lucrativos que é responsável pela coordenação e controle da operação de instalações de geração e transmissão de energia elétrica do Sistema Interligado Nacional (SIN), sob fiscalização da ANEEL. O órgão foi criado em agosto de 1998, sob mandato do presidente Fernando Henrique Cardoso.
+O Operador Nacional do Sistema Elétrico (ONS) é uma entidade privada sem fins lucrativos que é responsável pela coordenação e controle da operação de instalações de geração e transmissão de energia elétrica do Sistema Interligado Nacional (SIN), sob fiscalização da ANEEL. O órgão foi criado pela Lei nº 9.648/1998, com alterações introduzidas pela Lei nº 10.848/2004 e regulamentado pelo Decreto nº 5.081/2004.
+
+Para o exercício de suas atribuições legais, o ONS desenvolve uma série de estudos e ações exercidas sobre o sistema e seus agentes proprietários para gerenciar as diferentes fontes de energia e a rede de transmissão, de forma a garantir a segurança do suprimento contínuo em todo o país, com os objetivos de:
+
+- promover a otimização da operação do sistema eletroenergético, visando ao menor custo para o sistema, observados os padrões técnicos e os critérios de confiabilidade estabelecidos nos Procedimentos de Rede aprovados pela ANEEL;
+- garantir que todos os agentes do setor elétrico tenham acesso à rede de transmissão de forma não discriminatória; e
+- contribuir, de acordo com a natureza de suas atividades, para que a expansão do SIN se faça ao menor custo e vise às melhores condições operacionais futuras.
+
+O ONS é composto por membros associados e membros participantes, que são as empresas de geração, transmissão, distribuição, consumidores livres, importadores e exportadores de energia. Também participam o Ministério de Minas e Energia (MME) e representantes dos Conselhos de Consumidores.
 
 ### CCEE
 
 A Câmara de Comercialização de Energia Elétrica (CCEE) tem por finalidade viabilizar a comercialização de energia elétrica no mercado de energia brasileiro. De fato, esta efetua a contabilização e a liquidação financeira das operações realizadas no mercado de curto prazo. As regras e procedimentos que regulam as atividades realizadas pela CCEE são aprovadas pela ANEEL.
 
-Foi criada em agosto de 2004, sob mandato do presidente Luiz Inácio Lula da Silva, sucedendo ao antigo Mercado Atacadista de Energia.
+Foi criada pela Lei nº 10.848/2004, sob mandato do presidente Luiz Inácio Lula da Silva, sucedendo ao antigo Mercado Atacadista de Energia, e é regulamentada pelo Decreto nº 5.177/2004.
+
+Trata-se de um órgão técnico que faz a compensação entre o que foi feito e o que está programado. Por exemplo, quando uma distribuidora utiliza a energia do sistema integrado, ela não sabe quem está fornecendo-a, podendo ser hidrelétricas, em períodos normais, ou termelétricas, em períodos de seca. Nesse segundo caso, o valor da energia se torna mais caro.
+
+Cabe à CCEE apurar essas questões, além da compra e venda de energia. Outro ponto que é responsabilidade da CCEE é determinar os créditos e débitos dos agentes envolvidos no mercado livre de energia. Por fim, a CCEE promove leilões de compra e venda, gerenciando os seus contratos.
 
 ### EPE
 
-A Empresa de Pesquisa Energética (EPE) é uma empresa pública vinculada ao Ministério de Minas e Energia, criada em março de 2004, sob mandato do presidente Luiz Inácio Lula da Silva. Tem por finalidade prestar serviços na área de estudos e pesquisas destinadas a subsidiar o planejamento do setor energético.
+A Empresa de Pesquisa Energética (EPE) é uma empresa pública vinculada ao Ministério de Minas e Energia, criada pela Lei 10.847/2004, sob mandato do ex-presidente Luiz Inácio Lula da Silva. Tem por finalidade prestar serviços na área de estudos e pesquisas destinadas a subsidiar o planejamento do setor energético.
 
 Cabe à EPE, dentre outras atribuições: (1) apresentar ao CNPE, anualmente, os Planos Decenais de Expansão (PDE), assim como a cada dois anos os Planos Nacionais de Energia (PNE); (2) identificar e quantificar os potenciais de recursos energéticos; e (3) elaborar e publicar o balanço energético nacional.
 
-A lista completa de atribuições pode ser vista no Art. 4° da Lei n° 10.847/04.[^lei10847]
-
-[^lei10847]: Disponível em: <http://www.planalto.gov.br/CCivil_03/_Ato2004-2006/2004/Lei/L10.847.htm>. Último acesso em 17 nov 2020.
+A lista completa de atribuições pode ser vista no Art. 4° da Lei n° 10.847/2004.
 
 Uma das principais motivações para a criação da EPE foram os racionamentos e apagões ocorridos no início da década, ocorridos durante o governo de Fernando Henrique Cardoso, atribuídos em parte à carência de planejamento. Embora seja uma entidade independente, é vinculada ao Ministério de Minas e Energia.
+
+### CNPE
+
+O Conselho Nacional de Política Energética (CNPE), criado pela Lei nº 9.478/1997, na condição de órgão de assessoramento do Presidente da República, é destinado à formulação de políticas e diretrizes energéticas.
+Dispõe sobre a estrutura e funcionamento desse Conselho o Decreto nº 3.520/2000, com detalhes sobre sua posterior transformação em órgão de assessoramento imediato do Presidente da República na Lei nº 10.683/2003.
+
+### CMSE
+
+O Comitê de Monitoramento do Setor Elétrico (CMSE) é um comitê governamental que lida com assuntos referentes à energia elétrica a nível federal. Foi criado pela Lei nº 10.848/2004 e regulamentado pelo Decreto nº 5.175/2004. De acordo com o Art. 3º deste decreto, compete ao CMSE:
+
+- acompanhar o desenvolvimento das atividades de geração, transmissão, distribuição, comercialização, importação e exportação de energia elétrica, gás natural e petróleo e seus derivados;
+- avaliar as condições de abastecimento e de atendimento, relativamente às atividades que desenvolvam o fornecimento eletroenergético, em horizontes pré-determinados; 
+- realizar periodicamente análise integrada de segurança de abastecimento e atendimento ao mercado de energia elétrica, de gás natural e petróleo e seus derivados;
+- identificar dificuldades e obstáculos de caráter técnico, ambiental, comercial, institucional e outros que afetem, ou possam afetar, a regularidade e a segurança de abastecimento e atendimento à expansão dos setores de energia elétrica, gás natural e petróleo e seus derivados; e
+- elaborar propostas de ajustes, soluções e recomendações de ações preventivas ou saneadoras de situações observadas em decorrência de atividades que possam criar dificuldades e obstáculos ao setor energético, visando à manutenção ou restauração da segurança no abastecimento e no atendimento eletroenergético, encaminhando-as, quando for o caso, ao Conselho Nacional de Política Energética - CNPE.
 
 ## O fluxo de energia
 
@@ -65,15 +82,18 @@ A geração de energia elétrica é a transformação da energia primária -- pe
 
 A transmissão efetua o transporte da energia gerada até os centros consumidores de carga. Nessa parte, o sistema brasileiro possui uma particularidade, que é o fato de que os grandes centros de consumidores ficam localizados longe da grande geração energética. Isso faz com que o Brasil tenha uma grande quantidade de linhas de transmissão com algumas centenas de quilômetros.
 
-A comercialização de energia é atualmente realizada em dois ambientes diferentes: (1) no Ambiente de Contratação Livre, que é destinado ao atendimento de consumidores livres -- o consumidor que pode optar pela compra de energia elétrica junto a qualquer fornecedor, que é atendido em qualquer tensão e com demanda contratada mínima de 3 MW, segundo a Resolução da ANEEL n° 376, de 25 de agosto de 2009[^res376] e a Resolução n° 414, de 9 de setembro de 2010[^res414]; e (2) no Ambiente de Contratação Regulada, que é destinado ao atendimento de consumidores cativos por meio das distribuidoras, sendo estas supridas por geradores estatais ou independentes que vendem energia em leilões públicos.
-
-[^res376]: Disponível em: <https://www.legisweb.com.br/legislacao/?id=109898>. Último acesso em 17 nov 2020.
-
-[^res414]: Disponível em: <https://www.legisweb.com.br/legislacao/?id=112868>. Último acesso em 17 nov 2020.
+A comercialização de energia é atualmente realizada em dois ambientes diferentes: (1) no Ambiente de Contratação Livre, que é destinado ao atendimento de consumidores livres -- o consumidor que pode optar pela compra de energia elétrica junto a qualquer fornecedor, que é atendido em qualquer tensão e com demanda contratada mínima de 3 MW, segundo a Resolução Normativa da ANEEL n° 376/2009 e a Resolução Normativa da ANEEL n° 414/2010;^[Isto já está em mudança, e a partir de 2023, todos consumidores com carga superior ou igual a 500 kW podem participar do mercado livre de energia, via cronograma estabelecido na Portaria MME nº 465/2019.] e (2) no Ambiente de Contratação Regulada, que é destinado ao atendimento de consumidores cativos por meio das distribuidoras, sendo estas supridas por geradores estatais ou independentes que vendem energia em leilões públicos.
 
 A distribuição é o setor responsável por receber a energia da transmissão e distribuí-la para os centros consumidores.
 
 Salvo no caso de *holdings*, empresas só podem atuar em uma das áreas ex-comercialização.
+
+### Geração
+
+### Transmissão
+
+### Distribuição
+
 
 ## Estudos e projeções de longo prazo
 
