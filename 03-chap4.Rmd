@@ -548,31 +548,32 @@ Assim, podemos calcular o retorno esperado do ativo – será usado para embasar
 
 \begin{align*}
 E(R_i) &= R_f + \beta_i(E(R_m)-R_f) \\
-E(R_i) &= 0.0938 + 0.66 * 0.0763 \\
-E(R_i) &= 0.144158
+E(R_i) &= 0.0925 + 0.34 * 0.0721 \\
+E(R_i) &= `r 0.0925 + 0.34 * 0.0721`
 \end{align*}
 
-Assim, com a taxa esperada de retorno do ativo, é razoável inferir que este será o custo de capital próprio; o custo de capital de terceiros pode ser descoberto através de um cálculo relativo ao passivo oneroso, obtido através do balanço patrimonial. Dessa forma, temos:
+Assim, com a taxa esperada de retorno do ativo, este será o custo de capital próprio; o custo de capital de terceiros pode ser descoberto através de um cálculo relativo ao passivo oneroso, obtido através do balanço patrimonial. Dessa forma, temos:
 
 $$
-R_d = \frac{J}{P_O} = \frac{1.10\,bi}{9.95\,bi} \sim 0.1104
+R_d = \frac{J}{P_O} = \frac{838.8\,mi}{9.82\,bi} \sim 0.085
 $$
 
 Finalmente, podemos juntar as partes para calcular o WACC:
 
 \begin{align*}
 WACC &= \frac{E}{V}*R_e + (1-T_C)*\frac{D}{V}*R_d \\
-WACC &= \frac{19.96\,bi}{46.78\,bi} * 0.144158 + (1-0.34)*\frac{26.82\,bi}{46.78\,bi}*0.1104 \\
-WACC &= 0.4267 * 0.144158 + 0.66 * 0.57332 * 0.1104 \\
-WACC &= 0.06151 + 0.04178 \\
-WACC &= 0.10329
+WACC &= `r last(est_cap$cap_proprio)`*`r 0.0925 + 0.34 * 0.0721` + (1-0.34)*`r 1-last(est_cap$cap_proprio)`*0.085 \\
+WACC &= `r last(est_cap$cap_proprio)*(0.0925 + 0.34 * 0.0721)` + `r (1-0.34)*(1-last(est_cap$cap_proprio))*0.085` \\
+WACC &= `r last(est_cap$cap_proprio)*(0.0925 + 0.34 * 0.0721) + (1-0.34)*(1-last(est_cap$cap_proprio))*0.085`
 \end{align*}
 
-Dessa forma, a taxa de desconto para o DCF é 10.3%. Então, será considerada que a taxa de crescimento será mantida para os próximos 5 anos, em seguida tendo o crescimento similar à taxa de crescimento médio da economia, tendo em vista que o setor elétrico possui uma causalidade de consumo de energia total para o PIB [@gadelha2014], embora não seja descartada a possibilidade de uma bidirecionalidade [@neto2016].
+Dessa forma, a taxa de desconto para o DCF é `r paste(round(100 * (last(est_cap$cap_proprio)*(0.0925 + 0.34 * 0.0721) + (1-0.34)*(1-last(est_cap$cap_proprio))*0.085), 2), "%", sep = "")`. 
 
-Conforme estabelecido pelo site do FMI,[^pibFMI] é razoável assumir que o PIB real brasileiro crescerá em 3% a.a. Dessa forma, no DCF:
+Para a taxa de crescimento, será considerado o crescimento da receita líquida, que, para empresas à base de concessões, representa uma taxa de crescimento sustentável oriunda majoritariamente de reajustes e revisões na tarifa aplicada aos clientes. Será considerada que a taxa de crescimento será mantida para os próximos 5 anos, em seguida a empresa teria um crescimento similar à taxa de crescimento médio da economia, tendo em vista que o setor elétrico possui uma causalidade de consumo de energia total para o PIB [@gadelha2014], embora não seja descartada a possibilidade de uma bidirecionalidade [@neto2016].^[Isso de certa forma assume que as concessões estariam "saturadas". Não necessariamente é o caso, podendo a Copel competir seja em geração, transmissão ou distribuição; essa consideração foi feita para fins deste estudo apenas e, para um caso mais aprofundado em que fosse feito um _valuation_ do tipo "soma das partes", seria necessário realizar essa comprovação para cada um dos negócios da Companhia.]
 
-[^pibFMI]: Disponível em: <https://bit.ly/3fqg4I4>. Último acesso em 05 mai 2021.
+Conforme estabelecido pelo site do FMI,[^pibFMI] é razoável assumir que o PIB real brasileiro crescerá em 2% a.a. Dessa forma, no DCF:
+
+[^pibFMI]: Disponível em: <https://bit.ly/3fqg4I4>. Último acesso em 26 jan 2022.
 
 \begin{align*}
 VPL &= \sum_{i=1}^N\frac{FC_t}{(1+r)^t} + \frac{FC_{N+2}}{(1+r)^{N+1}(r-g)} \\
