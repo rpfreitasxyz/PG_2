@@ -1,26 +1,27 @@
-﻿Detalhamento;TTM;31/12/2020;31/12/2019;31/12/2018;31/12/2017
-Fluxo de caixa operacional;;;;;
-Lucro Líquido;4206560;3904202;1989946;1407063;1033626
-Depreciação e amortização;1016978;1009912;1093836;749179;731599
-Imposto de renda diferido;1310155;1285365;639326;511993;274686
-Alteração no capital de giro;1368316;1351400;39176;330616;249311
-Contas a receber;-;-175049;225624;191113;-322814
-Inventário;-;-40035;-14220;-5726;20078
-Contas a pagar;-;217177;184965;-636671;209499
-Outro capital de giro;3428480;3704294;2396844;274315;-1022542
-Outros itens não monetários;-3559932;-2970871;-25174;-577270;-532039
-Caixa líquido proveniente de atividades operacionais;3633982;3940844;2945006;1770971;989206
-Fluxos de caixa das atividades de investimento;;;;;
-Investimentos em ativo imobilizado;-205502;-236550;-548162;-1496656;-2011748
-Aquisições líquidas;-;0;-123794;-;-
-Compras de investimentos;-77647;-120677;-133874;-127361;-248243
-Vendas/vencimentos dos investimentos;-;-;45170;0;533120
-Outras atividades de investimento;-1402164;-1236999;-938026;-568426;19840
-Caixa líquido usado para atividades de investimento;-1759889;-1667571;-1663651;-2149153;-1581173
-Fluxos de caixa das atividades de financiamento;;;;;
-Reembolso da dívida;-1291968;-1331718;-3668940;-2617811;-1886192
-Dividendos Pagos;-644983;-626357;-380421;-300722;-506404
-Caixa líquido usado para atividades de financiamento;-1679131;-1695075;-288037;1286516;649969
-Variação líquida em dinheiro;190689;558160;993318;908334;58002
-Caixa no início do período;2986997;2941727;1948409;1040075;982073
-Caixa no final do período;3177686;3499887;2941727;1948409;1040075
+﻿Detalhamento;TTM;2020;2019;2018;2017
+Lucro Líquido do Exercício;4652,43;3909,75;2062,87;1444;1118,26
+Fluxo de Caixa das Atividades Operacionais;2945,62;3940,84;2945,01;1770,97;989,21
+Depreciação/Exaustão;773,8;1009,91;1093,84;749,18;731,6
+Amortização;-;-;-;-;-
+Impostos Diferidos;778,33;24,9;205,77;-68,07;-105,26
+Itens não Monetários;-4634,58;-1553,07;749,51;287,85;316,5
+Recebimentos;-;-;-;-;-
+Pagamentos em Espécie;-;-;-;-;-
+Impostos Pagos;411,54;636,42;575,21;468,55;335,09
+Juros Pagos;384,57;576,35;1035,23;790,1;1154,85
+Capital de Giro;1375,64;549,36;-1166,98;-641,99;-1071,89
+Fluxo de Caixa das Atividades de Investimento;1153,62;-1667,57;-1663,65;-2149,15;-1581,17
+Despesas de Capital;-140,43;-236,55;-548,16;-1496,66;-2011,75
+Outros Fluxos de Caixa das Atividades de Financiamento, Total;1294,05;-1431,02;-1115,49;-652,5;430,57
+Fluxo de Caixa das Atividades de Financiamento;-2184,49;-1715,11;-288,04;1286,52;649,97
+Ítens de Financiamento;-1,85;-20,04;-;-;-
+Total de Dividendos pagos;-2451,4;-626,36;-380,42;-300,72;-506,4
+Emissão de Ações (Aposentadoria), Líquido;-;-;-;-;-
+Emissão de Dívida (Aposentadoria), Líquido;268,75;-1068,72;92,38;1587,24;1156,37
+Efeito do Câmbio;-;-;-;-;-
+Variações Líquidas no Caixa;1914,74;558,16;993,32;908,33;58
+Saldo Inicial em Caixa;-;-;1948,41;1040,08;982,08
+Saldo Final em Caixa;-;-;2941,73;1948,41;1040,08
+Fluxo de Caixa Livre;-;-;2396,85;274,31;-1022,54
+Crescimento do Fluxo de Caixa Livre;-;-;-;-;-
+Rendimento do Fluxo de Caixa Livre;-;-;-;-;-
