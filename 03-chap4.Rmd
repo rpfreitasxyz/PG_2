@@ -450,6 +450,9 @@ dre_trat <- dre %>%
   drop_na() %>%
   mutate_at(2:ncol(.), round)
 
+rec_liq <- dre_trat %>% filter(Conta == "Receita Líquida de Vendas e/ou Serviços")
+evo_rec_liq <- rec_liq$`2021` / rec_liq$`2012`
+
 kable(dre_trat %>% select(1:6),
   caption = "Demonstrativos de Resultado da Copel, em milhares de reais. Base contábil de 2012 a 2016.",
   format = "latex",
@@ -476,11 +479,11 @@ kable(dre_trat %>% select(1, 7:11),
 
 ```
 
-No que tange ao demonstrativo de resultado, é notável a crescente na receita líquida, demonstrando em conjunto com o crescimento da base de consumidores, um aumento na arrecadação por cliente. De fato, relativo a 2011, o último ano contou com um crescimento de 139,6%.
+Se o balanço patrimonial pode ser considerado uma fotografia, o demonstrativo de resultado conta a história do período como um filme. Representa uma formação dinâmica do resultado líquido do começo ao fim do trimestre, sendo usada para medir a eficiência do desempenho econômico, uma vez que permite uma análise dos resultados ligados diretamente à operação da empresa.
 
-Salta aos olhos, entretanto, algumas irregularidades no que tange ao lucro líquido do ano de 2020. Ora, sendo esta uma companhia que funciona em sua maioria à base de concessões, qual a razão para tal flutuação?
+No que tange ao demonstrativo de resultado, é notável a crescente na receita líquida, demonstrando em conjunto com o crescimento da base de consumidores, um aumento na arrecadação por cliente. De fato, o último ano representa `r paste(round(100 * evo_rec_liq, 2), "%", sep = "")`, relativo a 2012, um CAGR de `r paste(round(100 * ((evo_rec_liq^(1/10))-1), 2), "%", sep = "")` ao ano.
 
-Grande parte é por causa do resultado financeiro, associado a um reconhecimento de crédito tributário, assim como juros e variação monetária sobre repasse do CRC – a Conta de Resultados a Compensar. Evidentemente, existe também um crescimento de receita líquida obtida por parte dos clientes, entretanto isso é de se esperar por parte de empresas operando com base em concessões.
+Salta aos olhos, entretanto, que por mais que a receita líquida de 2020 tenha sido superior à de 2021, o lucro líquido foi menor. Ora, sendo esta uma companhia que funciona em sua maioria à base de concessões, qual a razão para tal irregularidade? Grande parte é por causa do resultado financeiro, associado a um reconhecimento de crédito tributário, juros e variação monetária sobre repasse do CRC – a Conta de Resultados a Compensar – assim como a alienação completa da Copel Telecom.
 
 ```{r, tab.pos = "H", echo = FALSE, message = FALSE, warning = FALSE}
 library(readxl)
@@ -510,7 +513,15 @@ kable(dfc,
   )
 ```
 
-O DFC não está apresentado desde 2011 por causa das possíveis mutações dentro da nomenclatura das contas, assim como ser de uso mais pontual, para calcular o fluxo de caixa livre.
+Se o balanço patrimonial é a fotografia de um momento específico da empresa e o demonstrativo de resultado conta sua história em determinado período, o demonstrativo de fluxo de caixa é uma espécie de documentário, um _making-of_ da produção das divulgações financeiras anteriores, que é visto como extras.
+
+O demonstrativo de fluxo de caixa não está apresentado desde 2012 por causa das possíveis mutações dentro da nomenclatura das contas, assim como ser de uso "extra" para observar as movimentações de caixa.
+
+Ainda relativo à alienação de Copel Telecom e o CRC, existem alguns indicativos nesses movimentos no DFC: 
+
+- **Redução na conta de depreciação/exaustão e redução nas despesas de capital.** Sem o capital imobilizado da Copel Telecom, a conta referente às depreciações das instalações e afins também se foram;
+- **Aumento no capital de giro.** Isso está relacionado ao pagamento pelo governo do Paraná em agosto de 2021 do CRC, em seu valor integral, adicionando assim ao caixa da empresa;
+- **Aumento substancial nos dividendos pagos.** Baseado no histórico da Copel de pagamento de dividendos, assim como na sua própria política de dividendos a ser comentada mais à frente, seria incomum da empresa fazer um payout tão elevado sem uma boa justificativa para tal – no caso, a justificativa foi o acréscimo grande de caixa derivado dessas duas operações.
 
 ### *Valuation* através de Fluxos de Caixa Descontados (DCF)
 
