@@ -8,7 +8,7 @@ Comecemos, desta forma, fazendo um dossiê da empresa, de forma a estudar melhor
 
 ### História
 
-É de suma importância comentar que a parte a seguir é uma adaptação de transcritos oriundos do site da própria empresa,[^histCopel] com pequenos acréscimos por parte do autor.
+Vale comentar que a parte a seguir é uma adaptação de transcritos oriundos do site da própria empresa,[^histCopel] com pequenos acréscimos por parte do autor.
 
 [^histCopel]: Versão completa disponível em: <https://www.Copel.com/hpCopel/root/nivel2.jsp?endereco=%2FhpCopel%2Froot%2FpagCopel2.nsf%2Fdocs%2F6505401715872FAA032573FA0069734F>. Último acesso em 10 nov 2020.
 
@@ -60,9 +60,7 @@ A Copel opera um parque gerador com diversas usinas próprias e participações 
 knitr::include_graphics("img/usinas_Copel.jpg")
 ```
 
-Comecemos comentando a respeito das hidrelétricas. Existe uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução n° 875, de 10 de março de 2020,[^res875] a diferenciação é tal:
-
-[^res875]: Disponível em: <https://www.in.gov.br/web/dou/-/resolucao-normativa-n-875-de-10-de-marco-de-2020-248070610>. Último acesso em 17 nov 2020.
+Comecemos comentando a respeito das hidrelétricas. Existe uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução nº 875/2020, a diferenciação é tal:
 
 -   Uma **Central Geradora Hidrelétrica com Capacidade Instalada Reduzida (CGH)** é aquela cuja potência seja igual ou inferior a 5 MW.
 -   Uma **Pequena Central Hidrelétrica (PCH)** é aquela que possui duas características: (1) potência instalada superior a 5 MW e igual ou inferior a 30 MW; e (2) área de reservatório de até 13 km², excluindo a calha do leito regular do rio. Existem, ainda, cláusulas que regularizam a condição de (2).
@@ -319,13 +317,13 @@ A empresa, naturalmente, se faz valer de uma Norma aplicável a conexão de micr
 
 ## Cálculo do *valuation* intrínseco
 
-Nesta seção, demonstraremos como se realiza o cálculo de *valuation* intrínseco utilizando-se os métodos citados anteriormente no referencial teórico. Antes, entretanto, cabem algumas observações relativas às demonstrações financeiras, assim como o estabelecimento de algumas bases para os estudos.
+Nesta seção, será feito o cálculo de *valuation* intrínseco utilizando-se os métodos citados anteriormente no referencial teórico. Antes, entretanto, cabem algumas observações relativas às demonstrações financeiras, assim como o estabelecimento de algumas bases para os estudos.
 
 Para uma análise intrínseca, comecemos nos debruçando sobre as demonstrações financeiras da Companhia. Conforme recomendação de Graham e Dodd [-@graham2009], para uma estimativa do futuro, será usada uma janela de 10 anos. Os dados foram obtidos através do site Fundamentus.[^acessoFundamentus]
 
 [^acessoFundamentus]: Disponível em: <https://www.fundamentus.com.br/balancos.php?papel=CPLE3&tipo=1>. Dados obtidos pela última vez em 26 jan 2022.
 
-É relevante começar a análise pelo balanço patrimonial, uma vez que este demonstra os ativos e passivos da empresa como um todo; é similar a uma fotografia da situação da empresa ao final do período. Assim, é possível estudar o imobilizado da empresa, a condição de dívida e, posição de liquidez, dentre outros.
+É relevante começar a análise pelo balanço patrimonial, uma vez que este demonstra os ativos e passivos da empresa como um todo; é similar a uma fotografia da situação da empresa ao final do período. Assim, é possível estudar o imobilizado da empresa, a condição de dívida, posição de liquidez, dentre outros.
 
 ```{r, tab.pos = "H", echo = FALSE, message = FALSE, warning = FALSE}
 library(readxl)
@@ -359,6 +357,29 @@ bp_trat <- bp %>%
   drop_na() %>%
   mutate_at(2:ncol(.), round)
 
+patrim_liq <- bp_trat %>% filter(Conta == "Patrimônio Líquido")
+evo_patrim_liq <- patrim_liq$`2021` / patrim_liq$`2012`
+
+divida <- bp_trat %>% filter(Conta %in% c("Patrimônio Líquido", "Empréstimos e Financiamentos")) %>%
+  group_by(Conta) %>%
+  summarise_all(sum) %>% ungroup() %>%
+  pivot_longer(cols = 2:ncol(.), names_to = "anos", values_to = "outros") %>%
+  pivot_wider(names_from = "Conta", values_from = "outros") %>%
+  arrange(anos) %>%
+  mutate(div_patrim = `Empréstimos e Financiamentos` / `Patrimônio Líquido`)
+
+liquidez <- bp_trat %>% filter(Conta %in% c("Ativo Circulante", "Passivo Circulante")) %>%
+  pivot_longer(cols = 2:ncol(.), names_to = "anos", values_to = "outros") %>%
+  pivot_wider(names_from = "Conta", values_from = "outros") %>%
+  arrange(anos) %>%
+  mutate(liquidez_circ = `Ativo Circulante` / `Passivo Circulante`)
+
+est_cap <- bp_trat %>% filter(Conta %in% c("Patrimônio Líquido", "Passivo Total")) %>%
+  pivot_longer(cols = 2:ncol(.), names_to = "anos", values_to = "outros") %>%
+  pivot_wider(names_from = "Conta", values_from = "outros") %>%
+  arrange(anos) %>%
+  mutate(cap_proprio = `Patrimônio Líquido` / `Passivo Total`)
+
 kable(bp_trat %>% select(1:6),
   caption = "Balanço Patrimonial da Copel, em milhares de reais. Base contábil de 2012 a 2016.",
   format = "latex",
@@ -387,14 +408,15 @@ kable(bp_trat %>% select(1, 7:11),
  
 ```
 
-É relevante comentar que, ao longo dos 10 anos, o patrimônio líquido da Copel não caiu de forma consolidada em qualquer ano; demonstra inclusive uma tendência de crescimento, estando 68,7% superior no ano de 2020, relativo a 2011. Isso pode ser expandido para as contas de ativos e passivos, o que é um indicador de estabilidade e previsibilidade de rendimentos.
+É relevante comentar que, ao longo dos 10 anos, o patrimônio líquido da Copel não caiu de forma consolidada em qualquer ano; demonstra inclusive uma tendência de crescimento, equivalente a `r paste(round(100 * evo_patrim_liq, 2), "%", sep = "")` relativo a 2012. Isso pode ser expandido para as contas de ativos e passivos, o que é um indicador de estabilidade e previsibilidade de rendimentos.
 
-Além disso, relativo ao controle da dívida em 2020, nota-se que a companhia tem aproximadamente 50% de dívida bruta, sendo este o valor total dos empréstimos e financiamentos – tanto circulantes quanto não-circulantes – dividido pelo patrimônio líquido.
+Através do indicador de dívida bruta, sendo este o valor total dos empréstimos e financiamentos – tanto circulantes quanto não-circulantes – dividido pelo patrimônio líquido, podemos realizar a análise da dívida. Relativo ao controle da dívida, nota-se que a companhia tem uma situação conservadora de dívida, principalmente se for levada em conta que está em um setor intensivo em capital. Este indicador apresenta uma média de `r paste(round(100 * mean(divida$div_patrim), 2), "%", sep = "")`, chegando ao seu valor máximo `r paste(round(100 * max(divida$div_patrim), 2), "%", sep = "")` em `r (filter(divida, div_patrim == max(div_patrim)))$anos`.
 
-No que tange à capacidade de pagamento, a empresa mantém a liquidez corrente – isto é, o ativo circulante dividido pelo passivo circulante – em níveis sadios, a 1,18; isso demonstra que a empresa consegue, facilmente, quitar suas obrigações de curto prazo, para o ano de 2021.
+Atualmente, para o resultado de 2021, o indicador está em `r paste(round(100 * last(divida$div_patrim), 2), "%", sep = "")`, representando um nível abaixo da média. Isso tem relação com alguns fatos relevantes da Companhia, como é o caso da alienação da Copel Telecom, o mais novo programa de Units, e a concretização da conta de resultados a compensar (CRC), pago pelo governo do Paraná em agosto de 2021.
 
-Vale comentar também a estrutura de capital no último ano do balanço, que é de aproximadamente 42,7% de capital próprio – faz-se a divisão do patrimônio líquido pelo passivo total – e 57,3% de capital de terceiros – o restante. Esses dados serão relevantes para se calcular o custo ponderado de capital mais tarde.
+No que tange à capacidade de pagamento, a empresa mantém a liquidez corrente – isto é, o ativo circulante dividido pelo passivo circulante – na média de `r round(mean(liquidez$liquidez_circ), 2)`, com seu pior resultado em `r (filter(liquidez, liquidez_circ == min(liquidez_circ)))$anos`, com valor `r round(min(liquidez$liquidez_circ), 2)`. Isso demonstra que a empresa consegue geralmente quitar suas obrigações de curto prazo. Para o ano de 2021, esse indicador ficou em `r round(last(liquidez$liquidez_circ), 2)`, próximo da média.
 
+Vale comentar também a estrutura de capital no último ano do balanço, que é de aproximadamente `r paste(round(100 * last(est_cap$cap_proprio), 2), "%", sep = "")` de capital próprio – faz-se a divisão do patrimônio líquido pelo passivo total – e `r paste(round(100 * (1-last(est_cap$cap_proprio)), 2), "%", sep = "")` de capital de terceiros – o restante. Esses dados serão relevantes para se calcular o custo ponderado de capital mais tarde. Levanta-se ainda que essa estrutura de capital fica historicamente próximo ao 50/50, sendo a média da participação de capital próprio na estrutura da empresa `r paste(round(100 * mean(est_cap$cap_proprio), 2), "%", sep = "")` e o capital de terceiros, por consequência, `r paste(round(100 * (1-mean(est_cap$cap_proprio)), 2), "%", sep = "")`.
 
 ```{r, tab.pos = "H", echo = FALSE, message = FALSE, warning = FALSE}
 library(readxl)
@@ -466,7 +488,7 @@ library(tidyverse)
 
 dfc <- read_csv2("data/DFC_Copel.csv") %>%
   rename("Conta" = "Detalhamento",
-         "2021E" = "TTM") %>%
+         "9M21" = "TTM") %>%
   relocate("2020", .after = "Conta") %>%
   relocate("2019", .after = "Conta") %>%
   relocate("2018", .after = "Conta") %>%
@@ -476,7 +498,7 @@ dfc <- read_csv2("data/DFC_Copel.csv") %>%
   select(1:6)
 
 kable(dfc,
-  caption = "Demonstrativos de Fluxo de Caixa da Copel, em milhões de reais. Base contábil de 2017 a 2021 – esperado.",
+  caption = "Demonstrativos de Fluxo de Caixa da Copel, em milhões de reais. Base contábil de 2017 a 9 meses de 2021.",
   format = "latex",
   booktabs = TRUE,
   longtable = TRUE
