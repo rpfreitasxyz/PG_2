@@ -9,3 +9,7 @@ O valor intrínseco encontrado através do DCF é consideravelmente alto relativ
 3. **Possíveis interferências públicas.** Assim como ocorreu com a Companhia de Saneamento do Paraná em 2020, existe a possibilidade da Agência Reguladora de Serviços Públicos Delegados do Paraná (Agepar) suspender revisões tarifárias. Continuando pela analogia, a agência suspendeu 3 vezes o reajuste de saneamento e, ao final, reduziu o valor de 9.62% para 5.11%. Cabe comentar, o acionista majoritário é o próprio estado do Paraná. Naturalmente, o poder público demonstra assim uma possível falha de governança, ao passo que nem sempre as ações do governo estarão alinhadas com os interesses dos acionistas.
 
 Dessa forma, uma confluência de fortes fatores colaboram para fazer com que uma empresa, mesmo que sólida em termos financeiros, possua um preço baixo relativa aos seus pares.
+
+Curiosamente, o resultado do DCF é uma cifra maior do que a do modelo de desconto de dividendos, e isso é devido, em grande parte, ao fato do custo da dívida acrescido do _tax shield_ ser consideravelmente menor do que o custo de capital próprio. Como as proporções de cada tipo de capital na estrutura da empresa é próximo a 50/50, isso faz com o que o WACC seja consideravelmente reduzido.
+
+referencia sobre utilidade de indicadores de valuation multiplo [@suozzo2001]

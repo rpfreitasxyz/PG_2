@@ -709,9 +709,9 @@ P_0 &= `r div_por_acao / (retorno_esp - PIB)`
 
 Finalmente, é possível concluir que o valor de uma ação ordinária da Copel, segundo o DDM, é de aproximadamente R\$ `r round(div_por_acao / (retorno_esp - PIB), 2)` por ação.
 
-## Cálculo do *valuation* relativo
+## *Valuation* relativo
 
-Naturalmente, ao fazermos uma comparação, é necessário questionar a natureza dos ativos. São similares? Precisam ser ajustados a um denominador comum? São, ao menos, comparáveis?
+Nesta seção, será feita a análise de múltiplos como o _valuation_ relativo. Em resumo, uma análise de múltiplo é feita ao compararmos indicadores da empresa relativo a seus pares. Naturalmente, ao fazermos uma comparação, é necessário questionar a natureza dos ativos. São similares? Precisam ser ajustados a um denominador comum? São, ao menos, comparáveis?
 
 No caso de uma empresa como a Copel, uma _holding_ do setor elétrico, faz sentido a comparação com outras _holdings_ do setor. Foram escolhidas, então, outras quatro companhias:
 
@@ -752,6 +752,10 @@ P_L <- page_filtr %>% filter(Indicadores == "P/L") %>%
   mutate_at(2:ncol(.), function(x) str_replace(x, ",", "\\.") %>% as.numeric())
 med_P_L <- rowMeans(P_L[3:ncol(page_filtr)])
 
+EV_EBIT <- page_filtr %>% filter(Indicadores == "EV/EBIT") %>%
+  mutate_at(2:ncol(.), function(x) str_replace(x, ",", "\\.") %>% as.numeric())
+med_EV_EBIT <- rowMeans(EV_EBIT[3:ncol(page_filtr)])
+
 P_VP <- page_filtr %>% filter(Indicadores == "P/VP") %>%
   mutate_at(2:ncol(.), function(x) str_replace(x, ",", "\\.") %>% as.numeric())
 med_P_VP <- rowMeans(P_VP[3:ncol(page_filtr)])
@@ -761,10 +765,10 @@ yield <- page_filtr %>% filter(Indicadores == "Div.Yield") %>%
 med_yield <- rowMeans(yield[3:ncol(page_filtr)])
 ```
 
-Relativo ao grupo de outras empresas analisadas, temos um P/L médio de `r round(med_P_L, 2)`. Através desse indicador, é possível considerar que a Copel está valorizada em `r paste(round(100 * P_L$CPLE3 / med_P_L, 2), "%", sep = "")` relativo à média dos pares.
+Relativo ao grupo de outras empresas analisadas, temos um P/L médio de `r round(med_P_L, 2)`. Através desse indicador, é possível considerar que a Copel está valorizada em `r paste(round(100 * P_L$CPLE3 / med_P_L, 2), "%", sep = "")` relativo à média dos pares. Similarmente, o indicador de EV/EBIT da empresa também está abaixo dos pares, isto é, `r round(EV_EBIT$CPLE3, 2)` versus `r round(med_EV_EBIT, 2)` – uma relação de `r paste(round(100 * EV_EBIT$CPLE3 / med_EV_EBIT, 2), "%", sep = "")`.
 
-Similarmente, a valorização de `r paste(round(100 * P_VP$CPLE3 / med_P_VP, 2), "%", sep = "")` da empresa relativo ao P/VP médio de `r round(med_P_VP, 2)` dos pares demonstra mais um indicador oportuno, tendo em vista que o indicador de P/VP torna-se mais relevante quanto mais capital intensivo for o setor. **REFERÊNCIA???**
+A valorização de `r paste(round(100 * P_VP$CPLE3 / med_P_VP, 2), "%", sep = "")` da empresa relativo ao P/VP médio de `r round(med_P_VP, 2)` dos pares demonstra mais um indicador oportuno.
 
 Outro indicador promissor recente é o _dividend yield_ da empresa. Com os eventos não-recorrentes, o _dividend yield_ da empresa é de `r paste(round(yield$CPLE3, 2), "%", sep = "")`. Frente à média dos pares de `r paste(round(med_yield, 2), "%", sep = "")`, isso indica uma relação de `r paste(round(100 * yield$CPLE3 / med_yield, 2), "%", sep = "")`. Evidentemente, esse indicador é uma situação atípica, mas no passado, a média de distribuição de proventos da companhia ficou próxima dos pares.^[É possível observar isso através do histórico de _dividend yield_ da empresa, em <https://statusinvest.com.br/acoes/cple3>. Último acesso em 28 jan 2022.]
 
-É possível ainda tirar outras conclusões, como
+Seria possível fazer a análise de outros indicadores da tabela, entretanto foram separados os principais para serem melhor detalhados.
