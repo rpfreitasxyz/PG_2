@@ -1,1 +1,11 @@
 # Conclusão
+
+Nesta seção, faremos algumas conclusões a respeito dos métodos de _valuation_ realizados, assim como um comparativo entre eles, finalizando assim o estudo.
+
+O valor intrínseco encontrado através do DCF é consideravelmente alto relativo ao preço atual do ativo devido a diversos fatores, a elucidar alguns:
+
+1. **Baixa correlação do ativo com o IBOV.** Como foi observado, a correlação do ativo com o índice Bovespa é consideravelmente baixa, representando assim, dentro da teoria do CAPM, uma necessidade de retorno menor, devido à sua menor volatilidade relativa ao mercado.
+2. **Crise hídrica no estado do Paraná.** Desde julho de 2019, com agravamento em março de 2020, até o momento de escrita, o estado passa por uma das piores estiagens da história. Por se tratar de uma companhia com matriz elétrica predominantemente hidráulica, a empresa acaba por perder então espaço no ambiente de contratação livre, assim como ser exposta a um índice mais alto de inadimplência no ambiente regulado, tendo em vista os acréscimos nas contas de luz.
+3. **Possíveis interferências públicas.** Assim como ocorreu com a Companhia de Saneamento do Paraná em 2020, existe a possibilidade da Agência Reguladora de Serviços Públicos Delegados do Paraná (Agepar) suspender revisões tarifárias. Continuando pela analogia, a agência suspendeu 3 vezes o reajuste de saneamento e, ao final, reduziu o valor de 9.62% para 5.11%. Cabe comentar, o acionista majoritário é o próprio estado do Paraná. Naturalmente, o poder público demonstra assim uma possível falha de governança, ao passo que nem sempre as ações do governo estarão alinhadas com os interesses dos acionistas.
+
+Dessa forma, uma confluência de fortes fatores colaboram para fazer com que uma empresa, mesmo que sólida em termos financeiros, possua um preço baixo relativa aos seus pares.
