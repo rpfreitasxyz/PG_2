@@ -675,8 +675,8 @@ calcula_DCF = function(WACC, CAGR_DCF) {
 tabela_sensibilidade_DCF <- crossing(vec_WACC, vec_CAGR_DCF) %>%
   mutate(resultado_DCF = map2(.x = vec_WACC, .y = vec_CAGR_DCF, .f = calcula_DCF)) %>%
   unnest(cols = c(resultado_DCF)) %>%
-  mutate_at(1:2, function(x) paste(round(100 * x, 2), "%", sep = "")) %>%
-  mutate(resultado_DCF = paste("R$", round(resultado_DCF, 2), sep = "")) %>%
+  mutate_at(1:2, function(x) paste(format(round(100 * x, 2), nsmall = 2), "%", sep = "")) %>%
+  mutate(resultado_DCF = paste("R$", format(round(resultado_DCF, 2)), sep = "")) %>%
   pivot_wider(names_from = "vec_CAGR_DCF", values_from = "resultado_DCF")
 
 nome_rows <- tabela_sensibilidade_DCF$vec_WACC
@@ -748,7 +748,7 @@ payout = 0.65 * LL_2022
 div_por_acao = payout / 2.73655
 ```
 
-Dessa forma, tem-se que o _payout_ será de `r round(payout, 2)` bilhões, conforme a política de dividendos da empresa.^[Este valor também não ultrapassa a condição de preservar o chamado "Fluxo de Caixa Disponível" da empresa, sendo o FCD calculado como sendo o Fluxo de Caixa Operacional menos os Dispêndios de Capitais. Novamente, o caso da alienação da Copel Telecomunicações auxiliou nessa questão, reduzindo o dispêndio de capital necessário por parte da empresa, permitindo uma maior distribuição de dividendos.] Dividindo esse valor pelo atual número de ações,[^acoesDisponiveisCPLE] obtém-se um dividendo esperado de aproximadamente `r round(div_por_acao)` centavos, considerando que cada ação tenha distribuição homogênea de dividendos.^[Não é o caso, tendo em vista que as distribuições para ações ordinárias, preferenciais tipo A e B são diferentes entre si; mas essa simplificação servirá para os propósitos deste estudo.] Assim sendo:
+Dessa forma, tem-se que o _payout_ será de `r round(payout, 2)` bilhões, conforme a política de dividendos da empresa.^[Este valor também não ultrapassa a condição de preservar o chamado "Fluxo de Caixa Disponível" da empresa, sendo o FCD calculado como sendo o Fluxo de Caixa Operacional menos os Dispêndios de Capitais. Novamente, o caso da alienação da Copel Telecomunicações auxiliou nessa questão, reduzindo o dispêndio de capital necessário por parte da empresa, permitindo uma maior distribuição de dividendos.] Dividindo esse valor pelo atual número de ações,[^acoesDisponiveisCPLE] obtém-se um dividendo esperado de aproximadamente `r round(100 * div_por_acao)` centavos, considerando que cada ação tenha distribuição homogênea de dividendos.^[Não é o caso, tendo em vista que as distribuições para ações ordinárias, preferenciais tipo A e B são diferentes entre si; mas essa simplificação servirá para os propósitos deste estudo.] Assim sendo:
 
 \begin{align*}
 P_0 &= \frac{D_1}{r-g} \\
@@ -773,9 +773,9 @@ calcula_DDM = function(LL_2022, retorno_esp) {
 tabela_sensibilidade_DDM <- crossing(vec_LL, vec_retorno_esp) %>%
   mutate(resultado_DDM = map2(.x = vec_LL, .y = vec_retorno_esp, .f = calcula_DDM)) %>%
   unnest(cols = c(resultado_DDM)) %>%
-  mutate(vec_LL = paste("R$", round(vec_LL, 2), " bi", sep = "")) %>%
-  mutate(vec_retorno_esp = paste(round(100 * vec_retorno_esp, 2), "%", sep = "")) %>%
-  mutate(resultado_DDM = paste("R$", round(resultado_DDM, 2), sep = "")) %>%
+  mutate(vec_LL = paste("R$", format(round(vec_LL, 2), nsmall = 2), " bi", sep = "")) %>%
+  mutate(vec_retorno_esp = paste(format(round(100 * vec_retorno_esp, 2), nsmall = 2), "%", sep = "")) %>%
+  mutate(resultado_DDM = paste("R$", format(round(resultado_DDM, 2), nsmall = 2), sep = "")) %>%
   pivot_wider(names_from = "vec_LL", values_from = "resultado_DDM")
 
 nome_rows <- tabela_sensibilidade_DDM$vec_retorno_esp
