@@ -131,6 +131,7 @@ kable(
   caption = "Extensão de linhas de transmissão da Copel, por nível de tensão.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   align = "cc"
   ) %>%
   kable_styling(
@@ -156,6 +157,7 @@ kable(
   caption = "Subestações de transmissão da Copel, por nível de tensão.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   align = "ccc"
   ) %>%
   kable_styling(
@@ -215,6 +217,7 @@ kable(
   caption = "Número de consumidores da Copel.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   align = "cccc"
   ) %>%
   kable_styling(
@@ -238,6 +241,7 @@ kable(
   caption = "Indicadores de atuação da distribuição.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   align = "cc"
   ) %>%
   kable_styling(
@@ -262,6 +266,7 @@ kable(
   caption = "Perfil de consumo de energia da distribuição.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   align = "cccc"
   ) %>%
   kable_styling(
@@ -294,6 +299,7 @@ kable(
   caption = "Perfil de consumo de energia da classe Industrial.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   align = "cccc"
   ) %>%
   kable_styling(
@@ -382,6 +388,7 @@ kable(bp_trat %>% select(1:6),
   caption = "Balanço Patrimonial da Copel, em milhares de reais. Base contábil de 2012 a 2016.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   longtable = TRUE
   ) %>%
   kable_styling(
@@ -395,6 +402,7 @@ kable(bp_trat %>% select(1, 7:11),
   caption = "Balanço Patrimonial da Copel, em milhares de reais. Base contábil de 2017 a 2021.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   longtable = TRUE
   ) %>%
   kable_styling(
@@ -455,6 +463,7 @@ kable(dre_trat %>% select(1:6),
   caption = "Demonstrativos de Resultado da Copel, em milhares de reais. Base contábil de 2012 a 2016.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   longtable = TRUE
   ) %>%
   kable_styling(
@@ -467,6 +476,7 @@ kable(dre_trat %>% select(1, 7:11),
   caption = "Demonstrativos de Resultado da Copel, em milhares de reais. Base contábil de 2017 a 2021.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   longtable = TRUE
   ) %>%
   kable_styling(
@@ -508,6 +518,7 @@ kable(dfc,
   caption = "Demonstrativos de Fluxo de Caixa da Copel, em milhões de reais. Base contábil de 2017 a 9 meses de 2021.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   longtable = TRUE
   ) %>%
   kable_styling(
@@ -611,6 +622,7 @@ kable(calculo_fcff,
   caption = "Cálculo de FCFF até 2021.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   longtable = TRUE
   ) %>%
   kable_styling(
@@ -695,6 +707,7 @@ kable(tabela_sensibilidade_DCF,
   col.names = nome_cols,
   row.names = TRUE,
   align = "c",
+  linesep = "",
   longtable = T
   ) %>%
   kable_styling(
@@ -794,6 +807,7 @@ kable(tabela_sensibilidade_DDM,
   col.names = nome_cols,
   row.names = TRUE,
   align = "c",
+  linesep = "",
   longtable = T
   ) %>%
   kable_styling(
@@ -834,6 +848,7 @@ kable(page_filtr,
   caption = "Comparativo de empresas similares à Copel.",
   format = "latex",
   booktabs = TRUE,
+  linesep = "",
   align = "c"
   ) %>%
   kable_styling(
