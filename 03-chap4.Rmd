@@ -311,9 +311,7 @@ kable(
   )
 ```
 
-A Copel disponibiliza também os dados referentes às tarifas pagas pelos clientes, tanto de alta quanto baixa tensão.[^justTarifas]
-
-[^justTarifas]: É importante ressaltar que as tarifas já estão disponibilizadas com os impostos (ICMS, PIS e COFINS), vigentes a partir de 09 jul 2020; foram incluídos para facilitar o entendimento por parte do leitor, no entanto, as alíquotas efetivas referentes ao PIS e à COFINS devem ser apuradas mensalmente, com suas variações sendo aplicadas às tarifas tempestivamente.
+A Copel disponibiliza também os dados referentes às tarifas pagas pelos clientes, tanto de alta quanto baixa tensão.
 
 A empresa, naturalmente, se faz valer de uma Norma aplicável a conexão de micro e minigeração no sistema de compensação -- esta é a NTC 905200[^normaCopel]. Isso decorre do fato que conforme o estabelecido pela Resolução da ANEEL n° 482/2012, é permitido aos consumidores instalar geradores de pequeno porte em suas unidades consumidoras e utilizar o sistema elétrico da distribuidora para injetar o excedente de energia, que é convertido em crédito de energia válido por 60 meses. Tais créditos poderão ser utilizados para abater do consumo da própria unidade consumidora nos meses seguintes ou de outras unidades consumidoras que precisam estar previamente cadastradas para esse fim e atendidas pela mesma distribuidora -- no caso, a Copel --, cujo titular seja o mesmo da unidade com sistema de compensação de energia elétrica, possuidor do mesmo CPF ou CNPJ junto ao Ministério da Fazenda. Outra forma para adicionar unidades consumidoras para o abatimento do consumo é através de empreendimento com múltiplas unidades consumidoras ou geração compartilhada.
 
@@ -349,6 +347,7 @@ bp_trat <- bp %>%
   mutate(temp = row_number()) %>%
   unite(Conta_nova, temp, Conta, sep = "_") %>%
   pivot_longer(cols = 2:ncol(.), names_to = "Data", values_to = "Valor") %>%
+  mutate(Valor = Valor / 1000) %>%
   mutate(Data = dmy(Data),
          ano = year(Data)) %>%
   group_by(Conta_nova, ano) %>%
@@ -385,7 +384,7 @@ est_cap <- bp_trat %>% filter(Conta %in% c("Patrimônio Líquido", "Passivo Tota
   mutate(cap_proprio = `Patrimônio Líquido` / `Passivo Total`)
 
 kable(bp_trat %>% select(1:6),
-  caption = "Balanço Patrimonial da Copel, em milhares de reais. Base contábil de 2012 a 2016.",
+  caption = "Balanço Patrimonial da Copel, em milhões de reais. Base contábil de 2012 a 2016.",
   format = "latex",
   booktabs = TRUE,
   linesep = "",
@@ -394,12 +393,12 @@ kable(bp_trat %>% select(1:6),
   kable_styling(
     latex_options = c("HOLD_position", "repeat_header"),
     repeat_header_text = "\\textit{(continuação)}",
-    font_size = 8
+    font_size = 10
   ) %>%
   column_spec(1, width = "6cm")
 
 kable(bp_trat %>% select(1, 7:11),
-  caption = "Balanço Patrimonial da Copel, em milhares de reais. Base contábil de 2017 a 2021.",
+  caption = "Balanço Patrimonial da Copel, em milhões de reais. Base contábil de 2017 a 2021.",
   format = "latex",
   booktabs = TRUE,
   linesep = "",
@@ -408,13 +407,13 @@ kable(bp_trat %>% select(1, 7:11),
   kable_styling(
     latex_options = c("HOLD_position", "repeat_header"),
     repeat_header_text = "\\textit{(continuação)}",
-    font_size = 8
+    font_size = 10
   ) %>%
   column_spec(1, width = "6cm")
  
 ```
 
-É relevante comentar que, ao longo dos 10 anos, o patrimônio líquido da Copel não caiu de forma consolidada em qualquer ano; demonstra inclusive uma tendência de crescimento, com crescimento de `r paste(round(100 * (1-evo_patrim_liq), 2), "%", sep = "")` relativo a 2012. Isso pode ser expandido para as contas de ativos e passivos, o que é um indicador de estabilidade e previsibilidade de rendimentos.
+É relevante comentar que, ao longo dos 10 anos, o patrimônio líquido da Copel não caiu de forma consolidada em qualquer ano; demonstra inclusive uma tendência de crescimento, com crescimento de `r paste(round(100 * (evo_patrim_liq-1), 2), "%", sep = "")` relativo a 2012. Isso pode ser expandido para as contas de ativos e passivos, o que é um indicador de estabilidade e previsibilidade de rendimentos.
 
 Através do indicador de dívida bruta, sendo este o valor total dos empréstimos e financiamentos – tanto circulantes quanto não-circulantes – dividido pelo patrimônio líquido, podemos realizar a análise da dívida. Relativo ao controle da dívida, nota-se que a companhia tem uma situação conservadora de dívida, principalmente se for levada em conta que está em um setor intensivo em capital. Este indicador apresenta uma média de `r paste(round(100 * mean(divida$div_patrim), 2), "%", sep = "")`, chegando ao seu valor máximo `r paste(round(100 * max(divida$div_patrim), 2), "%", sep = "")` em `r (filter(divida, div_patrim == max(div_patrim)))$anos`.
 
@@ -444,6 +443,7 @@ dre_trat <- dre %>%
   mutate(temp = row_number()) %>%
   unite(Conta_nova, temp, Conta, sep = "_") %>%
   pivot_longer(cols = 2:ncol(.), names_to = "Data", values_to = "Valor") %>%
+  mutate(Valor = Valor / 1000) %>%
   mutate(Data = dmy(Data),
          ano = year(Data)) %>%
   group_by(Conta_nova, ano) %>%
@@ -460,7 +460,7 @@ rec_liq <- dre_trat %>% filter(Conta == "Receita Líquida de Vendas e/ou Serviç
 evo_rec_liq <- rec_liq$`2021` / rec_liq$`2012`
 
 kable(dre_trat %>% select(1:6),
-  caption = "Demonstrativos de Resultado da Copel, em milhares de reais. Base contábil de 2012 a 2016.",
+  caption = "Demonstrativos de Resultado da Copel, em milhões de reais. Base contábil de 2012 a 2016.",
   format = "latex",
   booktabs = TRUE,
   linesep = "",
@@ -469,11 +469,11 @@ kable(dre_trat %>% select(1:6),
   kable_styling(
     latex_options = c("HOLD_position", "repeat_header"),
     repeat_header_text = "\\textit{(continuação)}",
-    font_size = 8
+    font_size = 10
   )
 
 kable(dre_trat %>% select(1, 7:11),
-  caption = "Demonstrativos de Resultado da Copel, em milhares de reais. Base contábil de 2017 a 2021.",
+  caption = "Demonstrativos de Resultado da Copel, em milhões de reais. Base contábil de 2017 a 2021.",
   format = "latex",
   booktabs = TRUE,
   linesep = "",
@@ -482,7 +482,7 @@ kable(dre_trat %>% select(1, 7:11),
   kable_styling(
     latex_options = c("HOLD_position", "repeat_header"),
     repeat_header_text = "\\textit{(continuação)}",
-    font_size = 8
+    font_size = 10
   )
 
 ```
@@ -524,8 +524,9 @@ kable(dfc,
   kable_styling(
     latex_options = c("HOLD_position", "repeat_header"),
     repeat_header_text = "\\textit{(continuação)}",
-    font_size = 8
-  )
+    font_size = 10
+  ) %>%
+  column_spec(1, width = "6cm")
 ```
 
 Se o balanço patrimonial é a fotografia de um momento específico da empresa e o demonstrativo de resultado conta sua história em determinado período, o demonstrativo de fluxo de caixa é uma espécie de documentário, um _making-of_ da produção das divulgações financeiras anteriores, que é visto como extras.
@@ -567,7 +568,7 @@ retorno_esp = 0.0925 + 0.34 * 0.0721
 Assim, com a taxa esperada de retorno do ativo, este será o custo de capital próprio; o custo de capital de terceiros pode ser descoberto através de um cálculo relativo ao passivo oneroso, obtido através do balanço patrimonial.^[Este é um _proxy_ para calcular o custo da dívida. O verdadeiro custo da dívida é mais complexo de se obter, tendo em vista que os diferentes braços da _holding_ têm diferentes taxas entre si, que não necessariamente são as mesmas ao longo do tempo. Tranmissão, por exemplo, por muito tempo se fez valer da TJLP, a Taxa de Juro de Longo Prazo do BNDES, como forma de financiar a expansão; enteretanto, esse indexador tem caído em desuso. Similarmente, projetos de geração não têm um indexador fixo, se fazendo valer geralmente de consórcios e afins para serem construídos, com termos discutidos em contratos privados.] Dessa forma, temos:
 
 $$
-R_d = \frac{J}{P_O} = \frac{838.8\,mi}{9.82\,bi} \sim 0.085
+R_d = \frac{J}{P_O} = \frac{838.8\,mi}{9.82\,bi} = 0.085
 $$
 
 Finalmente, podemos juntar as partes para calcular o WACC:
@@ -610,7 +611,7 @@ calculo_fcff <- dre_trat %>%
   select(1, 7:ncol(.)) %>%
   rbind(dfc %>% 
           filter(Conta %in% c("Depreciação/Exaustão", "Despesas de Capital", "Capital de Giro")) %>%
-          mutate_at(2:ncol(.), function(x) as.numeric(x) * 1000)) %>%
+          mutate_at(2:ncol(.), function(x) as.numeric(x))) %>%
   pivot_longer(cols = 2:ncol(.), names_to = "anos", values_to = "outros") %>%
   pivot_wider(names_from = "Conta", values_from = "outros") %>%
   arrange(anos) %>%
@@ -619,7 +620,7 @@ calculo_fcff <- dre_trat %>%
   pivot_wider(names_from = "anos", values_from = "outros")
   
 kable(calculo_fcff,
-  caption = "Cálculo de FCFF até 2021.",
+  caption = "Cálculo de FCFF até 2021, em milhões de reais.",
   format = "latex",
   booktabs = TRUE,
   linesep = "",
@@ -628,7 +629,7 @@ kable(calculo_fcff,
   kable_styling(
     latex_options = c("HOLD_position", "repeat_header"),
     repeat_header_text = "\\textit{(continuação)}",
-    font_size = 8
+    font_size = 10
   )
 ```
 
