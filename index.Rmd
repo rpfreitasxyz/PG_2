@@ -97,7 +97,7 @@ on chapters.
 
 # Introdução
 
-Cabe, antes de começar o desenvolvimento do trabalho propriamente dito, contextualizar e justificar o trabalho, assim como explicitar aos leitores os objetivos, as limitações e a estrutura do mesmo.
+Cabe, antes de começar o desenvolvimento do trabalho propriamente dito, contextualizar e justificar o trabalho, assim como explicitar os objetivos, as limitações e a estrutura do mesmo.
 
 ## Contextualização
 
@@ -107,13 +107,13 @@ Um ano após 1967, foi criado o principal índice de ações brasileiro: o Ibove
 
 A partir de 2007, as bolsas de valores deixaram de ser entidades sem fins lucrativos e tornaram-se empresas de capital aberto. No ano seguinte, a BM&F e a Bovespa se uniram, resultando na criação da Bolsa de Valores, Mercadorias e Futuros de São Paulo -- a BM&F Bovespa. Em 2017, foram fundidas a BM&F Bovespa e Cetip, dando origem à B3 S.A., sob a supervisão da Comissão de Valores Mobiliários -- esta é a bolsa brasileira atualmente.
 
-Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Valores ano a ano, sendo em 2020 o recorde, um aumento de 47.7% relativo a maio de 2019[^aumentoCPF].
+Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Valores ano a ano, atingindo em outubro de 2021, a marca de 4 milhões de contas de pessoas física em renda variável[^aumentoCPF].
 
-[^aumentoCPF]: Pode-se conferir a evolução dos mesmos baixando a planilha presente neste link: <http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-a-vista/historico-pessoas-fisicas/>. Último acesso em 07 jul 2020.
+[^aumentoCPF]: Disponível em: <https://www.b3.com.br/pt_br/noticias/4-milhoes-de-pfs.htm>. Último acesso em 28 jan 2022.
 
-Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros -- o que não quer dizer que o investidor deve investir em todos. De fato, o investidor precisa minimizar seu risco, preferencialmente investindo em empresas que dentre outras características possuem alto *payout* de dividendos, baixo grau de alavancagem; e menor variabilidade de lucros [@beaver1970].
+Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros -- o que não quer dizer que o investidor deve aportar capital em todos. De fato, o investidor iniciante deve minimizar seu risco, preferencialmente investindo em empresas que dentre outras características possuem alto *payout* de dividendos, baixo grau de alavancagem; e menor variabilidade de lucros [@beaver1970].
 
-Empresas do setor de utilidades possuem tais características, em sua maioria; dessa forma, escolheu-se um exemplar do mesmo -- a Companhia Paranaense de Energia, Copel -- como forma de fazer o valuation da empresa, fazer um breve resumo do setor elétrico, comparar os métodos de avaliação; e, evidentemente, exemplificar o processo ao leitor.
+Empresas do setor de utilidades possuem tais características, em sua maioria; dessa forma, escolheu-se um exemplar do mesmo -- a Companhia Paranaense de Energia, Copel -- como forma de fazer um breve resumo do setor elétrico, o _valuation_ da empresa através desses métodos selecionados e, por fim, comparar os métodos com os resultados em mãos, exemplificando o processo ao leitor.
 
 ## Justificativa
 
@@ -121,7 +121,7 @@ Por mais que a caderneta de poupança seja o investimento preferido dos brasilei
 
 [^justNom]: Nominal, pois os retornos reais são contextuais devido ao pagamento de impostos, dividendos; e, a depender do ativo, dos custos do mesmo.
 
-[^dadosIPEA]: Ambas as séries podem ser obtidas em <http://www.ipeadata.gov.br/Default.aspx>. Último acesso em 10 jul 2020.
+[^dadosIPEA]: Ambas as séries podem ser obtidas em <http://www.ipeadata.gov.br/Default.aspx>. Último acesso em 14 jan 2022.
 
 ```{r, fig.cap = "Uma comparação entre o IBOV e a poupança.", fig.pos = "H", echo = FALSE, out.width = "100%"}
 knitr::include_graphics("img/ibov-poupanca.png")
@@ -129,9 +129,9 @@ knitr::include_graphics("img/ibov-poupanca.png")
 
 Com o passar do tempo, entretanto, a maturação no mercado financeiro pode, naturalmente, levar o investidor a se interessar por retornos acima do mercado -- fundos de índice, por definição, impossibilitam o objetivo. Isso leva a uma exploração de diferentes classes de ativos, desde ações ordinárias a fundos de investimento em ações. Um investidor, entretanto, tem de ter em mente que raramente fundos de investimento com administração ativa, no longo prazo, superam os retornos dos fundos de índice, em termos reais [@bogle2015].
 
-Assim sendo, caso o investidor deseja ter sucesso, é importante que as escolhas de ativos sejam racionais. Ao menos, tão racionais quanto possível forem para humanos. De fato, indivíduos estão sujeitos a uma racionalidade restrita [@simon1997], o que leva a diversas heurísticas -- inclusive, mas não limitadas a: enfatizar evidências que apoiam visões próprias [@klayman1995], superestimar probabilidades por maior "disponibilidade" em memória [@schwarz1991]; e superestimar a própria habilidade, quando se é novato, assim como subestimar, quando se é um *expert* [@kruger1999] -- para simplificar o processo de raciocínio e, permitir, assim, que o agente consiga satisfazer as restrições -- tempo, recursos, dentre outros -- para a tomada de decisões.
+Assim sendo, caso o investidor deseja ter sucesso, é importante que as escolhas de ativos sejam racionais – ao menos, tão racionais quanto possível forem. Indivíduos estão sujeitos a uma racionalidade restrita [@simon1997], o que leva a diversas heurísticas -- inclusive, mas não limitadas a: enfatizar evidências que apoiam visões próprias [@klayman1995], superestimar probabilidades por maior "disponibilidade" em memória [@schwarz1991]; e percepção distorcida de habilidade [@kruger1999] -- para simplificar o processo de raciocínio e, permitir, assim, que o agente consiga satisfazer as restrições -- tempo, recursos, dentre outros -- para a tomada de decisões.
 
-De fato, a abordagem de realizar tanto o *valuation* intrínseco quanto o relativo de uma empresa é, além de uma interessante comparação entre métodos, uma forma de evitar a "síndrome do homem com martelo", popularizado por Munger [-@munger2006]. Este cita um provérbio, que diz: "Para um homem com um martelo, todo problema se parece com um prego."
+A abordagem de realizar tanto o *valuation* intrínseco quanto o relativo de uma empresa é, além de uma interessante comparação entre métodos, uma forma de evitar a "síndrome do homem com martelo", popularizado por Munger [-@munger2006]. Este cita um provérbio, que diz: "Para um homem com um martelo, todo problema se parece com um prego."
 
 ## Objetivos
 
@@ -147,12 +147,12 @@ Este trabalho se limita a prover um breve prospecto do cenário energético bras
 
 O trabalho possui, em sua integralidade, cinco capítulos.
 
-O primeiro capítulo é uma introdução ao restante do trabalho, e é efetivamente um resumo do que o leitor verá pela frente.
+O primeiro capítulo é uma introdução ao restante do trabalho, e é efetivamente um resumo do que será feito pela frente.
 
-O segundo capítulo é uma examinação do setor energético brasileiro, a ser feito pela leitura e examinação do Plano Decenal de Expansão de Energia (PDE) e o Plano Nacional de Energia (PNE), ambos elaborados pela Empresa de Pesquisa Energética (EPE). Através destes, podemos ter uma melhor noção do setor no qual a empresa está inserida, possibilitando um melhor cálculo e previsão dos fluxos de caixa.
+O segundo capítulo é uma breve explanação do setor energético brasileiro, com examinação do Plano Decenal de Expansão de Energia (PDE) e o Plano Nacional de Energia (PNE), ambos elaborados pela Empresa de Pesquisa Energética (EPE). Através deste capítulo, podemos ter uma melhor noção do setor no qual a empresa está inserida, possibilitando um melhor cálculo e previsão dos fluxos de caixa.
 
-O terceiro capítulo é a documentação do referencial teórico utilizado, a ser escrito seguindo uma lógica linear, de forma tal que possa também ser visto como uma metodologia, com exemplos para auxiliar o leitor.
+O terceiro capítulo é a documentação do referencial teórico utilizado, organizado quando possível seguindo uma lógica linear, de forma tal que possa também ser visto como uma metodologia.
 
-O quarto capítulo é o estudo de caso de fato. Será dada uma contextualização da empresa, assim como a aplicação dos métodos discutidos.
+O quarto capítulo é o estudo de caso de fato. Será dada uma contextualização da empresa, assim como a aplicação dos métodos discutidos, com as premissas e cálculos explicitados.
 
-O quinto e último capítulo é a conclusão, em que será feita a exposição dos resultados, assim como a comparação entre os métodos de *valuation* discutidos durante o texto.
+O quinto e último capítulo é a conclusão, em que serão feitos os comentários a respeito dos resultados, assim como a comparação entre os métodos de *valuation* discutidos durante o texto.
