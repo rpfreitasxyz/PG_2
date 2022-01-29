@@ -2,8 +2,8 @@
 doc_type: 'grad' # 'msc' or 'dscexam' or 'dsc'
 portuguese: true # choose either portuguese or english to be true
 english: false
-title: '_Valuation_ Intrínseco e Relativo: O estudo de caso da Copel'
-foreigntitle: 'Intrinsic and Relative Valuation: The case study of Copel'
+title: 'Comparatório entre métodos de _valuation_ intrínseco e relativo aplicados à Copel'
+foreigntitle: 'Comparison between intrinsic and relative valuation methods applied to Copel'
 department: 'EPR'
 date_month: '`r format(Sys.Date(), "%m")`'
 date_year: '`r format(Sys.Date(), "%Y")`'
@@ -39,13 +39,19 @@ dedication: |
 thanks:
 - title: Agradecimentos
   text:  |
-    Agradeço pela oportunidade de cursar um ensino superior de qualidade de forma pública. Mesmo com suas diversas limitações e imperfeições, a República brasileira segue em frente com a mensagem de democratização do conhecimento. É somente por meio desta que podemos nos defender contra a tirania vil da ignorância. Dessa forma, estou em dívida com a sociedade; com todos que permitiram minha entrada e estadia no curso de Engenharia de Produção pela UFRJ. Uma dívida monumental, se pensada pela ótica dos benefícios. Espero retornar o investimento em breve, a começar de forma humilde com este trabalho de conclusão de curso. Boa leitura!
+    Antes de mais nada, agradeço pela oportunidade de cursar um ensino superior de qualidade de forma gratuita. Este é um investimento que a sociedade como um todo impartiu em mim; uma dívida monumental, se pensada pela ótica dos benefícios, e que pretendo pagar de volta com juros altos ao longo tempo.
     
-    Lorem ipsum
+    Agradeço à minha família, Ricardo, Sandra e Carol, que, ao mesmo tempo que me proveram um compasso moral para me guiar ao longo da vida, sempre me deixaram livre para fazer minhas próprias escolhas e adaptar essa ferramenta tão poderosa. Enfaticamente, eu não seria a pessoa que eu sou, caso não fossem vocês. Agradeço também ao meu tio Marco por ser, além da pessoa mais descontraída que eu conheço, um facilitador enorme da minha vida acadêmica. Os dias seriam muito mais cinzas se eu não tivesse a sua companhia nessa jornada. Por fim, agradeço ao meu póstumo avô, Antônio. Me faltam as palavras para descrever quão heroica foi sua trajetória, começando com venda de balas no trem e encerrando com uma família formada, com diversos netos. Agora, descansa. Teu trabalho foi feito com maestria.
+    
+    Agradeço aos meus amigos da faculdade, em especial à Camila, Philippe, Thiago, Fernando e João. Vocês foram essenciais para meu desenvolvimento como pessoa e tornaram essa jornada tão mais fácil. Desde a colaboração em trabalhos até os momentos de descontração, saibam que estes momentos ficarão eternamente comigo, e espero que possamos cultivá-los para o resto da vida.
+    
+    Agradeço também à EPE e à PSR, em especial ao Gustavo, Daniel, Jairo e Monique. É um privilégio estar próximo de profissionais únicos e de distinção como vocês. São pessoas muito queridas e fundamentais para meu desenvolvimento não só como profissional, mas como pessoa.
+    
+    Finalmente, agradeço aos meus orientadores, José Roberto Ribas e Marco Krebs, por ministrarem diversas disciplinas que participei de forma excelente e também por me orientarem na criação deste trabalho. 
 abstract: |
-  `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
+  Com a crescente entrada do investidor pessoa física na bolsa brasileira (B3), cada vez mais são estudadas formas de filtrar ativos que aparentam estar atraentes, assim como métodos de determinação do valor justo de uma ação, de forma a conferir um retorno satisfatório para os investimentos. Frequentemente, os ativos selecionados são por vezes determinados de forma defensiva, escolhendo-se ativos com fluxos de caixa razoavelmente prevísiveis, assim como pagamento de dividendos. O presente trabalho tem por objetivo realizar um comparativo entre métodos de _valuation_ comumente utilizados, tanto de forma intrínseca e relativa, aplicados a uma empresa exemplo que satisfaça a condição de ação defensiva – no caso, a _holding_ do setor elétrico, Copel. Ao longo do trabalho, é explicitado o processo de cálculo de _valuation_, assim como os fundamentos da empresa. Por fim, é realizado o comparativo, determinados os valores justos para a _holding_.
 foreignabstract: |
-  `r if(knitr:::is_latex_output()) paste(readLines("00-foreignabstract.Rmd"), collapse = '\n  ')`
+  With the increasing entry of the individual investor in the brazilian stock exchange (B3), more and more ways of filtering assets that appear to be attractive are studied, as well as methods of determining the fair value of a share, in order to provide a satisfactory return for said investments. Often, selected assets are sometimes determined defensively, choosing assets with reasonably predictable cash flows, as well as dividend payouts. The present work aims to make a comparison between commonly used valuation methods, both intrinsically and relatively, applied to an example company that satisfies the condition of defensive stock – in this case, the holding company of the electricity sector, Copel. Throughout the work, the process of valuation calculation is explicit, as well as the fundamentals of the company. Finally, the comparison is made, having determined the fair values for said holding company.
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 bibliography: bib/thesis.bib
