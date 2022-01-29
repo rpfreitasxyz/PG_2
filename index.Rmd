@@ -82,6 +82,8 @@ if(!require(devtools))
 if(!require(coppedown))
   devtools::install_github("mralbu/coppedown")
 library(coppedown)
+
+options(digits = 2)
 ```
 
 <!-- On ordering the chapter files:
