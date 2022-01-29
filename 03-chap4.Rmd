@@ -654,9 +654,13 @@ VPL &= `r (FCFF_0 / (1+WACC)) + (FCFF_0 * (1+CAGR_DCF) / (1+WACC)^2) + (FCFF_0 *
 VPL_DCF = (FCFF_0 / (1+WACC)) + (FCFF_0 * (1+CAGR_DCF) / (1+WACC)^2) + (FCFF_0 * (1+CAGR_DCF)^2 / (1+WACC)^3) + (FCFF_0 * (1+CAGR_DCF)^3 / (1+WACC)^4) + (FCFF_0 * (1+CAGR_DCF)^4 / (1+WACC)^5) + (FCFF_0 * (1+CAGR_DCF)^6 / ((1+WACC)^6*(WACC-PIB)))
 ```
 
-Assim, realizando a divisão pelo número de ações disponíveis no mercado,[^acoesDisponiveisCPLE] R\$ `r round(VPL_DCF / 2.73655, 2)` é aproximadamente o valor por ação.
+Foi encontrado, através do fluxo de caixa descontado, um valor de aproximadamente R\$ `r round(VPL_DCF, 2)` bilhões para a firma. Deduzindo a dívida bruta – aproximadamente R\$ 10.459 bi – e adicionando as disponibilidades – aproximadamente R\$ 4.855 bi –, temos um valor para _equity_ de R\$ `r round(VPL_DCF - 10.459 + 4.855, 2)` bilhões.
+
+Assim, realizando a divisão pelo número de ações disponíveis no mercado,[^acoesDisponiveisCPLE] R\$ `r round((VPL_DCF - 10.459 + 4.855) / 2.73655, 2)` é aproximadamente o valor de _equity_ por ação.
 
 [^acoesDisponiveisCPLE]: Em momento de escrita, são 2.736.550.000, somando-se ações ordinárias e preferenciais. Disponível em: <https://www.fundamentus.com.br/detalhes.php?papel=CPLE3>. Último acesso em 27 jan 2022.
+
+
 
 ### *Valuation* através do Modelo do Desconto de Dividendos (DDM)
 
@@ -690,10 +694,10 @@ Dessa forma, é relevante então calcular a dita Alavancagem. Conforme retratado
 
 Realizando um breve cálculo, esta razão pelos últimos 12 meses, no momento de escrita, 27 de janeiro de 2022, é de $\frac{5.604,03\,mi}{4.038,06\,mi} =$ `r 5604.03 / 4038.06`.
 
-Caso consideremos um crescimento aos dos anos de 2017-2019 para o lucro líquido, e tomando como base os valores de 2019, em que não existiram situações muito atípicas no radar da empresa, é razoável assumir que em 2022, o lucro líquido será de aproximadamente 3.6 bilhões de reais.
+Caso consideremos um crescimento similar aos dos anos de 2017-2019 para o lucro líquido, e tomando como base os valores de 2019, em que não existiram situações muito atípicas no radar da empresa, é razoável assumir que em 2022, o lucro líquido será de aproximadamente 3.1 bilhões de reais.
 
 ```{r, echo=FALSE, include = FALSE}
-LL_2022 = 3.6
+LL_2022 = 3.1
 payout = 0.65 * LL_2022
 div_por_acao = payout / 2.73655
 ```
@@ -767,7 +771,7 @@ med_yield <- rowMeans(yield[3:ncol(page_filtr)])
 
 Relativo ao grupo de outras empresas analisadas, temos um P/L médio de `r round(med_P_L, 2)`. Através desse indicador, é possível considerar que a Copel está valorizada em `r paste(round(100 * P_L$CPLE3 / med_P_L, 2), "%", sep = "")` relativo à média dos pares. Similarmente, o indicador de EV/EBIT da empresa também está abaixo dos pares, isto é, `r round(EV_EBIT$CPLE3, 2)` versus `r round(med_EV_EBIT, 2)` – uma relação de `r paste(round(100 * EV_EBIT$CPLE3 / med_EV_EBIT, 2), "%", sep = "")`.
 
-A valorização de `r paste(round(100 * P_VP$CPLE3 / med_P_VP, 2), "%", sep = "")` da empresa relativo ao P/VP médio de `r round(med_P_VP, 2)` dos pares demonstra mais um indicador oportuno.
+A valorização de `r paste(round(100 * P_VP$CPLE3 / med_P_VP, 2), "%", sep = "")` da empresa relativo ao P/VP médio de `r round(med_P_VP, 2)` dos pares demonstra mais um indicador oportuno. Este é um indicador relevante, principalmente pelo fato da Companhia estar inserida em um setor intensivo em capital.
 
 Outro indicador promissor recente é o _dividend yield_ da empresa. Com os eventos não-recorrentes, o _dividend yield_ da empresa é de `r paste(round(yield$CPLE3, 2), "%", sep = "")`. Frente à média dos pares de `r paste(round(med_yield, 2), "%", sep = "")`, isso indica uma relação de `r paste(round(100 * yield$CPLE3 / med_yield, 2), "%", sep = "")`. Evidentemente, esse indicador é uma situação atípica, mas no passado, a média de distribuição de proventos da companhia ficou próxima dos pares.^[É possível observar isso através do histórico de _dividend yield_ da empresa, em <https://statusinvest.com.br/acoes/cple3>. Último acesso em 28 jan 2022.]
 

@@ -12,4 +12,10 @@ Dessa forma, uma confluência de fortes fatores colaboram para fazer com que uma
 
 Curiosamente, o resultado do DCF é uma cifra maior do que a do modelo de desconto de dividendos, e isso é devido, em grande parte, ao fato do custo da dívida acrescido do _tax shield_ ser consideravelmente menor do que o custo de capital próprio. Como as proporções de cada tipo de capital na estrutura da empresa é próximo a 50/50, isso faz com o que o WACC seja consideravelmente reduzido.
 
-referencia sobre utilidade de indicadores de valuation multiplo [@suozzo2001]
+De qualquer forma, ambos os métodos demonstraram que a ação, em sua cotação atual, mostra-se **desvalorizada** relativo ao seu valor intrínseco. Entretanto, como visto, esta análise é consideravelmente mais demorada do que uma análise de múltiplos. 
+
+Assim, para não realizar estudos de _valuation_ intrínseco para cada empresa aberta, cada uma com suas peculiaridades e em diferentes setores com diferentes normas e regulamentos, é interessante filtrar possíveis desvalorizações com uma breve análise de múltiplos para um setor com pares comparáveis, como foi feito no _valuation_ relativo, para depois seguir com um estudo mais profundo de _valuation_ intrísenco, para finalmente determinar se um ativo está ou não de fato desvalorizado, conforme premissas determinadas.
+
+Como ramificações futuras desse estudo, podem ser realizados os mesmos métodos, entretanto ao invés de possuir uma visão do agregado, fazer uma espécie de _valuation_ "soma das partes", levando em conta as peculiaridades de cada braço da companhia – geração, transmissão, comercialização e distribuição. Adicionalmente, não necessariamente precisa ser da mesma _holding_ – no caso, a Copel –, mas para outras _holdings_ do setor elétrico, também.
+
+Outra possibilidade seria de explorar outros métodos de _valuation_ relativo, tendo em vista que o trabalho se limitou a discorrer apenas sobre análise por múltiplos. Poderia ser feito um estudo a respeito do uso de múltiplos de preço-alvo, em que se define um preço teto até onde, baseado em múltiplos, com o qual seria possível ainda comprar determinado ativo e ainda assim esperar um retorno satisfatório.
