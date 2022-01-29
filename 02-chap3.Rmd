@@ -1,10 +1,10 @@
 # Referencial teórico
 
-Nesta seção será feita uma consideração a respeito dos métodos e conceitos utilizados ao longo do estudo. É de interesse do leitor prestar especial atenção ao enunciado abaixo, uma vez que é um breve alicerce teórico que serve não apenas para esse estudo, como para diversos outros similares. Recomenda-se, ainda, a leitura de Damodaran [-@damodaran2007] para se ter um panorama de diversos outros modelos a serem aplicados, assim como uma discussão a respeito de seus usos e efetividade.
+Nesta seção será feita uma consideração a respeito dos métodos e conceitos utilizados ao longo do estudo. Recomenda-se, ainda, a leitura de Damodaran [-@damodaran2007] para se ter um panorama de diversos outros modelos a serem aplicados, assim como uma discussão ainda mais a fundo de seus usos e efetividade.
 
 ## *Valuation* intrínseco
 
-Comecemos discutindo brevemente a respeito do que é possuir "valor intrínseco". Este é um conceito filosófico, em que o valor de um objeto ou projeto é derivado de, e por si só -- em outras palavras, livre de fatores externos. Analistas financeiros constroem modelos para estimar o que se imagina ser o valor intrínseco de uma empresa sem considerar o seu valor de mercado em determinado dia.
+Comecemos discutindo brevemente a respeito do que é possuir "valor intrínseco". Este é um conceito em que o valor de um objeto ou projeto é derivado de si só -- livre de fatores externos. Analistas financeiros constroem modelos para estimar o que se imagina ser o valor intrínseco de uma empresa sem considerar o seu valor de mercado em determinado dia.
 
 Naturalmente, o mercado, no curto prazo, está sujeito a flutuações que podem ser atribuídas a diversos fatores, desde manipulação de preços em papéis mais ilíquidos a pensamento de manada por parte de investidores. Cabe, nesse momento, utilizar a analogia popularizada por Graham [-@graham2016, pp. 204-205], do Sr. Mercado:
 
@@ -144,7 +144,3 @@ Existem diversas formas de se utilizar múltiplos para _valuation_. A abordagem 
 Pelo interesse de se desenvolver melhores ferramentas de filtragem acionária, o estudo de tais indicadores foi iniciado. Vale, então, comentar a respeito da precisão histórica de tais múltiplos.
 
 Existiram, naturalmente, estudos que relacionaram múltiplos com fundamentais de *valuation* [@beaver1978; @peasnell1982]. De fato, há uma forte conexão entre o valor contábil e retorno sobre patrimônio líquido, como notado por Wilcox [-@wilcox1984], fazendo o argumento de que ações baratas são aquelas que são vendidas a múltiplos de valor contábil baixos enquanto mantém retornos sobre o patrimônio líquidos altos ou, no mínimo, razoáveis. Na verdade, Penman [-@penman1996] também traça uma distinção entre múltiplos de preço sobre lucro e múltiplos de valor contábil no que tange a sua ligação com o retorno sobre o patrimônio líquido, ao mencionar que, à medida que múltiplos de P/VP aumentam com o ROE, a relação entre múltiplos de P/L e ROE é mais fraca. Múltiplos de lucros por ação são os melhores em explicar diferenças em precificação, múltiplos de vendas e fluxos de caixa operacionais são os piores, e múltiplos de valor contábil e EBITDA tendem a ficar no meio [@liu2002; @liu2007; @lie2002]. Curiosamente, existe ainda uma relação inversa entre volatilidade do mercado e múltiplos de P/L [@stohs1996], demonstrando a aversão ao risco do investidor.
-
-Mas nem todo múltiplo é útil em todas as situações.
-
-referencia sobre utilidade de indicadores de valuation multiplo 

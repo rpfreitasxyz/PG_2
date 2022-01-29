@@ -2,7 +2,7 @@
 
 Nesta seção, faremos algumas conclusões a respeito dos métodos de _valuation_ realizados, assim como um comparativo entre eles, finalizando assim o estudo.
 
-O valor intrínseco encontrado através do DCF é consideravelmente alto relativo ao preço atual do ativo devido a diversos fatores, a elucidar alguns:
+O valor intrínseco encontrado através do DCF é maior do que o preço atual do ativo devido a diversos fatores, a elucidar alguns:
 
 1. **Baixa correlação do ativo com o IBOV.** Como foi observado, a correlação do ativo com o índice Bovespa é consideravelmente baixa, representando assim, dentro da teoria do CAPM, uma necessidade de retorno menor, devido à sua menor volatilidade relativa ao mercado.
 2. **Crise hídrica no estado do Paraná.** Desde julho de 2019, com agravamento em março de 2020, até o momento de escrita, o estado passa por uma das piores estiagens da história. Por se tratar de uma companhia com matriz elétrica predominantemente hidráulica, a empresa acaba por perder então espaço no ambiente de contratação livre, assim como ser exposta a um índice mais alto de inadimplência no ambiente regulado, tendo em vista os acréscimos nas contas de luz.

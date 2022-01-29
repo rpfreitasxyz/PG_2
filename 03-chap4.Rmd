@@ -1,6 +1,6 @@
 # Estudo de caso
 
-Iniciamos, agora, o estudo do caso propriamente dito -- sendo este o da Companhia Paranaense de Energia. Para um estudo próprio de *valuation*, é necessário conhecer-se o ativo a ser estudado. Isso com a finalidade de poder realizar estimativas de crescimento e risco mais apropriadas, assim como realizar um pequeno dossiê da empresa e suas conquistas, elucidando assim práticas de governança e um histórico operacional.
+Iniciamos, agora, o estudo do caso propriamente dito -- sendo este o da Companhia Paranaense de Energia. Para um estudo próprio de *valuation*, é necessário conhecer-se o ativo a ser estudado. Isso com a finalidade de poder realizar estimativas de crescimento e risco mais apropriadas, assim como realizar um pequeno dossiê da empresa e suas conquistas, elucidando assim práticas de governança e um histórico operacional. Por causa da extensão das atividades da Copel, será feito um sobrevoo a respeito de seus negócios individuais, e depois será consolidado o consolidado da empresa para realização do _valuation_.
 
 ## Breve dossiê da Copel
 
@@ -635,7 +635,7 @@ kable(calculo_fcff,
 
 É razoável assumir que esse crescimento de FCFF nos anos recentes não é sustentável. De fato, com esse caixa extra obtido, a empresa optou por distribuir uma quantia exagerada de dividendos, chegando a _yields_ superiores de 20% – isto será comentado com maior detalhe à frente. Essa alienação do braço de telecomunicações da Companhia, assim como o recebimento da CRC por parte do governo paranaense são atividades não-recorrentes que não apenas fizeram com que aumentasse o caixa da empresa, mas também reduzisse o dispêndio de capital – no caso da alienação –, fazendo com que a capacidade de geração de caixa livre da empresa melhore no longo prazo. É relevante comentar, também, que os valores do DFC são de apenas 9 meses, dando ainda mais espaço para a empresa de geração de capital. 
 
-Tendo esses comentários em mente, para fins desse estudo, considera-se que o FCFF para 2022 – e que servirá de base para as projeções de FCFFs futuros – seja de 1.8 bilhões de reais. Este valor não é tão grande quanto os 5.1 bi dos 9 meses de 2021, entretanto é uma visão de crescimento se comparado a 2020.
+Tendo esses comentários em mente, para fins desse estudo, considera-se que o FCFF para 2022 – e que servirá de base para as projeções de FCFFs futuros – seja de 1.8 bilhões de reais. Este valor não é tão grande quanto os 5.1 bi dos 9 meses de 2021, entretanto é uma visão de crescimento se comparado a 2019.
 
 ```{r, echo=FALSE, include=FALSE}
 FCFF_0 = 1.8
@@ -688,7 +688,7 @@ calcula_DCF = function(WACC, CAGR_DCF) {
 tabela_sensibilidade_DCF <- crossing(vec_WACC, vec_CAGR_DCF) %>%
   mutate(resultado_DCF = map2(.x = vec_WACC, .y = vec_CAGR_DCF, .f = calcula_DCF)) %>%
   unnest(cols = c(resultado_DCF)) %>%
-  mutate_at(1:2, function(x) paste(format(round(100 * x, 2), nsmall = 2), "%", sep = "")) %>%
+  mutate_at(1:2, function(x) paste(round(100 * x, 2), "%", sep = "")) %>%
   mutate(resultado_DCF = paste("R$", format(round(resultado_DCF, 2)), sep = "")) %>%
   pivot_wider(names_from = "vec_CAGR_DCF", values_from = "resultado_DCF")
 
