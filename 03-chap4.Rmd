@@ -60,7 +60,7 @@ A Copel opera um parque gerador com diversas usinas próprias e participações 
 knitr::include_graphics("img/usinas_Copel.jpg")
 ```
 
-Comecemos comentando a respeito das hidrelétricas. Existe uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução nº 875/2020, a diferenciação é tal:
+Comecemos comentando a respeito das hidrelétricas. Existe uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução nº 875/2020,[@ren875_2020] a diferenciação é tal:
 
 -   Uma **Central Geradora Hidrelétrica com Capacidade Instalada Reduzida (CGH)** é aquela cuja potência seja igual ou inferior a 5 MW.
 -   Uma **Pequena Central Hidrelétrica (PCH)** é aquela que possui duas características: (1) potência instalada superior a 5 MW e igual ou inferior a 30 MW; e (2) área de reservatório de até 13 km², excluindo a calha do leito regular do rio. Existem, ainda, cláusulas que regularizam a condição de (2).
@@ -200,7 +200,7 @@ Por mais que a Companhia possua projetos de transmissão em andamento -- como, p
 
 #### Distribuição
 
-No que tange a distribuição, a Copel é responsável pela energia de cerca de 4,5 milhões de clientes de 394 municípios do Paraná -- sendo 392 integralmente atendidos e 2 parcialmente. A empresa administra 190 mil km de redes de distribuição, com 2,8 milhões de postes e 361 subestações, assim como potência instalada de 10,5 mil MVA. Todos os dados são referentes ao final do ano de 2019. A empresa conta, também, com postos de atendimento espalhados por todos os municípios da área de concessão.
+No que tange a distribuição, a Copel é responsável pela energia de cerca de 4,5 milhões de clientes de 394 municípios do Paraná -- sendo 392 integralmente atendidos e 2 parcialmente. A empresa administra 190 mil km de redes de distribuição, com 2,8 milhões de postes e 361 subestações, assim como potência instalada de 10,5 mil MVA. Todos os dados são referentes ao final do ano de 2021. A empresa conta, também, com postos de atendimento espalhados por todos os municípios da área de concessão.
 
 ```{r, tab.pos = "H", echo = FALSE, message = FALSE}
 library(tidyverse)
@@ -210,9 +210,9 @@ library(kableExtra)
 kable(
   tibble(
     `Classes` = c("Residencial", "Industrial", "Comercial", "Rural", "Outras"),
-    `set-19` = c(3808, 73, 405, 351, 58),
-    `set-18` = c(3732, 74, 397, 353, 57),
-    `%` = c(2.0, -1.4, 2.1, -0.6, 1.2)
+    `set-21` = c(4016.4, 70.8, 419.8, 343.6, 52.3),
+    `set-20` = c(3911.3, 70.9, 407.3, 348.4, 59.5),
+    `%` = c(2.7, -0.2, 3.1, -1.4, -11.2)
   ),
   caption = "Número de consumidores da Copel.",
   format = "latex",
@@ -228,27 +228,6 @@ kable(
   )
 ```
 
-```{r, tab.pos = "H", echo = FALSE, message = FALSE}
-library(tidyverse)
-library(knitr)
-library(kableExtra)
-
-kable(
-  tibble(
-    " " = c("Área de Concessão (km²)", "Municípios Atendidos", "Localidades Atendidas", "População Atendida PR (Mil Habitantes)", "Taxa de Atendimento Urbana (%)", "Consumo Médio Residencial (kWh/mês)"),
-    "set/19" = c(194854, 393, 113, 11434, 99.9, 167.5)
-  ),
-  caption = "Indicadores de atuação da distribuição.",
-  format = "latex",
-  booktabs = TRUE,
-  linesep = "",
-  align = "cc"
-  ) %>%
-  kable_styling(
-    latex_options = "HOLD_position"
-  )
-```
-
 O perfil de consumo de energia da empresa é diversificado, com a classe Industrial sendo a maior de todas as fatias.
 
 ```{r, tab.pos = "H", echo = FALSE, message = FALSE}
@@ -258,10 +237,10 @@ library(kableExtra)
 
 kable(
   tibble(
-    `Classes` = c("Residencial", "Industrial", "Comercial", "Rural", "Outras", "Suprim. a Concessionárias e Permissionárias", "Concessionárias Fio"),
-    `set-19` = c(5571, 8451, 4509, 1817, 1895, 146, 483),
-    `set-18` = c(5413, 8422, 4330, 1791, 1856, 222, 369),
-    `%` = c(2.9, 0.3, 4.1, 1.5, 2.1, -34.5, 30.9)
+    `Classes` = c("Residencial", "Industrial", "Comercial", "Rural", "Outras", "Suprim. a Concessionárias e Permissionárias"),
+    `set-21` = c(6021, 1720, 3055, 1865, 1759, 64),
+    `set-20` = c(5793, 1719, 3080, 1828, 1759, 56),
+    `%` = c(3.9, 0.1, -0.8, 2.0, 0.0, 14.3)
   ),
   caption = "Perfil de consumo de energia da distribuição.",
   format = "latex",
@@ -282,38 +261,9 @@ kable(
 knitr::include_graphics("img/consumo_dist.png")
 ```
 
-Dentro da classe Industrial, temos ainda subdivisões por atividade, com a fabricação de celulose e alimentos compondo quase metade do consumo como um todo.
-
-```{r, tab.pos = "H", echo = FALSE, message = FALSE}
-library(tidyverse)
-library(knitr)
-library(kableExtra)
-
-kable(
-  tibble(
-    `Descrição` = c("Fabricação de Produtos Alimentícios", "Fabricação de Celulose, Papel e Produtos de Papel", "Fabricação de Produtos Minerais Não Metálicos", "Fabricação de Produtos de Borracha e de Material Plástico", "Fabricação de Produtos Químicos", "Demais Ramos"),
-    `set-19` = c(2840, 1113, 615, 510, 491, 2882),
-    `set-18` = c(2715, 1181, 716, 492, 443, 2875),
-    `%` = c(4.6, -5.8, -14.1, 3.6, 11.1, 0.2)
-  ),
-  caption = "Perfil de consumo de energia da classe Industrial.",
-  format = "latex",
-  booktabs = TRUE,
-  linesep = "",
-  align = "cccc"
-  ) %>%
-  kable_styling(
-    latex_options = "HOLD_position"
-  ) %>%
-  add_header_above(
-    header = c("Consumo de Energia Acumulado - GWh" = 4),
-    bold = TRUE
-  )
-```
-
 A Copel disponibiliza também os dados referentes às tarifas pagas pelos clientes, tanto de alta quanto baixa tensão.
 
-A empresa, naturalmente, se faz valer de uma Norma aplicável a conexão de micro e minigeração no sistema de compensação -- esta é a NTC 905200[^normaCopel]. Isso decorre do fato que conforme o estabelecido pela Resolução da ANEEL n° 482/2012, é permitido aos consumidores instalar geradores de pequeno porte em suas unidades consumidoras e utilizar o sistema elétrico da distribuidora para injetar o excedente de energia, que é convertido em crédito de energia válido por 60 meses. Tais créditos poderão ser utilizados para abater do consumo da própria unidade consumidora nos meses seguintes ou de outras unidades consumidoras que precisam estar previamente cadastradas para esse fim e atendidas pela mesma distribuidora -- no caso, a Copel --, cujo titular seja o mesmo da unidade com sistema de compensação de energia elétrica, possuidor do mesmo CPF ou CNPJ junto ao Ministério da Fazenda. Outra forma para adicionar unidades consumidoras para o abatimento do consumo é através de empreendimento com múltiplas unidades consumidoras ou geração compartilhada.
+A empresa, naturalmente, se faz valer de uma Norma aplicável a conexão de micro e minigeração no sistema de compensação -- esta é a NTC 905200[^normaCopel]. Isso decorre do fato que conforme o estabelecido pela Resolução da ANEEL n° 482/2012,[@ren482_2012] é permitido aos consumidores instalar geradores de pequeno porte em suas unidades consumidoras e utilizar o sistema elétrico da distribuidora para injetar o excedente de energia, que é convertido em crédito de energia válido por 60 meses. Tais créditos poderão ser utilizados para abater do consumo da própria unidade consumidora nos meses seguintes ou de outras unidades consumidoras que precisam estar previamente cadastradas para esse fim e atendidas pela mesma distribuidora -- no caso, a Copel --, cujo titular seja o mesmo da unidade com sistema de compensação de energia elétrica, possuidor do mesmo CPF ou CNPJ junto ao Ministério da Fazenda. Outra forma para adicionar unidades consumidoras para o abatimento do consumo é através de empreendimento com múltiplas unidades consumidoras ou geração compartilhada.
 
 [^normaCopel]: Disponível em: <https://bit.ly/35Ze9Xv>. Último acesso em 23 nov 2020.
 
@@ -584,7 +534,7 @@ WACC &= `r last(est_cap$cap_proprio)*(retorno_esp) + (1-0.34)*(1-last(est_cap$ca
 WACC <- last(est_cap$cap_proprio)*(retorno_esp) + (1-0.34)*(1-last(est_cap$cap_proprio))*0.085
 ```
 
-Dessa forma, a taxa de desconto para o DCF é `r paste(round(100 * (last(est_cap$cap_proprio)*(retorno_esp) + (1-0.34)*(1-last(est_cap$cap_proprio))*0.085), 2), "%", sep = "")`. 
+Dessa forma, a taxa de desconto para o DCF é `r paste(round(100 * (last(est_cap$cap_proprio)*(retorno_esp) + (1-0.34)*(1-last(est_cap$cap_proprio))*0.085), 2), "%", sep = "")` a.a. 
 
 Agora, é necessário determinar o fluxo de caixa livre para a firma (FCFF). A seguinte ordem de operações é feita:
 

@@ -2,8 +2,8 @@
 doc_type: 'grad' # 'msc' or 'dscexam' or 'dsc'
 portuguese: true # choose either portuguese or english to be true
 english: false
-title: 'Comparatório entre métodos de _valuation_ intrínseco e relativo aplicados à Copel'
-foreigntitle: 'Comparison between intrinsic and relative valuation methods applied to Copel'
+title: 'Uma comparação entre métodos de valoração: Estudo de caso para a Copel'
+foreigntitle: 'A comparison between valuation methods: Case study applied to Copel'
 department: 'EPR'
 date_month: '`r format(Sys.Date(), "%m")`'
 date_year: '`r format(Sys.Date(), "%Y")`'
@@ -47,7 +47,7 @@ thanks:
     
     Agradeço também à EPE e à PSR, em especial ao Gustavo, Daniel, Jairo e Monique. É um privilégio estar próximo de profissionais únicos e de distinção como vocês. São pessoas muito queridas e fundamentais para meu desenvolvimento não só como profissional, mas como pessoa.
     
-    Finalmente, agradeço aos meus orientadores, José Roberto Ribas e Marco Krebs, por ministrarem diversas disciplinas que participei de forma excelente e também por me orientarem na criação deste trabalho. 
+    Finalmente, agradeço aos meus orientadores, José Roberto Ribas e Marco Krebs, por ministrarem diversas disciplinas que participei de forma excelente e também por me orientarem na criação deste trabalho.
 abstract: |
   Com a crescente entrada do investidor pessoa física na bolsa brasileira (B3), cada vez mais são estudadas formas de filtrar ativos que aparentam estar atraentes, assim como métodos de determinação do valor justo de uma ação, de forma a conferir um retorno satisfatório para os investimentos. Frequentemente, os ativos selecionados são por vezes determinados de forma defensiva, escolhendo-se ativos com fluxos de caixa razoavelmente prevísiveis, assim como pagamento de dividendos. O presente trabalho tem por objetivo realizar um comparativo entre métodos de _valuation_ comumente utilizados, tanto de forma intrínseca e relativa, aplicados a uma empresa exemplo que satisfaça a condição de ação defensiva – no caso, a _holding_ do setor elétrico, Copel. Ao longo do trabalho, é explicitado o processo de cálculo de _valuation_, assim como os fundamentos da empresa. Por fim, é realizado o comparativo, determinados os valores justos para a _holding_.
 foreignabstract: |
@@ -113,9 +113,9 @@ Em tempos contemporâneos, há um crescimento de CPFs registrados na Bolsa de Va
 
 [^aumentoCPF]: Disponível em: <https://www.b3.com.br/pt_br/noticias/4-milhoes-de-pfs.htm>. Último acesso em 28 jan 2022.
 
-Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros -- o que não quer dizer que o investidor deve aportar capital em todos. De fato, o investidor iniciante deve minimizar seu risco, preferencialmente investindo em empresas que dentre outras características possuem alto *payout* de dividendos, baixo grau de alavancagem; e menor variabilidade de lucros [@beaver1970].
+Com diversos setores e subsetores de atuação, são diversas as empresas de capital aberto à disposição para escolha do crescente número de investidores brasileiros -- o que não quer dizer que o investidor deve aportar capital em todos. De fato, o investidor iniciante deve preferencialmente buscar por empresas com lucros estáveis, pagadoras de dividendos e de baixa correlação com o mercado, a fim de minimizar a volatilidade de sua posição.
 
-Empresas do setor de utilidades possuem tais características, em sua maioria; dessa forma, escolheu-se um exemplar do mesmo -- a Companhia Paranaense de Energia, Copel -- como forma de fazer um breve resumo do setor elétrico, o _valuation_ da empresa através desses métodos selecionados e, por fim, comparar os métodos com os resultados em mãos, exemplificando o processo ao leitor.
+Empresas concessionárias de energia elétrica possuem tais características, em sua maioria; dessa forma, escolheu-se uma empresa desse setor para ser analisada -- a Companhia Paranaense de Energia, Copel -- como forma de fazer um breve resumo do setor elétrico, o _valuation_ da empresa através desses métodos selecionados e, por fim, comparar os métodos com os resultados em mãos, exemplificando o processo ao leitor.
 
 ## Justificativa
 
