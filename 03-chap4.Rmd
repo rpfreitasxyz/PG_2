@@ -2,7 +2,7 @@
 
 Iniciamos, agora, o estudo do caso propriamente dito -- sendo este o da Companhia Paranaense de Energia. Para um estudo próprio de *valuation*, é necessário conhecer-se o ativo a ser estudado. Isso com a finalidade de poder realizar estimativas de crescimento e risco mais apropriadas, assim como realizar um pequeno dossiê da empresa e suas conquistas, elucidando assim práticas de governança e um histórico operacional. Por causa da extensão das atividades da Copel, será feito um sobrevoo a respeito de seus negócios individuais, e depois será consolidado o consolidado da empresa para realização do _valuation_.
 
-## Breve dossiê da Copel
+## Caracterização da Copel
 
 Comecemos, desta forma, fazendo um dossiê da empresa, de forma a estudar melhor sua história e operações, assim como expor casos relevantes da empresa.
 
@@ -46,7 +46,7 @@ Em 2012, a Copel finalizou todas as fases do programa Luz para Todos, efetivamen
 
 Podemos notar, então, um grau de maturidade elevado por parte da empresa atualmente, em que a mesma segue uma motivação de melhoria dos processos atuais, com objetivo secundário de ampliar para outros estados, à medida que concessões e órgãos reguladores dão seu aval.
 
-### *Core business*
+### Unidade de negócios principais
 
 As informações retiradas para o estudo do *core business* da Copel foram retiradas diretamente do site deles.[^siteCopel]
 
@@ -60,7 +60,7 @@ A Copel opera um parque gerador com diversas usinas próprias e participações 
 knitr::include_graphics("img/usinas_Copel.jpg")
 ```
 
-Comecemos comentando a respeito das hidrelétricas. Existe uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução nº 875/2020 [@ren875_2020], a diferenciação é tal:
+Comecemos comentando a respeito das hidrelétricas. Existe uma diferenciação entre Central Geradora Hidrelétrica (CGH), Pequena Central Hidrelétrica (PCH) e Usina Hidrelétrica (UHE). Por mais que todas se aproveitem do potencial hidráulico de um recurso hídrico, a diferença está no porte do empreendimento. Como disposto pela ANEEL, na Resolução nº 875/2020,[@ren875_2020] a diferenciação é tal:
 
 -   Uma **Central Geradora Hidrelétrica com Capacidade Instalada Reduzida (CGH)** é aquela cuja potência seja igual ou inferior a 5 MW.
 -   Uma **Pequena Central Hidrelétrica (PCH)** é aquela que possui duas características: (1) potência instalada superior a 5 MW e igual ou inferior a 30 MW; e (2) área de reservatório de até 13 km², excluindo a calha do leito regular do rio. Existem, ainda, cláusulas que regularizam a condição de (2).
@@ -71,7 +71,7 @@ Essa diferenciação é relevante, uma vez que o licenciamento destes três tipo
 Assim sendo, são as hidrelétricas tanto operacionais quanto em construção, com participação da Copel:
 
 -   **UHE Colíder.** Está sendo construída na região norte do Mato Grosso, nos municípios de Nova Canaã do Norte e Itaúba. O empreendimento terá potência instalada estimada de 300 MW, o suficiente para atender ao consumo de uma cidade com 850 mil habitantes. Cabe comentar que essa obra é integrante do PAC do Governo Federal.
--   **UHE Governador Ney Aminthas de Barros Braga,** anterior UHE Segredo. Esta é a segunda usina da Copel em potência instalada, com capacidade de 1.260 MW. Está localizada no rio Iguaçu, no município de Mangueirinha. Foi inaugurada em 1992, tendo sido a primeira UHE a possuir um Relatório de Impacto Ambiental (RIMA) no Brasil.
+-   **UHE Governador Ney Aminthas de Barros Braga,** anterior UHE Segredo. Esta é a segunda usina da Copel em potência instalada, com capacidade de 1.260 MW. Está localizada no rio Iguaçu, no município de Mangueirinha. Foi inaugurada em 1992, tendo sido a primeira UHE a possuir um Relatório de Impacto Ambiental (Rima) no Brasil.
 -   **UHE Governador José Richa,** anterior UHE Salto Caxias. É uma das mais importantes da Copel, tendo 1.240 MW de potência instalada. Foi inaugurada em fevereiro de 1999 e está situada no rio Iguaçu, no município de Capitão Leônidas Marques.
 -   **UHE Governador Bento Munhoz da Rocha Netto,** anterior UHE Foz do Areia. Esta é a maior usina da Copel, com capacidade instalada de 1.676 MW. Está localizada no rio Iguaçu, no município de Pinhão. Como um todo, a operação foi iniciada em 1980; suas operações causaram a desativação da PCH Salto Grande do Iguaçu, que contava com 15.2 MW.
 -   **UHE Baixo Iguaçu.** Tem capacidade instalada de 350,2 MW -- suficiente para atender uam cidade com 1 milhão de habitantes. Iniciou suas operações no primeiro semestre de 2019. A Copel detém 30% de participação nesta usina instalada no rio Iguaçu, entre os municípios de Capanema e Capitão Leônidas Marques.
@@ -125,8 +125,8 @@ library(kableExtra)
 
 kable(
   tibble(
-    `NÍVEL DE TENSÃO (kV)` = c(69, 138, 230, 525),
-    `EXTENSÃO (km)` = c(0, 7.2, 2235.5, 278.5)
+	`NÍVEL DE TENSÃO (kV)` = c(69, 138, 230, 525),
+	`EXTENSÃO (km)` = c(0, 7.2, 2235.5, 278.5)
   ),
   caption = "Extensão de linhas de transmissão da Copel, por nível de tensão.",
   format = "latex",
@@ -135,11 +135,11 @@ kable(
   align = "cc"
   ) %>%
   kable_styling(
-    latex_options = "HOLD_position"
+	latex_options = "HOLD_position"
   ) %>%
   add_header_above(
-    header = c("LINHAS DE TRANSMISSÃO" = 2),
-    bold = TRUE
+	header = c("LINHAS DE TRANSMISSÃO" = 2),
+	bold = TRUE
   )
 ```
 
@@ -150,9 +150,9 @@ library(kableExtra)
 
 kable(
   tibble(
-    `NÍVEL DE TENSÃO (kV)` = c(230, 525),
-    `QUANTIDADE` = c(31, 4),
-    `POTÊNCIA (MVA)` = c(9602.0, 3400.0)
+	`NÍVEL DE TENSÃO (kV)` = c(230, 525),
+	`QUANTIDADE` = c(31, 4),
+	`POTÊNCIA (MVA)` = c(9602.0, 3400.0)
   ),
   caption = "Subestações de transmissão da Copel, por nível de tensão.",
   format = "latex",
@@ -161,11 +161,11 @@ kable(
   align = "ccc"
   ) %>%
   kable_styling(
-    latex_options = "HOLD_position"
+	latex_options = "HOLD_position"
   ) %>%
   add_header_above(
-    header = c("SUBESTAÇÕES DE TRANSMISSÃO" = 3),
-    bold = TRUE
+	header = c("SUBESTAÇÕES DE TRANSMISSÃO" = 3),
+	bold = TRUE
   )
 ```
 
@@ -209,10 +209,10 @@ library(kableExtra)
 
 kable(
   tibble(
-    `Classes` = c("Residencial", "Industrial", "Comercial", "Rural", "Outras"),
-    `set-21` = c(4016.4, 70.8, 419.8, 343.6, 52.3),
-    `set-20` = c(3911.3, 70.9, 407.3, 348.4, 59.5),
-    `%` = c(2.7, -0.2, 3.1, -1.4, -11.2)
+	`Classes` = c("Residencial", "Industrial", "Comercial", "Rural", "Outras"),
+	`set-21` = c(4016.4, 70.8, 419.8, 343.6, 52.3),
+	`set-20` = c(3911.3, 70.9, 407.3, 348.4, 59.5),
+	`%` = c(2.7, -0.2, 3.1, -1.4, -11.2)
   ),
   caption = "Número de consumidores da Copel.",
   format = "latex",
@@ -221,10 +221,10 @@ kable(
   align = "cccc"
   ) %>%
   kable_styling(
-    latex_options = "HOLD_position"
+	latex_options = "HOLD_position"
   ) %>%
   add_header_above(
-    header = c("Número de consumidores (em milhares)" = 1, "No mês" = 3)
+	header = c("Número de consumidores (em milhares)" = 1, "No mês" = 3)
   )
 ```
 
@@ -237,10 +237,10 @@ library(kableExtra)
 
 kable(
   tibble(
-    `Classes` = c("Residencial", "Industrial", "Comercial", "Rural", "Outras", "Suprim. a Concessionárias e Permissionárias"),
-    `set-21` = c(6021, 1720, 3055, 1865, 1759, 64),
-    `set-20` = c(5793, 1719, 3080, 1828, 1759, 56),
-    `%` = c(3.9, 0.1, -0.8, 2.0, 0.0, 14.3)
+	`Classes` = c("Residencial", "Industrial", "Comercial", "Rural", "Outras", "Suprim. a Concessionárias e Permissionárias"),
+	`set-21` = c(6021, 1720, 3055, 1865, 1759, 64),
+	`set-20` = c(5793, 1719, 3080, 1828, 1759, 56),
+	`%` = c(3.9, 0.1, -0.8, 2.0, 0.0, 14.3)
   ),
   caption = "Perfil de consumo de energia da distribuição.",
   format = "latex",
@@ -249,11 +249,11 @@ kable(
   align = "cccc"
   ) %>%
   kable_styling(
-    latex_options = "HOLD_position"
+	latex_options = "HOLD_position"
   ) %>%
   add_header_above(
-    header = c("Consumo de Energia Acumulado - GWh" = 4),
-    bold = TRUE
+	header = c("Consumo de Energia Acumulado - GWh" = 4),
+	bold = TRUE
   )
 ```
 
@@ -263,9 +263,11 @@ knitr::include_graphics("img/consumo_dist.png")
 
 A Copel disponibiliza também os dados referentes às tarifas pagas pelos clientes, tanto de alta quanto baixa tensão.
 
-A empresa, naturalmente, se faz valer de uma Norma aplicável a conexão de micro e minigeração no sistema de compensação -- esta é a NTC 905200[^normaCopel]. Isso decorre do fato que conforme o estabelecido pela Resolução da ANEEL n° 482/2012 [@ren482_2012], é permitido aos consumidores instalar geradores de pequeno porte em suas unidades consumidoras e utilizar o sistema elétrico da distribuidora para injetar o excedente de energia, que é convertido em crédito de energia válido por 60 meses. Tais créditos poderão ser utilizados para abater do consumo da própria unidade consumidora nos meses seguintes ou de outras unidades consumidoras que precisam estar previamente cadastradas para esse fim e atendidas pela mesma distribuidora -- no caso, a Copel --, cujo titular seja o mesmo da unidade com sistema de compensação de energia elétrica, possuidor do mesmo CPF ou CNPJ junto ao Ministério da Fazenda. Outra forma para adicionar unidades consumidoras para o abatimento do consumo é através de empreendimento com múltiplas unidades consumidoras ou geração compartilhada.
+A empresa, naturalmente, se faz valer de uma Norma aplicável a conexão de micro e minigeração no sistema de compensação -- esta é a NTC 905200[^normaCopel]. Isso decorre do fato que conforme o estabelecido pela Resolução da ANEEL n° 482/2012,[@ren482_2012] é permitido aos consumidores instalar geradores de pequeno porte em suas unidades consumidoras e utilizar o sistema elétrico da distribuidora para injetar o excedente de energia, que é convertido em crédito de energia válido por 60 meses. Tais créditos poderão ser utilizados para abater do consumo da própria unidade consumidora nos meses seguintes ou de outras unidades consumidoras que precisam estar previamente cadastradas para esse fim e atendidas pela mesma distribuidora -- no caso, a Copel --, cujo titular seja o mesmo da unidade com sistema de compensação de energia elétrica, possuidor do mesmo CPF ou CNPJ junto ao Ministério da Fazenda. Outra forma para adicionar unidades consumidoras para o abatimento do consumo é através de empreendimento com múltiplas unidades consumidoras ou geração compartilhada.
 
 [^normaCopel]: Disponível em: <https://bit.ly/35Ze9Xv>. Último acesso em 23 nov 2020.
+
+A empresa também conta com relatórios ESG para os ramos de geração, transmissão e distribuição da empresa, sendo uma das primeiras _holdings_ a adotar sistemas de _smart grid_, com um _rollout_ massivo de medidores inteligentes a serem implantados. Dessa forma, a empresa se posiciona como uma vanguarda no que tange à transição energética no Brasil.^[Inclusive, a pesquisa de novas tecnologias em todos os segmentos da empresa são prioridade, conforme Modelo de Negócios disponibilizado no Relato Integrado de 2020, disponível em: <https://api.mziq.com/mzfilemanager/v2/d/16a31b1b-5ecd-4214-a2e0-308a2393e330/0f3821c6-5a81-f5a7-abf5-0346d49c71c7?origin=1>. Último acesso em 21 mar 2022.]
 
 ## Cálculo do *valuation* intrínseco
 
@@ -299,7 +301,7 @@ bp_trat <- bp %>%
   pivot_longer(cols = 2:ncol(.), names_to = "Data", values_to = "Valor") %>%
   mutate(Valor = Valor / 1000) %>%
   mutate(Data = dmy(Data),
-         ano = year(Data)) %>%
+     	ano = year(Data)) %>%
   group_by(Conta_nova, ano) %>%
   summarise(Valor = first(Valor)) %>%
   ungroup() %>%
@@ -341,9 +343,9 @@ kable(bp_trat %>% select(1:6),
   longtable = TRUE
   ) %>%
   kable_styling(
-    latex_options = c("HOLD_position", "repeat_header"),
-    repeat_header_text = "\\textit{(continuação)}",
-    font_size = 10
+	latex_options = c("HOLD_position", "repeat_header"),
+	repeat_header_text = "\\textit{(continuação)}",
+	font_size = 10
   ) %>%
   column_spec(1, width = "6cm")
 
@@ -355,9 +357,9 @@ kable(bp_trat %>% select(1, 7:11),
   longtable = TRUE
   ) %>%
   kable_styling(
-    latex_options = c("HOLD_position", "repeat_header"),
-    repeat_header_text = "\\textit{(continuação)}",
-    font_size = 10
+	latex_options = c("HOLD_position", "repeat_header"),
+	repeat_header_text = "\\textit{(continuação)}",
+	font_size = 10
   ) %>%
   column_spec(1, width = "6cm")
  
@@ -395,7 +397,7 @@ dre_trat <- dre %>%
   pivot_longer(cols = 2:ncol(.), names_to = "Data", values_to = "Valor") %>%
   mutate(Valor = Valor / 1000) %>%
   mutate(Data = dmy(Data),
-         ano = year(Data)) %>%
+     	ano = year(Data)) %>%
   group_by(Conta_nova, ano) %>%
   summarise(Valor = sum(Valor)) %>%
   ungroup() %>%
@@ -417,9 +419,9 @@ kable(dre_trat %>% select(1:6),
   longtable = TRUE
   ) %>%
   kable_styling(
-    latex_options = c("HOLD_position", "repeat_header"),
-    repeat_header_text = "\\textit{(continuação)}",
-    font_size = 10
+	latex_options = c("HOLD_position", "repeat_header"),
+	repeat_header_text = "\\textit{(continuação)}",
+	font_size = 10
   )
 
 kable(dre_trat %>% select(1, 7:11),
@@ -430,9 +432,9 @@ kable(dre_trat %>% select(1, 7:11),
   longtable = TRUE
   ) %>%
   kable_styling(
-    latex_options = c("HOLD_position", "repeat_header"),
-    repeat_header_text = "\\textit{(continuação)}",
-    font_size = 10
+	latex_options = c("HOLD_position", "repeat_header"),
+	repeat_header_text = "\\textit{(continuação)}",
+	font_size = 10
   )
 
 ```
@@ -453,7 +455,7 @@ library(tidyverse)
 
 dfc <- read_csv2("data/DFC_Copel.csv") %>%
   rename("Conta" = "Detalhamento",
-         "2021" = "TTM") %>%
+     	"2021" = "TTM") %>%
   relocate("2020", .after = "Conta") %>%
   relocate("2019", .after = "Conta") %>%
   relocate("2018", .after = "Conta") %>%
@@ -472,9 +474,9 @@ kable(dfc,
   longtable = TRUE
   ) %>%
   kable_styling(
-    latex_options = c("HOLD_position", "repeat_header"),
-    repeat_header_text = "\\textit{(continuação)}",
-    font_size = 10
+	latex_options = c("HOLD_position", "repeat_header"),
+	repeat_header_text = "\\textit{(continuação)}",
+	font_size = 10
   ) %>%
   column_spec(1, width = "6cm")
 ```
@@ -483,7 +485,7 @@ Se o balanço patrimonial é a fotografia de um momento específico da empresa e
 
 O demonstrativo de fluxo de caixa não está apresentado desde 2012 por causa das possíveis mutações dentro da nomenclatura das contas, assim como ser de uso "extra" para observar as movimentações de caixa.
 
-Ainda relativo à alienação de Copel Telecom e o CRC, existem alguns indicativos nesses movimentos no DFC: 
+Ainda relativo à alienação de Copel Telecom e o CRC, existem alguns indicativos nesses movimentos no DFC:
 
 - **Redução na conta de depreciação/exaustão e redução nas despesas de capital.** Sem o capital imobilizado da Copel Telecom, a conta referente às depreciações das instalações e afins também se foram;
 - **Aumento no capital de giro.** Isso está relacionado ao pagamento pelo governo do Paraná em agosto de 2021 do CRC, em seu valor integral, adicionando assim ao caixa da empresa;
@@ -493,7 +495,7 @@ Ainda relativo à alienação de Copel Telecom e o CRC, existem alguns indicativ
 
 Inicia-se o _valuation_ em si tomando ciência da sensibilidade do ativo perante o mercado, através de uma visita ao Yahoo! Finance[^BetaCPLE]. Temos que $\beta$ vale 0.34. Este foi calculado através de base mensal com duração de 5 anos.
 
-[^BetaCPLE]: Disponível em: <https://finance.yahoo.com/quote/CPLE3.SA/>. Último acesso em 26 jan 2022.
+[^BetaCPLE]: Disponível em: <https://finance.yahoo.com/quote/CPLE3.SA/>. O cálculo do indicador é feito de forma retroativa, para 5 anos. Último acesso em 26 jan 2022.
 
 A seguir, os componentes para o cálculo de CAPM. Com uma visita ao site de Aswath Damodaran[^DamodaranPremio] foi possível constatar que o prêmio de risco do mercado brasileiro é de 7.21%, atualizado pela última vez em 5 de janeiro de 2022.
 
@@ -521,7 +523,7 @@ $$
 R_d = \frac{J}{P_O} = \frac{838.8\,mi}{9.82\,bi} = 0.085
 $$
 
-Finalmente, podemos juntar as partes para calcular o WACC:
+Finalmente, adicionam-se as partes para calcular o WACC:
 
 \begin{align*}
 WACC &= \frac{E}{V}*R_e + (1-T_C)*\frac{D}{V}*R_d \\
@@ -534,7 +536,7 @@ WACC &= `r last(est_cap$cap_proprio)*(retorno_esp) + (1-0.34)*(1-last(est_cap$ca
 WACC <- last(est_cap$cap_proprio)*(retorno_esp) + (1-0.34)*(1-last(est_cap$cap_proprio))*0.085
 ```
 
-Dessa forma, a taxa de desconto para o DCF é `r paste(round(100 * (last(est_cap$cap_proprio)*(retorno_esp) + (1-0.34)*(1-last(est_cap$cap_proprio))*0.085), 2), "%", sep = "")` a.a. 
+Dessa forma, a taxa de desconto para o DCF é `r paste(round(100 * (last(est_cap$cap_proprio)*(retorno_esp) + (1-0.34)*(1-last(est_cap$cap_proprio))*0.085), 2), "%", sep = "")` a.a.
 
 Agora, é necessário determinar o fluxo de caixa livre para a firma (FCFF). A seguinte ordem de operações é feita:
 
@@ -559,16 +561,16 @@ calculo_fcff <- dre_trat %>%
   pivot_longer(cols = 2:ncol(.), names_to = "Conta", values_to = "outros") %>%
   pivot_wider(names_from = "anos", values_from = "outros") %>%
   select(1, 7:ncol(.)) %>%
-  rbind(dfc %>% 
-          filter(Conta %in% c("Depreciação/Exaustão", "Despesas de Capital", "Capital de Giro")) %>%
-          mutate_at(2:ncol(.), function(x) as.numeric(x))) %>%
+  rbind(dfc %>%
+      	filter(Conta %in% c("Depreciação/Exaustão", "Despesas de Capital", "Capital de Giro")) %>%
+      	mutate_at(2:ncol(.), function(x) as.numeric(x))) %>%
   pivot_longer(cols = 2:ncol(.), names_to = "anos", values_to = "outros") %>%
   pivot_wider(names_from = "Conta", values_from = "outros") %>%
   arrange(anos) %>%
   mutate(FCFF = `NOPAT` + `Depreciação/Exaustão` + `Despesas de Capital` + `Capital de Giro`) %>%
   pivot_longer(cols = 2:ncol(.), names_to = "Conta", values_to = "outros") %>%
   pivot_wider(names_from = "anos", values_from = "outros")
-  
+ 
 kable(calculo_fcff,
   caption = "Cálculo de FCFF até 2021, em milhões de reais.",
   format = "latex",
@@ -577,13 +579,13 @@ kable(calculo_fcff,
   longtable = TRUE
   ) %>%
   kable_styling(
-    latex_options = c("HOLD_position", "repeat_header"),
-    repeat_header_text = "\\textit{(continuação)}",
-    font_size = 10
+	latex_options = c("HOLD_position", "repeat_header"),
+	repeat_header_text = "\\textit{(continuação)}",
+	font_size = 10
   )
 ```
 
-É razoável assumir que esse crescimento de FCFF nos anos recentes não é sustentável. De fato, com esse caixa extra obtido, a empresa optou por distribuir uma quantia exagerada de dividendos, chegando a _yields_ superiores de 20% – isto será comentado com maior detalhe à frente. Essa alienação do braço de telecomunicações da Companhia, assim como o recebimento da CRC por parte do governo paranaense são atividades não-recorrentes que não apenas fizeram com que aumentasse o caixa da empresa, mas também reduzisse o dispêndio de capital – no caso da alienação –, fazendo com que a capacidade de geração de caixa livre da empresa melhore no longo prazo. É relevante comentar, também, que os valores do DFC são de apenas 9 meses, dando ainda mais espaço para a empresa de geração de capital. 
+É razoável assumir que esse crescimento de FCFF nos anos recentes não é sustentável. De fato, com esse caixa extra obtido, a empresa optou por distribuir uma quantia exagerada de dividendos, chegando a _yields_ superiores de 20% – isto será comentado com maior detalhe à frente. Essa alienação do braço de telecomunicações da Companhia, assim como o recebimento da CRC por parte do governo paranaense são atividades não-recorrentes que não apenas fizeram com que aumentasse o caixa da empresa, mas também reduzisse o dispêndio de capital – no caso da alienação –, fazendo com que a capacidade de geração de caixa livre da empresa melhore no longo prazo. É relevante comentar, também, que os valores do DFC são de apenas 9 meses, dando ainda mais espaço para a empresa de geração de capital.
 
 Tendo esses comentários em mente, para fins desse estudo, considera-se que o FCFF para 2022 – e que servirá de base para as projeções de FCFFs futuros – seja de 1.8 bilhões de reais. Este valor não é tão grande quanto os 5.1 bi dos 9 meses de 2021, entretanto é uma visão de crescimento se comparado a 2019.
 
@@ -662,14 +664,14 @@ kable(tabela_sensibilidade_DCF,
   longtable = T
   ) %>%
   kable_styling(
-    latex_options = c("HOLD_position", "repeat_header"),
-    repeat_header_text = "\\textit{(continuação)}",
-    font_size = 11
+	latex_options = c("HOLD_position", "repeat_header"),
+	repeat_header_text = "\\textit{(continuação)}",
+	font_size = 11
   ) %>%
   footnote(general = "Linhas: WACC; Colunas: CAGR.",
-           general_title = "Nota: ",
-           title_format = "italic",
-           footnote_as_chunk = TRUE)
+       	general_title = "Nota: ",
+       	title_format = "italic",
+       	footnote_as_chunk = TRUE)
 ```
 
 ### *Valuation* através do Modelo do Desconto de Dividendos (DDM)
@@ -762,14 +764,14 @@ kable(tabela_sensibilidade_DDM,
   longtable = T
   ) %>%
   kable_styling(
-    latex_options = c("HOLD_position", "repeat_header"),
-    repeat_header_text = "\\textit{(continuação)}",
-    font_size = 11
+	latex_options = c("HOLD_position", "repeat_header"),
+	repeat_header_text = "\\textit{(continuação)}",
+	font_size = 11
   ) %>%
   footnote(general = "Linhas: taxa de desconto; Colunas: LL esperado.",
-           general_title = "Nota: ",
-           title_format = "italic",
-           footnote_as_chunk = TRUE)
+       	general_title = "Nota: ",
+       	title_format = "italic",
+       	footnote_as_chunk = TRUE)
 ```
 
 ## *Valuation* relativo
@@ -803,7 +805,7 @@ kable(page_filtr,
   align = "c"
   ) %>%
   kable_styling(
-    latex_options = "HOLD_position"
+	latex_options = "HOLD_position"
   )
 ```
 

@@ -28,8 +28,8 @@ examiner:
   name: Marco Ludwik Patrício Krebs
   degree: D.Sc.
 - title: Prof.
-  name: Nome Completo do Terceiro Examinador
-  degree: Ph.D
+  name: Roberto Ivo da Rocha Lima Filho
+  degree: D.Sc.
 listoftables: true
 listoffigures: true
 dedication: |
